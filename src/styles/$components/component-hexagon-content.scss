@@ -1,0 +1,77 @@
+.component-hexagon-content {
+  counter-reset: hexacontent;
+
+  &__package {
+    min-height: rem(190);
+    padding-top: 30px;
+    padding-left: rem(220);
+    position: relative;
+
+    @include mq("md") {
+      padding-left: rem(130);
+    }
+
+    @include mq("sm") {
+      padding: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(75);
+
+      @include mq("sm") {
+        margin-bottom: rem(55);
+      }
+    }
+
+    &::before {
+      content: counter(hexacontent);
+      width: rem(160);
+      height: rem(140);
+      font-size: rem(60);
+      line-height: rem(140);
+      text-align: center;
+      color: $bd-green-1;
+      background-image: url(/images/bg-polygon-fill-content.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      counter-increment: hexacontent;
+
+      @include mq("md") {
+        width: rem(100);
+        height: rem(100);
+        line-height: rem(100);
+      }
+
+      @include mq("sm") {
+        display: block;
+        margin-bottom: rem(20);
+        position: static;
+      }
+    }
+  }
+
+  &__title {
+    font-size: rem(18);
+    line-height: rem(20);
+    font-weight: 500;
+    color: $link;
+    margin-bottom: rem(10);
+  }
+
+  &__code {
+    font-size: rem(14);
+    line-height: rem(15);
+    color: $medium-teal;
+    margin-bottom: rem(5);
+  }
+
+  &__desc {
+    font-size: rem(14);
+    line-height: rem(20);
+    margin-bottom: rem(25);
+  }
+}

@@ -1,0 +1,14 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Loading'
+  - useFooter = false
+  - useHeader = false
+  - useLoading = false
+  - namespace = '--bg-gradient'
+
+block container
+  .container-fluid
+    h2.template__header
+      | Loading
+    +loading(true)

@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "arrError": [
+    {
+      "inputError": "email",
+      "msgError": "Invalid email address"
+    },
+    {
+      "inputError": "first_name",
+      "msgError": "Invalid first name"
+    }
+  ]
+}

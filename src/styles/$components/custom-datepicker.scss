@@ -1,0 +1,143 @@
+.custom-datepicker {
+  margin-top: rem(10);
+
+  .todow {
+    color: $green-4;
+  }
+
+  .datepicker {
+    background: $white;
+
+    &-inline {
+      width: 100%;
+    }
+
+    &-switch {
+      font-size: rem(14);
+      line-height: rem(20);
+    }
+
+    &-months,
+    &-years {
+      td {
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    &-years {
+      .datepicker-switch {
+        pointer-events:none;
+      }
+    }
+
+    th,
+    td {
+      font-weight: 400;
+    }
+
+    td {
+      position: relative;
+      padding: rem(10);
+      border-radius: rem(2);
+      z-index: 1;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: rem(28);
+        height: rem(24);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: rem(2);
+        background-color: transparent;
+        z-index: -1;
+      }
+
+      .no-touchevents &:hover {
+        &:after {
+          background-color: $bg-gray-1;
+        }
+      }
+
+      &.old {
+        color: $light-gray;
+      }
+
+      &.today {
+        &:after {
+          background-color: $light-gray;
+        }
+
+        .no-touchevents &:hover {
+          &:after {
+            background-color: $light-gray;
+          }
+        }
+      }
+
+      &.active {
+        color: $white;
+
+        &:after {
+          background-color: $bg-green-dark-4;
+        }
+
+        .no-touchevents &:hover {
+          &:after {
+            background-color: $bg-green-dark-4;
+          }
+        }
+      }
+    }
+
+    thead {
+      tr {
+       & + tr {
+          th {
+            padding: rem(10) 0;
+            border-radius: 0;
+            border-bottom: 1px solid $bd-gray-3;
+          }
+       } 
+      }
+    }
+
+    .table-condensed {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+
+      tr {
+        font-size: rem(11);
+        line-height: rem(16);
+
+        td {
+          &:hover {
+            background-color: transparent;
+          }
+
+          &.today {
+            background-image: none;
+            background-color: transparent;
+
+            &:hover {
+              background-color: transparent;
+            }
+          }
+
+          &.active {
+            background-image: none;
+            background-color: transparent;
+
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

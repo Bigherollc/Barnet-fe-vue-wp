@@ -1,0 +1,74 @@
+mixin useHeader({isLogin = false} = {})
+  header.header(data-header)
+    .header__sticky.--bg-gradient(data-sticky)
+      .header__main
+        .container
+          .menumobile(data-menumobile)
+            .menumobile__toggle(data-toggle)
+              span
+            .menumobile__menu(data-menu)
+              .menumobile__wrap
+                +nav([
+                  {title: 'Concepts', text: 'Concepts', href: ''},
+                  {title: 'Actives', text: 'Actives', href: ''},
+                  {title: 'Systems', text: 'Systems', href: ''},
+                  {title: 'Formula', text: 'Formula', href: ''},
+                  {title: 'Resources', text: 'Resources', href: ''},
+                  {title: 'Global Innovation Center', text: 'Global Innovation Center', href: ''},
+                  {title: 'Samples', text: 'Samples', href: '', count: '0'}
+                ])
+                +nav([
+                  {title: 'Profile Settings', text: 'Profile Settings', href: ''},
+                  {title: 'Change Password', text: 'Change Password', href: ''},
+                  {title: 'Logout', text: 'Logout', href: ''}
+                ])
+          .header__logo
+            +link(rel="stylesheet", href="index.html")
+              +img(src="/images/logo-barnet.svg", alt="")
+          .header__right
+            .header__menuNav
+              +nav([
+                {title: 'Global Innovation Center', text:'Global Innovation Center', href: '', icon: 'icon-beaker'},
+              ])
+            .header__account(data-account)
+              .header__account-toggle(title="Mark James" data-account-toggle)
+                i.icon.icon-account
+                span Mark James
+              .header__account-dropdown(data-account-dropdown)
+                +nav([
+                  {title: 'Profile Settings', text: 'Profile Settings', href: ''},
+                  {title: 'Change Password', text: 'Change Password', href: ''},
+                  {title: 'Logout', text: 'Logout', href: ''}
+                ])
+            .header__samples
+              +link(rel="stylesheet", href="", title="Samples" data-anchor-link)
+                i(class='icon icon-sample')
+                span.header__samples-text Samples
+                span.header__samples-count.d-none(data-count-sample) 0
+            .header__search-toggle(data-search-toggle)
+              i(class='icon icon-search icon-gtm-search')
+      if isLogin
+        .header__menu
+          .container
+            +nav([
+              {title: 'Concepts', text: 'Concepts', href: ''},
+              {title: 'Actives', text: 'Actives', href: ''},
+              {title: 'Systems', text: 'Systems', href: ''},
+              {title: 'Formula', text: 'Formula', href: ''},
+              {title: 'Resources', text: 'Resources', href: ''}
+            ])
+      else
+        .header__menu
+          .container
+            +nav([
+              {title: 'Concepts', text: 'Concepts', href: '/concepts-landing-logout.html'},
+              {title: 'Products', text: 'Products', href: '/all-product-logout.html'},
+              {title: 'Formula', text: 'Formula', href: '/formula-landing-logout.html'},
+            ])
+      .header__search-dropdown(data-search-dropdown)
+        .header__search-form(data-search-form data-action="search-logout.html")
+          button(data-search-btn)
+            i(class='icon icon-search')
+          input(type="text" class="form-control" autocomplete="off" name="s" data-search-input data-api="/data/product-data.json")
+          button(data-search-clear-btn)
+            i(class='icon icon-close')

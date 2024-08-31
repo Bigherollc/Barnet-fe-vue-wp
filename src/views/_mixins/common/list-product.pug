@@ -1,0 +1,13 @@
+mixin listProduct(items)
+  .component-list-product&attributes(attributes)
+    each item in items
+      .component-list-product__item(class=[item.image && '--has-image'])
+        if item.image
+          .component-list-product__image
+            +link(rel="stylesheet", href="", title=item.title)
+              +img(src=item.image, title=item.title)
+        .component-list-product__wrap
+          .component-list-product__title
+            h3
+              +link(rel="stylesheet", href="", title=item.title)!=item.title
+          .component-list-product__desc!=item.desc

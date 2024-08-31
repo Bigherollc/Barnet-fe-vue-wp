@@ -1,0 +1,48 @@
+.component-image-form {
+  background-color: $semi-dark-teal;
+  @extend %box-shadow-1;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__img {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    img {
+      display: block;
+      width: 100%;
+      min-height: 100%;
+    }
+  }
+
+  .component-form {
+    max-width: rem(380);
+    box-shadow: none;
+
+    &__wrapper {
+      padding: rem(35) rem(15);
+    }
+  }
+
+  @include mq(md) {
+    background-color: $dark-teal;
+
+    .container {
+      padding: 0;
+    }
+
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+  }
+
+  @include mq(sm) {
+    &.--mg-top-ml {
+      margin-top: 0;
+    }
+  }
+}

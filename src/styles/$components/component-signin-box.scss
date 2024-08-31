@@ -1,0 +1,67 @@
+.component-signin-box {
+  color: $white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: rem(30) rem(35) rem(35);
+  @extend %box-shadow-1;
+  position: relative;
+  z-index: 1;
+
+  @include mq("md") {
+    padding: rem(30) rem(30) rem(40);
+  }
+
+  &__box {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    @include mq("md") {
+      display: block;
+    }
+  }
+
+  &__signin {
+    width: 100%;
+    max-width: rem(355);
+    padding-right: rem(40);
+    margin-right: rem(25);
+    border-right: solid rem(1) $barnet-teal;
+
+    @include mq("md") {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: rem(30);
+      padding-right: 0;
+      padding-bottom: rem(40);
+      border-right: none;
+      border-bottom: solid rem(1) $barnet-teal;
+    }
+  }
+
+  &__title {
+    font-size: rem(24);
+    line-height: rem(36);
+    font-weight: 300;
+    color: $barnet-teal;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: rem(14);
+    line-height: rem(20);
+    margin-bottom: rem(10);
+  }
+
+  &__list {
+    margin-bottom: rem(25);
+  }
+
+  &__titleRequest {
+    font-size: rem(18);
+    line-height: rem(19);
+    font-weight: 300;
+    margin-bottom: rem(20);
+  }
+}

@@ -1,0 +1,195 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Landing Skin'
+  - isLogin = true
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+  - background = '../images/bg-landing-3.png'
+
+block container
+  .landing
+    .container
+      .landing-wrapper
+        .landing__groupTitle
+          +headingGroup('Skin', 'Lorem ipsum door sit ahmet. Our line of bio actives and supporting systems will lorem ipsum dolor sit ahmet.', '--size-lg to-uppercase')
+
+        .landing__slideHero.--mg-top-lg
+          +slideHero([
+            {
+              image: '/images/active/hero-1.png',
+              title: 'Introducing Barnet Color',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+              hasBg: true,
+              mode: 'dark'
+            },
+            {
+              image: '/images/active/hero-2.png',
+              title: 'Introducing Barnet Color',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+            },
+            {
+              image: '/images/active/hero-3.png',
+              title: 'Introducing Barnet Color',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+            },
+          ]).--size-wrap-md(data-slider-main data-opts-slider='{"slickContainer": ".landing__slideHero","optsSlick": {"slide": "[data-slider-item]", "dots": true, "rows": 0, "slidesToShow": 1}}')
+
+        .landing__featuredFilter.--mg-top-lg
+          .component-list-filter
+            .component-list-filter__wrapper
+              .component-list-filter__group
+                +headingGroup('Active Materials', 'East asian inspired materials for all your ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.').--dark-mode
+                +nav-link([
+                  {
+                    title: 'Firming',
+                    href: '#'
+                  },
+                  {
+                    title: 'Anti-oxidents',
+                    href: '#'
+                  },
+                  {
+                    title: 'Exfoliants',
+                    href: '#'
+                  },
+                  {
+                    title: 'Moisturizers',
+                    href: '#'
+                  },
+                  {
+                    title: 'Filter Name',
+                    href: '#'
+                  },
+                  {
+                    title: 'Preservative Free',
+                    href: '#'
+                  },
+                  {
+                    title: 'Vegan',
+                    href: '#'
+                  },
+                  {
+                    title: 'COSMOS Certified',
+                    href: '#'
+                  },
+                  {
+                    title: 'ISO Organic',
+                    href: '#'
+                  }
+                ]).component-list
+                .component-list-filter__cta--wrapper
+                  +link('#', 'All Actives').btn
+              .component-list-filter__group
+                +headingGroup('System Formers', 'The perfect platform for your innovation. Our system formers let you lorem ipsum dolor sit ahmet dum sit eclor deus.').--dark-mode
+                +nav-link([
+                  {
+                    title: 'Firming',
+                    href: '#'
+                  },
+                  {
+                    title: 'Anti-oxidents',
+                    href: '#'
+                  },
+                  {
+                    title: 'Exfoliants',
+                    href: '#'
+                  },
+                  {
+                    title: 'Moisturizers',
+                    href: '#'
+                  },
+                  {
+                    title: 'Filter Name',
+                    href: '#'
+                  },
+                  {
+                    title: 'Preservative Free',
+                    href: '#'
+                  },
+                  {
+                    title: 'Phenoxyethene Free',
+                    href: '#'
+                  },
+                  {
+                    title: 'Vegan',
+                    href: '#'
+                  },
+                  {
+                    title: 'COSMOS Certified',
+                    href: '#'
+                  },
+                  {
+                    title: 'ISO Organic',
+                    href: '#'
+                  }
+                ]).component-list
+                .component-list-filter__cta--wrapper
+                  +link('#', 'All Systems').btn
+
+        .landing__featuredConcepts.--mg-top-lg
+          .component-fashtion-concepts
+            .component-fashtion-concepts__wrapper
+              +headingGroup('The Science of Skin', 'Lorem ipsum dolor sit ahmet forward looking concept collections.').text-center.--dark-mode
+              .component-fashtion-concepts__slider.--mg-top-sm
+                +imageConcepts([
+                  {
+                    image: '/images/active/mask-1.png',
+                    title: 'DNA Integrity',
+                    desc: 'Brighten, blur and highlight for glowing youthful skin.'
+                  },
+                  {
+                    image: '/images/active/mask-2.png',
+                    title: 'Holobiont Beauty',
+                    desc: 'Fresh and natural light touch coverage for daily use.'
+                  },
+                  {
+                    image: '/images/active/mask-3.png',
+                    title: 'Moisturization',
+                    desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+                  },
+                  {
+                    image: '/images/active/mask-3.png',
+                    title: 'Moisturization',
+                    desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+                  },
+                  {
+                    image: '/images/active/mask-3.png',
+                    title: 'Moisturization',
+                    desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+                  }
+                ])(data-slider-main data-opts-slider='{"slickContainer": ".component-fashtion-concepts","optsSlick": {"slide": "[data-slider-item]","dots": true, "rows": 0, "slidesToShow": 4, "slidesToScroll": 4, "responsive":[{"breakpoint": 991, "settings": {"slidesToShow": 3, "slidesToScroll": 3}},{"breakpoint": 768, "settings": {"slidesToShow": 2, "slidesToScroll": 2}}]}}')
+
+        .landing__featuredImageOneside.--mg-top-lg
+          +imageOneside({
+            imgObj: {
+              src: '../images/landing-oneside-1.png',
+              title: 'Sustainability Snap Shots'
+            },
+            contentObj: {
+              title: 'Sustainability Snap Shots',
+              subTitle: 'Every Barnet product has a story. Follow ther journey of our Sustaianable by Barnet products and learn how the sustanable practices behind each. ',
+              headingDarkmode: true,
+              cta: {
+                link: '#',
+                title: 'See All Sustainablr by Barnet',
+              }
+            }
+          })
+
+        .landing__featuredImageOneside.--image-right.--mg-top-lg
+          +imageOneside({
+            imgObj: {
+              src: '../images/landing-oneside-1.png',
+              title: 'Sustainability Snap Shots'
+            },
+            contentObj: {
+              title: 'Sustainability Snap Shots',
+              subTitle: 'Every Barnet product has a story. Follow ther journey of our Sustaianable by Barnet products and learn how the sustanable practices behind each. ',
+              headingDarkmode: true,
+              cta: {
+                link: '#',
+                title: 'See All Sustainablr by Barnet',
+              }
+            }
+          })

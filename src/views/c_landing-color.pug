@@ -1,0 +1,208 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Landing Color'
+  - isLogin = true
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+  - background = '../images/bg-landing-3.png'
+
+block container
+  .landing
+    .container
+      .landing-wrapper
+        .landing__groupTitle
+          +headingGroup('Color', 'Lorem ipsum door sit ahmet. Our line of bio actives and supporting systems will lorem ipsum dolor sit ahmet.', '--size-lg to-uppercase')
+
+        .landing__slideHero.--mg-top-lg
+          +slideHero([
+            {
+              image: '/images/active/hero-1.png',
+              title: 'Introducing Barnet Color',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+            },
+            {
+              image: '/images/active/hero-2.png',
+              title: 'Introducing Barnet Color',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+            },
+            {
+              image: '/images/active/hero-3.png',
+              title: 'Introducing Barnet Color',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+            },
+          ]).--size-wrap-md(data-slider-main data-opts-slider='{"slickContainer": ".landing__slideHero","optsSlick": {"slide": "[data-slider-item]", "dots": true, "rows": 0, "slidesToShow": 1}}')
+
+        .landing__featuredCards.--mg-top-lg
+          +headingGroup('List Concepts', null).text-center.--dark-mode
+          .component-image-card.concepts
+            .component-image-card__wrapper
+              .component-image-card__slider
+                +imageConcepts([
+                  {
+                    image: '/images/seqments/seqments-10.png',
+                    title: 'COSMOS Certified',
+                    desc: 'Very short description of what the concept is.',
+                  },
+                  {
+                    image: '/images/seqments/seqments-11.png',
+                    title: 'Clean Beauty Compliant',
+                    desc: 'Very short description of what the concept is.',
+                  },
+                  {
+                    image: '/images/seqments/seqments-12.png',
+                    title: 'EWG Rated',
+                    desc: 'Very short description of what the concept is.',
+                  },
+                  {
+                    image: '/images/seqments/seqments-13.png',
+                    title: 'Halal Compliant',
+                    desc: 'Very short description of what the concept is.',
+                  },
+                  {
+                    image: '/images/seqments/seqments-14.png',
+                    title: 'ISO Natural',
+                    desc: 'Very short description of what the concept is.',
+                  },
+                  {
+                    image: '/images/seqments/seqments-15.png',
+                    title: 'ISO Organic',
+                    desc: 'Very short description of what the concept is.',
+                  },
+                  {
+                    image: '/images/seqments/seqments-16.png',
+                    title: 'RSPO Certified',
+                    desc: 'Very short description of what the concept is.',
+                  },
+                  {
+                    image: '/images/seqments/seqments-11.png',
+                    title: 'Clean Beauty Compliant',
+                    desc: 'Very short description of what the concept is.',
+                  },
+                  {
+                    image: '/images/seqments/seqments-12.png',
+                    title: 'EWG Rated',
+                    desc: 'Very short description of what the concept is.',
+                  },
+                  {
+                    image: '/images/seqments/seqments-13.png',
+                    title: 'Halal Compliant',
+                    desc: 'Very short description of what the concept is.',
+                  },
+                  {
+                    image: '/images/seqments/seqments-14.png',
+                    title: 'ISO Natural',
+                    desc: 'Very short description of what the concept is.',
+                  },
+                  {
+                    image: '/images/seqments/seqments-15.png',
+                    title: 'ISO Organic',
+                    desc: 'Very short description of what the concept is.',
+                  },
+                  {
+                    image: '/images/seqments/seqments-16.png',
+                    title: 'RSPO Certified',
+                    desc: 'Very short description of what the concept is.',
+                  }
+                ])
+
+        .landing__featuredBlock.--mg-top-lg
+          .row
+            .col-3.landing__featuredBlock--colBg
+              .landing__featuredBlock--bg(style='background-image: url(../images/bg-landing-block-2.png)')
+            .col-12.col-md-9
+              .landing__featuredBlock--wrapper
+                +headingGroup('Featured Products')
+                +listProduct([
+                  {
+                    title: 'A.M. Mist Mask',
+                    desc: 'Give your skin an early boost in the morning that only takes a minute! This morning spray on mask is the perfect way to start your day. It’s a jelly skin shot that will leave you feeling moisturized from A.M. to P.M.',
+                  },
+                  {
+                    title: 'Acqua Rush Emulsion',
+                    desc: 'Get a wave of hydration with Acqua Rush Emulsion! This formula gives you instant and lasting moisturization to plump and revitalize even the driest of skin. The active ingredients focus not only on instantly supplying key moisture elements but also stimulating the skin to moisturize itself for sustained moisture. Keep your skin healthy and hydrated around the clock with the Acqua Rush Emulsion!',
+                  },
+                  {
+                    title: 'Bouncy Balm Serum Foundation',
+                    desc: 'Immerse your skin in moisture with this bouncy balm foundation. The solid serum is a full coverage product delivering skin care benefits which hydrate the skin and reduce lines and wrinkles with a “Botox-like” effect.',
+                  },
+                  {
+                    title: 'CleanStick',
+                    desc: 'Are you in a rush? Take cleansing with you on the go! Infused with charcoal powder to detox the skin from dirt and impurities delivering the right amount of moisture and lipids into the skin. Once the stick interacts with water it will bloom into a cleansing milk removing impurities, dirt and sebum.',
+                  },
+                  {
+                    title: 'Gravity-Proof Sunscreen',
+                    desc: 'Defy gravity with the Gravity-Proof Sunscreen. Naturally lift and firm the skin  while plumping and filling in fine lines. Perfect for daily wear, apply in the morning for sun protection coupled with gravity fighting ingredients!',
+                  },
+                ])
+                .landing__featuredBlock--cta
+                  +link(rel="stylesheet", href="#", title="See All conscious Beatuy Products").btn.btn-regular See All conscious Beatuy Products
+
+        .landing__featuredBlock.--image-right.--mg-top-lg
+          .row
+            .col-3.landing__featuredBlock--colBg
+              .landing__featuredBlock--bg(style='background-image: url(../images/bg-landing-block-2.png)')
+            .col-12.col-md-9
+              .landing__featuredBlock--wrapper
+                +headingGroup('Featured Formula')
+                +listProduct([
+                  {
+                    title: 'A.M. Mist Mask',
+                    desc: 'Give your skin an early boost in the morning that only takes a minute! This morning spray on mask is the perfect way to start your day. It’s a jelly skin shot that will leave you feeling moisturized from A.M. to P.M.',
+                    image: '/images/product/ic_lotion.png'
+                  },
+                  {
+                    title: 'Acqua Rush Emulsion',
+                    desc: 'Get a wave of hydration with Acqua Rush Emulsion! This formula gives you instant and lasting moisturization to plump and revitalize even the driest of skin. The active ingredients focus not only on instantly supplying key moisture elements but also stimulating the skin to moisturize itself for sustained moisture. Keep your skin healthy and hydrated around the clock with the Acqua Rush Emulsion!',
+                    image: '/images/product/ic_lipstick.png'
+                  },
+                  {
+                    title: 'Bouncy Balm Serum Foundation',
+                    desc: 'Immerse your skin in moisture with this bouncy balm foundation. The solid serum is a full coverage product delivering skin care benefits which hydrate the skin and reduce lines and wrinkles with a “Botox-like” effect.',
+                    image: '/images/product/ic_lipstick.png'
+                  },
+                  {
+                    title: 'CleanStick',
+                    desc: 'Are you in a rush? Take cleansing with you on the go! Infused with charcoal powder to detox the skin from dirt and impurities delivering the right amount of moisture and lipids into the skin. Once the stick interacts with water it will bloom into a cleansing milk removing impurities, dirt and sebum.',
+                    image: '/images/product/ic_stick.png'
+                  },
+                  {
+                    title: 'Gravity-Proof Sunscreen',
+                    desc: 'Defy gravity with the Gravity-Proof Sunscreen. Naturally lift and firm the skin  while plumping and filling in fine lines. Perfect for daily wear, apply in the morning for sun protection coupled with gravity fighting ingredients!',
+                    image: '/images/product/ic_lotion.png'
+                  },
+                ])
+                .landing__featuredBlock--cta
+                  +link(rel="stylesheet", href="#", title="See All Formula").btn.btn-regular See All Formula
+
+        .landing__featuredVideo.--mg-top-lg
+          +relatedVideo({
+            classComp: '--bg-white --shadow-normal',
+            type: 4,
+            groupTitle: {
+              title: 'Related Video',
+              cta: 'See More'
+            },
+            items: [
+              {
+                image: '../images/related-video-1.png',
+                title: 'Title of the Video',
+                time: '15:23'
+              },
+              {
+                image: '../images/related-video-1.png',
+                title: 'Title of the Video',
+                time: '15:23'
+              },
+              {
+                image: '../images/related-video-1.png',
+                title: 'Title of the Video',
+                time: '15:23'
+              },
+              {
+                image: '../images/related-video-1.png',
+                title: 'Webinar: Title of the Presentation',
+                time: '15:23'
+              },
+            ]
+          })(data-slider-main data-opts-slider='{"slickContainer": ".component-related-video","optsSlick": {"slide": "[data-slider-item]","dots": true, "rows": 0, "slidesToShow": 4,  "slidesToScroll": 4, "responsive":[{"breakpoint": 991, "settings": {"slidesToShow": 3,  "slidesToScroll": 3}},{"breakpoint": 768, "settings": {"slidesToShow": 2,  "slidesToScroll": 2}},{"breakpoint": 376, "settings": {"slidesToShow": 1,  "slidesToScroll": 1}}]}}')

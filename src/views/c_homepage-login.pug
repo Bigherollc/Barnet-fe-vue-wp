@@ -1,0 +1,351 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Homepage Login'
+  - useFooter = true
+  - useHeader = true
+  - isLogin = true
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+
+block container
+  section.component-slider-header.--mg-top-lg
+    .container
+      +slideHero([
+        {
+          image: '/images/slider-hero-1.png',
+          title: 'Introducing Barnet Color',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          mode: 'dark'
+        },
+        {
+          image: '/images/active/hero-2.png',
+          title: 'Introducing Barnet Color',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+        },
+        {
+          image: '/images/active/hero-3.png',
+          title: 'Introducing Barnet Color',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          mode: 'dark'
+        },
+      ]).--size-wrap-lg(data-slider-main data-opts-slider='{"slickContainer": ".component-slider-header","optsSlick": {"slide": "[data-slider-item]", "dots": true, "rows": 0, "slidesToShow": 1}}')
+
+  section.component-seqments.--mg-top-ml
+    .container
+      .component-seqments__wrapper
+        +headingGroup('Lorem Ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', '--size-lg').--dark-mode
+        +imageContent([
+          {
+            image: '/images/seqments/seqments-1.png',
+            title: 'Color by Barnet',
+            isDarkMode: true
+          },
+          {
+            image: '/images/seqments/seqments-2.png',
+            title: 'Conscious Beauty',
+          },
+          {
+            image: '/images/seqments/seqments-3.png',
+            title: 'Derm',
+            isDarkMode: true
+          },
+          {
+            image: '/images/seqments/seqments-4.png',
+            title: 'Hair',
+            isDarkMode: true
+          },
+          {
+            image: '/images/seqments/seqments-4.png',
+            title: 'Skin Care',
+            isDarkMode: true
+          },
+        ])(data-slider-main data-opts-slider='{"slickContainer": ".component-seqments","optsSlick": {"slide": "[data-slider-item]", "dots": true, "rows": 0, "slidesToShow": 2, "slidesToScroll": 2}, "mq": "sm"}').--has-slider-sm
+
+  section.component-fashtion-concepts.--mg-top-lg
+    .container
+      .component-fashtion-concepts__wrapper
+        +headingGroup('Hot Fashion Concepts', 'Kickstart your innovation with on-trend and forward looking concept collections.').text-center.--dark-mode
+        .component-fashtion-concepts__slider.--mg-top-sm
+          +imageConcepts([
+            {
+              image: '/images/active/mask-1.png',
+              title: 'Around the Clock Aging (Epigenetics)',
+              desc: 'Brighten, blur and highlight for glowing youthful skin.'
+            },
+            {
+              image: '/images/active/mask-2.png',
+              title: 'Holobiont Beauty',
+              desc: 'Fresh and natural light touch coverage for daily use.'
+            },
+            {
+              image: '/images/active/mask-3.png',
+              title: 'Moisturization',
+              desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+            },
+            {
+              image: '/images/active/mask-4.png',
+              title: 'Moisturization',
+              desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+            },
+            {
+              image: '/images/active/mask-4.png',
+              title: 'Moisturization',
+              desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+            },
+          ])(data-slider-main data-opts-slider='{"slickContainer": ".component-fashtion-concepts","optsSlick": {"slide": "[data-slider-item]","dots": true, "rows": 0, "slidesToShow": 4, "slidesToScroll": 4, "responsive":[{"breakpoint": 991, "settings": {"slidesToShow": 3, "slidesToScroll": 3}},{"breakpoint": 768, "settings": {"slidesToShow": 2, "slidesToScroll": 2}}]}}')
+
+  section.component-list-filter.--mg-top-lg
+    .container
+      .component-list-filter__wrapper(style='background-image: url(../images/bg-hexagon.png)')
+        .component-list-filter__group
+          +headingGroup('Active Materials', 'East asian inspired materials for all your ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.').--dark-mode
+          +nav-link([
+            {
+              title: 'Firming',
+              href: '#'
+            },
+            {
+              title: 'Anti-oxidents',
+              href: '#'
+            },
+            {
+              title: 'Exfoliants',
+              href: '#'
+            },
+            {
+              title: 'Moisturizers',
+              href: '#'
+            },
+            {
+              title: 'Filter Name',
+              href: '#'
+            },
+            {
+              title: 'Preservative Free',
+              href: '#'
+            },
+            {
+              title: 'Vegan',
+              href: '#'
+            },
+            {
+              title: 'COSMOS Certified',
+              href: '#'
+            },
+            {
+              title: 'ISO Organic',
+              href: '#'
+            }
+          ]).component-list
+          .component-list-filter__cta--wrapper
+            +link('#', 'All Actives').btn
+        .component-list-filter__group
+          +headingGroup('System Formers', 'The perfect platform for your innovation. Our system formers let you lorem ipsum dolor sit ahmet dum sit eclor deus.').--dark-mode
+          +nav-link([
+            {
+              title: 'Firming',
+              href: '#'
+            },
+            {
+              title: 'Anti-oxidents',
+              href: '#'
+            },
+            {
+              title: 'Exfoliants',
+              href: '#'
+            },
+            {
+              title: 'Moisturizers',
+              href: '#'
+            },
+            {
+              title: 'Filter Name',
+              href: '#'
+            },
+            {
+              title: 'Preservative Free',
+              href: '#'
+            },
+            {
+              title: 'Phenoxyethene Free',
+              href: '#'
+            },
+            {
+              title: 'Vegan',
+              href: '#'
+            },
+            {
+              title: 'COSMOS Certified',
+              href: '#'
+            },
+            {
+              title: 'ISO Organic',
+              href: '#'
+            }
+          ]).component-list
+          .component-list-filter__cta--wrapper
+            +link('#', 'All Systems').btn
+
+  section.component-hexagon.--mg-top-lg
+    .container
+      .component-hexagon__wrapper
+        +headingGroup('Starter Formula', 'Jumpstart your product design with our on-trend and lab proven formulations.', '--size-lg to-uppercase').--dark-mode
+        .component-hexagon__box
+          .component-hexagon__row
+            .component-hexagon__col
+              .component-hexagon__item
+                +link('#', 'Eye Liner').component-hexagon__item--content
+                  .component-hexagon__item--img
+                    img(src="../images/product/product-lotion-b.svg")
+                  .component-hexagon__item--name
+                    | Eye Liner
+            .component-hexagon__col
+              .component-hexagon__item
+                +link('#', 'Lip Stain').component-hexagon__item--content
+                  .component-hexagon__item--img
+                    img(src="../images/product/product-lipstick.svg")
+                  .component-hexagon__item--name
+                    | Lip Stain
+            .component-hexagon__col.--break
+            .component-hexagon__col
+              .component-hexagon__item
+                +link('#', 'Eye Liner').component-hexagon__item--content
+                  .component-hexagon__item--img
+                    img(src="../images/product/product-lotion-b.svg")
+                  .component-hexagon__item--name
+                    | Eye Liner
+            .component-hexagon__col
+              .component-hexagon__item
+                +link('#', 'Eye Liner').component-hexagon__item--content
+                  .component-hexagon__item--img
+                    img(src="../images/product/product-lotion-b.svg")
+                  .component-hexagon__item--name
+                    | Eye Liner
+            .component-hexagon__col
+              .component-hexagon__item
+                +link('#', 'Eye Liner').component-hexagon__item--content
+                  .component-hexagon__item--img
+                    img(src="../images/product/product-lotion-b.svg")
+                  .component-hexagon__item--name
+                    | Eye Liner
+            .component-hexagon__col
+              .component-hexagon__item
+                +link('#', 'Eye Liner').component-hexagon__item--content
+                  .component-hexagon__item--img
+                    img(src="../images/product/product-lotion-b.svg")
+                  .component-hexagon__item--name
+                    | Eye Liner
+            .component-hexagon__col
+              .component-hexagon__item.--disable
+            .component-hexagon__col
+              .component-hexagon__item
+                +link('#', 'Eye Liner').component-hexagon__item--content
+                  .component-hexagon__item--img
+                    img(src="../images/product/product-lotion-b.svg")
+                  .component-hexagon__item--name
+                    | Eye Liner
+            .component-hexagon__col
+              .component-hexagon__item
+                +link('#', 'Eye Liner').component-hexagon__item--content
+                  .component-hexagon__item--img
+                    img(src="../images/product/product-lotion-b.svg")
+                  .component-hexagon__item--name
+                    | Eye Liner
+            .component-hexagon__col
+              .component-hexagon__item
+                +link('#', 'Eye Liner').component-hexagon__item--content
+                  .component-hexagon__item--img
+                    img(src="../images/product/product-lotion-b.svg")
+                  .component-hexagon__item--name
+                    | Eye Liner
+            .component-hexagon__col
+              .component-hexagon__item
+                +link('#', 'Eye Liner').component-hexagon__item--content
+                  .component-hexagon__item--img
+                    img(src="../images/product/product-lotion-b.svg")
+                  .component-hexagon__item--name
+                    | Eye Liner
+            .component-hexagon__col
+              .component-hexagon__item.--disable
+            .component-hexagon__col
+              .component-hexagon__item
+                +link('#', 'Eye Liner').component-hexagon__item--content
+                  .component-hexagon__item--img
+                    img(src="../images/product/product-lotion-b.svg")
+                  .component-hexagon__item--name
+                    | Eye Liner
+            .component-hexagon__col
+              .component-hexagon__item
+                +link('#', 'Eye Liner').component-hexagon__item--content
+                  .component-hexagon__item--img
+                    img(src="../images/product/product-lotion-b.svg")
+                  .component-hexagon__item--name
+                    | Eye Liner
+            .component-hexagon__col
+              .component-hexagon__item
+                +link('#', 'Foundation').component-hexagon__item--content
+                  .component-hexagon__item--img
+                    img(src="../images/product/product-stick.svg")
+                  .component-hexagon__item--name
+                    | Foundation
+            .component-hexagon__col
+              .component-hexagon__item.--transparent
+            .component-hexagon__col
+              .component-hexagon__item.--disable
+            .component-hexagon__col
+              .component-hexagon__item.--disable
+            .component-hexagon__col
+              .component-hexagon__item.--transparent
+            .component-hexagon__col.--sm-block
+              .component-hexagon__item.--see-all
+                +link('#', 'See All Formula').component-hexagon__item--content
+                  .component-hexagon__item--btn
+                    | See All Formula
+            .component-hexagon__col
+              .component-hexagon__item.--disable
+
+  section.component-band.--mg-top-lg
+    .container
+      .component-band__wrapper
+        .component-band__group.--white
+          .component-band__icon
+            i.icon.icon-beaker
+          .component-band__heading
+            | Formula Rescue
+        .component-band__group
+          .component-band__desc
+            | Stabilize your formulas, improve texture, foaming and dispersions with
+            +link('#', 'Emergency Formulation Assistance.')
+          +link('#', 'Emergency Formulation Assistance.').component-band__cta
+            i.icon.icon-menu-open
+
+  +imageOneside({
+    imgObj: {
+      src: '/images/content-oneside/global-support.png',
+      title: 'Global Support'
+    },
+    contentObj: {
+      title: 'Global Support',
+      subTitle: 'Lorem ipsum dolor sit ahmet commeitment to out cusgtomers. With partners all over the globe dolor sit ahmet.',
+      list: [
+        {
+          title: 'Sales Consultations & Support',
+        },
+        {
+          title: 'Innovation Center & Lab Assistance',
+        },
+        {
+          title: 'Compliance & Regulatory Support',
+        },
+        {
+          title: 'Customized Logistics',
+        },
+      ],
+      cta: {
+        link: '#',
+        title: 'Learn More',
+        darkmode: true
+      }
+    }
+  }).--mg-top-lg.--mg-bottom-lg

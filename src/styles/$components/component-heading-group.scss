@@ -1,0 +1,85 @@
+.component-heading-group {
+  color: $black;
+
+  &__heading {
+    word-break: break-word;
+
+    &.\--size-lg {
+      font-size: $font-size-h1;
+      line-height: rem(30);
+    }
+
+    &.\--size-md {
+      font-size: rem(18);
+      line-height: rem(20);
+    }
+
+    &.\--size-sm {
+      font-size: rem(16);
+      line-height: rem(18);
+    }
+
+    &.\--size-h2 {
+      font-size: $font-size-h2;
+      line-height: rem(26);
+      font-weight: 300;
+    }
+  }
+
+  &__desc {
+    margin-top: rem(10);
+    font-size: rem(14);
+    line-height: rem(20);
+    font-weight: 300;
+
+    .productDetail__analysis & {
+      white-space: pre-wrap;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    p {
+      padding-bottom: rem(20);
+    }
+  }
+
+  &.\--dark-mode {
+    color: $white;
+  }
+
+  .global__groupTitle & {
+    display: flex;
+    align-items: center;
+
+    @include mq("sm") {
+      display: block;
+    }
+
+    &__heading {
+      max-width: rem(260);
+
+      @include mq("sm") {
+        max-width: 100%;
+      }
+    }
+
+    &__desc {
+      max-width: rem(600);
+      margin-left: rem(35);
+      margin-top: 0;
+
+      @include mq("sm") {
+        max-width: 100%;
+        margin-top: rem(10);
+        margin-left: 0;
+      }
+    }
+  }
+
+  .component-slider-hero & {
+    max-height: 100%;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,17 @@
+mixin imageConcepts(items)
+  .component-image-concepts
+    .component-image-concepts__wrapper.slider-control&attributes(attributes)
+        +imageConceptsItem(items)
+
+mixin imageConceptsItem (items)
+  each item in items
+    .component-image-concepts__item(data-slider-item)
+      .component-image-concepts__item--wrapper
+        .component-image-concepts__item--img
+          +img(src=item.image, alt=item.title)
+        .component-image-concepts__item--content
+          .component-image-concepts__item--heading
+            !=item.title
+          .component-image-concepts__item--desc
+            !=item.desc
+        +link(rel="stylesheet", href="#", title=item.title)

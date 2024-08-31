@@ -1,0 +1,51 @@
+.landing-logout {
+  padding: rem(70) 0 rem(180);
+
+  @include mq("lg") {
+    padding: rem(60) 0 rem(110);
+  }
+
+  &__groupTitle {
+    .component-heading-group {
+      display: flex;
+      align-items: center;
+
+      @include mq(sm) {
+        flex-wrap: wrap;
+      }
+
+      &__heading {
+        width: rem(300);
+        white-space: nowrap;
+      }
+
+      &__desc {
+        max-width: rem(505);
+        margin-left: rem(35);
+        margin-top: 0;
+
+        @include mq(sm) {
+          margin-left: 0;
+          margin-top: rem(10);
+        }
+      }
+    }
+  }
+
+  .component-image-oneside {
+    .container {
+      &::before {
+        @include mq("sm") {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: calc(100% - 1.5rem * 2);
+          height: 1px;
+          background: $bd-gray-1;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}

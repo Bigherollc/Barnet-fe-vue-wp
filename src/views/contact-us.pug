@@ -1,0 +1,42 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Contact us (logout)'
+  - isLogin = false
+  - useFooter = true
+  - useHeader = true
+  - isFooterLegal = true
+  - namespace = '--fit-vh --bg-gradient'
+
+block container
+  section.component-form-hero.contact-us(style="background-image: url('/images/bg-contact-us.png')")
+    .component-form.--right
+      .component-form__wrapper
+        +headingGroup('Contact us', '', '--size-lg to-uppercase').--dark-mode.text-center(data-heading)
+        form.component-form__form(data-parsley-validate data-parsley-errors-messages-disabled method='post')
+          .component-form__content(data-tab-content)
+            .component-form__group                
+              .component-form__group__input
+                .component-form__item
+                  input.form-control.--dark-mode(type="text" name="name" placeholder="Name" autocomplete="off" required)
+                .component-form__item
+                  input.form-control.--dark-mode(type="email" name="email" placeholder="Email" autocomplete="off" required)
+                .component-form__item
+                  textarea.form-control.--dark-mode(type="text" name="message" placeholder="Your Message" autocomplete="off" required)
+            .component-form__group
+              button.btn.btn-solid.btn-block.btn-large.--dark-mode(data-next-btn type="submit")
+                | Submit
+          .component-form__content.d-none(data-tab-content)
+            .alert-successful
+              .alert-successful__title 
+                | Your Message Has Been Sent
+              .alert-successful__description
+                | We will get back to you as soon as possible.
+      .contact-us__information
+        .contact-us__information--content
+          p Barnet Products LLC.
+          p 920 Sylvan Avenue
+          p Suite 210
+          p Englewood Cliffs, NJ 07632
+          p 
+            +link('tel:#201-346-4620', '201-346-4620')

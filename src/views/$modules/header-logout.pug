@@ -1,0 +1,26 @@
+header.header(data-header)
+  .header__sticky.--bg-gradient(data-sticky)
+    .header__main
+      .container
+        include menumobile
+        .header__logo
+          +link(rel="stylesheet", href="index.html")
+            +img(src="/images/logo-barnet.svg", alt="")
+        .header__right
+          .header__menuNav
+            +nav([
+              {title: 'Sign In', text:'Sign In', href: '', icon: 'icon-account'},
+            ])
+          .header__samples
+            +link(rel="stylesheet", href="", title="Samples")
+              i(class='icon icon-sample')
+              span.header__samples-text Samples
+              span.header__samples-count 2
+          .header__search-toggle(data-search-toggle)
+            i(class='icon icon-search icon-gtm-search')
+    .header__search-dropdown(data-search-dropdown)
+      .header__search-form
+        form(action="post")
+          button
+            i(class='icon icon-search')
+          input(type="text" class="form-control" autocomplete="off")

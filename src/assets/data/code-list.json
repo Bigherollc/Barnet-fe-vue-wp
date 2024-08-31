@@ -1,0 +1,2577 @@
+{
+  "customer_id": "1681",
+  "customer_title": "Loreal",
+  "customer_modify": "2021-05-11 02:41:21",
+  "data": [
+    {
+      "digital_code_id": "2253",
+      "digital_code_title": "Digital Code Lanuranium",
+      "digital_code": "R14582",
+      "products": [
+        {
+          "data": {
+            "id": 1423,
+            "unique_id": "v2645484",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-30 07:07:19",
+            "post_date_gmt": "2021-03-30 07:07:19",
+            "post_title": "A. Product Sample",
+            "post_content": "",
+            "post_excerpt": "[Log In] Bora Bora White Sand is a natural exfoliant from lagoons of polynesian high islands. The Polynesian archipelagos were formed millions of years ago with the emergence of volcanos",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "a-product-sample",
+            "post_modified": "2021-05-11 03:16:56",
+            "post_modified_gmt": "2021-05-11 03:16:56",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/a-product-sample/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Squalene, Medicago (Alfalfa) sativa extract, Cocos (Coconut) nucifera oil",
+            "product_description": [
+              "<p>[Log Out] A product description is the marketing copy used to describe a product's value proposition to potential customers. A compelling product description provides customers with details around features, problems it solves and other benefits to help generate a sale.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[Log In] Bora Bora White Sand is a natural exfoliant from lagoons of polynesian high islands. The Polynesian archipelagos were formed millions of years ago with the emergence of volcanos. As soon as the volcanic activity was finished, coral started developing along the coast, rich is diverse trace elements. The natural process of erosoin leads to the coral detaching itself and creating small particles that arrive on the shore creating white sand beaches. Once picked, the sand is crushed and a natural exfoliating ingredient, Bora Bora White Sand, is formed.</p>\n<h2>Function</h2>\n<p>Bora Bora White Sand consists of fine particles (<500um) of coral that have washed ashore on the beaches of Polynesia. Bora Bora White Sand is crushed and riddled in order to obtain a powder. Bora Bora White Sand has natural mineral exfoliation and works best on the face and body in exfoliating gels and exfoliating emulsions.</p>\n<h2>Formulation</h2>\n<p>Bora Bora White Sand is a white to ivory find powder with a neutral odor. Bora Bora White Sand is insoluble in oil and water.</p>\n",
+              "<p>Bora Bora White Sand consists of fine particles (<500um) of coral that have washed ashore on the beaches of Polynesia. Bora Bora White Sand is crushed and riddled in order to obtain a powder. Bora Bora White Sand has natural mineral exfoliation and works best on the face and body in exfoliating gels and exfoliating emulsions.</p>\n",
+              "<p>Bora Bora White Sand is a white to ivory find powder with a neutral odor. Bora Bora White Sand is insoluble in oil and water.</p>\n",
+              "<p>The natural process of erosoin leads to the coral detaching itself and creating small particles that arrive on the shore creating white sand beaches. Once picked, the sand is crushed and a natural exfoliating ingredient, Bora Bora White Sand, is formed.</p>\n"
+            ],
+            "product_keyword": [
+              "A",
+              "Product",
+              "Sample"
+            ],
+            "product_msds_doc": "646",
+            "product_spec_doc": "867",
+            "product_kiss_doc": "1560",
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": "domestic_only",
+            "product_roles": null,
+            "product_usage": "14.2 - 21.6%",
+            "product_updated": null,
+            "product_featured": "1",
+            "product_global_compliance": [
+              {
+                "t_label": "VN",
+                "t_text": "Viet Nam"
+              },
+              {
+                "t_label": "BR-VT",
+                "t_text": "Ba Ria - Vung Tau"
+              },
+              {
+                "t_label": "HN",
+                "t_text": "Ha Noi"
+              },
+              {
+                "t_label": "SG",
+                "t_text": "Sai Gon"
+              },
+              {
+                "t_label": "BD",
+                "t_text": "Binh Duong"
+              }
+            ],
+            "product_alternate_group": [
+              {
+                "product_alternate_product": "822",
+                "product_alternate_description": "acid free"
+              },
+              {
+                "product_alternate_description": "A product description is the marketing copy used to describe a product's value proposition to potential customers. A compelling product description provides customers with details around features, problems it solves and other benefits to help generate a sale."
+              }
+            ],
+            "product_right_sub_text": null,
+            "product_public": "0"
+          }
+        },
+        {
+          "data": {
+            "id": 827,
+            "unique_id": "2344a4",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-17 08:39:46",
+            "post_date_gmt": "2021-03-17 08:39:46",
+            "post_title": "AcquaCell",
+            "post_content": "",
+            "post_excerpt": "AcquaCell is a natural fruit complex, designed to deliver important moisture to corneocytes. Tested at 3% on 20 subjects for 2 hours, AcquaCell significantly reduced the appearance of fine lines, “plumping” the cells",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "acquacell",
+            "post_modified": "2021-05-07 04:05:17",
+            "post_modified_gmt": "2021-05-07 04:05:17",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/acquacell/",
+            "web_type": "active",
+            "product_type": "Active",
+            "inci_name": "Caprylic/Capric Triglyceride, \r\nHydrogenated Lecithin, Stearyl \r\nAlcohol, Behenyl Alcohol, \r\nPhytosterol, Glyceryl Stearate, \r\nPolyglyceryl-10 Myristate, \r\nTocopherol",
+            "product_description": [
+              "<p>[logout]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>AcquaCell is a natural fruit complex, designed to deliver important moisture to corneocytes. Tested at 3% on 20 subjects for 2 hours, AcquaCell significantly reduced the appearance of fine lines, “plumping” the cells.</p>\n<p> </p>\n<p><strong>Function  (FUNCTION)</strong></p>\n<p>AcquaCell is a natural fruit complex, designed to deliver important moisture to corneocytes. Tested at 3% on 20 subjects for 2 hours, AcquaCell significantly reduced the appearance of fine lines, “plumping” the cells.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": "646",
+            "product_spec_doc": "867",
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": "global",
+            "product_roles": null,
+            "product_usage": "1.00-3.00%",
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": [
+              {
+                "t_label": "AUTRALIA",
+                "t_text": "Listed AICS"
+              },
+              {
+                "t_label": "CANADA",
+                "t_text": "Listed DSL, rICL"
+              },
+              {
+                "t_label": "CHINA",
+                "t_text": "Listed IECIC"
+              },
+              {
+                "t_label": "EU",
+                "t_text": "<1 MT Exempt"
+              }
+            ],
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 924,
+            "unique_id": "334474",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:53:06",
+            "post_date_gmt": "2021-03-18 03:53:06",
+            "post_title": "Anti-Polluaging Cream-to-Powder",
+            "post_content": "",
+            "post_excerpt": "[login][Potasium Sorbate][No-Palm]Fight signs of aging and pollution! This anti-polluaging formulation glides onto skin effortlessly, delivering moisturization and hydration throughout the stressful city life. It starts as a moisturizing cream that turns into a silky smooth primer that blurs fine lines creating the perfect canvas for your daily makeup regimen for a day in the city!\n*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "anti-polluaging-cream-to-powder",
+            "post_modified": "2021-05-07 03:56:14",
+            "post_modified_gmt": "2021-05-07 03:56:14",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/anti-polluaging-cream-to-powder/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Yeast Extract (Aqeous) & Lycium \r\nChinense Fruit Extract & \r\nVaccinum Angustifolium \r\n(Blueberry) Fruit Extract & \r\nVaccinum Macrocarpon \r\n(Cranberry) Fruit Extract",
+            "product_description": [
+              "<p>[logout][Potasium Sorbate][No-Palm]Fight signs of aging and pollution! This anti-polluaging formulation glides onto skin effortlessly, delivering moisturization and hydration throughout the stressful city life. It starts as a moisturizing cream that turns into a silky smooth primer that blurs fine lines creating the perfect canvas for your daily makeup regimen for a day in the city!</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for a Silicone-Free Version and/or Ethoxylate-Free Version.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][Potasium Sorbate][No-Palm]Fight signs of aging and pollution! This anti-polluaging formulation glides onto skin effortlessly, delivering moisturization and hydration throughout the stressful city life. It starts as a moisturizing cream that turns into a silky smooth primer that blurs fine lines creating the perfect canvas for your daily makeup regimen for a day in the city!</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for a Silicone-Free Version and/or Ethoxylate-Free Version.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "0"
+          }
+        },
+        {
+          "data": {
+            "id": 899,
+            "unique_id": "23b4c4",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:07:58",
+            "post_date_gmt": "2021-03-18 03:07:58",
+            "post_title": "Cleansing Cream",
+            "post_content": "",
+            "post_excerpt": "[login][glycol-free]This unique oil-in-water formula deeply cleanses skin and can be tissued off. Cleansing Cream melts onto the skin, releasing the oil phase and washing away all impurities, perfect for waterproof makeup!\n*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "cleansing-cream",
+            "post_modified": "2021-05-07 04:02:56",
+            "post_modified_gmt": "2021-05-07 04:02:56",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/cleansing-cream/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Water, Hibiscus Sabdariffa \r\nFlower Extract, Ferula Assa \r\nFoetida Root Extract, Pyrus \r\nCommunis (Pear) Fruit Extract, \r\nCamellia Sinensis Leaf Extract",
+            "product_description": [
+              "<p>[logout][glycol-free]This unique oil-in-water formula deeply cleanses skin and can be tissued off. Cleansing Cream melts onto the skin, releasing the oil phase and washing away all impurities, perfect for waterproof makeup!</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for a Silicone-Free Version.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][glycol-free]This unique oil-in-water formula deeply cleanses skin and can be tissued off. Cleansing Cream melts onto the skin, releasing the oil phase and washing away all impurities, perfect for waterproof makeup!</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for a Silicone-Free Version.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 912,
+            "unique_id": "333454",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:45:23",
+            "post_date_gmt": "2021-03-18 03:45:23",
+            "post_title": "Filter-Free Mist",
+            "post_content": "",
+            "post_excerpt": "[login][sustainable]Mid-day slump have you feeling dehydrated? Filter-Free Mist gives just the moisturizing boost needed. The gel-to-mist technology will allow the skin to hydrate quickly during the driest afternoon hours",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "filter-free-mist",
+            "post_modified": "2021-05-07 04:00:02",
+            "post_modified_gmt": "2021-05-07 04:00:02",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/filter-free-mist/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Caprylic/Capric Triglyceride, \r\nHydrogenated Lecithin, Stearyl \r\nAlcohol, Behenyl Alcohol, \r\nPhytosterol, Glyceryl Stearate, \r\nPolyglyceryl-10 Myristate, \r\nTocopherol",
+            "product_description": [
+              "<p>[logout][sustainable]Mid-day slump have you feeling dehydrated? Filter-Free Mist gives just the moisturizing boost needed. The gel-to-mist technology will allow the skin to hydrate quickly during the driest afternoon hours. A quick mist helps to regulate sebum production while maintaining moisturization. Spray, and take your look through the evening.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][sustainable]Mid-day slump have you feeling dehydrated? Filter-Free Mist gives just the moisturizing boost needed. The gel-to-mist technology will allow the skin to hydrate quickly during the driest afternoon hours. A quick mist helps to regulate sebum production while maintaining moisturization. Spray, and take your look through the evening.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 905,
+            "unique_id": "332484",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:19:53",
+            "post_date_gmt": "2021-03-18 03:19:53",
+            "post_title": "Moisturizing Foundation Stick",
+            "post_content": "",
+            "post_excerpt": "[login][peg-free]An easy-to-apply and highly blendable stick created the perfect, lightweight  no-makeup makeup look! A creamy texture formulated with mineral powders, pigments and moisturizers to get the full coverage look without feeling it! This is the perfect  filter-free stick foundation to take with you from morning to night!\n",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "moisturizing-foundation-stick",
+            "post_modified": "2021-05-07 04:02:30",
+            "post_modified_gmt": "2021-05-07 04:02:30",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/moisturizing-foundation-stick/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Yeast Extract (Aqeous) & Lycium \r\nChinense Fruit Extract & \r\nVaccinum Angustifolium \r\n(Blueberry) Fruit Extract & \r\nVaccinum Macrocarpon \r\n(Cranberry) Fruit Extract)",
+            "product_description": [
+              "<p>[logout][peg-free]An easy-to-apply and highly blendable stick created the perfect, lightweight  no-makeup makeup look! A creamy texture formulated with mineral powders, pigments and moisturizers to get the full coverage look without feeling it! This is the perfect  filter-free stick foundation to take with you from morning to night!</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][peg-free]An easy-to-apply and highly blendable stick created the perfect, lightweight  no-makeup makeup look! A creamy texture formulated with mineral powders, pigments and moisturizers to get the full coverage look without feeling it! This is the perfect  filter-free stick foundation to take with you from morning to night!</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "0"
+          }
+        },
+        {
+          "data": {
+            "id": 922,
+            "unique_id": "334454",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:51:53",
+            "post_date_gmt": "2021-03-18 03:51:53",
+            "post_title": "Pomegranate Gelee",
+            "post_content": "",
+            "post_excerpt": "[login][Phenoxyethanol Free]Brighten your day with a double dose of Gellee!  Experience the power of the skin brightening actives wrapped in a luxurious gel. A combination of actives derived from pomegranate and other plants target the function and performance of melanocytes, preventing and reducing the appearance of dark spots and brightening the complexion",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "pomegranate-gelee",
+            "post_modified": "2021-05-07 03:56:55",
+            "post_modified_gmt": "2021-05-07 03:56:55",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/pomegranate-gelee/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Yeast Extract (Aqeous) & Lycium \r\nChinense Fruit Extract & \r\nVaccinum Angustifolium \r\n(Blueberry) Fruit Extract & \r\nVaccinum Macrocarpon \r\n(Cranberry) Fruit Extract",
+            "product_description": [
+              "<p>[logout][Phenoxyethanol Free]Brighten your day with a double dose of Gellee!  Experience the power of the skin brightening actives wrapped in a luxurious gel. A combination of actives derived from pomegranate and other plants target the function and performance of melanocytes, preventing and reducing the appearance of dark spots and brightening the complexion.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][Phenoxyethanol Free]Brighten your day with a double dose of Gellee!  Experience the power of the skin brightening actives wrapped in a luxurious gel. A combination of actives derived from pomegranate and other plants target the function and performance of melanocytes, preventing and reducing the appearance of dark spots and brightening the complexion.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "0"
+          }
+        },
+        {
+          "data": {
+            "id": 900,
+            "unique_id": "332434",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:08:51",
+            "post_date_gmt": "2021-03-18 03:08:51",
+            "post_title": "W/Si Physical Sunscreen",
+            "post_content": "",
+            "post_excerpt": "[login][halal]This silicone system will provide long wear and resistance against water and perspiration while protecting against the sun’s rays. Unlike oil-in-water formulas, sunscreens remain on top of the skin instead of being absorbed to create a shield between the sun and skin barrier",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "w-si-physical-sunscreen",
+            "post_modified": "2021-05-07 04:02:51",
+            "post_modified_gmt": "2021-05-07 04:02:51",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/w-si-physical-sunscreen/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Water, Hibiscus Sabdariffa \r\nFlower Extract, Ferula Assa \r\nFoetida Root Extract, Pyrus \r\nCommunis (Pear) Fruit Extract, \r\nCamellia Sinensis Leaf Extract",
+            "product_description": [
+              "<p>[logout][halal]This silicone system will provide long wear and resistance against water and perspiration while protecting against the sun’s rays. Unlike oil-in-water formulas, sunscreens remain on top of the skin instead of being absorbed to create a shield between the sun and skin barrier. Protect your skin with W/Si Physical Sunscreen!</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][halal]This silicone system will provide long wear and resistance against water and perspiration while protecting against the sun’s rays. Unlike oil-in-water formulas, sunscreens remain on top of the skin instead of being absorbed to create a shield between the sun and skin barrier. Protect your skin with W/Si Physical Sunscreen!</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        }
+      ]
+    },
+    {
+      "digital_code_id": "1680",
+      "digital_code_title": "Loreal_1",
+      "digital_code": "Loreal1",
+      "products": [
+        {
+          "data": {
+            "id": 928,
+            "unique_id": "3344b4",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:55:20",
+            "post_date_gmt": "2021-03-18 03:55:20",
+            "post_title": "Barfilm L",
+            "post_content": "",
+            "post_excerpt": "[login][Sodium Benzoate][Vegan] Barfilm L is a natural, ethoxylate-free film former specifically tested to increase the adhesion of pigment on the skin as well as providing water resistance.\n",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "barfilm-l",
+            "post_modified": "2021-05-07 03:54:57",
+            "post_modified_gmt": "2021-05-07 03:54:57",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/barfilm-l/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Caprylic/Capric Triglyceride, \r\nHydrogenated Vegetable Oil, \r\nPolygonum Fagopyrum Seed \r\nExtract",
+            "product_description": [
+              "<p>[logout][Sodium Benzoate][Vegan] Barfilm L is a natural, ethoxylate-free film former specifically tested to increase the adhesion of pigment on the skin as well as providing water resistance.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][Sodium Benzoate][Vegan] Barfilm L is a natural, ethoxylate-free film former specifically tested to increase the adhesion of pigment on the skin as well as providing water resistance.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "1",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 1348,
+            "unique_id": "v25474d4",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-25 10:49:40",
+            "post_date_gmt": "2021-03-25 10:49:40",
+            "post_title": "Barsoft TXM",
+            "post_content": "",
+            "post_excerpt": "Barsoft TXM is a glycerin complex which improves the aesthetics of water. It enables glycerin to penetrate quickly into the skin, providing a moisturizing sensation without a tacky dry down",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "barsoft-txm",
+            "post_modified": "2021-05-07 03:54:29",
+            "post_modified_gmt": "2021-05-07 03:54:29",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/barsoft-txm/",
+            "web_type": "active",
+            "product_type": "Active",
+            "inci_name": "Water, Hibiscus Sabdariffa \r\nFlower Extract, Ferula Assa \r\nFoetida Root Extract, Pyrus \r\nCommunis (Pear) Fruit Extract, \r\nCamellia Sinensis Leaf Extract",
+            "product_description": [
+              "<p>Barsoft TXM is a glycerin complex which improves the aesthetics of water. It enables glycerin to penetrate quickly into the skin, providing a moisturizing sensation without a tacky dry down. Utilizing this ingredient can help increase “body” and “slip” in hydrous formulations as well as reduce tackiness.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>Barsoft TXM is a glycerin complex which improves the aesthetics of water. It enables glycerin to penetrate quickly into the skin, providing a moisturizing sensation without a tacky dry down. Utilizing this ingredient can help increase “body” and “slip” in hydrous formulations as well as reduce tackiness.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "1",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 913,
+            "unique_id": "333464",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:46:01",
+            "post_date_gmt": "2021-03-18 03:46:01",
+            "post_title": "Cleansing Gel",
+            "post_content": "",
+            "post_excerpt": "[login][vegan]Cleanse the day away with this moisturizing gel that doesn’t strip the skin. The double break technology creates a refreshing burst of hydration while gently cleansing the skin of impurities",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "cleansing-gel",
+            "post_modified": "2021-05-07 03:59:45",
+            "post_modified_gmt": "2021-05-07 03:59:45",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/cleansing-gel/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Yeast Extract (Aqeous) & Lycium \r\nChinense Fruit Extract & \r\nVaccinum Angustifolium \r\n(Blueberry) Fruit Extract & \r\nVaccinum Macrocarpon \r\n(Cranberry) Fruit Extract)",
+            "product_description": [
+              "<p>[logout][vegan]Cleanse the day away with this moisturizing gel that doesn’t strip the skin. The double break technology creates a refreshing burst of hydration while gently cleansing the skin of impurities.</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for a Silicone-Free Version.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][vegan]Cleanse the day away with this moisturizing gel that doesn’t strip the skin. The double break technology creates a refreshing burst of hydration while gently cleansing the skin of impurities.</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for a Silicone-Free Version.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 912,
+            "unique_id": "333454",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:45:23",
+            "post_date_gmt": "2021-03-18 03:45:23",
+            "post_title": "Filter-Free Mist",
+            "post_content": "",
+            "post_excerpt": "[login][sustainable]Mid-day slump have you feeling dehydrated? Filter-Free Mist gives just the moisturizing boost needed. The gel-to-mist technology will allow the skin to hydrate quickly during the driest afternoon hours",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "filter-free-mist",
+            "post_modified": "2021-05-07 04:00:02",
+            "post_modified_gmt": "2021-05-07 04:00:02",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/filter-free-mist/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Caprylic/Capric Triglyceride, \r\nHydrogenated Lecithin, Stearyl \r\nAlcohol, Behenyl Alcohol, \r\nPhytosterol, Glyceryl Stearate, \r\nPolyglyceryl-10 Myristate, \r\nTocopherol",
+            "product_description": [
+              "<p>[logout][sustainable]Mid-day slump have you feeling dehydrated? Filter-Free Mist gives just the moisturizing boost needed. The gel-to-mist technology will allow the skin to hydrate quickly during the driest afternoon hours. A quick mist helps to regulate sebum production while maintaining moisturization. Spray, and take your look through the evening.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][sustainable]Mid-day slump have you feeling dehydrated? Filter-Free Mist gives just the moisturizing boost needed. The gel-to-mist technology will allow the skin to hydrate quickly during the driest afternoon hours. A quick mist helps to regulate sebum production while maintaining moisturization. Spray, and take your look through the evening.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 910,
+            "unique_id": "333434",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:39:19",
+            "post_date_gmt": "2021-03-18 03:39:19",
+            "post_title": "Fluid Lipstick",
+            "post_content": "",
+            "post_excerpt": "[login][silicone-free]Want a bold look? Fluid Lipstick is the answer for a bright pop of color. With its intense moisturization abilities, lips stay hydrated and smooth all day",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "fluid-lipstick",
+            "post_modified": "2021-05-07 04:02:09",
+            "post_modified_gmt": "2021-05-07 04:02:09",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/fluid-lipstick/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Propylene Glycol Dicaprate & \r\nHelianthus Annuus (Sunflower) \r\nSeed Cake & Hordeum Vulgare \r\n(Barley) Ext. & Cucumis Sativus \r\n(Cucumber) Fruit Ext.",
+            "product_description": [
+              "<p>[logout][silicone-free]Want a bold look? Fluid Lipstick is the answer for a bright pop of color. With its intense moisturization abilities, lips stay hydrated and smooth all day. The formula easily glides onto lips to complete an effortless bold look!</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][silicone-free]Want a bold look? Fluid Lipstick is the answer for a bright pop of color. With its intense moisturization abilities, lips stay hydrated and smooth all day. The formula easily glides onto lips to complete an effortless bold look!</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 918,
+            "unique_id": "3334b4",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:49:07",
+            "post_date_gmt": "2021-03-18 03:49:07",
+            "post_title": "H2O Primer",
+            "post_content": "",
+            "post_excerpt": "[login][Ethylhexylglycerin]H2O Primer is a thin, water-like primer to moisturize and prep skin for the day. Filled with 71 beneficial minerals, H2O Primer will improve the wear of makeup and maintain a healthy look all day long!\n*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "h2o-primer",
+            "post_modified": "2021-05-07 03:58:13",
+            "post_modified_gmt": "2021-05-07 03:58:13",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/h2o-primer/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Water, Glycerin, Citrullus\r\nvulgaris (Watermelon) Fruit \r\nExtract, Pyrus Malus (Apple) \r\nFruit Extract, Lens Esculenta \r\n(Lentil) Fruit Extract, Sodium \r\nPCA and Sodium Lactate",
+            "product_description": [
+              "<p>[logout][Ethylhexylglycerin]H2O Primer is a thin, water-like primer to moisturize and prep skin for the day. Filled with 71 beneficial minerals, H2O Primer will improve the wear of makeup and maintain a healthy look all day long!</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for an Ethoxylate-Free Version.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][Ethylhexylglycerin]H2O Primer is a thin, water-like primer to moisturize and prep skin for the day. Filled with 71 beneficial minerals, H2O Primer will improve the wear of makeup and maintain a healthy look all day long!</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for an Ethoxylate-Free Version.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "0"
+          }
+        },
+        {
+          "data": {
+            "id": 785,
+            "unique_id": "13a484",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-17 08:03:21",
+            "post_date_gmt": "2021-03-17 08:03:21",
+            "post_title": "HydraDuct-B3",
+            "post_content": "",
+            "post_excerpt": "[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "hydraduct-b3",
+            "post_modified": "2021-05-07 04:21:45",
+            "post_modified_gmt": "2021-05-07 04:21:45",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/hydraduct-b3/",
+            "web_type": "active",
+            "product_type": "Active",
+            "inci_name": "Bambusa vulgaris Extract & \r\nPisum sativum (Pea) Extract & \r\nGlucosamine HCl & Water",
+            "product_description": [
+              "<p>[logout]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 916,
+            "unique_id": "333494",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:47:58",
+            "post_date_gmt": "2021-03-18 03:47:58",
+            "post_title": "Instant Firming Serum",
+            "post_content": "",
+            "post_excerpt": "[login][Calcium Gluconate]Need a lift? This Instant Firming Serum will give you an immediate anti-wrinkle effect with a firming sensation! Keep your skin hydrated all day for a rejuvenated, fresh look!\n*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for an Ethoxylate-Free Version",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "instant-firming-serum",
+            "post_modified": "2021-05-07 03:58:54",
+            "post_modified_gmt": "2021-05-07 03:58:54",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/instant-firming-serum/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Hydrogenated Lecithin, Stearyl \r\nGlycyrrhetinate, Castor Oil, \r\nCaprylic/Capric Triglyceride, \r\nTetrahexyldecyl Ascorbate, \r\nGlycerin",
+            "product_description": [
+              "<p>[logout][Calcium Gluconate]Need a lift? This Instant Firming Serum will give you an immediate anti-wrinkle effect with a firming sensation! Keep your skin hydrated all day for a rejuvenated, fresh look!</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for an Ethoxylate-Free Version.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][Calcium Gluconate]Need a lift? This Instant Firming Serum will give you an immediate anti-wrinkle effect with a firming sensation! Keep your skin hydrated all day for a rejuvenated, fresh look!</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for an Ethoxylate-Free Version.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "1",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "0"
+          }
+        },
+        {
+          "data": {
+            "id": 917,
+            "unique_id": "3334a4",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:48:39",
+            "post_date_gmt": "2021-03-18 03:48:39",
+            "post_title": "Jelly Foundation",
+            "post_content": "",
+            "post_excerpt": "[login][Ethylhexylglycerin]This weightless Jelly Foundation gives your skin a healthy tinted glow filled with lasting hydration. Create an even complexion, covering imperfections, with this bouncy, spreadable foundation",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "jelly-foundation",
+            "post_modified": "2021-05-07 03:58:27",
+            "post_modified_gmt": "2021-05-07 03:58:27",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/jelly-foundation/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Water, Glycerin, Citrullus\r\nvulgaris (Watermelon) Fruit \r\nExtract, Pyrus Malus (Apple) \r\nFruit Extract, Lens Esculenta \r\n(Lentil) Fruit Extract, Sodium \r\nPCA and Sodium Lactate",
+            "product_description": [
+              "<p>[logout][Ethylhexylglycerin]This weightless Jelly Foundation gives your skin a healthy tinted glow filled with lasting hydration. Create an even complexion, covering imperfections, with this bouncy, spreadable foundation. Jelly Foundation will moisturize your skin all day for a smooth, lasting look.</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for a Silicone-Free Version.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][Ethylhexylglycerin]This weightless Jelly Foundation gives your skin a healthy tinted glow filled with lasting hydration. Create an even complexion, covering imperfections, with this bouncy, spreadable foundation. Jelly Foundation will moisturize your skin all day for a smooth, lasting look.</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for a Silicone-Free Version.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "0"
+          }
+        },
+        {
+          "data": {
+            "id": 835,
+            "unique_id": "235484",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-17 08:42:47",
+            "post_date_gmt": "2021-03-17 08:42:47",
+            "post_title": "NET WS-CF",
+            "post_content": "",
+            "post_excerpt": "[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "net-ws-cf",
+            "post_modified": "2021-05-07 04:04:48",
+            "post_modified_gmt": "2021-05-07 04:04:48",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/net-ws-cf/",
+            "web_type": "active",
+            "product_type": "Active",
+            "inci_name": "east Extract (Aqeous) & Lycium \r\nChinense Fruit Extract & \r\nVaccinum Angustifolium \r\n(Blueberry) Fruit Extract & \r\nVaccinum Macrocarpon \r\n(Cranberry) Fruit Extract)",
+            "product_description": [
+              "<p>[logout]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 386,
+            "unique_id": "x2a494",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-04 07:29:17",
+            "post_date_gmt": "2021-03-04 07:29:17",
+            "post_title": "Polynesian Coconut Exfoliating Pulp",
+            "post_content": "",
+            "post_excerpt": "[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "polynesian-coconut-exfoliating-pulp",
+            "post_modified": "2021-05-07 04:23:52",
+            "post_modified_gmt": "2021-05-07 04:23:52",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/polynesian-coconut-exfoliating-pulp/",
+            "web_type": "active",
+            "product_type": "Active",
+            "inci_name": "Water, Hibiscus Sabdariffa \r\nFlower Extract, Ferula Assa \r\nFoetida Root Extract, Pyrus \r\nCommunis (Pear) Fruit Extract, \r\nCamellia Sinensis Leaf Extract",
+            "product_description": [
+              "<p>[logout]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 382,
+            "unique_id": "x2a454",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-04 07:25:45",
+            "post_date_gmt": "2021-03-04 07:25:45",
+            "post_title": "Polynesian Coconut Powder",
+            "post_content": "",
+            "post_excerpt": "[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "polynesian-coconut-powder",
+            "post_modified": "2021-05-07 04:24:01",
+            "post_modified_gmt": "2021-05-07 04:24:01",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/polynesian-coconut-powder/",
+            "web_type": "active",
+            "product_type": "Active",
+            "inci_name": "Water, Glycerin, Citrullus\r\nvulgaris (Watermelon) Fruit \r\nExtract, Pyrus Malus (Apple) \r\nFruit Extract, Lens Esculenta \r\n(Lentil) Fruit Extract, Sodium \r\nPCA and Sodium Lactate",
+            "product_description": [
+              "<p>[logout]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 354,
+            "unique_id": "x27474",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-04 05:07:14",
+            "post_date_gmt": "2021-03-04 05:07:14",
+            "post_title": "Polynesian Vanilla Powder",
+            "post_content": "",
+            "post_excerpt": "[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "polynesian-vanilla-powder",
+            "post_modified": "2021-05-07 04:23:55",
+            "post_modified_gmt": "2021-05-07 04:23:55",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/polynesian-vanilla-powder/",
+            "web_type": "active",
+            "product_type": "Active",
+            "inci_name": "Water, Hibiscus Sabdariffa \r\nFlower Extract, Ferula Assa \r\nFoetida Root Extract, Pyrus \r\nCommunis (Pear) Fruit Extract, \r\nCamellia Sinensis Leaf Extract",
+            "product_description": [
+              "<p>[logout]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 1352,
+            "unique_id": "v2548474",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-25 10:56:28",
+            "post_date_gmt": "2021-03-25 10:56:28",
+            "post_title": "Resurfacid CR",
+            "post_content": "",
+            "post_excerpt": "[log in]Moisturizing active tested in vivo to reduce\nwrinkles around the eyes in two hours.\nTested in vivo for 24 hour moisturization\n",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "resurfacid-cr",
+            "post_modified": "2021-05-07 03:52:51",
+            "post_modified_gmt": "2021-05-07 03:52:51",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/resurfacid-cr/",
+            "web_type": "active",
+            "product_type": "Active",
+            "inci_name": "Glycerin, Water, Pancratium \r\nmaritimum Extract",
+            "product_description": [
+              "<p>[log out] Moisturizing active tested in vivo to reduce<br />\nwrinkles around the eyes in two hours.<br />\nTested in vivo for 24 hour moisturization</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[log in]Moisturizing active tested in vivo to reduce<br />\nwrinkles around the eyes in two hours.<br />\nTested in vivo for 24 hour moisturization</p>\n"
+            ],
+            "product_keyword": [
+              "Resurfacid CR",
+              "Resurfacid",
+              "CR"
+            ],
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 915,
+            "unique_id": "333484",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:47:20",
+            "post_date_gmt": "2021-03-18 03:47:20",
+            "post_title": "Self-Emulsifying Cleanser",
+            "post_content": "",
+            "post_excerpt": "[login][Calcium Gluconate]Keep skin clean, healthy, and soft with the Self-Emulsifying Cleanser. This advanced cleansing system self-emulsifies with water allowing easy removal of oil",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "self-emulsifying-cleanser",
+            "post_modified": "2021-05-07 03:59:11",
+            "post_modified_gmt": "2021-05-07 03:59:11",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/self-emulsifying-cleanser/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Yeast Extract (Aqeous) & Lycium \r\nChinense Fruit Extract & \r\nVaccinum Angustifolium \r\n(Blueberry) Fruit Extract & \r\nVaccinum Macrocarpon \r\n(Cranberry) Fruit Extract)\r\nFermented berries with very strong antioxidant power. Detoxinet translocated \r\nNRF2, the master regulator of \r\ndetoxification by the cells, triggering the \r\nrelease of 200 detoxifying molecules.\r\nR7635 Evodiox Evodia Rutaecarpa Fruit Extr",
+            "product_description": [
+              "<p>[logout][Calcium Gluconate]Keep skin clean, healthy, and soft with the Self-Emulsifying Cleanser. This advanced cleansing system self-emulsifies with water allowing easy removal of oil. Without stripping the lipid barrier, the Self-Emulsifying Cleanser effectively removes makeup and impurities.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][Calcium Gluconate]Keep skin clean, healthy, and soft with the Self-Emulsifying Cleanser. This advanced cleansing system self-emulsifies with water allowing easy removal of oil. Without stripping the lipid barrier, the Self-Emulsifying Cleanser effectively removes makeup and impurities.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 900,
+            "unique_id": "332434",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:08:51",
+            "post_date_gmt": "2021-03-18 03:08:51",
+            "post_title": "W/Si Physical Sunscreen",
+            "post_content": "",
+            "post_excerpt": "[login][halal]This silicone system will provide long wear and resistance against water and perspiration while protecting against the sun’s rays. Unlike oil-in-water formulas, sunscreens remain on top of the skin instead of being absorbed to create a shield between the sun and skin barrier",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "w-si-physical-sunscreen",
+            "post_modified": "2021-05-07 04:02:51",
+            "post_modified_gmt": "2021-05-07 04:02:51",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/w-si-physical-sunscreen/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Water, Hibiscus Sabdariffa \r\nFlower Extract, Ferula Assa \r\nFoetida Root Extract, Pyrus \r\nCommunis (Pear) Fruit Extract, \r\nCamellia Sinensis Leaf Extract",
+            "product_description": [
+              "<p>[logout][halal]This silicone system will provide long wear and resistance against water and perspiration while protecting against the sun’s rays. Unlike oil-in-water formulas, sunscreens remain on top of the skin instead of being absorbed to create a shield between the sun and skin barrier. Protect your skin with W/Si Physical Sunscreen!</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][halal]This silicone system will provide long wear and resistance against water and perspiration while protecting against the sun’s rays. Unlike oil-in-water formulas, sunscreens remain on top of the skin instead of being absorbed to create a shield between the sun and skin barrier. Protect your skin with W/Si Physical Sunscreen!</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 919,
+            "unique_id": "3334c4",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:49:49",
+            "post_date_gmt": "2021-03-18 03:49:49",
+            "post_title": "Water Color Liquid Blush",
+            "post_content": "",
+            "post_excerpt": "[login][Gluconolactone]Fake a flush! A high silky-pigmented, liquid blush that brings a flush of natural-looking color to all skintones. The buildable formula blends effortlessly for a fool-proof application with a pop of color close to your natural flush",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "water-color-liquid-blush",
+            "post_modified": "2021-05-07 03:57:58",
+            "post_modified_gmt": "2021-05-07 03:57:58",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/water-color-liquid-blush/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Hydrogenated Lecithin, Licorice \r\nExtract, Castor Oil, \r\nCaprylic/Capric Triglyceride,\r\nTetrahexyldecyl Ascorbate, \r\nGlycerin",
+            "product_description": [
+              "<p>[logout][Gluconolactone]Fake a flush! A high silky-pigmented, liquid blush that brings a flush of natural-looking color to all skintones. The buildable formula blends effortlessly for a fool-proof application with a pop of color close to your natural flush. Just with a couple of drops it delivers the perfect amount of long-lasting color for sheer to high-impact looks.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][Gluconolactone]Fake a flush! A high silky-pigmented, liquid blush that brings a flush of natural-looking color to all skintones. The buildable formula blends effortlessly for a fool-proof application with a pop of color close to your natural flush. Just with a couple of drops it delivers the perfect amount of long-lasting color for sheer to high-impact looks.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "0"
+          }
+        }
+      ]
+    },
+    {
+      "digital_code_id": "2255",
+      "digital_code_title": "Cono Funium Fucodal Viranium",
+      "digital_code": "X45795",
+      "products": [
+        {
+          "data": {
+            "id": 924,
+            "unique_id": "334474",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:53:06",
+            "post_date_gmt": "2021-03-18 03:53:06",
+            "post_title": "Anti-Polluaging Cream-to-Powder",
+            "post_content": "",
+            "post_excerpt": "[login][Potasium Sorbate][No-Palm]Fight signs of aging and pollution! This anti-polluaging formulation glides onto skin effortlessly, delivering moisturization and hydration throughout the stressful city life. It starts as a moisturizing cream that turns into a silky smooth primer that blurs fine lines creating the perfect canvas for your daily makeup regimen for a day in the city!\n*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "anti-polluaging-cream-to-powder",
+            "post_modified": "2021-05-07 03:56:14",
+            "post_modified_gmt": "2021-05-07 03:56:14",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/anti-polluaging-cream-to-powder/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Yeast Extract (Aqeous) & Lycium \r\nChinense Fruit Extract & \r\nVaccinum Angustifolium \r\n(Blueberry) Fruit Extract & \r\nVaccinum Macrocarpon \r\n(Cranberry) Fruit Extract",
+            "product_description": [
+              "<p>[logout][Potasium Sorbate][No-Palm]Fight signs of aging and pollution! This anti-polluaging formulation glides onto skin effortlessly, delivering moisturization and hydration throughout the stressful city life. It starts as a moisturizing cream that turns into a silky smooth primer that blurs fine lines creating the perfect canvas for your daily makeup regimen for a day in the city!</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for a Silicone-Free Version and/or Ethoxylate-Free Version.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][Potasium Sorbate][No-Palm]Fight signs of aging and pollution! This anti-polluaging formulation glides onto skin effortlessly, delivering moisturization and hydration throughout the stressful city life. It starts as a moisturizing cream that turns into a silky smooth primer that blurs fine lines creating the perfect canvas for your daily makeup regimen for a day in the city!</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for a Silicone-Free Version and/or Ethoxylate-Free Version.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "0"
+          }
+        },
+        {
+          "data": {
+            "id": 399,
+            "unique_id": "x2b4c4",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-04 08:40:37",
+            "post_date_gmt": "2021-03-04 08:40:37",
+            "post_title": "Arovanda",
+            "post_content": "",
+            "post_excerpt": "[Login] Arovanda is a lipophilic extract of Spanish lavender. It is tested in vivo to increase corneocyte cohesion resulting in a significant increase in skin hydration",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "arovanda",
+            "post_modified": "2021-04-16 07:00:29",
+            "post_modified_gmt": "2021-04-16 07:00:29",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/arovanda/",
+            "web_type": "active",
+            "product_type": "Active",
+            "inci_name": "Caprylic/Capric Triglyceride (and) Hydrogenated Vegetable Oil (and) Lavandula Stoechas Extract",
+            "product_description": [
+              "<p>[Logout] Arovanda is a lipophilic extract of Spanish lavender. It is tested in vivo to increase corneocyte cohesion resulting in a significant increase in skin hydration.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[Login] Arovanda is a lipophilic extract of Spanish lavender. It is tested in vivo to increase corneocyte cohesion resulting in a significant increase in skin hydration.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 824,
+            "unique_id": "234474",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-17 08:36:21",
+            "post_date_gmt": "2021-03-17 08:36:21",
+            "post_title": "Benoiderm",
+            "post_content": "",
+            "post_excerpt": "[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "benoiderm",
+            "post_modified": "2021-05-07 04:15:38",
+            "post_modified_gmt": "2021-05-07 04:15:38",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/benoiderm/",
+            "web_type": "active",
+            "product_type": "Active",
+            "inci_name": "Water, Hibiscus Sabdariffa \r\nFlower Extract, Ferula Assa \r\nFoetida Root Extract, Pyrus \r\nCommunis (Pear) Fruit Extract, \r\nCamellia Sinensis Leaf Extract",
+            "product_description": [
+              "<p>[logout]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 817,
+            "unique_id": "2334a4",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-17 08:34:50",
+            "post_date_gmt": "2021-03-17 08:34:50",
+            "post_title": "BioFense",
+            "post_content": "",
+            "post_excerpt": "[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "biofense",
+            "post_modified": "2021-05-07 04:16:24",
+            "post_modified_gmt": "2021-05-07 04:16:24",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/biofense/",
+            "web_type": "active",
+            "product_type": "Active",
+            "inci_name": "Caprylic/Capric Triglyceride, \r\nHydrogenated Lecithin, Stearyl \r\nAlcohol, Behenyl Alcohol, \r\nPhytosterol, Glyceryl Stearate, \r\nPolyglyceryl-10 Myristate, \r\nTocopherol",
+            "product_description": [
+              "<p>[logout]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 913,
+            "unique_id": "333464",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:46:01",
+            "post_date_gmt": "2021-03-18 03:46:01",
+            "post_title": "Cleansing Gel",
+            "post_content": "",
+            "post_excerpt": "[login][vegan]Cleanse the day away with this moisturizing gel that doesn’t strip the skin. The double break technology creates a refreshing burst of hydration while gently cleansing the skin of impurities",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "cleansing-gel",
+            "post_modified": "2021-05-07 03:59:45",
+            "post_modified_gmt": "2021-05-07 03:59:45",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/cleansing-gel/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Yeast Extract (Aqeous) & Lycium \r\nChinense Fruit Extract & \r\nVaccinum Angustifolium \r\n(Blueberry) Fruit Extract & \r\nVaccinum Macrocarpon \r\n(Cranberry) Fruit Extract)",
+            "product_description": [
+              "<p>[logout][vegan]Cleanse the day away with this moisturizing gel that doesn’t strip the skin. The double break technology creates a refreshing burst of hydration while gently cleansing the skin of impurities.</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for a Silicone-Free Version.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][vegan]Cleanse the day away with this moisturizing gel that doesn’t strip the skin. The double break technology creates a refreshing burst of hydration while gently cleansing the skin of impurities.</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for a Silicone-Free Version.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 912,
+            "unique_id": "333454",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:45:23",
+            "post_date_gmt": "2021-03-18 03:45:23",
+            "post_title": "Filter-Free Mist",
+            "post_content": "",
+            "post_excerpt": "[login][sustainable]Mid-day slump have you feeling dehydrated? Filter-Free Mist gives just the moisturizing boost needed. The gel-to-mist technology will allow the skin to hydrate quickly during the driest afternoon hours",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "filter-free-mist",
+            "post_modified": "2021-05-07 04:00:02",
+            "post_modified_gmt": "2021-05-07 04:00:02",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/filter-free-mist/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Caprylic/Capric Triglyceride, \r\nHydrogenated Lecithin, Stearyl \r\nAlcohol, Behenyl Alcohol, \r\nPhytosterol, Glyceryl Stearate, \r\nPolyglyceryl-10 Myristate, \r\nTocopherol",
+            "product_description": [
+              "<p>[logout][sustainable]Mid-day slump have you feeling dehydrated? Filter-Free Mist gives just the moisturizing boost needed. The gel-to-mist technology will allow the skin to hydrate quickly during the driest afternoon hours. A quick mist helps to regulate sebum production while maintaining moisturization. Spray, and take your look through the evening.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][sustainable]Mid-day slump have you feeling dehydrated? Filter-Free Mist gives just the moisturizing boost needed. The gel-to-mist technology will allow the skin to hydrate quickly during the driest afternoon hours. A quick mist helps to regulate sebum production while maintaining moisturization. Spray, and take your look through the evening.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 925,
+            "unique_id": "334484",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:53:38",
+            "post_date_gmt": "2021-03-18 03:53:38",
+            "post_title": "HD Color Drops",
+            "post_content": "",
+            "post_excerpt": "[login][Preservative Free]Seize your ‘dropportunity’! Add a few color drops to transform your favorite skincare product into a pop of color, color it yourself! Find your perfect level of coverage from a sun kissed tint to a flawless look.\n",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "hd-color-drops",
+            "post_modified": "2021-05-07 03:56:04",
+            "post_modified_gmt": "2021-05-07 03:56:04",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/hd-color-drops/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Yeast Extract (Aqeous) & Lycium \r\nChinense Fruit Extract & \r\nVaccinum Angustifolium \r\n(Blueberry) Fruit Extract & \r\nVaccinum Macrocarpon \r\n(Cranberry) Fruit Extract",
+            "product_description": [
+              "<p>[logout][Preservative Free]Seize your ‘dropportunity’! Add a few color drops to transform your favorite skincare product into a pop of color, color it yourself! Find your perfect level of coverage from a sun kissed tint to a flawless look.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][Preservative Free]Seize your ‘dropportunity’! Add a few color drops to transform your favorite skincare product into a pop of color, color it yourself! Find your perfect level of coverage from a sun kissed tint to a flawless look.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "1",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 921,
+            "unique_id": "334444",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:51:09",
+            "post_date_gmt": "2021-03-18 03:51:09",
+            "post_title": "Mascara Refresher",
+            "post_content": "",
+            "post_excerpt": "[login][Phenoxyethanol Free]Bring your mascara back to life! This mascara refresher is perfect for a quick touch-up designed to instantly revive, separate and define every lash. A serum-like formulation that will help to increase eyelash length and volume with the incorporation of natural source actives",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "mascara-refresher",
+            "post_modified": "2021-05-07 03:57:07",
+            "post_modified_gmt": "2021-05-07 03:57:07",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/mascara-refresher/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Yeast Extract (Aqeous) & Lycium \r\nChinense Fruit Extract & \r\nVaccinum Angustifolium \r\n(Blueberry) Fruit Extract & \r\nVaccinum Macrocarpon \r\n(Cranberry) Fruit Extract",
+            "product_description": [
+              "<p>[logout][Phenoxyethanol Free]Bring your mascara back to life! This mascara refresher is perfect for a quick touch-up designed to instantly revive, separate and define every lash. A serum-like formulation that will help to increase eyelash length and volume with the incorporation of natural source actives.  Say goodbye to stiff lashes and refresh your eyes!</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for an Ethoxylate-Free Version.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][Phenoxyethanol Free]Bring your mascara back to life! This mascara refresher is perfect for a quick touch-up designed to instantly revive, separate and define every lash. A serum-like formulation that will help to increase eyelash length and volume with the incorporation of natural source actives.  Say goodbye to stiff lashes and refresh your eyes!</p>\n<p>*Flexible Formula: Love this formula but interested in different ingredients? To alter this formula, please contact barnetlab@barnetproducts.com for an Ethoxylate-Free Version.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "0"
+          }
+        },
+        {
+          "data": {
+            "id": 810,
+            "unique_id": "233434",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-17 08:25:07",
+            "post_date_gmt": "2021-03-17 08:25:07",
+            "post_title": "Myrtelin",
+            "post_content": "",
+            "post_excerpt": "[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "myrtelin",
+            "post_modified": "2021-05-07 04:16:46",
+            "post_modified_gmt": "2021-05-07 04:16:46",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/myrtelin/",
+            "web_type": "active",
+            "product_type": "Active",
+            "inci_name": "Water, Hibiscus Sabdariffa \r\nFlower Extract, Ferula Assa \r\nFoetida Root Extract, Pyrus \r\nCommunis (Pear) Fruit Extract, \r\nCamellia Sinensis Leaf Extract",
+            "product_description": [
+              "<p>[logout]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 811,
+            "unique_id": "233444",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-17 08:25:32",
+            "post_date_gmt": "2021-03-17 08:25:32",
+            "post_title": "NET-LCS (NET-LCS PF)",
+            "post_content": "",
+            "post_excerpt": "[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "net-lcs-net-lcs-pf",
+            "post_modified": "2021-05-07 04:16:43",
+            "post_modified_gmt": "2021-05-07 04:16:43",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/net-lcs-net-lcs-pf/",
+            "web_type": "active",
+            "product_type": "Active",
+            "inci_name": "Water, Hibiscus Sabdariffa \r\nFlower Extract, Ferula Assa \r\nFoetida Root Extract, Pyrus \r\nCommunis (Pear) Fruit Extract, \r\nCamellia Sinensis Leaf Extract",
+            "product_description": [
+              "<p>[logout]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login]This gorgeous burgundy color pop provides full coverage in a liquid lipstick format. Creamilicious Liquid Lipstick glides easily onto lips, leaving lips soft and conditioned. This fromula can also be used as a lip stain once applied and removed leaving a beautiful purple/red tint on the lips.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "1"
+          }
+        },
+        {
+          "data": {
+            "id": 922,
+            "unique_id": "334454",
+            "post_author": {
+              "id": "1",
+              "unique_id": "v2",
+              "username": "barnet-dev",
+              "email": "admin@sutrix.com",
+              "display_name": "barnet-dev",
+              "join_at": "2021-03-12 08:20:32",
+              "role": [
+                "administrator"
+              ],
+              "type": "global",
+              "user_extra_info": {
+                "company_name": "sss",
+                "address": "23 An dương vương",
+                "address_optional": "",
+                "country": "AF",
+                "province": "ssdf",
+                "postal_code": "700000",
+                "phone": "0987876767",
+                "phone_optional": ""
+              },
+              "user_extra_type": null
+            },
+            "post_date": "2021-03-18 03:51:53",
+            "post_date_gmt": "2021-03-18 03:51:53",
+            "post_title": "Pomegranate Gelee",
+            "post_content": "",
+            "post_excerpt": "[login][Phenoxyethanol Free]Brighten your day with a double dose of Gellee!  Experience the power of the skin brightening actives wrapped in a luxurious gel. A combination of actives derived from pomegranate and other plants target the function and performance of melanocytes, preventing and reducing the appearance of dark spots and brightening the complexion",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "pomegranate-gelee",
+            "post_modified": "2021-05-07 03:56:55",
+            "post_modified_gmt": "2021-05-07 03:56:55",
+            "comment_count": "0",
+            "permalink": "http://barnet-be-dev.local.sutrix.com/barnet-product/pomegranate-gelee/",
+            "web_type": "system",
+            "product_type": "System",
+            "inci_name": "Yeast Extract (Aqeous) & Lycium \r\nChinense Fruit Extract & \r\nVaccinum Angustifolium \r\n(Blueberry) Fruit Extract & \r\nVaccinum Macrocarpon \r\n(Cranberry) Fruit Extract",
+            "product_description": [
+              "<p>[logout][Phenoxyethanol Free]Brighten your day with a double dose of Gellee!  Experience the power of the skin brightening actives wrapped in a luxurious gel. A combination of actives derived from pomegranate and other plants target the function and performance of melanocytes, preventing and reducing the appearance of dark spots and brightening the complexion.</p>\n"
+            ],
+            "product_description_concept": null,
+            "product_description_logged": [
+              "<p>[login][Phenoxyethanol Free]Brighten your day with a double dose of Gellee!  Experience the power of the skin brightening actives wrapped in a luxurious gel. A combination of actives derived from pomegranate and other plants target the function and performance of melanocytes, preventing and reducing the appearance of dark spots and brightening the complexion.</p>\n"
+            ],
+            "product_keyword": null,
+            "product_msds_doc": null,
+            "product_spec_doc": null,
+            "product_kiss_doc": null,
+            "product_dossier_doc": null,
+            "product_presentation_doc": null,
+            "product_formula_doc": null,
+            "product_area": null,
+            "product_roles": null,
+            "product_usage": null,
+            "product_updated": null,
+            "product_featured": "0",
+            "product_global_compliance": null,
+            "product_alternate_group": null,
+            "product_right_sub_text": null,
+            "product_public": "0"
+          }
+        }
+      ]
+    }
+  ],
+  "title": "BARNET PRODUCTS APPROVED FOR USE AT LOREAL",
+  "file_name": "barnet_products_corporation.pdf",
+  "company_name": "Barnet Products Corporation",
+  "company_address": "920 Sylvan Avenue Suite 210 Englewood Cliffs NJ 07632",
+  "company_info": "Tel 201 346 4620 Fax 201 346 4333 Web barnetproducts.com",
+  "footer": "The information contained in this document is, to the best of our knowledge, true and accurate. Barnet’s products are not made, sold or distributed for the cure or treatment of any disease, illness or medical condition. Barnet’s products are not FDA reviewed and Barnet expressly disclaims making or giving any warranty, express or implied, for any Barnet Product. Customer’s use must be based upon the Customer’s own investigations, testing, appraisals and formulations. No application or use of any Barnet Product should be construed as an inducement, or contributing to the use of any Barnet Product in infringement of any patents or contrary to any applicable government regulations. Copyright © 2020 Barnet Products LLC ALL RIGHTS RESERVED",
+  "logo": "/images/logo-pdf.jpg",
+  "date": "05/11/2021"
+}

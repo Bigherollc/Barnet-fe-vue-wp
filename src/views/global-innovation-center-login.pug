@@ -1,0 +1,94 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Global Innovation Center (login)'
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+block container
+  .global-innovation-center
+    .global-innovation-center__heading.--mg-top-ml
+      .container
+        .global-innovation-center__heading-row
+          .global-innovation-center__heading-col-1
+            +headingGroup('Global Innovation Center', '<p>The expert chemists of the Global Innovation Center have over 100 years in combined laboratory experience. </p><p>Tap in to their deep knowledge of all ingredients, best practices and formulation guidelines.</p>', '--size-lg').--dark-mode
+          .global-innovation-center__heading-col-2
+            +slideHero([
+              {
+                image: '/images/active/hero-1.png',
+                ribbon: 'New Formula',
+                title: 'Cleansing Oil Essence',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+              },
+              {
+                image: '/images/active/hero-2.png',
+                ribbon: 'New Formula',
+                title: 'Introducing Barnet Color',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+              },
+              {
+                image: '/images/active/hero-3.png',
+                ribbon: 'New Formula',
+                title: 'Introducing Barnet Color',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+                mode: 'dark'
+              },
+            ]).--size-wrap-lg(data-slider-main data-opts-slider='{"slickContainer": ".global-innovation-center__heading","optsSlick": {"slide": "[data-slider-item]", "dots": true, "rows": 0, "slidesToShow": 1}}')
+    .global-innovation-center__article 
+      +imageOneside({
+        imgObj: {
+          src: '/images/content-oneside/global-support.png',
+          title: 'How-to Videos and Instructional Resources'
+        },
+        contentObj: {
+          title: 'How-to Videos and Instructional Resources',
+          subTitle: 'Lorem ipsum dolor sit ahmet commeitment to out cusgtomers. With partners all over the globe dolor sit ahmet.',          
+          list: [],
+          cta: {
+            link: 'lab-training-login.html',
+            title: 'See all resources'
+          }
+        }
+      }).--pd-top-lg
+      +imageOneside({
+        imgObj: {
+          src: '/images/content-oneside/formula-library.png',
+          title: 'Formulation Guidelines & Starter Formula Creation'
+        },
+        contentObj: {
+          title: 'Formulation Guidelines & Starter Formula Creation',
+          subTitle: 'In addition to developing and evaluating every product the Global Innovation Center also crafts starter formula to showcase those ingredients. Inspired by the fashion of today and the trends of tomorrow our lorem ipsom dolor sit ahmet. ',          
+          list: [],
+          cta: {
+            link: 'lab-training-login.html',
+            title: 'Explore Starter Formula'
+          }
+        },
+        isRight: true
+      }).--pd-top-md.--mg-top-md
+      +imageOneside({
+        imgObj: {
+          src: '/images/content-oneside/innovation-consultation.png',
+          title: 'Lab Training'
+        },
+        contentObj: {
+          title: 'Lab Training',
+          subTitle: '<p>The Global Innovation Center team offers collaborative hands-on training customized to meet the unique needs of our customers</p><p>The training courses are tiered from basic emulsion theory, applied training on concepts and trends, and personalized training either on-site at Barnet, off-site at your location or virtually.</p>',          
+          list: [],
+          cta: {
+            link: 'lab-training-login.html',
+            title: 'Explore Our Products',
+            darkmode: true
+          }
+        }
+      }).--pd-top-md.--mg-top-md
+    .global-innovation-center__footing.--mg-top-lg
+      .container
+        +slideHero([
+          {
+            image: '/images/active/hero-1.png',
+            title: 'Need Help?',
+            desc: 'Our team of scientists at the Innovation Center can help with formula development,  process engineering and lorem ipsum dolor sit ahmet. ',
+          }
+        ]).--size-wrap-lg
+
+

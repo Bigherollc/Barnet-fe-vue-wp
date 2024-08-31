@@ -1,0 +1,24 @@
+mixin relatedVideo({classComp, type, groupTitle, items, linkSeeMore} = {})
+  .component-related-video(class=classComp)
+    .component-related-video__wrapper
+      if groupTitle
+        .component-related-video__group-title
+          +headingGroup(groupTitle.title)
+          .component-related-video__cta
+            +link(linkSeeMore, groupTitle.cta)(data-see-more).btn.btn-regular
+      //- .component-related-video__item.slider-control.row&attributes(attributes)
+      .component-related-video__item.slider-control&attributes(attributes)
+        +relatedVideoItem(type, items)
+
+mixin relatedVideoItem(type, items)
+  - itemGrid = 12 / type
+  each item in items
+    //- .component-related-video__col(class=`col-${itemGrid}` data-slider-item)
+    .component-related-video__col( data-slider-item)
+      +link('#', item.title).component-related-video__img.btn-gtm-view-video
+        +img(src=item.image, alt="image")
+      .component-related-video__content
+        +link('#', item.title).component-related-video__title.btn-gtm-view-video!=item.title
+        .component-related-video__time
+          i.icon.icon-clock-sm
+          !=item.time

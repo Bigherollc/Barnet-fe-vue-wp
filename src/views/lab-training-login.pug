@@ -1,0 +1,178 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Lab Training (login)'
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+block container
+  .lab-training 
+    .lab-training__heading(style="background-image: url('/images/bg-hexagon.png')")
+      .container
+        +headingGroup('Lab Training', '<p>The Global Innovation Center team offers collaborative hands-on training customized to meet the unique needs of our customers.</p><p>Courses range from basic emulsion theory, applied training on concepts and trends, to personalized training.</p>', '--size-lg').--dark-mode
+    .lab-training__accrodion.--mg-top-lg
+      .container 
+        .lab-training__accrodion-wrap
+          .component-hexagon-content
+            .component-hexagon-content__package
+              .component-hexagon-content__title Basic Training - Emulsion Theory
+              .component-hexagon-content__code GIC-B101
+              .component-hexagon-content__desc Understand the theory behind emulsification technologies with classroom theory and in-lab experience.  Seven modules available for half and full day sessions. 
+              +accrodion([
+                {
+                  toggle: 'Lamellar Gel Network Basics',
+                  content: '<p>Featuring: NET-APS, NET-LCS, Behenyl Alcohol, NET-SMT Lamellar Gel Networks are combinations of low and high HLB surfactants that swell and structure water forming oil-in-water (O/W) emulsions. The emulsions are stabilized by lamellar bilayers of surfactant and water surrounding oil droplets. These systems have viscoelastic rheological properties and sheer thinning during application. Furthermore they provide many skin benefits, such as: moisturization, delivery and deposition of actives, and waterproof films which create protective barriers.</p><ul class="component-list"><li>Build a lamellar gel network.</li><li>Create an α-crystalline gel.</li><li>Form a liquid crystal emulsion.</li><li>Evaluate the impact of preservatives on viscosity.</li><li>Formula Types: Skin Care or Color.</li></ul>'
+                },
+                {
+                  toggle: 'Jelly Architecture Basics',
+                  content: '<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, eligendi error pariatur nihil officia consequuntur assumenda aspernatur autem accusantium saepe sapiente voluptatum voluptas rem ab magnam neque ea? Minus, dolor!Ab labore saepe odit ad consectetur, quos dolore fuga cupiditate nisi ex quis, delectus voluptates, tenetur a! Officia, quisquam at sequi commodi quibusdam saepe animi maxime magnam eos libero dicta.</p><ul class="component-list"><li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li><li>Consectetur, ratione laborum exercitationem in, voluptatibus aut, architecto praesentium nulla molestiae non eveniet dolorum deserunt odio!</li><li>It has survived not only five centuries</li><li>Letraset sheets containing Lorem Ipsum passages</li><li>More recently with desktop publishing</li></ul>'
+                },
+                {
+                  toggle: 'Water-In-Silicone Architecture Basics',
+                  content: '<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia culpa amet dignissimos rerum officia vel modi labore provident sequi perferendis temporibus repellat, pariatur harum nesciunt dolor minima vero praesentium in.Molestias earum harum porro saepe qui itaque vel, maxime deserunt eveniet hic assumenda expedita quidem ullam excepturi numquam, ipsam ipsa asperiores iste nemo mollitia nisi repellendus beatae nesciunt. Soluta, nihil.Error facere, consequatur dolor pariatur laborum odit illum exercitationem enim, commodi voluptates in temporibus ut quibusdam earum molestias fugit neque sint ipsam eaque quaerat officia soluta fugiat, ducimus ea! Quisquam!</p><ul class="component-list"><li>PageMaker including versions of Lorem Ipsum</li><li>Aperiam impedit cupiditate autem quas repudiandae?</li></ul>'
+                },
+                {
+                  toggle: 'Pickeriing Architecture Basics',
+                  content: '<p>Featuring: NET-APS, NET-LCS, Behenyl Alcohol, NET-SMT Lamellar Gel Networks are combinations of low and high HLB surfactants that swell and structure water forming oil-in-water (O/W) emulsions. The emulsions are stabilized by lamellar bilayers of surfactant and water surrounding oil droplets. These systems have viscoelastic rheological properties and sheer thinning during application. Furthermore they provide many skin benefits, such as: moisturization, delivery and deposition of actives, and waterproof films which create protective barriers.</p><ul class="component-list"><li>Contrary to popular belief</li><li>Lorem Ipsum is not simply random text</li></ul>'
+                },
+                {
+                  toggle: 'Phosholipid Architecture Basics',
+                  content: '<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate sit corrupti perferendis, in est necessitatibus earum delectus nemo alias officiis atque! Dolore cumque est culpa quae ut maxime dolorem alias?Cumque, eos fuga facere ratione debitis illo consequuntur numquam recusandae ducimus voluptatibus autem eius cum architecto temporibus quae rem aperiam nemo porro deleniti earum similique provident alias, laudantium odio? Sequi?</p>'
+                },
+                {
+                  toggle: 'D-Phase Architecture Basics',
+                  content: '<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, exercitationem corporis accusantium magnam repellendus perferendis libero, laudantium dignissimos voluptatibus eligendi soluta sapiente voluptates mollitia quibusdam esse nisi quisquam ullam porro!Labore non laboriosam iste sit, quibusdam in eos at error dignissimos hic aspernatur eius necessitatibus harum cum iusto quam magni facilis blanditiis optio. Nulla, beatae quibusdam. Amet dolor recusandae beatae?Autem eum nisi beatae placeat doloribus animi culpa magni quibusdam tenetur, totam veniam quaerat distinctio provident exercitationem? Officiis explicabo distinctio alias illo dignissimos excepturi libero a et, harum totam illum!Harum ipsa fugit architecto voluptatibus qui totam quaerat corrupti! Sit quibusdam fuga laboriosam quia ratione ipsum? Hic harum illum voluptatem mollitia vero iste labore eos aspernatur, officia voluptate accusamus. Ratione.</p><ul class="component-list"><li>Build a lamellar gel network.</li>'
+                },
+                {
+                  toggle: 'Water Absorbant/Blurring Powder',
+                  content: '<p>Featuring: NET-APS, NET-LCS, Behenyl Alcohol, NET-SMT Lamellar Gel Networks are combinations of low and high HLB surfactants that swell and structure water forming oil-in-water (O/W) emulsions. The emulsions are stabilized by lamellar bilayers of surfactant and water surrounding oil droplets. These systems have viscoelastic rheological properties and sheer thinning during application. Furthermore they provide many skin benefits, such as: moisturization, delivery and deposition of actives, and waterproof films which create protective barriers.</p> <ul class="component-list"><li>Build a lamellar gel network.</li><li>Create an α-crystalline gel.</li><li>Form a liquid crystal emulsion.</li><li>Evaluate the impact of preservatives on viscosity.</li><li>Formula Types: Skin Care or Color.</li></ul>'
+                },
+              ])
+            .component-hexagon-content__package
+              .component-hexagon-content__title Applied Training - Formulating & Processing by Texture
+              .component-hexagon-content__code GIC-B102
+              .component-hexagon-content__desc Introduction to new trends and concepts in the market place. Formulating and processing Barnet stock library formulations.
+              +accrodion([
+                {
+                  toggle: 'Lamellar Gel Network Formula',
+                  content: '<p>Featuring: NET-APS, NET-LCS, Behenyl Alcohol, NET-SMT Lamellar Gel Networks are combinations of low and high HLB surfactants that swell and structure water forming oil-in-water (O/W) emulsions. The emulsions are stabilized by lamellar bilayers of surfactant and water surrounding oil droplets. These systems have viscoelastic rheological properties and sheer thinning during application. Furthermore they provide many skin benefits, such as: moisturization, delivery and deposition of actives, and waterproof films which create protective barriers.</p><ul class="component-list"><li>Build a lamellar gel network.</li><li>Create an α-crystalline gel.</li><li>Form a liquid crystal emulsion.</li><li>Evaluate the impact of preservatives on viscosity.</li><li>Formula Types: Skin Care or Color.</li></ul>'
+                },
+                {
+                  toggle: 'Jelly Architecture Formula',
+                  content: '<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, eligendi error pariatur nihil officia consequuntur assumenda aspernatur autem accusantium saepe sapiente voluptatum voluptas rem ab magnam neque ea? Minus, dolor!Ab labore saepe odit ad consectetur, quos dolore fuga cupiditate nisi ex quis, delectus voluptates, tenetur a! Officia, quisquam at sequi commodi quibusdam saepe animi maxime magnam eos libero dicta.</p><ul class="component-list"><li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li><li>Consectetur, ratione laborum exercitationem in, voluptatibus aut, architecto praesentium nulla molestiae non eveniet dolorum deserunt odio!</li><li>It has survived not only five centuries</li><li>Letraset sheets containing Lorem Ipsum passages</li><li>More recently with desktop publishing</li></ul>'
+                },
+                {
+                  toggle: 'Water-In-Silicone Architecture Formula',
+                  content: '<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia culpa amet dignissimos rerum officia vel modi labore provident sequi perferendis temporibus repellat, pariatur harum nesciunt dolor minima vero praesentium in.Molestias earum harum porro saepe qui itaque vel, maxime deserunt eveniet hic assumenda expedita quidem ullam excepturi numquam, ipsam ipsa asperiores iste nemo mollitia nisi repellendus beatae nesciunt. Soluta, nihil.Error facere, consequatur dolor pariatur laborum odit illum exercitationem enim, commodi voluptates in temporibus ut quibusdam earum molestias fugit neque sint ipsam eaque quaerat officia soluta fugiat, ducimus ea! Quisquam!</p><ul class="component-list"><li>PageMaker including versions of Lorem Ipsum</li><li>Aperiam impedit cupiditate autem quas repudiandae?</li></ul>'
+                },
+                {
+                  toggle: 'Pickeriing Architecture Formula',
+                  content: '<p>Featuring: NET-APS, NET-LCS, Behenyl Alcohol, NET-SMT Lamellar Gel Networks are combinations of low and high HLB surfactants that swell and structure water forming oil-in-water (O/W) emulsions. The emulsions are stabilized by lamellar bilayers of surfactant and water surrounding oil droplets. These systems have viscoelastic rheological properties and sheer thinning during application. Furthermore they provide many skin benefits, such as: moisturization, delivery and deposition of actives, and waterproof films which create protective barriers.</p><ul class="component-list"><li>Contrary to popular belief</li><li>Lorem Ipsum is not simply random text</li></ul>'
+                },
+                {
+                  toggle: 'Phosholipid Architecture Formula',
+                  content: '<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate sit corrupti perferendis, in est necessitatibus earum delectus nemo alias officiis atque! Dolore cumque est culpa quae ut maxime dolorem alias?Cumque, eos fuga facere ratione debitis illo consequuntur numquam recusandae ducimus voluptatibus autem eius cum architecto temporibus quae rem aperiam nemo porro deleniti earum similique provident alias, laudantium odio? Sequi?</p>'
+                },
+                {
+                  toggle: 'D-Phase Architecture Formula',
+                  content: '<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, exercitationem corporis accusantium magnam repellendus perferendis libero, laudantium dignissimos voluptatibus eligendi soluta sapiente voluptates mollitia quibusdam esse nisi quisquam ullam porro!Labore non laboriosam iste sit, quibusdam in eos at error dignissimos hic aspernatur eius necessitatibus harum cum iusto quam magni facilis blanditiis optio. Nulla, beatae quibusdam. Amet dolor recusandae beatae?Autem eum nisi beatae placeat doloribus animi culpa magni quibusdam tenetur, totam veniam quaerat distinctio provident exercitationem? Officiis explicabo distinctio alias illo dignissimos excepturi libero a et, harum totam illum!Harum ipsa fugit architecto voluptatibus qui totam quaerat corrupti! Sit quibusdam fuga laboriosam quia ratione ipsum? Hic harum illum voluptatem mollitia vero iste labore eos aspernatur, officia voluptate accusamus. Ratione.</p><ul class="component-list"><li>Build a lamellar gel network.</li>'
+                },
+                {
+                  toggle: 'Water Absorbant/Blurring Formula',
+                  content: '<p>Featuring: NET-APS, NET-LCS, Behenyl Alcohol, NET-SMT Lamellar Gel Networks are combinations of low and high HLB surfactants that swell and structure water forming oil-in-water (O/W) emulsions. The emulsions are stabilized by lamellar bilayers of surfactant and water surrounding oil droplets. These systems have viscoelastic rheological properties and sheer thinning during application. Furthermore they provide many skin benefits, such as: moisturization, delivery and deposition of actives, and waterproof films which create protective barriers.</p> <ul class="component-list"><li>Build a lamellar gel network.</li><li>Create an α-crystalline gel.</li><li>Form a liquid crystal emulsion.</li><li>Evaluate the impact of preservatives on viscosity.</li><li>Formula Types: Skin Care or Color.</li></ul>'
+                },
+                {
+                  toggle: 'Formula Collection',
+                  content: '<p>Featuring: NET-APS, NET-LCS, Behenyl Alcohol, NET-SMT Lamellar Gel Networks are combinations of low and high HLB surfactants that swell and structure water forming oil-in-water (O/W) emulsions. The emulsions are stabilized by lamellar bilayers of surfactant and water surrounding oil droplets. These systems have viscoelastic rheological properties and sheer thinning during application. Furthermore they provide many skin benefits, such as: moisturization, delivery and deposition of actives, and waterproof films which create protective barriers.</p><ul class="component-list"><li>Build a lamellar gel network.</li><li>Create an α-crystalline gel.</li><li>Form a liquid crystal emulsion.</li><li>Evaluate the impact of preservatives on viscosity.</li><li>Formula Types: Skin Care or Color.</li></ul>'
+                },
+              ])
+            .component-hexagon-content__package
+              .component-hexagon-content__title Personal Training
+              .component-hexagon-content__code GIC-B103
+              .component-hexagon-content__desc Strengthen formulating and processing with Barnet emulsification technologies. Conduct experiments side by side with GIC chemist to improve your formulations.
+              +accrodion([
+                {
+                  toggle: 'Flexible Course',
+                  content: '<p>Featuring: NET-APS, NET-LCS, Behenyl Alcohol, NET-SMT Lamellar Gel Networks are combinations of low and high HLB surfactants that swell and structure water forming oil-in-water (O/W) emulsions. The emulsions are stabilized by lamellar bilayers of surfactant and water surrounding oil droplets. These systems have viscoelastic rheological properties and sheer thinning during application. Furthermore they provide many skin benefits, such as: moisturization, delivery and deposition of actives, and waterproof films which create protective barriers.</p><ul class="component-list"><li>Build a lamellar gel network.</li><li>Create an α-crystalline gel.</li><li>Form a liquid crystal emulsion.</li><li>Evaluate the impact of preservatives on viscosity.</li><li>Formula Types: Skin Care or Color.</li></ul>'
+                },
+              ])
+    .lab-training__experience.--mg-top-lg
+      .container
+        .lab-training__experience-wrap
+          +headingGroup('Experience Options')
+          .global-innovation-center__heading-row
+            .global-innovation-center__heading-col-1
+              .lab-training__experience-context The GIC is proud to offer three options for Training Courses; on-site at the Global Innovation Center (NJ, USA),off-site at the customer’s lab, or virtually via a live session.
+            .global-innovation-center__heading-col-2
+              .row 
+                .col-12.col-sm-4
+                  .lab-training__experience-item
+                    .lab-training__experience-item--heading
+                      .lab-training__experience-item--icon
+                        +img(src="/images/global/i-1.svg", alt="")
+                      .lab-training__experience-item--text At the GIC
+                    +nav-list([
+                      {
+                        title: 'Visit the GIC',
+                        text: 'Visit the GIC'
+                      },
+                      {
+                        title: 'Lab Kits Supplied',
+                        text: 'Lab Kits Supplied'
+                      },
+                      {
+                        title: 'All Lab Tools Available',
+                        text: 'All Lab Tools Available'
+                      },
+                      {
+                        title: 'Lunch Provided',
+                        text: 'Lunch Provided'
+                      },
+                    ]).component-list
+                .col-12.col-sm-4
+                  .lab-training__experience-item
+                    .lab-training__experience-item--heading
+                      .lab-training__experience-item--icon
+                        +img(src="/images/global/i-2.svg", alt="")
+                      .lab-training__experience-item--text Off-Site
+                    +nav-list([
+                      {
+                        title: 'Visiting GIC Chemist',
+                        text: 'Visiting GIC Chemist'
+                      },
+                      {
+                        title: 'Lab Kits Supplied',
+                        text: 'Lab Kits Supplied'
+                      },
+                      {
+                        title: 'Lunch Provided',
+                        text: 'Lunch Provided'
+                      },
+                      {
+                        title: 'Customer Provided Training Space',
+                        text: 'Customer Provided Training Space'
+                      },
+                    ]).component-list
+                .col-12.col-sm-4
+                  .lab-training__experience-item
+                    .lab-training__experience-item--heading
+                      .lab-training__experience-item--icon
+                        +img(src="/images/global/i-3.svg", alt="")
+                      .lab-training__experience-item--text Virtual
+                    +nav-list([
+                      {
+                        title: 'Flexible Scheduling',
+                        text: 'Flexible Scheduling'
+                      },
+                      {
+                        title: 'Live Course & Demos',
+                        text: 'Live Course & Demos'
+                      },
+                      {
+                        title: 'Lab Kits Supplied',
+                        text: 'Lab Kits Supplied'
+                      },
+                    ]).component-list
+    .lab-training__btn.--mg-top-lg
+      .container
+        .lab-training__btn-wrap
+          +link(rel="stylesheet", href="lab-signup-login.html", title="Request Training").btn.btn-solid.--dark-mode Request Training

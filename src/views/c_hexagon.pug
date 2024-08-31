@@ -1,0 +1,129 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Hexagon'
+  - useHeader = false
+  - useFooter = false
+  - namespace = '--bg-gradient'
+
+block container
+  .container-fluid
+    h2.template__header
+      | Hexagon
+    section.component-hexagon
+      .container
+        .component-hexagon__wrapper
+          +headingGroup('Starter Formula', 'Jumpstart your product design with our on-trend and lab proven formulations.', '--size-lg to-uppercase').--dark-mode
+          .component-hexagon__box
+            .component-hexagon__row
+              .component-hexagon__col
+                .component-hexagon__item
+                  +link('#', 'Eye Liner').component-hexagon__item--content
+                    .component-hexagon__item--img
+                      img(src="../images/product/product-lotion-b.svg")
+                    .component-hexagon__item--name
+                      | Eye Liner
+              .component-hexagon__col
+                .component-hexagon__item
+                  +link('#', 'Lip Stain').component-hexagon__item--content
+                    .component-hexagon__item--img
+                      img(src="../images/product/product-lipstick.svg")
+                    .component-hexagon__item--name
+                      | Lip Stain
+              .component-hexagon__col.--break
+              .component-hexagon__col
+                .component-hexagon__item
+                  +link('#', 'Eye Liner').component-hexagon__item--content
+                    .component-hexagon__item--img
+                      img(src="../images/product/product-lotion-b.svg")
+                    .component-hexagon__item--name
+                      | Eye Liner
+              .component-hexagon__col
+                .component-hexagon__item
+                  +link('#', 'Eye Liner').component-hexagon__item--content
+                    .component-hexagon__item--img
+                      img(src="../images/product/product-lotion-b.svg")
+                    .component-hexagon__item--name
+                      | Eye Liner
+              .component-hexagon__col
+                .component-hexagon__item
+                  +link('#', 'Eye Liner').component-hexagon__item--content
+                    .component-hexagon__item--img
+                      img(src="../images/product/product-lotion-b.svg")
+                    .component-hexagon__item--name
+                      | Eye Liner
+              .component-hexagon__col
+                .component-hexagon__item
+                  +link('#', 'Eye Liner').component-hexagon__item--content
+                    .component-hexagon__item--img
+                      img(src="../images/product/product-lotion-b.svg")
+                    .component-hexagon__item--name
+                      | Eye Liner
+              .component-hexagon__col
+                .component-hexagon__item.--disable
+              .component-hexagon__col
+                .component-hexagon__item
+                  +link('#', 'Eye Liner').component-hexagon__item--content
+                    .component-hexagon__item--img
+                      img(src="../images/product/product-lotion-b.svg")
+                    .component-hexagon__item--name
+                      | Eye Liner
+              .component-hexagon__col
+                .component-hexagon__item
+                  +link('#', 'Eye Liner').component-hexagon__item--content
+                    .component-hexagon__item--img
+                      img(src="../images/product/product-lotion-b.svg")
+                    .component-hexagon__item--name
+                      | Eye Liner
+              .component-hexagon__col
+                .component-hexagon__item
+                  +link('#', 'Eye Liner').component-hexagon__item--content
+                    .component-hexagon__item--img
+                      img(src="../images/product/product-lotion-b.svg")
+                    .component-hexagon__item--name
+                      | Eye Liner
+              .component-hexagon__col
+                .component-hexagon__item
+                  +link('#', 'Eye Liner').component-hexagon__item--content
+                    .component-hexagon__item--img
+                      img(src="../images/product/product-lotion-b.svg")
+                    .component-hexagon__item--name
+                      | Eye Liner
+              .component-hexagon__col
+                .component-hexagon__item.--disable
+              .component-hexagon__col
+                .component-hexagon__item
+                  +link('#', 'Eye Liner').component-hexagon__item--content
+                    .component-hexagon__item--img
+                      img(src="../images/product/product-lotion-b.svg")
+                    .component-hexagon__item--name
+                      | Eye Liner
+              .component-hexagon__col
+                .component-hexagon__item
+                  +link('#', 'Eye Liner').component-hexagon__item--content
+                    .component-hexagon__item--img
+                      img(src="../images/product/product-lotion-b.svg")
+                    .component-hexagon__item--name
+                      | Eye Liner
+              .component-hexagon__col
+                .component-hexagon__item
+                  +link('#', 'Foundation').component-hexagon__item--content
+                    .component-hexagon__item--img
+                      img(src="../images/product/product-stick.svg")
+                    .component-hexagon__item--name
+                      | Foundation
+              .component-hexagon__col
+                .component-hexagon__item.--transparent
+              .component-hexagon__col
+                .component-hexagon__item.--disable
+              .component-hexagon__col
+                .component-hexagon__item.--disable
+              .component-hexagon__col
+                .component-hexagon__item.--transparent
+              .component-hexagon__col.--sm-block
+                .component-hexagon__item.--see-all
+                  +link('#', 'See All Formula').component-hexagon__item--content
+                    .component-hexagon__item--btn
+                      | See All Formula
+              .component-hexagon__col
+                .component-hexagon__item.--disable

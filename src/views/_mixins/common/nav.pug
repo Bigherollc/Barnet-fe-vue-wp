@@ -1,0 +1,44 @@
+mixin nav(items = [])
+  ul&attributes(attributes)
+    each item, index in items
+      li
+        if item.itemsMenu && item.itemsMenu[0]
+          +link(item.href, item.title, item.text)(class=[ item.class, menuIndex === index && '--active' ])
+          +nav(item.itemsMenu)
+        else
+          if item.count
+            +link(item.href, item.title, item.text)(class=[ item.class, menuIndex === index && '--active'], data-anchor-link)
+              if item.icon
+                i.icon(class=item.icon)
+              span!=item.text
+              span(class='count d-none' data-count-sample)!=item.count
+          else
+            +link(item.href, item.title, item.text)(class=[ item.class, menuIndex === index && '--active'])
+              if item.icon
+                i.icon(class=item.icon)
+              span!=item.text
+
+mixin nav-link(items)
+  ul&attributes(attributes)
+    each item, key in items
+      li(class=[
+        { active: item.active },
+        item.itemsMenu && 'has-submenu'
+      ])
+        +link(item.href, item.title)(class=item.class)
+        if (typeof(item.itemsMenu) !== 'undefined')
+          +nav(item.itemsMenu)
+
+mixin nav-list(items)
+  ul&attributes(attributes)
+    each item in items
+      li(class=[
+        { active: item.active },
+        item.itemsMenu && 'has-submenu'
+      ])
+        if item.number
+          span.number
+            !=item.number
+        !=item.title
+        if (typeof(item.itemsMenu) !== 'undefined')
+          +nav(item.itemsMenu)

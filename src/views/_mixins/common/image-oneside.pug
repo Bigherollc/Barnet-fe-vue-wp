@@ -1,0 +1,18 @@
+
+mixin imageOneside({contentObj, imgObj, isRight = false} = {})
+  section.component-image-oneside&attributes(attributes)(class=[isRight && '--image-right'])
+      .container
+        .component-image-oneside__wrapper
+          .component-image-oneside__img
+            img(src=imgObj.src alt=imgObj.title)
+          +imageOnesideContent(contentObj)
+
+mixin imageOnesideContent({title, subTitle, list, cta, headingDarkmode} = {})
+  .component-image-oneside__content
+    +headingGroup(title, subTitle, '--size-lg')(class=[headingDarkmode && '--dark-mode'])
+    if list
+      +nav-list(list).component-image-oneside__desc
+    if cta
+      .component-image-oneside__ctas--wrapper
+        .component-image-oneside__cta
+          +link(cta.link, cta.title).btn(class=[cta.darkmode && 'btn-solid --dark-mode'])

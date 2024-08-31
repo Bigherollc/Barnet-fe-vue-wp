@@ -1,0 +1,49 @@
+.component-form-account {
+  position: relative;
+  width: 100%;
+  padding: rem(100) rem(150) rem(100) rem(40);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: top left;
+
+  &__logo {
+    display: block;
+    text-align: center;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .component-heading-group {
+    &__heading {
+      margin-top: rem(10);
+      font-size: rem(20);
+      text-align: center;
+    }
+  }
+
+  .component-form {
+    &__form {
+      margin-top: rem(25);
+    }
+  }
+
+  @include mq(md) {
+    padding-top: rem(90);
+    padding-right: rem(40);
+    background-position: bottom right;
+  }
+
+  @include mq(sm) {
+    padding: rem(100) rem(15) rem(40);
+
+    .component-heading-group {
+      &__heading {
+        font-size: rem(16);
+      }
+    }
+  }
+}

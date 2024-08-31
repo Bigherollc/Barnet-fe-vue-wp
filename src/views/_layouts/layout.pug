@@ -1,0 +1,96 @@
+include ../_mixins/all
+
+block vars
+  - let useLoading = true
+  - let useConfirmPopup = true
+  - let useHeader = true
+  - let useFooter = true
+  - let isLogin = false
+  - let isFooterBoth = false
+  - let isFooterLegal = false
+  - let title = 'Layout'
+  - let namespace = ''
+  - let menuIndex = 0
+  - let pageLevel = 0
+  - let background = ''
+
+- const rootAssetsPath = $localeName ? '../' : ''
+- const _levelPath = [...Array(pageLevel)].map(() => '..').join('/')
+- const _trailDash = pageLevel ? '/' : ''
+- const levelPath = _levelPath + _trailDash
+- const assetsPath = rootAssetsPath + levelPath
+- const isRTL = $translator.isRTL
+- const dir = isRTL ? 'rtl' : 'ltr'
+- const rtlSuffix = isRTL ? '-rtl' : ''
+-
+  const viewports = [
+    'width=device-width',
+    'initial-scale=1',
+    'shrink-to-fit=no'
+  ].join(',')
+
+-
+  const translateAssetPath = (path, useLevel) => {
+    const isExternalPath = /^(https?:)?\/\//.test(path)
+
+    return isExternalPath
+      ? path
+      : (useLevel ? levelPath : assetsPath) + path.replace(/^\//, '')
+  }
+
+doctype html
+html.no-js(lang=$localeName dir=dir)
+  head
+    title=title
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(charset="utf-8")
+    meta(name="viewport" content!=viewports)
+    // Start: Script GTM
+    script.
+      window.dataLayer = window.dataLayer || [];
+    // End: Script GTM
+
+    include ../_blocks/meta
+    include ../_blocks/favicon
+    include ../_blocks/styles
+
+    block styles
+  if background
+    body(
+        class=namespace,
+        data-cart-sample
+        data-opts-sample='{"successPage": "/c_sample-request.html", "failPage": "/c_sample-empty.html", "addText": "Samples Added", "defaultText": "Samples available. Lorem ipsum dolor sit amet, consectetur adipiscing elit."}',
+        data-url='{"product": "/data/quick-find-product.json", "formula": "/data/quick-find-formula.json"}',
+        data-parallax
+        style={'background-image': 'url('+background+')'}
+      )
+  else
+    body(
+      class=namespace,
+      data-cart-sample
+      data-opts-sample='{"successPage": "/c_sample-request.html", "failPage": "/c_sample-empty.html", "addText": "Samples Added", "defaultText": "Samples available. Lorem ipsum dolor sit amet, consectetur adipiscing elit."}',
+      data-url='{"product": "/data/quick-find-product.json", "formula": "/data/quick-find-formula.json"}'
+    )
+  noscript JavaScript is off. Please enable to view full site.
+
+  if useHeader
+    +useHeader({'isLogin': isLogin})
+    //- include ../$modules/header
+
+  main(role="main")
+    block container
+
+  if useFooter
+    +useFooter({'isLegal': isFooterLegal, 'isBoth': isFooterBoth, 'isLogin': isLogin})
+    //- include ../$modules/footer
+  if useLoading
+    +loading(false)
+
+  if useConfirmPopup
+    +confirmPopup()
+
+  block scripts
+    script.
+      var staticJsAssetsPath = '#{assetsPath}js/';
+
+  include ../_blocks/scripts

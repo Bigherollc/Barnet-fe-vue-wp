@@ -1,0 +1,141 @@
+.about-us {
+  // HEADER
+  &__header {
+    display: flex;
+    align-items: center;
+    background: url('../images/bg-hexagon.png') no-repeat center;
+    background-size: cover;
+    background-position: center;
+    height: rem(250);
+    color: $white;
+    @extend %box-shadow-1;
+
+    @include mq(md) {
+      height: auto;
+      padding: rem(40) 0;
+    }
+
+    &-logo {
+      text-align: center;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-summarize {
+      font-size: rem(21);
+      line-height: rem(20);
+      text-align: center;
+    }
+
+    &-introduction {
+      max-width: rem(616);
+      padding-left: rem(40);
+      font-size: rem(18);
+      line-height: rem(23);
+      font-weight: 300;
+
+      @include mq(md) {
+        margin: 0 auto;
+        margin-top: rem(25);
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  // ANALYZE
+  &__analyze {
+    display: flex;
+    align-items: center;
+    height: rem(240);
+    text-align: center;
+
+    @include mq(sm) {
+      height: auto;
+      padding: rem(25) 0 rem(30);
+    }
+
+    &-item {
+      @include mq(sm) {
+        margin-bottom: rem(20);
+      }
+    }
+
+    &-counter {
+      font-size: rem(60);
+      line-height: rem(64);
+      font-weight: 300;
+      color: $green-2;
+
+      @include mq(md) {
+        font-size: rem(40);
+      }
+    }
+
+    &-unit {
+      margin: auto;
+      max-width: rem(126);
+      font-size: rem(18);
+      line-height: rem(19);
+
+      @include mq(md) {
+        font-size: rem(14);
+        line-height: rem(20);
+      }
+    }
+  }
+
+  // INTRO VIDEO
+  &__intro-video {
+    background-color: $semi-dark-teal;
+    @extend %box-shadow-1;
+
+    #video {
+      margin: 0 rem(30);
+
+      @include mq(sm) {
+        margin: 0;
+      }
+
+      .vjs_video_3-dimensions {
+        padding-top: 55%;
+      }
+    }
+  }
+
+  // MAP
+  &__map {
+    padding-top: rem(106);
+    padding-bottom: rem(160);
+
+    @include mq(sm) {
+      padding-top: rem(60);
+      padding-bottom: rem(80);
+    }
+
+    &-img {
+      @include mq(sm) {
+        text-align: center;
+      }
+    }
+
+    // COMPONENT HEADING GROUP
+    .component-heading-group {
+      max-width: rem(500);
+
+      @include mq(sm) {
+        max-width: 100%;
+      }
+
+      &.\--mg-top-ml {
+        margin-top: rem(40);
+      }
+
+      &__heading {
+        color: $white;
+      }
+    }
+  }
+}

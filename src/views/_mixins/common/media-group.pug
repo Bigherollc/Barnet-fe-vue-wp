@@ -1,0 +1,15 @@
+mixin mediaGroup(item)
+  .component-media-group&attributes(attributes)
+    if item.image
+      .component-media-group__image
+        if item.link
+          +link(rel="stylesheet", href=item.link, title=item.title)
+            +img(src=item.image, alt="", title=item.title)
+        else
+          +img(src=item.image, alt="", title=item.title)
+    .component-media-group__caption
+      .component-media-group__title
+        if item.link
+          +link(rel="stylesheet", href=item.link, title=item.title, data-anchor-link-diagram)
+            span!=item.title
+      .component-media-group__content!=item.content

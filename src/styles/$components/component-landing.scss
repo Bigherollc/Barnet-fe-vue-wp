@@ -1,0 +1,283 @@
+.landing {
+  min-height: 100vh;
+  padding: rem(60) 0 rem(110);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  $element: &;
+
+  &__groupTitle {
+    .component-heading-group {
+      display: flex;
+      align-items: center;
+
+      @include mq(sm) {
+        flex-wrap: wrap;
+      }
+
+      &__heading {
+        white-space: nowrap;
+      }
+
+      &__desc {
+        max-width: rem(505);
+        margin-left: rem(35);
+        margin-top: 0;
+
+        @include mq(sm) {
+          margin-left: 0;
+          margin-top: rem(10);
+        }
+      }
+    }
+  }
+
+  &__featuredConcepts {
+    .component-heading-group {
+      position: relative;
+    }
+
+    .component-fashtion-concepts {
+      padding-left: 0;
+      padding-right: 0;
+
+      &__wrapper {
+        &:before {
+          left: 0;
+          right: 0;
+        }
+      }
+
+      @include mq(md) {
+        &__wrapper {
+          padding-top: rem(35);
+    
+          &:before {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .component-image-concepts {
+      max-width: rem(880);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: rem(15);
+      padding-right: rem(15);
+    }
+
+    .slider-init {
+      .component-image-concepts {
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &.\--dark-mode {
+      .component-fashtion-concepts__wrapper {
+        &:before {
+          border: 0;
+          background-color: $bg-teal-3;
+          opacity: 0.5;
+        }
+      }
+    }
+
+    &.\--light-mode {
+      .component-fashtion-concepts__wrapper {
+        &:before {
+          border: 0;
+          background-color: $bg-white-2;
+        }
+      }
+    }
+  }
+
+  &__featuredBlock {
+    &.\--image-right {
+      .row {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .component-heading-group {
+      margin-bottom: rem(20);
+    }
+
+    &--wrapper {
+      padding: rem(25) rem(20);
+      background: $bg-white-1;
+      @extend %box-shadow-1;
+    }
+
+    &--colBg {
+      @include mq(md) {
+        display: none;
+      }
+    }
+
+    &--bg {
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      @extend %box-shadow-1;
+    }
+
+    &--cta {
+      margin-top: rem(30);
+      text-align: left;
+
+      .btn {
+        white-space: break-spaces;
+      }
+    }
+
+    .component-list-product {
+      padding: 0;
+      box-shadow: none;
+    }
+  }
+
+  &__featuredCards {
+    .component-heading-group {
+      margin-bottom: rem(40);
+    }
+
+    .concepts {
+      .component-image-concepts__item {
+        width: 14.2857%; //100% / 7
+
+        @include mq(md) {
+          width: 25%;
+        }
+
+        @include mq(xs) {
+          width: 50%;
+        }
+      }
+    }
+
+    &.\--light-mode {
+      .component-image-card {
+        &__wrapper {
+          &:before {
+            border: 0;
+            background-color: $bg-teal-3;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    &.\--dark-mode {
+      .component-image-card {
+        &__wrapper {
+          &:before {
+            border: 0;
+            background-color: $bg-white-2;
+          }
+        }
+      }
+    }
+  }
+
+  &__featuredImageOneside {
+    .component-image-oneside {
+      padding-left: 0;
+      padding-right: 0;
+
+      &__wrapper {
+        padding-left: rem(15);
+        padding-right: rem(15);
+
+        @include mq(sm) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        &:before {
+          top: rem(45);
+          bottom: rem(45);
+        }
+      }
+
+      &__content {
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+
+        @include mq(sm) {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    // &.\--dark-mode {
+    //   .component-image-oneside {
+    //     &__wrapper {
+    //       &:before {
+    //         background-color: $bg-teal-3;
+    //         opacity: 0.5;
+    //       }
+    //     }
+    //   }
+    // }
+
+    // &.\--light-mode {
+    //   .component-image-oneside {
+    //     &__wrapper {
+    //       &:before {
+    //         background-color: $bg-white-2;
+    //       }
+    //     }
+    //   }
+
+    //   .component-heading-group {
+    //     &__heading {
+    //       color: $semi-dark-teal;
+    //     }
+    //   }
+
+    //   .btn {
+    //     background-color: transparent;
+    //     color: $medium-teal;
+    //     border-color: $bd-teal-2;
+
+    //     &:hover {
+    //       .no-touchevents & {
+    //         color: $white;
+    //         background-color: $bg-green-dark-4;
+    //         border-color: transparent;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+
+  // &.\--conscious-beauty {
+  //   #{$element}__featuredBlock {
+  //     &--wrapper {
+  //       padding: rem(25) rem(20);
+  //       background: $bg-white-1;
+  //     }
+
+  //     &--cta {
+  //       text-align: left;
+  //     }
+
+  //     .component-heading-group {
+  //       margin: 0 0 rem(20);
+  //       text-align: left;
+  //     }
+
+  //     .component-list-product {
+  //       padding: 0;
+  //       box-shadow: none;
+  //     }
+  //   }
+  // }
+}

@@ -1,0 +1,22 @@
+.component-image-card {
+  &__wrapper {
+    position: relative;
+    padding-left: rem(30);
+    padding-right: rem(30);
+
+    @include mq(sm) {
+      padding-left: rem(15);
+      padding-right: rem(15);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: rem(35);
+      bottom: rem(50);
+      left: 0;
+      right: 0;
+      border: solid 0.1rem rgba(255, 255, 255, 0.25);
+    }
+  }
+}

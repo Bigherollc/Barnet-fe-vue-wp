@@ -1,0 +1,99 @@
+.component-table {
+  overflow: hidden;
+  overflow-x: auto;
+
+  table {
+    font-size: rem(14);
+    line-height: rem(20);
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border-top: rem(1) solid $green-2;
+    border-left: rem(1) solid $green-2;
+    border-bottom: rem(1) solid $green-2;
+
+    @include mq("sm") {
+      display: block;
+    }
+    
+    &:last-child {
+      border-right: rem(1) solid $green-2;
+    }
+  }
+
+  th {
+    font-size: rem(16);
+    line-height: rem(18);
+    font-weight: 500;
+    color: $white;
+    text-align: center;
+    padding: rem(2) rem(20);
+    background-color: $teal;
+
+    @include mq("sm") {
+      display: none;
+    }
+  }
+
+  tr {
+    @include mq("sm") {
+      display: block;
+      padding: rem(25) rem(15);
+      border: rem(1) solid $green-2;
+      border-bottom: none;
+    }
+
+    &:nth-child(odd) {
+      @include mq("sm") {
+        background-color: $light-gray;
+      }
+    }
+
+    &:last-child {
+      @include mq("sm") {
+        border-bottom: rem(1) solid $green-2;
+      }
+    }
+  }
+
+  td {
+    padding: rem(10) rem(20);
+
+    @include mq("sm") {
+      display: flex;
+      padding: 0;
+      border: none;
+
+      &::before {
+        content: attr(data-title)':';
+        width: rem(105);
+        margin-right: rem(5);
+        flex-shrink: 0;
+        text-align: right;
+      }
+    }
+  }
+
+  thead {
+    @include mq("sm") {
+      display: none;
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        td {
+          background-color: $light-gray;
+
+          @include mq("sm") {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,292 @@
+.component-hexagon {
+  $element: &;
+
+  @extend %background-gradiant;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__box {
+    @include mq('ml') {
+      margin-top: rem(70);
+    }
+
+    @include mq('ml') {
+      margin-top: rem(35);
+    }
+
+    .ie & {
+      overflow: hidden;
+    }
+  }
+
+  &__row {
+    padding-top: 1.5%;
+
+    &::after {
+      display: block;
+      content: "";
+      clear: left;
+    }
+
+    @include mq('ml') {
+      padding-top: 3%;
+    }
+
+    @include mq('sm') {
+      padding-top: 0;
+    }
+  }
+
+
+  .component-heading-group {
+    position: absolute;
+    right: 0;
+    max-width: rem(530);
+    padding: 0 rem(20);
+    margin-right: rem(60);
+    color: $white;
+
+    @include mq('ml') {
+      position: static;
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  }
+
+  &__heading {
+    font-size: rem(28);
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    margin-top: 10px;
+    font-size: rem(14);
+    line-height: rem(20);
+  }
+
+  &__col {
+    width: 14.285714%;
+    padding: 0;
+    max-width: none;
+    float: left;
+    flex-basis: unset;
+    flex-grow: unset;
+    margin-top: -1.5%;
+
+    @include mq("ml") {
+      width: 16.666667%;
+    }
+
+    @include mq("md") {
+      width: 22.3%;
+      margin-top: -3%;
+    }
+
+    @include mq("sm") {
+      display: none;
+      width: rem(150);
+      margin: 0 auto;
+      margin-top: 0;
+      float: none;
+    }
+
+    &:first-child {
+      margin-left: 7.1%;
+
+      @include mq("md") {
+        margin-left: 10.7%;
+      }
+    }
+
+    &:nth-child(10) {
+      @include mq("ml") {
+        margin-left: 7.1%;
+      }
+
+      @include mq("md") {
+        margin-left: 0;
+      }
+    }
+
+    &:nth-child(11) {
+      margin-left: 7.1%;
+
+      @include mq("ml") {
+        margin-left: 0;
+      }
+
+      @include mq("md") {
+        margin-left: 10.7%;
+      }
+    }
+
+    &.\--break {
+      width: 100%;
+
+      @include mq("md") {
+        display: none;
+      }
+    }
+
+    &.\--sm-block {
+      @include mq("sm") {
+        display: block;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin: 0 rem(10);
+    padding-top: 100%;
+    background-image: url('../images/bg-polygon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    color: $white;
+    cursor: pointer;
+    transition: all .2s ease;
+    $element-item: &;
+
+    // transition: all .2s linear;
+
+    .no-touchevents &:hover {
+      background-image: url('../images/bg-polygon-dark.svg');
+
+      #{$element-item}--content {
+        text-decoration: none;
+      }
+    }
+
+    &.\--see-all {
+      background-image: url('../images/bg-polygon-white.svg');
+      color: $link;
+
+      .no-touchevents &:hover {
+        background-image: url('../images/bg-polygon-dark.svg');
+        color: $white;
+      }
+    }
+
+    &.\--disable,
+    &.\--transparent {
+      pointer-events: none;
+    }
+
+    &.\--disable {
+      background-image: url('../images/bg-polygon-disable.png');
+      filter: blur(4px);
+      background-size: cover;
+      margin: 0;
+
+      @include mq("md") {
+        display: none;
+      }
+    }
+
+    &.\--transparent {
+      background: none;
+
+      @include mq("ml") {
+        display: none;
+      }
+    }
+
+    &--content {
+      position: absolute;
+      top: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      padding: 0 rem(10);
+      text-align: center;
+      transition: none;
+    }
+
+    &--img {
+      width: rem(45);
+      height: rem(45);
+      margin: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &--name {
+      margin-top: 10px;
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    &--btn {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: rem(14);
+      line-height: rem(20);
+      transition: all .2s ease;
+    }
+  }
+
+  // IN PRODUCT PAGE
+  &--productPage {
+    background: transparent;
+
+    #{$element}__col {
+      width: 16.666667%;
+
+      @include mq("ml") {
+        width: 20%;
+      }
+
+      &:first-child,
+      &:nth-child(11) {
+        margin-left: 0;
+      }
+
+      &:nth-child(7),
+      &:nth-child(17) {
+        margin-left: 8.1%;
+
+        @include mq("ml") {
+          margin-left: 0;
+        }
+      }
+
+      &:nth-child(6),
+      &:nth-child(15) {
+        @include mq("ml") {
+          margin-left: 10%;
+        }
+
+        @include mq("md") {
+          margin-left: 0;
+        }
+      }
+
+      &:nth-child(10) {
+        @include mq("ml") {
+          margin-left: 0;
+        }
+      }
+
+      &:nth-child(9) {
+        @include mq("md") {
+          margin-left: 10%;
+        }
+      }
+
+      &.\--sm-block {
+        @include mq("sm") {
+          width: rem(150);
+        }
+      }
+    }
+  }
+}

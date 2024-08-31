@@ -1,0 +1,67 @@
+.component-list-product {
+  padding: rem(20);
+  padding-bottom: rem(25);
+  background-color: $white;
+  @extend %box-shadow-1;
+
+  &__item {
+    padding: rem(20) 0;
+
+    &.\--has-image {
+      display: flex;
+      align-items: center;
+      padding: rem(15);
+      position: relative;
+
+      @include mq("sm") {
+        align-items: flex-start;
+      }
+    }
+
+    .\--has-border & {
+      &:not(:last-child) {
+        border-bottom: rem(1) solid $bd-gray-2;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(5);
+
+    h3 {
+      font-size: rem(18);
+      line-height: rem(19);
+    }
+
+    a {
+      color: $link;
+    }
+  }
+
+  &__desc {
+    font-size: rem(14);
+    line-height: rem(20);
+  }
+
+  &__image {
+    width: rem(100);
+    margin-right: rem(16);
+    flex-shrink: 0;
+
+    a {
+      display: block;
+      width: rem(100);
+      height: rem(100);
+      position: relative;
+    }
+
+    img {
+      max-width: rem(70);
+      max-height: rem(70);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

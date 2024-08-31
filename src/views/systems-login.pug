@@ -1,0 +1,175 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Systems Landing (login)'
+  - isLogin = true
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+
+block container
+  .product-container(data-product)
+    .container
+      .product__pageListing
+        .product__pageListing--row
+          .product__pageListing--colLeft
+            .product__groupTitle
+              +headingGroup('Systems', 'Beyond traditional emulsifiers, we focus on look and feel to make your products stand out in the marketplace.', '--size-lg').--dark-mode
+            .product__filter(data-filter)
+              .product__filter-collapse(data-filter-collapse)
+                .product__filter-wrap
+                  .product__boxFilter.active(data-boxcollapse)
+                    .product__boxFilter-title(data-boxcollapse-toggle) Usage
+                    .product__boxFilter-box
+                      .product__boxFilter-list(data-filter-list)
+                        +filterLink([
+                          {text: 'Sustainable Commitment (5)', href:'active-login.html?action=listing&filter=sustainable-commitment', darkmode: true},
+                          {text: 'ISO Natural Origin Rating (4)', href:'active-login.html?action=listing&filter=iso-natural-origin',darkmode: true},
+                          {text: 'ISO Organic Origin (5)', href:'active-login.html?action=listing&filter=iso-organic-origin',darkmode: true},
+                          {text: 'Sephora Clean Compliant (5)', href:'active-login.html?action=listing&filter=sephora-clean-compliant',darkmode: true},
+                          {text: 'EWG (1-2) (8)', href:'active-login.html?action=listing&filter=ewg-1-2',darkmode: true},
+                          {text: 'COSMOS (8)', href:'active-login.html?action=listing&filter=cosmos',darkmode: true},
+                          {text: 'RSPO Certified (4)', href:'active-login.html?action=listing&filter=rspo-certified',darkmode: true},
+                          {text: 'No Palm (4)', href:'active-login.html?action=listing&filter=no-palm',darkmode: true},
+                          {text: 'Superfood Ingredient (4)', href:'active-login.html?action=listing&filter=superfood',darkmode: true},
+                          {text: 'Vegan Compliant (4)', href:'active-login.html?action=listing&filter=vegan-compliant',darkmode: true},
+                          {text: 'Halal Compliant (4)', href:'active-login.html?action=listing&filter=halal-compliant',darkmode: true},
+                        ])
+                  .product__boxFilter.active(data-boxcollapse)
+                    .product__boxFilter-title(data-boxcollapse-toggle) Attributes
+                    .product__boxFilter-box
+                      .product__boxFilter-list(data-filter-list)
+                        +filterLink([
+                          {text: 'pH Greater than 8 (12)', href:'active-login.html?action=listing&filter=ph-greater-than-8', darkmode: true},
+                          {text: 'pH Greater than 4 (12)', href:'active-login.html?action=listing&filter=ph-less-than-4', darkmode: true},
+                          {text: '80C + Formulation (6)', href:'active-login.html?action=listing&filter=80c-formulation', darkmode: true},
+                          {text: 'Glycol-Free (6)', href:'active-login.html?action=listing&filter=glycol-free', darkmode: true},
+                          {text: 'PEG-Free (8)', href:'active-login.html?action=listing&filter=peg-free', darkmode: true},
+                          {text: 'Silicone-Free (5)', href:'active-login.html?action=listing&filter=silicone-free', darkmode: true},
+                          {text: 'Ethoxylate-Free (5)', href:'active-login.html?action=listing&filter=ethoxylate-free', darkmode: true},
+                        ])
+          .product__pageListing--colRight
+            .product__slideHero
+              +slideHero([
+                {
+                  image: '/images/active/hero-1.png',
+                  title: 'Introducing Barnet Color',
+                  desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+                },
+                {
+                  image: '/images/active/hero-2.png',
+                  title: 'Introducing Barnet Color',
+                  desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+                },
+                {
+                  image: '/images/active/hero-3.png',
+                  title: 'Introducing Barnet Color',
+                  desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+                },
+              ]).--size-wrap-md(data-slider-main data-opts-slider='{"slickContainer": ".product__slideHero","optsSlick": {"slide": "[data-slider-item]", "dots": true, "rows": 0, "slidesToShow": 1}}')
+            .product__title-widget.--mg-top-lg System Concepts
+            .product__slideBanner.--mg-top-ml
+              +imageConcepts([
+                {
+                  image: '/images/active/mask-1.png',
+                  title: 'Around the Clock Aging (Epigenetics)',
+                  desc: 'Brighten, blur and highlight for glowing youthful skin.'
+                },
+                {
+                  image: '/images/active/mask-2.png',
+                  title: 'Holobiont Beauty',
+                  desc: 'Fresh and natural light touch coverage for daily use.'
+                },
+                {
+                  image: '/images/active/mask-3.png',
+                  title: 'Moisturization',
+                  desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+                },
+                {
+                  image: '/images/active/mask-2.png',
+                  title: 'Holobiont Beauty',
+                  desc: 'Fresh and natural light touch coverage for daily use.'
+                },
+              ])(data-slider-main data-opts-slider='{"slickContainer": ".product__slideBanner","optsSlick": {"slide": "[data-slider-item]","dots": true, "rows": 0, "slidesToShow": 3, "slidesToScroll": 3, "responsive":[{"breakpoint": 768, "settings": {"slidesToShow": 2, "slidesToScroll": 2}}]}}')
+            .product__band.--mg-top-md
+              .component-band.component-band--productPage
+                .component-band__wrapper
+                  .component-band__group.--white
+                    .component-band__icon
+                      i.icon.icon-beaker
+                    .component-band__heading
+                      | Formula Rescue
+                  .component-band__group
+                    .component-band__desc
+                      | Stabilize your formulas, improve texture, foaming and dispersions with
+                      +link('#', 'Emergency Formulation Assistance.')
+                    +link('#').component-band__cta
+                      i.icon.icon-menu-open
+            .product__title-widget.--mg-top-lg Featured Systems
+            .product__wrapping.--mg-top-sm
+              .product__filter.product__filter--mobile(data-filter)
+                .product__filter-toggle(data-filter-toggle)
+                  span.open Hide Filters
+                  span.close Show all Categories & Filters
+                .product__filter-collapse(data-filter-collapse)
+                  .product__filter-wrap
+                    .product__boxFilter.active(data-boxcollapse)
+                      .product__boxFilter-title(data-boxcollapse-toggle) Usage
+                      .product__boxFilter-box
+                        .product__boxFilter-list(data-filter-list)
+                          +filterLink([
+                            {text: 'Sustainable Commitment (5)', href:'active-login.html?action=listing&filter=sustainable-commitment', darkmode: true},
+                            {text: 'ISO Natural Origin Rating (4)', href:'active-login.html?action=listing&filter=iso-natural-origin',darkmode: true},
+                            {text: 'ISO Organic Origin (5)', href:'active-login.html?action=listing&filter=iso-organic-origin',darkmode: true},
+                            {text: 'Sephora Clean Compliant (5)', href:'active-login.html?action=listing&filter=sephora-clean-compliant',darkmode: true},
+                            {text: 'EWG (1-2) (8)', href:'active-login.html?action=listing&filter=ewg-1-2',darkmode: true},
+                            {text: 'COSMOS (8)', href:'active-login.html?action=listing&filter=cosmos',darkmode: true},
+                            {text: 'RSPO Certified (4)', href:'active-login.html?action=listing&filter=rspo-certified',darkmode: true},
+                            {text: 'No Palm (4)', href:'active-login.html?action=listing&filter=no-palm',darkmode: true},
+                            {text: 'Superfood Ingredient (4)', href:'active-login.html?action=listing&filter=superfood',darkmode: true},
+                            {text: 'Vegan Compliant (4)', href:'active-login.html?action=listing&filter=vegan-compliant',darkmode: true},
+                            {text: 'Halal Compliant (4)', href:'active-login.html?action=listing&filter=halal-compliant',darkmode: true},
+                          ])
+                    .product__boxFilter.active(data-boxcollapse)
+                      .product__boxFilter-title(data-boxcollapse-toggle) Attributes
+                      .product__boxFilter-box
+                        .product__boxFilter-list(data-filter-list)
+                          +filterLink([
+                            {text: 'pH Greater than 8 (12)', href:'active-login.html?action=listing&filter=ph-greater-than-8', darkmode: true},
+                            {text: 'pH Greater than 4 (12)', href:'active-login.html?action=listing&filter=ph-less-than-4', darkmode: true},
+                            {text: '80C + Formulation (6)', href:'active-login.html?action=listing&filter=80c-formulation', darkmode: true},
+                            {text: 'Glycol-Free (6)', href:'active-login.html?action=listing&filter=glycol-free', darkmode: true},
+                            {text: 'PEG-Free (8)', href:'active-login.html?action=listing&filter=peg-free', darkmode: true},
+                            {text: 'Silicone-Free (5)', href:'active-login.html?action=listing&filter=silicone-free', darkmode: true},
+                            {text: 'Ethoxylate-Free (5)', href:'active-login.html?action=listing&filter=ethoxylate-free', darkmode: true},
+                          ])
+              +listProduct([
+                {title: 'Bois Gel', desc: 'Bois Gel is a gellant used to formulate translucent anhydrous gels. It is easy-to-use, being a pastille and having a melting point of 60°C.'},
+                {title: 'Barsolve LP-7', desc: 'A new easy-to-use solubilizer designed to incorporate hydrophilic ingredients into lipsticks. Barsolve LP-7 was tested to prevent water evaporation at high temperatures (90°C for 60 minutes).'},
+                {title: 'Odyssis', desc: 'Odyssis is an aqueous extract (in glycerin) of Lotus maritimus, commonly known as Pea Lotus. It was tested in vivo (2%) to have a slimming effect, reducing cellulite. It was tested in vitro to protect adiponectin (a protein which limits the expansion of adipocytes).'},
+                {title: 'Thiotaine', desc: 'Roxisomes is a DNA repair enzyme encapsulated in a liposome. The liposome is designed to break down inside the cell, releasing the enzyme. Roxisomes is tested to repair 8-oxo-guanine damage (oxidative damage) to DNA. Roxisomes shortens the time for nucleus DNA to repair from 24 hours to 2 hours.'},
+                {title: 'Phormistim G', desc: 'Roxisomes is a DNA repair enzyme encapsulated in a liposome. The liposome is designed to break down inside the cell, releasing the enzyme. Roxisomes is tested to repair 8-oxo-guanine damage (oxidative damage) to DNA. Roxisomes shortens the time for nucleus DNA to repair from 24 hours to 2 hours.'},
+                {title: 'Statis G', desc: 'Statis G is an aqueous extract derived from Limonium narbonense, also known as Statice or Immortelle Bleue. Statis G upregulates SIRT-3, which promotes the regeneration of ATP and anti-oxidants, and SIRT-5, which has a central role in reducing apoptosis (cell death).'},
+              ])
+            .product__loadmore.--mg-top-md
+              +link(rel="stylesheet", href="systems-login.html?action=listing", data-see-more).btn.btn-regular.--dark-mode See All Actives
+
+  .product-container(style="display: none" data-listing-page)
+    .container#app
+      com-container(:isdarkmode="true")
+        com-heading-group(
+          slot="left"
+          title="Systems"
+          desc="Beyond traditional emulsifiers, we focus on look and feel to make your products stand out in the marketplace."
+        )
+        com-filter(slot="left")
+        com-tab-list(slot="right").d-none
+          com-tab-list-item(name="system")
+        com-wrapping(slot="right")
+          com-filter-mobile
+          com-listing
+            com-list-product(
+              :hasborder="true"
+              data="/data/product-data.json"
+              filter="/data/product-filter.json"
+            )
+            com-load-more

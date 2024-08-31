@@ -1,0 +1,33 @@
+.term-of-use {
+  padding-top: rem(66);
+  padding-bottom: rem(60);
+
+  &__wrapper {
+    padding: rem(49) rem(31) rem(57) rem(32);
+    @extend %box-shadow-1;
+    background-color: $white;
+  }
+
+  &__header {
+    h1 {
+      font-weight: 300;
+      color: $semi-dark-teal;
+    }
+  }
+
+  p {
+    margin-bottom: rem(35);
+
+    &.size-ml {
+      font-size: $font-size-h2;
+      line-height: rem(26);
+      font-weight: 300;
+      margin-bottom: rem(20);
+    }
+  }
+
+  a {
+    color: $link;
+    font-weight: 500;
+  }
+}

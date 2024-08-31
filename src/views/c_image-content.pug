@@ -1,0 +1,72 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Image Content'
+  - useFooter = false
+  - useHeader = false
+  - namespace = '--bg-gradient'
+
+block container
+  .container-fluid
+    h2.template__header
+      | Component Image Content OneSide Left
+    +imageOneside({
+      imgObj: {
+        src: '/images/content-oneside/200-products.png',
+        title: '200+ Products'
+      },
+      contentObj: {
+        title: '200+ Products',
+        subTitle: 'Our collection of unique, well tested specialty ingredients lorem ipsum cosmetics and personal care.',
+        list: [
+          {
+            title: 'Backed by Science',
+          },
+          {
+            title: 'On-Trend & Fashion Forward',
+          },
+          {
+            title: 'Formulating Guidelines',
+          },
+          {
+            title: 'Starter Formula Included',
+          },
+        ],
+        cta: {
+          link: '#',
+          title: 'Explore Our Products'
+        }
+      }
+    })
+
+    h2.template__header
+      | Component Image Content Oneside Right
+    +imageOneside({
+      imgObj: {
+        src: '/images/content-oneside/200-products.png',
+        title: '200+ Products'
+      },
+      contentObj: {
+        title: '200+ Products',
+        subTitle: 'Our collection of unique, well tested specialty ingredients lorem ipsum cosmetics and personal care.',
+        list: [
+          {
+            title: 'Backed by Science',
+          },
+          {
+            title: 'On-Trend & Fashion Forward',
+          },
+          {
+            title: 'Formulating Guidelines',
+          },
+          {
+            title: 'Starter Formula Included',
+          },
+        ],
+        cta: {
+          link: '#',
+          title: 'Explore Our Products'
+        }
+      },
+      isRight: true
+    })

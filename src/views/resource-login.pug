@@ -1,0 +1,177 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Resource Landing (login)'
+  - isLogin = true
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+
+block container
+  .product-container(data-product)
+    .container
+      .product__pageListing
+        .product__pageListing--row
+          .product__pageListing--colLeft
+            .product__groupTitle
+              +headingGroup('Resources', 'Barnet is always creating videos, presentations and lorem ipsum dolor sit ahment.', '--size-lg').--dark-mode
+            .product__filter(data-filter)
+              .product__filter-collapse(data-filter-collapse)
+                .product__filter-wrap
+                  .product__boxFilter.active(data-boxcollapse)
+                    .product__boxFilter-title(data-boxcollapse-toggle) type
+                    .product__boxFilter-box
+                      .product__boxFilter-list(data-filter-list)
+                        +filterLink([
+                          {text: 'Moisturizing (7)', href:'resource-login.html?action=listing&filter=moisturizing', darkmode: true},
+                          {text: 'Natural Blurring (4)', href:'resource-login.html?action=listing&filter=natural-blurring',darkmode: true},
+                          {text: 'Lip Plumping (5)', href:'resource-login.html?action=listing&filter=lip-plumping', darkmode: true},
+                          {text: 'Natural Flavor Enhancement (5)', href:'resource-login.html?action=listing&filter=natural-flavor-enhancement', darkmode: true},
+                          {text: 'Anti-Inflammation (7)', href:'resource-login.html?action=listing&filter=anti-inflammation', darkmode: true},
+                          {text: 'Anti-Aging (6)', href:'resource-login.html?action=listing&filter=anti-aging', darkmode: true},
+                          {text: 'Pdf (6)', href:'resource-login.html?action=listing&filter=pdf', darkmode: true},
+                          {text: 'Skin Brightening (3)', href:'resource-login.html?action=listing&filter=skin-brightening', darkmode: true},
+                          {text: 'Video (1)', href:'resource-login.html?action=listing&filter=video', darkmode: true},
+                        ])
+          .product__pageListing--colRight
+            .product__slideHero.--has-border
+              +slideHero([
+                {
+                  image: '/images/resource/hero.jpg',
+                  ribbon: 'WEBINAR 9/15 - 10AM EST',
+                  title: 'Cannibiota',
+                  desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+                  mode: 'dark'
+                },
+                {
+                  image: '/images/active/hero-2.png',
+                  title: 'Introducing Barnet Color',
+                  desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+                },
+                {
+                  image: '/images/active/hero-3.png',
+                  title: 'Introducing Barnet Color',
+                  desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+                },
+              ]).--size-wrap-md(data-slider-main data-opts-slider='{"slickContainer": ".product__slideHero","optsSlick": {"slide": "[data-slider-item]", "dots": true, "rows": 0, "slidesToShow": 1}}')
+            .product__wrapping.--mg-top-lg
+              .product__filter.product__filter--mobile(data-filter)
+                .product__filter-toggle(data-filter-toggle)
+                  span.open Hide Filters
+                  span.close Show all Categories & Filters
+                .product__filter-collapse(data-filter-collapse)
+                  .product__filter-wrap
+                    .product__boxFilter.active(data-boxcollapse)
+                      .product__boxFilter-title(data-boxcollapse-toggle) type
+                      .product__boxFilter-box
+                        .product__boxFilter-list(data-filter-list)
+                          +filterLink([
+                            {text: 'Moisturizing (7)', href:'resource-login.html?action=listing&filter=moisturizing', darkmode: true},
+                          {text: 'Natural Blurring (4)', href:'resource-login.html?action=listing&filter=natural-blurring',darkmode: true},
+                          {text: 'Lip Plumping (5)', href:'resource-login.html?action=listing&filter=lip-plumping', darkmode: true},
+                          {text: 'Natural Flavor Enhancement (5)', href:'resource-login.html?action=listing&filter=natural-flavor-enhancement', darkmode: true},
+                          {text: 'Anti-Inflammation (7)', href:'resource-login.html?action=listing&filter=anti-inflammation', darkmode: true},
+                          {text: 'Anti-Aging (6)', href:'resource-login.html?action=listing&filter=anti-aging', darkmode: true},
+                          {text: 'Pdf (6)', href:'resource-login.html?action=listing&filter=pdf', darkmode: true},
+                          {text: 'Skin Brightening (3)', href:'resource-login.html?action=listing&filter=skin-brightening', darkmode: true},
+                          {text: 'Video (1)', href:'resource-login.html?action=listing&filter=video', darkmode: true},
+                          ])
+              .product__resourceLanding
+                +relatedVideo({
+                  classComp: '--bg-green',
+                  type: 3,
+                  groupTitle: {
+                    title: 'Product Videos',
+                    cta: 'See More'
+                  },
+                  items: [
+                    {
+                      image: '../images/related-video-1.png',
+                      title: 'Title of the Video',
+                      time: '15:23'
+                    },
+                    {
+                      image: '../images/related-video-1.png',
+                      title: 'Title of the Video',
+                      time: '15:23'
+                    },
+                    {
+                      image: '../images/related-video-1.png',
+                      title: 'Title of the Video',
+                      time: '15:23'
+                    },
+                  ],
+                  linkSeeMore: '/resource-login.html?action=listing&filter=moisturizing'
+                })(data-slider-main data-opts-slider='{"slickContainer": ".component-related-video","optsSlick": {"slide": "[data-slider-item]","dots": true, "rows": 0, "slidesToShow": 3,  "slidesToScroll": 3, "responsive":[{"breakpoint": 768, "settings": {"slidesToShow": 2,  "slidesToScroll": 2}},{"breakpoint": 376, "settings": {"slidesToShow": 1,  "slidesToScroll": 1}}]}}')
+                +relatedVideo({
+                  classComp: '--bg-green --mg-top-ml',
+                  type: 3,
+                  groupTitle: {
+                    title: 'Formulation Videos',
+                    cta: 'See More'
+                  },
+                  items: [
+                    {
+                      image: '../images/related-video-1.png',
+                      title: 'Title of the Video',
+                      time: '15:23'
+                    },
+                    {
+                      image: '../images/related-video-1.png',
+                      title: 'Title of the Video',
+                      time: '15:23'
+                    },
+                    {
+                      image: '../images/related-video-1.png',
+                      title: 'Title of the Video',
+                      time: '15:23'
+                    },
+                  ]
+                })(data-slider-main data-opts-slider='{"slickContainer": ".component-related-video","optsSlick": {"slide": "[data-slider-item]","dots": true, "rows": 0, "slidesToShow": 3,  "slidesToScroll": 3, "responsive":[{"breakpoint": 768, "settings": {"slidesToShow": 2,  "slidesToScroll": 2}},{"breakpoint": 376, "settings": {"slidesToShow": 1,  "slidesToScroll": 1}}]}}')
+                +relatedVideo({
+                  classComp: '--bg-green --mg-top-ml',
+                  type: 3,
+                  groupTitle: {
+                    title: 'Virtual Presentations',
+                    cta: 'See More'
+                  },
+                  items: [
+                    {
+                      image: '../images/related-video-1.png',
+                      title: 'Title of the Video',
+                      time: '15:23'
+                    },
+                    {
+                      image: '../images/related-video-1.png',
+                      title: 'Title of the Video',
+                      time: '15:23'
+                    },
+                    {
+                      image: '../images/related-video-1.png',
+                      title: 'Title of the Video',
+                      time: '15:23'
+                    },
+                  ]
+                })(data-slider-main data-opts-slider='{"slickContainer": ".component-related-video","optsSlick": {"slide": "[data-slider-item]","dots": true, "rows": 0, "slidesToShow": 3,  "slidesToScroll": 3, "responsive":[{"breakpoint": 768, "settings": {"slidesToShow": 2,  "slidesToScroll": 2}},{"breakpoint": 376, "settings": {"slidesToShow": 1,  "slidesToScroll": 1}}]}}')
+              .product__loadmore.--mg-top-md
+                +link(rel="stylesheet", href="resource-login.html?action=listing&action=listing", data-see-more).btn.btn-regular.--dark-mode
+                  | See All Resources
+
+  .product-container(style="display: none" data-listing-page)
+    .container#app
+      com-container(:isdarkmode="true")
+        com-heading-group(
+          slot="left"
+          title="Resources"
+          desc="Barnet is always creating videos, presentations and lorem ipsum dolor sit ahment."
+        )
+        com-filter(slot="left")
+        com-tab-list(slot="right").d-none
+          com-tab-list-item(name="resource")
+        com-wrapping(slot="right")
+          com-filter-mobile
+          com-listing
+            com-list-resource(
+              data="/data/resource-data.json"
+              filter="/data/resource-filter.json"
+            )
+            com-load-more

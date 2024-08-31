@@ -1,0 +1,15 @@
+mixin slideHero(items)
+  .component-slider-hero.slider-control&attributes(attributes)
+    each item in items
+      - var darkMode = item.mode === 'dark'
+        .component-slider-hero__item(class=[darkMode ? 'dark-mode': ''] style='background-image: url('+item.image+')' data-slider-item)
+          .component-slider-hero__wrap
+            if item.ribbon
+              .component-slider-hero__ribbon
+                != item.ribbon
+            +headingGroup(item.title, item.desc )(class=[darkMode && '--dark-mode'])
+            .component-slider-hero__btn
+              if item.hasBg
+                +link('#', 'See Details').btn.btn-solid(class=[darkMode && '--dark-mode'])
+              else
+                +link('#', 'See Details').btn.btn-regular(class=[darkMode && '--dark-mode'])

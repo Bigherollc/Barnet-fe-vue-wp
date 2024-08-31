@@ -1,0 +1,397 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Concepts Landing (login)'
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+block container
+  .concepts-container
+    .container
+      .concepts
+        +headingGroup('Concepts', 'It all starts with an idea. Concepts are collections of active ingredients, systems and inpiring formula that center around a unifying idea.', '--size-lg').--dark-mode
+        .concepts__productGroup.--mg-top-lg
+          .row
+            .col-12.col-sm-4.col-md-5
+              .concepts__productGroup--wrap
+                .row
+                  .col-12.col-md-6
+                    .concepts__imageContent.--dark-mode(style="background-image: url(/images/concepts/bg-1.png)")
+                      .concepts__imageContent-desc
+                        h2 Actives & System Formers
+                  .col-12.col-md-6
+                    .concepts__productGroup--wrapper
+                      .component-tab-list.--vertical.--hasToggle.--dark-mode(data-tab-list)
+                        .component-tab-list__toggle(data-toggle-tab) Fashion
+                        ul(class='nav' role='tablist')
+                          li
+                            a(class="btn-gtm-concept-section" href='#tab-1' data-toggle='tab' class='active') Fashion
+                          li
+                            a(class="btn-gtm-concept-section" href='#tab-2', data-toggle='tab') Skin Care Claims
+                          li
+                            a(class="btn-gtm-concept-section" href='#tab-3', data-toggle='tab') Lifestyle
+                          li
+                            a(class="btn-gtm-concept-section" href='#tab-4', data-toggle='tab') Body Zone
+                          li
+                            a(class="btn-gtm-concept-section" href='#tab-5', data-toggle='tab') Science & Technology Fashion
+                          li
+                            a(class="btn-gtm-concept-section" href='#tab-6', data-toggle='tab') Systems
+                          li
+                            a(class="btn-gtm-concept-section" href='#tab-7', data-toggle='tab') Applications
+            .col-12.col-sm-8.col-md-7
+              .tab-content
+                .tab-pane.active(id="tab-1")
+                  +imageConcepts([
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Holobiont Beauty',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-2.png',
+                      title: 'Fundamentally Fashionable',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Industry Essentials',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-7.png',
+                      title: 'Hair',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-9.png',
+                      title: 'Skin Care',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-3.png',
+                      title: 'Hair',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Holobiont Beauty',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Fundamentally Fashionable',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Industry Essentials',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-7.png',
+                      title: 'Hair',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Skin Care',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-8.png',
+                      title: 'Hair',
+                      desc: 'Very short description of what the concept is.',
+                    }
+                  ])
+                .tab-pane(id="tab-2")
+                  +imageConcepts([
+                    {
+                      image: '/images/seqments/seqments-2.png',
+                      title: 'Fundamentally Fashionable',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Holobiont Beauty',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Fundamentally Fashionable',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Industry Essentials',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-7.png',
+                      title: 'Hair',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Skin Care',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-8.png',
+                      title: 'Hair',
+                      desc: 'Very short description of what the concept is.',
+                    }
+                  ])
+                .tab-pane(id="tab-3")
+                  +imageConcepts([
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Holobiont Beauty',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-2.png',
+                      title: 'Fundamentally Fashionable',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Industry Essentials',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-7.png',
+                      title: 'Hair',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                  ])
+                .tab-pane(id="tab-4")
+                  +imageConcepts([
+                    {
+                      image: '/images/seqments/seqments-9.png',
+                      title: 'Skin Care',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-3.png',
+                      title: 'Hair',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Industry Essentials',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-7.png',
+                      title: 'Hair',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Skin Care',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-8.png',
+                      title: 'Hair',
+                      desc: 'Very short description of what the concept is.',
+                    }
+                  ])
+                .tab-pane(id="tab-5")
+                .tab-pane(id="tab-6")
+                .tab-pane(id="tab-7")
+        .concepts__productGroup.--mg-top-lg
+          .row
+            .col-12.col-sm-4.col-md-5
+              .concepts__productGroup--wrap
+                .row
+                  .col-12.col-md-6
+                    .concepts__imageContent.--dark-mode(style="background-image: url(/images/concepts/bg-2.png)")
+                      .concepts__imageContent-desc
+                        h2 Color by Barnet
+                  .col-12.col-md-6
+                    .concepts__productGroup--wrapper
+                      .component-tab-list.--vertical.--hasToggle.--dark-mode(data-tab-list)
+                        .component-tab-list__toggle(data-toggle-tab) Instant Results
+                        ul(class='nav' role='tablist')
+                          li
+                            a(href='#tab-8' data-toggle='tab' class='active') Instant Results
+                          li
+                            a(href='#tab-9', data-toggle='tab') Oil Soluble
+                          li
+                            a(href='#tab-10', data-toggle='tab') Fashion
+                          li
+                            a(href='#tab-11', data-toggle='tab') Systems
+                          li
+                            a(href='#tab-12', data-toggle='tab') Applications
+                      +link(rel="stylesheet", href="").btn.btn-regular.--dark-mode.--mg-top-sm
+                        span See All
+            .col-12.col-sm-8.col-md-7
+              .tab-content
+                .tab-pane.active(id="tab-8")
+                  +imageConcepts([
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Holobiont Beauty',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-2.png',
+                      title: 'Fundamentally Fashionable',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Industry Essentials',
+                      desc: 'Very short description of what the concept is.',
+                    }
+                  ])
+                .tab-pane(id="tab-9")
+                  +imageConcepts([
+                    {
+                      image: '/images/seqments/seqments-7.png',
+                      title: 'Hair',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Skin Care',
+                      desc: 'Very short description of what the concept is.',
+                    }
+                  ])
+                .tab-pane(id="tab-10")
+                  +imageConcepts([
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Holobiont Beauty',
+                      desc: 'Very short description of what the concept is.',
+                    }
+                  ])
+                .tab-pane(id="tab-11")
+                  +imageConcepts([
+                    {
+                      image: '/images/seqments/seqments-8.png',
+                      title: 'Hair',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Industry Essentials',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-3.png',
+                      title: 'Hair',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Skin Care',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-7.png',
+                      title: 'Hair',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-9.png',
+                      title: 'Skin Care',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                  ])
+                .tab-pane(id="tab-12")
+                  +imageConcepts([
+                    {
+                      image: '/images/seqments/seqments-8.png',
+                      title: 'Hair',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-6.png',
+                      title: 'Industry Essentials',
+                      desc: 'Very short description of what the concept is.',
+                    }
+                  ])
+        .concepts__productGroup.--mg-top-lg
+          .row
+            .col-12.col-sm-4.col-md-5
+              .concepts__productGroup--wrap
+                .row
+                  .col-12.col-md-6
+                    .concepts__imageContent(style="background-image: url(/images/concepts/bg-3.png)")
+                      .concepts__imageContent-desc
+                        h2 Conscious Beauty
+                  .col-12.col-md-6
+                    .concepts__productGroup--wrapper
+                      .component-tab-list.--vertical.--hasToggle.--dark-mode(data-tab-list)
+                        .component-tab-list__toggle(data-toggle-tab) Instant Certifications & Compliance
+                        ul(class='nav' role='tablist')
+                          li
+                            a(href='#tab-13' data-toggle='tab' class='active') Certifications & Compliance
+                          li
+                            a(href='#tab-14', data-toggle='tab') Natural Standards
+                      +link(rel="stylesheet", href="").btn.btn-regular.--dark-mode.--mg-top-sm
+                        span See All
+            .col-12.col-sm-8.col-md-7
+              .tab-content
+                .tab-pane.active(id="tab-13")
+                  +imageConcepts([
+                    {
+                      image: '/images/seqments/seqments-10.png',
+                      title: 'COSMOS Certified',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-11.png',
+                      title: 'Clean Beauty Compliant',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-12.png',
+                      title: 'EWG Rated',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-13.png',
+                      title: 'Halal Compliant',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-14.png',
+                      title: 'ISO Natural',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-15.png',
+                      title: 'ISO Organic',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-16.png',
+                      title: 'RSPO Certified',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                  ])
+                .tab-pane(id="tab-14")
+                  +imageConcepts([
+                    {
+                      image: '/images/seqments/seqments-15.png',
+                      title: 'ISO Organic',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-16.png',
+                      title: 'RSPO Certified',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-13.png',
+                      title: 'Halal Compliant',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                    {
+                      image: '/images/seqments/seqments-14.png',
+                      title: 'ISO Natural',
+                      desc: 'Very short description of what the concept is.',
+                    },
+                  ])

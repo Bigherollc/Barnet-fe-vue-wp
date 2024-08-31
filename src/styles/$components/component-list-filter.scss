@@ -1,0 +1,84 @@
+.component-list-filter {
+  background-color: $medium-teal;
+
+  &__wrapper {
+    display: flex;
+    padding: rem(35);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $bg-teal-1;
+  }
+
+  &__group {
+    flex: 1 100%;
+    margin-left: calc((85*100%)/1200);
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  .component-list {
+    margin-top: rem(25);
+    column-count: 2;
+    color: $green-2;
+
+    a {
+      font-size: rem(16);
+      line-height: rem(27);
+      font-weight: 500;
+    }
+  }
+
+  .btn {
+    margin-top: rem(40);
+  }
+
+  @include mq(md) {
+    .container {
+      padding: 0;
+    }
+
+    &__wrapper {
+      flex-wrap: wrap;
+      padding-bottom: rem(65);
+      background-position: 35% center;
+    }
+
+    &__group {
+      margin-left: 0;
+      margin-top: rem(65);
+    }
+
+    .component-heading-group {
+      text-align: center;
+    }
+
+    &__cta--wrapper {
+      text-align: center;
+    }
+
+    .component-list {
+      column-count: 3;
+    }
+  }
+
+  @include mq(sm) {
+    &__wrapper {
+      padding-left: rem(15);
+      padding-right: rem(15);
+    }
+
+    &__group {
+      margin-top: rem(100);
+    }
+
+    .component-heading-group {
+      padding: 0 rem(10);
+    }
+
+    .component-list {
+      column-count: 1;
+    }
+  }
+}

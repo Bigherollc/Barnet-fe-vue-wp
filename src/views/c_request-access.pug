@@ -1,0 +1,91 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Request Access'
+  - useFooter = true
+  - useHeader = true
+  - isFooterLegal = true
+  - namespace = '--fit-vh'
+
+block container
+  section.component-form-hero(style='background-image:  url("../images/bg-sign-in.png")' data-url='/data/request-step.json' data-method="POST" data-request-step)
+    .component-form.--right
+      .component-form__wrapper
+        +headingGroup('Request Access', '', '--size-lg to-uppercase').--dark-mode(data-heading)
+        +nav-list([
+          {
+            title: '',
+            active: true
+          },
+          {
+            title: '',
+          }
+        ]).component-progress-step(data-progress-step)
+        form.component-form__form(action='action_page.php' data-parsley-errors-messages-disabled data-parsley-validate)
+          .component-form__content(data-tab-content)
+            .component-form__group
+              +headingForm('', 'Access requests are granted after lorem ipsom dolor sit ahmet. If approved, an email with access details will be sent to the email address provided in less than 48 hours. 111111111111')
+              .component-form__group__input
+                .component-form__item
+                  input.form-control.--dark-mode(type="text" name="first_name" placeholder="First Name" autocomplete="off" data-parsley-required)
+                .component-form__item
+                  input.form-control.--dark-mode(type="text" name="last_name" placeholder="Last Name" autocomplete="off" data-parsley-required)
+                .component-form__item
+                  input.form-control.--dark-mode(type="email" name="email" placeholder="Work Email Address" autocomplete="off" data-parsley-required data-parsley-pattern='/^([A-Za-z0-9][\._\+\-]{0,1})+[A-Za-z0-9]+@[A-Za-z0-9]+(\.{0,1}[A-Za-z0-9]){2,3}\.[a-z]{2,3}$/')
+                  label.component-form__lbl(for="email")
+                    | This Email will be used to login.
+            .component-form__group
+              +headingForm('', 'Let us know f you are working on a specific project or lorem ipsum dolor sit ahmet.')
+              .component-form-group__input
+                .component-form__item
+                  textarea.form-control.--dark-mode(type="text" name="note" placeholder="Optional Note")
+            .component-form__group.text-center
+              button.btn.btn-solid.--dark-mode(data-next-btn type="button")
+                | Continue
+          .component-form__content.d-none(data-tab-content)
+            .component-form__group
+              .component-form__group__input
+                .component-form__item
+                  input.form-control.--dark-mode(type="text" name="company_name" placeholder="Company Name" autocomplete="off" data-parsley-required)
+                .component-form__item
+                  input.form-control.--dark-mode(type="text" name="address" placeholder="Address" autocomplete="off" data-parsley-required)
+                .component-form__item
+                  input.form-control.--dark-mode(type="text" name="address_optional" placeholder="Address Line 2 (Optional)" autocomplete="off")
+                .component-form__item
+                  select.form-control.--dark-mode(name="united_states" required data-parsley-required)
+                    option(disabled selected value="") United States
+                    option(value="0") Male
+                    option(value="1") Female
+                .component-form__two-col
+                  .col-6.component-form__item
+                    input.form-control.--dark-mode(type="text" name="province" placeholder="State/Province" autocomplete="off" data-parsley-required)
+                  .col-6.component-form__item
+                    input.form-control.--dark-mode(type="text" name="postal_code" placeholder="Postal Code" autocomplete="off" data-parsley-required)
+                .component-form__item
+                  input.form-control.--dark-mode(type="text" name="phone" placeholder="Work Phone" autocomplete="off" data-parsley-required data-mask="000-000-0000")
+                .component-form__item
+                  input.form-control.--dark-mode(type="text" name="phone_optional" placeholder="Mobile Phone (Optional)" autocomplete="off" data-mask="000-000-0000")
+            .component-form__group
+              .component-form-group__input
+                .component-form__item
+                  .form-checkbox.--dark-mode
+                    input(type="checkbox" id="checkbox1" name="checkbox" data-parsley-checkmin="1" data-parsley-required)
+                    label(for="checkbox1")
+                      |  Signup for our newsletter to recieve updates about new prodcuts and whatever else is in the bnewsletter
+                      span
+                
+            .component-form__group
+              +headingForm('', 'How did you hear about us:')
+              .component-form-group__input
+                .component-form__item
+                  select.form-control.--dark-mode(name="about_us" required data-parsley-required)
+                    option(disabled selected value="") Select
+                    option(value="0") Male
+                    option(value="1") Female
+            .component-form__group.text-center
+              button.btn.btn-solid.--dark-mode(data-next-btn type="submit")
+                | Submit Request
+          .component-form__content.d-none(data-tab-content)
+            +headingGroup('Thank You', 'Your request is being reviewed. If approved, an email with access details will be sent to the email address provided in less than 48 hours.', '--size-lg to-uppercase text-left').--dark-mode.text-center
+            .component-form__btn
+              +link("#", 'Ok').btn.btn-solid.--dark-mode

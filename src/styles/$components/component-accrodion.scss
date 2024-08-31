@@ -1,0 +1,43 @@
+.component-accrodion {
+  $element: &;
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+  }
+
+  &__toggle {
+    font-size: rem(18);
+    line-height: rem(19);
+    color: $link;
+    cursor: pointer;
+
+    &::after {
+      font-size: rem(12);
+      color: $black;
+      margin-left: rem(5);
+      content: '\e906';
+      @extend %font-icon;
+    }
+
+    .active & {
+      &::after {
+        content: '\e907';
+      }
+    }
+  }
+
+  &__dropdown {
+    display: none;
+    padding: rem(25);
+    margin-top: rem(20);
+    font-size: rem(14);
+    line-height: rem(20);
+    background-color: $bd-green-1;
+
+    p {
+      padding-bottom: rem(25);
+    }
+  }
+}

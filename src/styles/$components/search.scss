@@ -1,0 +1,64 @@
+.search {
+  min-height: 100vh;
+  padding: rem(155) 0 rem(143);
+
+  @include mq("md") {
+    padding: rem(100) 0 rem(50);
+  }
+
+  @include mq("sm") {
+    padding: rem(40) 0 rem(50);
+  }
+
+  // COMPONENT LIST PRODUCT
+  .component-list-product {
+    padding: 0;
+
+    @include mq("sm") {
+      padding: 0 rem(20);
+    }
+  }
+
+  // COMPONENT LIST RESOURCE
+  .component-list-resource {
+    padding: 0;
+  }
+
+  // PRODUCT LISTING
+  .product__listing {
+    box-shadow: none;
+  }
+
+  // PRODUCT FILTER
+  .product__filter {
+    top: rem(80);
+  }
+
+  // NO RESULT
+  &__no-result {
+    max-width: rem(380);
+    text-align: center;
+    margin: 0 auto;
+    padding: rem(75) 0;
+
+    &--image {
+      margin-bottom: 25px;
+    }
+
+    &--text {
+       font-size: rem(16);
+       line-height: rem(25);
+       color: $semi-dark-teal;
+    }
+  }
+
+  // NO RESULT SIDEBAR
+  &__no-result-sidebar {
+    width: 100%;
+    max-width: rem(157);
+
+    @include mq("md") {
+      display: none;
+    }
+  }
+}

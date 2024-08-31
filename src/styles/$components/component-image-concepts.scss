@@ -1,0 +1,83 @@
+.component-image-concepts {
+  $element: &;
+
+  color: $white;
+  margin-top: rem(-12);
+
+  &__wrapper {
+    margin: 0 rem(-15);
+
+    @include mq(sm) {
+      margin: 0 rem(-7.5);
+    }
+  }
+
+  &__item {
+    width: calc(100% / 4);
+    padding: rem(12) rem(15);
+
+    @include mq(sm) {
+      padding: 0 rem(7.5);
+    }
+
+    &--wrapper {
+      position: relative;
+      @extend %box-shadow-1;
+    }
+
+    &--content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: rem(20);
+      white-space: normal;
+      word-break: break-word;
+    }
+
+    &--heading {
+      font-size: rem(18);
+      line-height: rem(20);
+    }
+
+    &--desc {
+      margin-top: rem(10);
+      font-size: rem(14);
+      line-height: rem(20);
+    }
+
+    &--img {
+      overflow: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+        transition: all .2s linear;
+      }
+    }
+
+    &:hover {
+      #{$element}__item {
+        &--img {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  .search & {
+    @include mq("sm") {
+      margin-bottom: rem(45);
+    }
+  }
+}

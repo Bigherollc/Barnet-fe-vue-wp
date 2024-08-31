@@ -1,0 +1,33 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'All Product (logout)'
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+block container
+  .product-container
+    .container#app
+      com-container(:isdarkmode="true")
+        com-heading-group(
+          slot="left"
+          title="All Products"
+          desc="We specialize in Active Ingredients for the use in personal care products and unique System Formers inspired by East Asian trends."
+        )
+        com-filter(slot="left")
+        com-tab-list(slot="right")
+          com-tab-list-item(name="active")
+          com-tab-list-item(name="system")
+        com-wrapping(slot="right")
+          com-sign-in(
+            background-image="/images/product/bg-signin.png"
+            url-sign-in="/sign-in"
+            url-request-access="/request-access"
+          )
+          com-filter-mobile
+          com-listing
+            com-list-product(
+              :hasborder="true"
+              data="/data/product-data.json"
+              filter="/data/product-filter.json"
+            )
+            com-load-more

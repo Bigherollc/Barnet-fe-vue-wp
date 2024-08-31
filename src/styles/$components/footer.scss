@@ -1,0 +1,101 @@
+.footer {
+  &__wrapper {
+    @extend %background-gradiant-2;
+    padding: 5rem 0 7rem;
+    color: $white;
+
+    &.\--small {
+      padding: 2rem 0;
+    }
+
+    &.\--dark {
+      background: $bg-green-dark-2;
+    }
+  }
+
+  &__description {
+    &--content {
+      margin-top: 3rem;
+    }
+  }
+
+  &__information {
+    position: relative;
+    padding-left: 1.5rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -1.5rem;
+      height: rem(95);
+      background: $bg-green-dark-1;
+      width: 1px;
+    }
+
+    &--content {
+      a {
+        display: inline-block;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  &__nav {
+    li {
+      display: inline-block;
+      font-size: rem(11);
+
+      @include mq("sm") {
+        text-align: center;
+      }
+
+      &:not(:first-child) {
+        a {
+          display: inline-block;
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: rem(14);
+    line-height: 2rem;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
+
+  @include mq(sm) {
+    &__description {
+      margin-bottom: 3rem;
+    }
+
+    &__information {
+      padding-top: 3rem;
+      padding-left: 0;
+
+      &:before {
+        top: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+      }
+    }
+
+    &__nav {
+      li {
+        display: block;
+
+        &:not(:first-child) {
+          a {
+            margin-left: 0;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+mixin listFiles(items)
+  ul&attributes(attributes)
+    each item in items
+      li
+        +link(rel="stylesheet", href=item.href, title=item.text)
+          i(class=['icon', item.icon])
+          span.text!=item.text
+            if item.extension
+              span.extension (!{item.extension})

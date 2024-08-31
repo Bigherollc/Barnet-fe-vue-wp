@@ -1,0 +1,244 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Product Active Detail (login)'
+  - isLogin = true
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+
+block container
+  .product-container.product-container--detail
+    .container
+      .productDetail
+        .productDetail__wrapping
+          .productDetail__header
+            .productDetail__header-groupTitle
+              h1.productDetail__header-title Bora Bora White Sand
+              .productDetail__header-attr LOREAL: CN34251
+            .productDetail__header-desc
+              .productDetail__header-desc--productPage
+                  span INCI:
+                  p Calcium Carbonate, Name of the Thing, Name of the Thing, Name of the Thing
+          .productDetail__background(style="background-image: url(/images/product/bg-detail-1.png)")
+          .productDetail__detail
+            .productDetail__detail-wrap
+              .productDetail__detail-right
+                .productDetail__fileList
+                  +listFiles([
+                    {
+                      icon: 'icon-formula-card',
+                      text: 'One-Sheet',
+                      extension: 'pdf',
+                      href: ''
+                    },
+                    {
+                      icon: 'icon-formula-sheet',
+                      text: 'Safety Data Sheet ',
+                      extension: 'pdf',
+                      href: ''
+                    },
+                    {
+                      icon: 'icon-kiss-sheet',
+                      text: 'Specifications ',
+                      extension: 'pdf',
+                      href: ''
+                    },
+                    {
+                      icon: 'icon-presentation',
+                      text: 'One-Sheet ',
+                      extension: 'pptx',
+                      href: ''
+                    },
+                    {
+                      icon: 'icon-sds',
+                      text: 'Safety Data Sheet ',
+                      extension: 'pdf',
+                      href: ''
+                    },
+                    {
+                      icon: 'icon-spec',
+                      text: 'Specifications ',
+                      extension: 'pdf',
+                      href: ''
+                    },
+                  ])
+                .productDetail__attributes
+                  .productDetail__attributes-properties.--mg-bottom-sm
+                    p
+                      strong Use Level:
+                      |  1.00 - 5.00%
+                    p
+                      strong Solubility:
+                      |  Oil Soluble
+                    p
+                      strong Preservative:
+                      |  Preservative Free
+                  h3.productDetail__attributes-title Key Attributes & Certifications:
+                  .productDetail__attributes-list
+                    +listAttr([
+                      {
+                        image: '/images/product/Logo_Sustainable.png',
+                        text: 'Sustainable By Barnet'
+                      },
+                      {
+                        image: '/images/product/logo_jsqi_quasi_drug.png',
+                        text: 'Quasi-Drug Excipient'
+                      },
+                      {
+                        image: '/images/product/Logo_ISONatural_Natural.png',
+                        text: 'ISO Natural'
+                      },
+                      {
+                        image: '/images/product/Logo_RSPO2020.png',
+                        text: 'No Palm'
+                      },
+                      {
+                        image: '/images/product/Logo_ISONatural_Organic.png',
+                        text: 'ISO Organic'
+                      },
+                      {
+                        image: '/images/product/Logo_Vegan.png',
+                        text: 'Vegan'
+                      },
+                      {
+                        image: '/images/product/Logo_CleanBeauty.png',
+                        text: 'Clean beauty'
+                      },
+                      {
+                        image: '/images/product/Logo_HallalCompliant.png',
+                        text: 'Halal'
+                      },
+                      {
+                        image: '/images/product/Logo_CleanBeauty.png',
+                        text: 'Logo_EWG'
+                      },
+                      {
+                        image: '/images/product/Logo_SoyFree.png',
+                        text: 'Soy-Free'
+                      },
+                      {
+                        image: '/images/product/Logo_RSPOCertified.png',
+                        text: 'RSPO Certified'
+                      },
+                      {
+                        image: '/images/product/Logo_NutFree.png',
+                        text: 'Nut-Free'
+                      },
+                      {
+                        image: '/images/product/Logo_RSPO2020.png',
+                        text: 'RSPO by 2020'
+                      },
+                      {
+                        image: '/images/product/Logo_NutFree.png',
+                        text: 'Logo_CrueltyFree'
+                      },
+                    ])
+                  h3.productDetail__attributes-title Global Compliance:
+                  .productDetail__attributes-compliance
+                    +listCompliance([
+                      {
+                        country: 'Australia',
+                        content: 'Exempt Listed AICS',
+                      },
+                      {
+                        country: 'China',
+                        content: 'Exempt Listed DSL Listed rICL',
+                      },
+                      {
+                        country: 'Canada',
+                        content: 'Listed IECIC',
+                      },
+                      {
+                        country: 'EU',
+                        content: '<1 MT Exempt',
+                      },
+                    ])
+              .productDetail__detail-left
+                h2.productDetail__contentAttributes
+                  p Bora Bora White Sand is a natural exfoliant from lagoons of polynesian high islands. The Polynesian archipelagos were formed millions of years ago with the emergence of volcanos. As soon as the volcanic activity was finished, coral started developing along the coast, rich is diverse trace elements. The natural process of erosoin leads to the coral detaching itself and creating small particles that arrive on the shore creating white sand beaches. Once picked, the sand is crushed and a natural exfoliating ingredient, Bora Bora White Sand, is formed.
+                  p Bora Bora White Sand consists of fine particles (<500um) of coral that have washed ashore on the beaches of Polynesia. Bora Bora White Sand is crushed and riddled in order to obtain a powder. Bora Bora White Sand has natural mineral exfoliation and works best on the face and body in exfoliating gels and exfoliating emulsions.
+                  p Bora Bora White Sand is a white to ivory find powder with a neutral odor. Bora Bora White Sand is insoluble in oil and water.
+          .productDetail__request
+            .component-sample-band
+              .component-sample-band__wrap
+                .component-sample-band__content
+                  .component-sample-band__icon
+                    i.icon.icon-sample
+                  .component-sample-band__text Samples available. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                .component-sample-band__btn
+                  +link(rel="stylesheet", href="#", title="Request Sample").btn.btn-solid.--dark-mode Request Sample
+          .productDetail__areaDetail.--mg-top-lg
+            +headingGroup('Starter Formula with Bora Bora White Sand', null, '--size-h2', 'h3')
+            +listProduct([
+              {
+                title: 'A.M. Mist Mask',
+                desc: 'Give your skin an early boost in the morning that only takes a minute! This morning spray on mask is the perfect way to start your day. It’s a jelly skin shot that will leave you feeling moisturized from A.M. to P.M.',
+                image: '/images/product/ic_lotion.png'
+              },
+              {
+                title: 'Acqua Rush Emulsion',
+                desc: 'Get a wave of hydration with Acqua Rush Emulsion! This formula gives you instant and lasting moisturization to plump and revitalize even the driest of skin. The active ingredients focus not only on instantly supplying key moisture elements but also stimulating the skin to moisturize itself for sustained moisture. Keep your skin healthy and hydrated around the clock with the Acqua Rush Emulsion!',
+                image: '/images/product/ic_lipstick.png'
+              },
+              {
+                title: 'Bouncy Balm Serum Foundation',
+                desc: 'Immerse your skin in moisture with this bouncy balm foundation. The solid serum is a full coverage product delivering skin care benefits which hydrate the skin and reduce lines and wrinkles with a “Botox-like” effect.',
+                image: '/images/product/ic_lipstick.png'
+              },
+              {
+                title: 'CleanStick',
+                desc: 'Are you in a rush? Take cleansing with you on the go! Infused with charcoal powder to detox the skin from dirt and impurities delivering the right amount of moisture and lipids into the skin. Once the stick interacts with water it will bloom into a cleansing milk removing impurities, dirt and sebum.',
+                image: '/images/product/ic_stick.png'
+              },
+              {
+                title: 'Gravity-Proof Sunscreen',
+                desc: 'Defy gravity with the Gravity-Proof Sunscreen. Naturally lift and firm the skin  while plumping and filling in fine lines. Perfect for daily wear, apply in the morning for sun protection coupled with gravity fighting ingredients!',
+                image: '/images/product/ic_lotion.png'
+              },
+            ]).--mg-top-sm.--pd-bottom-sm
+        section.component-fashtion-concepts.--mg-top-lg
+          .component-fashtion-concepts__wrapper
+            +headingGroup('Related Concepts', null, '--size-h2', 'h3').text-center.--dark-mode
+            .component-fashtion-concepts__slider.--mg-top-sm
+              +imageConcepts([
+                {
+                  image: '/images/active/mask-1.png',
+                  title: 'Around the Clock Aging (Epigenetics)',
+                  desc: 'Brighten, blur and highlight for glowing youthful skin.'
+                },
+                {
+                  image: '/images/active/mask-2.png',
+                  title: 'Holobiont Beauty',
+                  desc: 'Fresh and natural light touch coverage for daily use.'
+                },
+                {
+                  image: '/images/active/mask-3.png',
+                  title: 'Moisturization',
+                  desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+                },
+                {
+                  image: '/images/active/mask-4.png',
+                  title: 'Moisturization',
+                  desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+                },
+                {
+                  image: '/images/active/mask-1.png',
+                  title: 'Around the Clock Aging (Epigenetics)',
+                  desc: 'Brighten, blur and highlight for glowing youthful skin.'
+                },
+                {
+                  image: '/images/active/mask-2.png',
+                  title: 'Holobiont Beauty',
+                  desc: 'Fresh and natural light touch coverage for daily use.'
+                },
+                {
+                  image: '/images/active/mask-3.png',
+                  title: 'Moisturization',
+                  desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+                },
+                {
+                  image: '/images/active/mask-4.png',
+                  title: 'Moisturization',
+                  desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+                },
+              ])(data-slider-main data-opts-slider='{"slickContainer": ".component-fashtion-concepts","optsSlick": {"slide": "[data-slider-item]","dots": true, "rows": 0, "slidesToShow": 4, "slidesToScroll": 4, "responsive":[{"breakpoint": 991, "settings": {"slidesToShow": 3, "slidesToScroll": 3}}, {"breakpoint": 768, "settings": {"slidesToShow": 2, "slidesToScroll": 2}}]}}')

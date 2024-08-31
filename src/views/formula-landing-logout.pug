@@ -1,0 +1,58 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Formula landing (logout)'
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+block container
+  .landing-logout
+    .landing-logout__groupTitle
+      .container
+        +headingGroup('Starter Formula', 'These forward-looking and lab tested formula will kickstart your product development.', '--size-lg to-uppercase').--dark-mode
+    +imageOneside({
+      imgObj: {
+        src: '/images/content-oneside/formula-library.png',
+        title: 'Lots of Formula'
+      },
+      contentObj: {
+        title: 'Lots of Formula',
+        subTitle: 'Our collection of unique, well tested specialty ingredients lorem ipsum cosmetics and personal care. SEO focused text full of keywaords and targeted phrases.',
+        list: [
+          {
+            title: 'Keyword Valuable Formula Type Name, Another TYpe, Another Type, Tyoe, Type … and more.',
+          },
+        ],
+      },
+      isRight: true
+    }).--pd-top-lg.--mg-top-lg.--max-desc
+    +imageOneside({
+      imgObj: {
+        src: '/images/content-oneside/innovation-consultation.png',
+        title: 'From GIC'
+      },
+      contentObj: {
+        title: 'From GIC',
+        subTitle: '<p>The Global Innovation Center team offers collaborative hands-on training customized to meet the unique needs of our customers.</p><p>The training courses are tiered from basic emulsion theory, applied training on concepts and trends, and personalized training either on-site at Barnet, off-site at your location or virtually.</p>',
+        cta: {
+          link: '#',
+          title: 'See the Global Innovation Center'
+        }
+      },
+    }).--pd-top-lg.--mg-top-lg
+    .landing-logout__signin-box.--mg-top-xl
+      .container
+        .component-signin-box(style="background-image: url(/images/product/bg-signin.png)")
+          .component-signin-box__title Sign In for Details
+          .component-signin-box__box
+            .component-signin-box__signin
+              .component-signin-box__text Registered users get access to full product information and related resources:
+              .component-signin-box__list
+                ul.component-list
+                  li Specifications & Data Sheets
+                  li Videos & Presentations
+                  li Starter Formula
+              .component-signin-box__link
+                a(class="btn btn-normal --dark-mode") Sign in
+            .component-signin-box__request
+              .component-signin-box__titleRequest New Customer?
+              +link(rel="stylesheet", href="#", title="Request Access").btn.btn-solid.--dark-mode.btn-gtm-request-access Request Access

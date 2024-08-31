@@ -1,0 +1,127 @@
+include ../_mixins/all
+
+block vars
+  - let useHeader = false
+  - let useFooter = false
+  - let title = 'Template'
+  - let namespace = ''
+  - let menuIndex = 0
+  - let pageLevel = 0
+
+- const rootAssetsPath = $localeName ? '../' : ''
+- const _levelPath = [...Array(pageLevel)].map(() => '..').join('/')
+- const _trailDash = pageLevel ? '/' : ''
+- const levelPath = _levelPath + _trailDash
+- const assetsPath = rootAssetsPath + levelPath
+- const isRTL = $translator.isRTL
+- const dir = isRTL ? 'rtl' : 'ltr'
+- const rtlSuffix = isRTL ? '-rtl' : ''
+-
+  const viewports = [
+    'width=device-width',
+    'initial-scale=1',
+    'shrink-to-fit=no'
+  ].join(',')
+
+-
+  const translateAssetPath = (path, useLevel) => {
+    const isExternalPath = /^(https?:)?\/\//.test(path)
+
+    return isExternalPath
+      ? path
+      : (useLevel ? levelPath : assetsPath) + path.replace(/^\//, '')
+  }
+
+doctype html
+html.no-js(lang=$localeName dir=dir)
+  head
+    title=title
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(charset="utf-8")
+    meta(name="viewport" content!=viewports)
+
+    include ../_blocks/meta
+    include ../_blocks/favicon
+    include ../_blocks/styles
+
+    style.
+      .clearfix {
+        margin: 0 -0.5rem;
+      }
+
+      .clearfix:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      .template {
+        background: #eee;
+        overflow-x: hidden;
+      }
+      .template h1 {
+        line-height: 1.1;
+        letter-spacing: 0;
+        font-weight: bold;
+        text-align: center;
+        font-size: 2.5em;
+        margin: 1rem 0;
+      }
+
+      .template .block {
+        margin-bottom: 2rem;
+      }
+      @media screen and (min-width: 992px) {
+        .template .block {
+          margin-bottom: 5rem;
+        }
+      }
+      .template .block .clearfix {
+        counter-reset: link;
+      }
+      .template .blank {
+        display: inline-block;
+        padding: 0 0.5rem;
+        float: left;
+        width: 25%;
+      }
+      @media screen and (max-width: 992px) {
+        .template .blank {
+          width: calc(100% / 3);
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .template .blank {
+          width: 50%;
+        }
+      }
+      .template .link {
+        display: block;
+        position: relative;
+        margin-bottom: 1rem;
+        padding: 2rem;
+        border: 1px solid rgba(0, 0, 0, .2);
+        font-size: 1.8rem;
+        background: #fff;
+        color: inherit;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0);
+        transform: translateY(0);
+        transition: all 0.1s ease;
+      }
+      .template .link:hover, .template .link:focus {
+        text-decoration: none;
+        border-color: rgba(0, 0, 0, .5);
+        color: inherit;
+        background: #ddd;
+      }
+
+  body.template
+    main(role="main")
+      block container
+    block scripts
+      script.
+        var staticJsAssetsPath = '#{assetsPath}js/';
+    include ../_blocks/scripts
+    noscript JavaScript is off. Please enable to view full site.
+

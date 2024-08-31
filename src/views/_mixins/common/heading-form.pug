@@ -1,0 +1,8 @@
+mixin headingForm (title, desc, size)
+  .component-heading-form&attributes(attributes)
+    if title
+      h2.component-heading-form__heading
+        !=title
+    if desc
+      .component-heading-form__desc
+        !=desc

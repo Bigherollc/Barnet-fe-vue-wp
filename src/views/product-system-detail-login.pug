@@ -1,0 +1,237 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Systems Detail (login)'
+  - isLogin = true
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+
+block container
+  .product-container.product-container--detail
+    .container
+      .productDetail(data-product)
+        .productDetail__wrapping
+          .productDetail__header
+            .productDetail__header-groupTitle
+              h1.productDetail__header-title BarSperse-15
+              .productDetail__header-attr LOREAL: CN34251
+            .productDetail__header-desc
+              p INCI: Polyglyceryl-6 Polyricinoleate
+              p Use Level: 
+                <span>1.00 - 5.00%</span>
+                <span>Oil Soluble</span>
+                <span>Preservative Free</span>
+          .productDetail__background(style="background-image: url(/images/systems/bg-detail-1.png)")
+          .productDetail__detail
+            .productDetail__detail-wrap
+              .productDetail__detail-right
+                .productDetail__fileList
+                  +listFiles([
+                    {
+                      icon: 'icon-summary',
+                      text: 'One-Sheet ',
+                      extension: 'pdf',
+                      href: ''
+                    },
+                    {
+                      icon: 'icon-sds',
+                      text: 'Safety Data Sheet ',
+                      extension: 'pdf',
+                      href: ''
+                    },
+                    {
+                      icon: 'icon-spec',
+                      text: 'Specifications ',
+                      extension: 'pdf',
+                      href: ''
+                    },
+                  ])
+                .productDetail__attributes 
+                  h3.productDetail__attributes-title Key Attributes & Certifications:
+                  .productDetail__attributes-list
+                    +listAttr([
+                      {
+                        image: '/images/product/Logo_Sustainable.png',
+                        text: 'Sustainable By Barnet'
+                      },
+                      {
+                        image: '/images/product/logo_jsqi_quasi_drug.png',
+                        text: 'Quasi-Drug Excipient'
+                      },
+                      {
+                        image: '/images/product/Logo_ISONatural_Natural.png',
+                        text: 'ISO Natural'
+                      },
+                      {
+                        image: '/images/product/Logo_RSPO2020.png',
+                        text: 'No Palm'
+                      },
+                      {
+                        image: '/images/product/Logo_ISONatural_Organic.png',
+                        text: 'ISO Organic'
+                      },
+                      {
+                        image: '/images/product/Logo_Vegan.png',
+                        text: 'Vegan'
+                      },
+                      {
+                        image: '/images/product/Logo_CleanBeauty.png',
+                        text: 'Clean beauty'
+                      },
+                      {
+                        image: '/images/product/Logo_HallalCompliant.png',
+                        text: 'Halal'
+                      },
+                      {
+                        image: '/images/product/Logo_CleanBeauty.png',
+                        text: 'Logo_EWG'
+                      },
+                      {
+                        image: '/images/product/Logo_SoyFree.png',
+                        text: 'Soy-Free'
+                      },
+                      {
+                        image: '/images/product/Logo_RSPOCertified.png',
+                        text: 'RSPO Certified'
+                      },
+                      {
+                        image: '/images/product/Logo_NutFree.png',
+                        text: 'Nut-Free'
+                      },
+                      {
+                        image: '/images/product/Logo_RSPO2020.png',
+                        text: 'RSPO by 2020'
+                      },
+                      {
+                        image: '/images/product/Logo_NutFree.png',
+                        text: 'Logo_CrueltyFree'
+                      },
+                    ])
+                  h3.productDetail__attributes-title Global Compliance:
+                  .productDetail__attributes-compliance
+                    +listCompliance([
+                      {
+                        country: 'Australia',
+                        content: 'Exempt',
+                      },
+                      {
+                        country: 'China',
+                        content: 'Listed IECIC',
+                      },
+                      {
+                        country: 'Canada',
+                        content: 'Exempt',
+                      },
+                      {
+                        country: 'EU',
+                        content: '<1 MT Exempt',
+                      },
+                    ])
+                .productDetail__linkVersion.--mg-top-sm
+                  +link(title='Acid Free Version Available', href='#')
+                    span Acid Free Version Available
+              .productDetail__detail-left
+                h2.productDetail__contentAttributes
+                  p BarSperse-15 is a plant-derived polyglyceryl fatty acid ester. BarSperse-15 is a superior dispersing agent for pigmented formulations. It is also an exceptional co-emulsifier for water-in-oil and water-in-silicone emulsions.
+                  p BarSperse-15 is an excellent dispersing aid of pigments and inorganic sunscreens that can be used in a variety of applications such as lipsticks, foundations, mascaras and many other anhydrous, W/O, and O/W formulations. It has excellent oxidation and electrolyte stability, is almost odorless and imparts no color in formulations. In hydrous and O/W bases utilizing BV-OSC adding BarSperse-15 can prevent hydrolysis-induced degradation of BV-OSC.
+          .productDetail__request.--mg-top-lg
+            .component-sample-band
+              .component-sample-band__wrap
+                .component-sample-band__content
+                  .component-sample-band__icon
+                    i.icon.icon-sample
+                  .component-sample-band__text Samples available. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                .component-sample-band__btn
+                  +link(rel="stylesheet", href="#", title="Request Sample").btn.btn-solid.--dark-mode Request Sample
+          .productDetail__areaDetail.--mg-top-lg
+            .productDetail__headingGroup
+              +headingGroup('Formulating with BarSperse-15', null, '--size-h2', 'h3')
+              .productDetail__headingGroup-link
+                +link(rel="stylesheet", href="#")
+                  span See Standalone Video
+            .component-video-control.--mg-top-xs(data-video data-gtm-view-video='Formulating with BarSperse-15')
+              video(poster="../images/related-video-1.png")
+                source(src="/videos/video.mp4")
+          .productDetail__areaDetail.--mg-top-lg
+            .row
+              .col-12.col-sm-6
+                +headingGroup('Architecture/Technology', 'BarSperse-15 is a highly purified polyglyceryl fatty acid ester synthesized with hexaglycerin and polymers of ricinoleic acid. It is an ethoxylate-free surfactant that is plant-derived. BarSperse-15 is a nonionic surfactant containing many non-reactive hydroxyl groups, therefore, it has a high affinity for inorganic pigments. See the <a href="#">Detailed Presentation</a> (PDF).', '--size-h2', 'h3')
+              .col-12.col-sm-6
+                .productDetail__contentImage-image.--mg-top-ml
+                  +img(src="/images/systems/image.png", alt="")
+                .productDetail__contentImage-imageText.--mg-top-xs BarSperse-15 Chemical Structure
+          .productDetail__areaDetail.--mg-top-lg
+            +headingGroup('Starter Formula with BarSperse-15', null, '--size-h2', 'h3')
+            +listProduct([
+              {
+                title: 'A.M. Mist Mask', 
+                desc: 'Give your skin an early boost in the morning that only takes a minute! This morning spray on mask is the perfect way to start your day. It’s a jelly skin shot that will leave you feeling moisturized from A.M. to P.M.',
+                image: '/images/product/ic_lotion.png'
+              },
+              {
+                title: 'Acqua Rush Emulsion',
+                desc: 'Get a wave of hydration with Acqua Rush Emulsion! This formula gives you instant and lasting moisturization to plump and revitalize even the driest of skin. The active ingredients focus not only on instantly supplying key moisture elements but also stimulating the skin to moisturize itself for sustained moisture. Keep your skin healthy and hydrated around the clock with the Acqua Rush Emulsion!',
+                image: '/images/product/ic_lipstick.png'
+              },
+              {
+                title: 'Bouncy Balm Serum Foundation',
+                desc: 'Immerse your skin in moisture with this bouncy balm foundation. The solid serum is a full coverage product delivering skin care benefits which hydrate the skin and reduce lines and wrinkles with a “Botox-like” effect.',
+                image: '/images/product/ic_lipstick.png'
+              },
+              {
+                title: 'CleanStick',
+                desc: 'Are you in a rush? Take cleansing with you on the go! Infused with charcoal powder to detox the skin from dirt and impurities delivering the right amount of moisture and lipids into the skin. Once the stick interacts with water it will bloom into a cleansing milk removing impurities, dirt and sebum.',
+                image: '/images/product/ic_stick.png'
+              },
+              {
+                title: 'Gravity-Proof Sunscreen',
+                desc: 'Defy gravity with the Gravity-Proof Sunscreen. Naturally lift and firm the skin  while plumping and filling in fine lines. Perfect for daily wear, apply in the morning for sun protection coupled with gravity fighting ingredients!',
+                image: '/images/product/ic_lotion.png'
+              },
+            ]).--mg-top-sm.--pd-bottom-sm
+        section.component-fashtion-concepts.--mg-top-lg
+          .component-fashtion-concepts__wrapper
+            +headingGroup('Related Concepts', null, '--size-h2', 'h3').text-center.--dark-mode
+            .component-fashtion-concepts__slider.--mg-top-sm
+              +imageConcepts([
+                {
+                  image: '/images/active/mask-1.png',
+                  title: 'Around the Clock Aging (Epigenetics)',
+                  desc: 'Brighten, blur and highlight for glowing youthful skin.'
+                },
+                {
+                  image: '/images/active/mask-2.png',
+                  title: 'Holobiont Beauty',
+                  desc: 'Fresh and natural light touch coverage for daily use.'
+                },
+                {
+                  image: '/images/active/mask-3.png',
+                  title: 'Moisturization',
+                  desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+                },
+                {
+                  image: '/images/active/mask-4.png',
+                  title: 'Moisturization',
+                  desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+                },
+                {
+                  image: '/images/active/mask-1.png',
+                  title: 'Around the Clock Aging (Epigenetics)',
+                  desc: 'Brighten, blur and highlight for glowing youthful skin.'
+                },
+                {
+                  image: '/images/active/mask-2.png',
+                  title: 'Holobiont Beauty',
+                  desc: 'Fresh and natural light touch coverage for daily use.'
+                },
+                {
+                  image: '/images/active/mask-3.png',
+                  title: 'Moisturization',
+                  desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+                },
+                {
+                  image: '/images/active/mask-4.png',
+                  title: 'Moisturization',
+                  desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+                },
+              ])(data-slider-main data-opts-slider='{"slickContainer": ".component-fashtion-concepts","optsSlick": {"slide": "[data-slider-item]","dots": true, "rows": 0, "slidesToShow": 4, "slidesToScroll": 4, "responsive":[{"breakpoint": 991, "settings": {"slidesToShow": 3, "slidesToScroll": 3}}, {"breakpoint": 768, "settings": {"slidesToShow": 2, "slidesToScroll": 2}}]}}')

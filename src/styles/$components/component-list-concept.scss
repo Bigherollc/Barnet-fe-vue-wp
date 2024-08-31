@@ -1,0 +1,9 @@
+.component-list-concept {
+  .component-group-product {
+    &:not(:first-child) {
+      margin-top: rem(30);
+      padding-top: rem(30);
+      border-top: 1px solid $medium-teal;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+%background-gradiant {
+  background: linear-gradient(to right, rgba(3,173,169,1) 0%,rgba(18,93,104,1) 75%,rgba(6,124,141,1) 100%);
+}
+
+%background-gradiant-2 {
+  background: linear-gradient(to right, #122E34 5%,#194E57 30%,#122E34 50%);
+}
+
+%box-shadow-1 {
+  box-shadow: 0 3px 12px 1px $shadow-2;
+}
+
+%box-shadow-2 {
+  box-shadow: 0 3px 12px 1px $shadow-2, 0 2px 4px 0 $shadow-4;
+}
+
+%font-icon {
+  font-family: 'icoJayRobin';
+}

@@ -1,0 +1,111 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Product Detail (logout)'
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+
+block container
+  .product-container.product-container--detail
+    .container
+      .productDetail
+        .productDetail__wrapping
+          .productDetail__header
+            .productDetail__header-groupTitle
+              h1.productDetail__header-title Bora Bora White Sand
+            .productDetail__header-desc
+              p Oil Soluble  | Preservative Free
+          .productDetail__background(style="background-image: url(/images/product/bg-detail-1.png)")
+          .productDetail__detail
+            .productDetail__detail-wrap
+              .productDetail__detail-right
+                .productDetail__attributes 
+                  h3.productDetail__attributes-title Key Attributes & Certifications:
+                  .productDetail__attributes-list
+                    +listAttr([
+                      {
+                        image: '/images/product/Logo_Sustainable.png',
+                        text: 'Sustainable By Barnet'
+                      },
+                      {
+                        image: '/images/product/logo_jsqi_quasi_drug.png',
+                        text: 'Quasi-Drug Excipient'
+                      },
+                      {
+                        image: '/images/product/Logo_ISONatural_Natural.png',
+                        text: 'ISO Natural'
+                      },
+                      {
+                        image: '/images/product/Logo_RSPO2020.png',
+                        text: 'No Palm'
+                      },
+                      {
+                        image: '/images/product/Logo_ISONatural_Organic.png',
+                        text: 'ISO Organic'
+                      },
+                      {
+                        image: '/images/product/Logo_Vegan.png',
+                        text: 'Vegan'
+                      },
+                      {
+                        image: '/images/product/Logo_CleanBeauty.png',
+                        text: 'Clean beauty'
+                      },
+                      {
+                        image: '/images/product/Logo_HallalCompliant.png',
+                        text: 'Halal'
+                      },
+                      {
+                        image: '/images/product/Logo_CleanBeauty.png',
+                        text: 'Logo_EWG'
+                      },
+                      {
+                        image: '/images/product/Logo_SoyFree.png',
+                        text: 'Soy-Free'
+                      },
+                      {
+                        image: '/images/product/Logo_RSPOCertified.png',
+                        text: 'RSPO Certified'
+                      },
+                      {
+                        image: '/images/product/Logo_NutFree.png',
+                        text: 'Nut-Free'
+                      },
+                      {
+                        image: '/images/product/Logo_RSPO2020.png',
+                        text: 'RSPO by 2020'
+                      },
+                      {
+                        image: '/images/product/Logo_NutFree.png',
+                        text: 'Logo_CrueltyFree'
+                      },
+                    ])
+              .productDetail__detail-left
+                h2.productDetail__contentAttributes
+                  p Bora Bora White Sand consists of fine particles (<500um) of coral that have washed ashore on the beaches of Polynesia. The grains of sand are further crushed and then treated to provide a consistent, clean product. for gentle, effective exfoliation.
+                  p This is custom copy for logged out people. It should have enough keywords in it to attract people searching.
+          .productDetail__signIn
+            .component-signin-box(style="background-image: url(/images/product/bg-signin.png)")
+              .component-signin-box__title Sign In for Details
+              .component-signin-box__box
+                .component-signin-box__signin
+                  .component-signin-box__text Registered users get access to full product information and related resources:
+                  .component-signin-box__list
+                    ul.component-list
+                      li Specifications & Data Sheets
+                      li Videos & Presentations
+                      li Starter Formula
+                  .component-signin-box__link
+                    a(class="btn btn-normal --dark-mode") Sign in
+                .component-signin-box__request
+                  .component-signin-box__titleRequest New Customer?
+                  +link(rel="stylesheet", href="#", title="Request Access").btn.btn-solid.--dark-mode.btn-gtm-request-access Request Access
+          .productDetail__request
+            .component-sample-band
+              .component-sample-band__wrap
+                .component-sample-band__content
+                  .component-sample-band__icon
+                    i.icon.icon-sample
+                  .component-sample-band__text Samples available. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                .component-sample-band__btn
+                  +link(rel="stylesheet", href="#", title="Request Sample").btn.btn-solid.--dark-mode Request Sample

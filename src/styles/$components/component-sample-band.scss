@@ -1,0 +1,74 @@
+.component-sample-band {
+  padding: rem(15) rem(30);
+  background-color: $dark-teal;
+
+  @include mq("sm") {
+    padding: rem(25) rem(30);
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: rem(710);
+    margin: 0 auto;
+
+    @include mq("sm") {
+      display: block;
+      max-width: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+
+    @include mq("sm") {
+      justify-content: center;
+      margin-bottom: rem(25);
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include size(46);
+    font-size: rem(36);
+    margin-right: rem(15);
+    position: relative;
+    color: $green-1;
+  }
+
+  &__text {
+    font-size: rem(14);
+    line-height: rem(20);
+    color: $white;
+    max-width: rem(460);
+  }
+
+  &__btn {
+    flex-shrink: 0;
+    margin-left: rem(30);
+
+    .btn {
+      + .btn {
+        margin-left: rem(10);
+      }
+    }
+
+    @include mq("sm") {
+      display: flex;
+      margin-left: 0;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .btn:not(.d-none) {
+        + .btn {
+          margin-left: 0;
+          margin-top: rem(15);
+        }
+      }
+    }
+  }
+}

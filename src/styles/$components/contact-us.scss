@@ -1,0 +1,41 @@
+.contact-us {
+  .component-form {
+    flex-wrap: wrap;
+
+    .component-heading-group {
+      &__heading {
+        margin-bottom: rem(50);
+      }
+    }
+
+    .alert-successful {
+      text-align: center;
+      color: $white;
+      margin-top: rem(115);
+      margin-bottom: rem(160);
+
+
+      &__title {
+        font-size: rem(18);
+      }
+
+      &__description {
+        margin-top: rem(10);
+        font-size: rem(14);
+      }
+    }
+  }
+
+  &__information {
+    width: 100%;
+    padding: rem(35) rem(10) rem(35) rem(20);
+    line-height: rem(22);
+    font-weight: 300;
+    color: $gray-1;
+    background-color: $bg-green-dark-2;
+
+    &:before {
+      display: none;
+    }
+  }
+}

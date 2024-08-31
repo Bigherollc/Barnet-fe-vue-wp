@@ -1,0 +1,123 @@
+.component-related-video {
+  position: relative;
+  background-color: transparent;
+  $element: &;
+
+  &.slider-init {
+    #{$element}__wrapper {
+      &:before {
+        bottom: rem(50);
+      }
+    }
+  }
+
+  .slick-initialized {
+    .slick-list {
+      margin-left: rem(-15);
+      margin-right: rem(-15);
+    }
+
+    .slick-slide {
+      padding-left: rem(15);
+      padding-right: rem(15);
+    }
+  }
+
+
+
+  .component-heading-group {
+    padding-right: rem(10);
+
+    &__heading {
+      @include mq(sm) {
+        font-size: rem(20);
+      }
+    }
+  }
+
+  &__wrapper {
+    padding-top: rem(30);
+    padding-left: rem(30);
+    padding-right: rem(30);
+
+    @include mq(sm) {
+      padding-left: rem(20);
+      padding-right: rem(20);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      .\--bg-white & {
+        background: $white;
+      }
+
+      .\--bg-green & {
+        background: $bg-green-1;
+      }
+
+      .\--shadow-normal & {
+        @extend %box-shadow-1;
+      }
+    }
+  }
+
+  &__group-title {
+    display: flex;
+    position: relative;
+    margin-bottom: rem(40);
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__img {
+    display: block;
+    overflow: hidden;
+
+    .no-touchevents &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      min-height: 100%;
+      transition: all .2s linear;
+    }
+  }
+
+  &__col {
+    margin-bottom: rem(30);
+  }
+
+  &__content {
+    margin-top: rem(10)
+  }
+
+  &__title {
+    display: inline-block;
+    color: $link;
+    font-size: rem(16);
+    line-height: rem(18);
+    font-weight: 300;
+  }
+
+  &__time {
+    display: flex;
+    align-items: baseline;
+    color: $medium-teal;
+    font-size: rem(14);
+  }
+
+  .icon-clock-sm {
+    padding-right: rem(5);
+    font-size: rem(11);
+  }
+}

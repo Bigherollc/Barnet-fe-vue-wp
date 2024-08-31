@@ -1,0 +1,99 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Concepts landing (logout)'
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+block container
+  .landing-logout
+    .landing-logout__groupTitle
+      .container
+        +headingGroup('Concepts', 'It all starts with an idea. Concepts are collections of active ingredients, systems and inpiring formula that center around a unifying idea.', '--size-lg to-uppercase').--dark-mode
+    +imageOneside({
+      imgObj: {
+        src: '/images/content-oneside/200-products.png',
+        title: 'Systems & Actives Concepts'
+      },
+      contentObj: {
+        title: 'Systems & Actives Concepts',
+        subTitle: 'Our collection of unique, well tested specialty ingredients lorem ipsum cosmetics and personal care. SEO focused text full of keywaords and targeted phrases.',
+        list: [
+          {
+            title: 'Keyword Valuable Concept Name',
+          },
+          {
+            title: 'Holobiont Beauty',
+          },
+          {
+            title: 'Fundamentally Fashionable',
+          },
+          {
+            title: 'Industry Essentials',
+          },
+        ]
+      },
+      isRight: true
+    }).--pd-top-lg.--mg-top-lg
+    +imageOneside({
+      imgObj: {
+        src: '/images/content-oneside/innovation-consultation.png',
+        title: 'Color Concepts'
+      },
+      contentObj: {
+        title: 'Color Concepts',
+        subTitle: '<p>The Global Innovation Center team offers collaborative hands-on training customized to meet the unique needs of our customers.</p><p>The training courses are tiered from basic emulsion theory, applied training on concepts and trends, and personalized training either on-site at Barnet, off-site at your location or virtually.</p>',
+        list: [
+          {
+            title: 'Keyword Valuable Concept Name',
+          },
+          {
+            title: 'Skin Care',
+          },
+          {
+            title: 'Industry Essentials',
+          },
+        ],
+      },
+    }).--pd-top-lg.--mg-top-lg
+    +imageOneside({
+      imgObj: {
+        src: '/images/content-oneside/formula-library.png',
+        title: 'Color Concepts'
+      },
+      contentObj: {
+        title: 'Conscious Beauty Concepts',
+        subTitle: 'In addition to developing and evaluating every product the Global Innovation Center also crafts starter formula to showcase those ingredients. Inspired by the fashion of today and the trends of tomorrow our lorem ipsom dolor sit ahmet. ',
+        list: [
+          {
+            title: 'COSMOS Certified',
+          },
+          {
+            title: 'Clean Beauty Compliant',
+          },
+          {
+            title: 'EWG Rated',
+          },
+          {
+            title: 'RSPO Certified',
+          },
+        ],
+      },
+      isRight: true
+    }).--pd-top-lg.--mg-top-lg
+    .landing-logout__signin-box.--mg-top-xl
+      .container
+        .component-signin-box(style="background-image: url(/images/product/bg-signin.png)")
+          .component-signin-box__title Sign In for Details
+          .component-signin-box__box
+            .component-signin-box__signin
+              .component-signin-box__text Registered users get access to full product information and related resources:
+              .component-signin-box__list
+                ul.component-list
+                  li Specifications & Data Sheets
+                  li Videos & Presentations
+                  li Starter Formula
+              .component-signin-box__link
+                a(class="btn btn-normal --dark-mode") Sign in
+            .component-signin-box__request
+              .component-signin-box__titleRequest New Customer?
+              +link(rel="stylesheet", href="#", title="Request Access").btn.btn-solid.--dark-mode.btn-gtm-request-access Request Access

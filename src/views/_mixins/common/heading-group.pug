@@ -1,0 +1,7 @@
+mixin headingGroup (title, desc, size, tag = 'h2')
+  .component-heading-group&attributes(attributes)
+    #{tag}.component-heading-group__heading(class=[size && size])
+      !=title
+    if desc
+      .component-heading-group__desc
+        !=desc

@@ -1,0 +1,15 @@
+mixin imageContent(items)
+  .component-image-content
+    .component-image-content__wrapper.slider-control&attributes(attributes)
+      each item in items
+        +imageContentItem(item)
+
+mixin imageContentItem (item)
+  .component-image-content__item(class=[item.isDarkMode  && '--dark-mode'] data-slider-item)
+    .component-image-content__item--wrapper
+      .component-image-content__item--img
+        +img(src=item.image, alt=item.title)
+      .component-image-content__item--content
+        .component-image-content__item--heading
+          !=item.title
+      +link(rel="stylesheet", href="#", title=item.title)

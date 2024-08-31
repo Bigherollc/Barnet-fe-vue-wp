@@ -1,0 +1,33 @@
+mixin useFooter({isLegal = false, isBoth = false, isLogin = false} = {})
+  footer.footer
+    if !isLegal
+      .footer__wrapper
+        .container
+          .row
+            .col-sm-6
+              .footer__description
+                .footer__description--logo
+                  +link('/en/index.html', 'Logo')
+                    +img('/images/logo-barnet-medium.svg', 'Logo')
+                .footer__description--content
+                  p Summary version of about us ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                if isLogin
+                  +link('#', 'About Us').btn
+            .col-sm-4.offset-sm-2
+              .footer__information
+                .footer__information--content
+                  p Barnet Products LLC.
+                  p 920 Sylvan Avenue
+                  p Suite 210
+                  p Englewood Cliffs, NJ 07632
+                  p 
+                    +link('tel:#201-346-4620', '201-346-4620')
+                +link('#', 'Contact Us').btn.btn-gtm-contact-us
+    if isLegal || isBoth
+      .footer__wrapper.--small.--dark
+        .container
+          +nav-link([
+            { title: 'Copyright 2021 Barnet Products, LLC', href: `#` },
+            { title: 'Terms of Use', href: `#` },
+            { title: 'Privacy Policy', href: `#` }
+          ]).footer__nav

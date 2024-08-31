@@ -1,0 +1,392 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Formular Landing (login)'
+  - isLogin = true
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+
+block container
+  .product-container(data-product)
+    .container
+      .product__pageListing
+        .product__pageListing--row
+          .product__pageListing--colLeft
+            .product__groupTitle
+              +headingGroup('Starter Formula', 'These forward-looking and lab tested formula will kickstart your product development.', '--size-lg').--dark-mode
+            .product__filter(data-filter)
+              .product__filter-collapse(data-filter-collapse)
+                .product__filter-wrap
+                  .product__boxFilter.active(data-boxcollapse)
+                    .product__boxFilter-title(data-boxcollapse-toggle) Architecture
+                    .product__boxFilter-box
+                      .product__boxFilter-list(data-filter-list)
+                        +filterLink([
+                          {text: 'Emulsion (12)', href:'formula-login.html?action=listing&filter=emulsion', darkmode: true},
+                          {text: 'O/W (5)', href:'formula-login.html?action=listing&filter=o-w',darkmode: true},
+                          {text: 'Phospholipid (2)', href:'formula-login.html?action=listing&filter=phospholipid', darkmode: true},
+                          {text: 'D-Phase (1)', href:'formula-login.html?action=listing&filter=d-phase', darkmode: true},
+                          {text: 'Gel (5)', href:'formula-login.html?action=listing&filter=gel', darkmode: true},
+                          {text: 'Jelly (2)', href:'formula-login.html?action=listing&filter=jelly', darkmode: true},
+                          {text: 'W/O (1)', href:'formula-login.html?action=listing&filter=w-o', darkmode: true},
+                          {text: 'Mild Surfactant (2)', href:'formula-login.html?action=listing&filter=mild-surfactant', darkmode: true},
+                          {text: 'W/Si (7)', href:'formula-login.html?action=listing&filter=w-si', darkmode: true},
+                          {text: 'Stick (2)', href:'formula-login.html?action=listing&filter=stick', darkmode: true},
+                          {text: 'Liquid Crystal (1)', href:'formula-login.html?action=listing&filter=liquid-crystal', darkmode: true},
+                        ])
+                  .product__boxFilter.active(data-boxcollapse)
+                    .product__boxFilter-title(data-boxcollapse-toggle) Concerns
+                    .product__boxFilter-box
+                      .product__boxFilter-list(data-filter-list)
+                        +filterLink([
+                          {text: 'Acne (2)', href:'formula-listing-login.html?filter=acne', darkmode: true},
+                          {text: 'Excess Sebum (4)', href:'formula-listing-login.html?filter=excess-sebum', darkmode: true},
+                          {text: 'Mild Cleansing (4)', href:'formula-listing-login.html?filter=mild-cleansing', darkmode: true},
+                          {text: 'Lip Health (3)', href:'formula-listing-login.html?filter=lip-health', darkmode: true},
+                          {text: 'Moisture (7)', href:'formula-listing-login.html?filter=moisture', darkmode: true},
+                          {text: 'Visible Pores (1)', href:'formula-listing-login.html?filter=visible-pores', darkmode: true},
+                          {text: 'Aging (5)', href:'formula-listing-login.html?filter=aging', darkmode: true},
+                          {text: 'Firmness (2)', href:'formula-listing-login.html?filter=firmness', darkmode: true},
+                          {text: 'Brightening (3)', href:'formula-listing-login.html?filter=brightening', darkmode: true},
+                          {text: 'Millenial Aging (1)', href:'formula-listing-login.html?filter=millenial-aging', darkmode: true},
+                          {text: 'Environmental Stress (1)', href:'formula-listing-login.html?filter=environmental-stress', darkmode: true},
+                          {text: 'Inflammation (2)', href:'formula-listing-login.html?filter=inflammation', darkmode: true},
+                          {text: 'Water-In-Silicone (12)', href:'formula-listing-login.html?filter=sun-protection', darkmode: true},
+                        ])
+                  .product__boxFilter(data-boxcollapse)
+                    .product__boxFilter-title(data-boxcollapse-toggle) Finish
+                    .product__boxFilter-box
+                      .product__boxFilter-list(data-filter-list)
+                        +filterLink([
+                          {text: 'Matte (2)', href:'formula-listing-login.html?filter=matte', darkmode: true},
+                          {text: 'Shiny (1)', href:'formula-listing-login.html?filter=shiny', darkmode: true},
+                          {text: 'Natural (13)', href:'formula-listing-login.html?filter=natural', darkmode: true},
+                          {text: 'Metallic (1)', href:'formula-listing-login.html?filter=metallic', darkmode: true},
+                          {text: 'Dewy (2)', href:'formula-listing-login.html?filter=dewy', darkmode: true},
+                        ])
+          .product__pageListing--colRight
+            .product__slideHero
+              +slideHero([
+                {
+                  image: '/images/active/hero-1.png',
+                  title: 'Introducing Barnet Color',
+                  desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+                },
+                {
+                  image: '/images/active/hero-2.png',
+                  title: 'Introducing Barnet Color',
+                  desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+                },
+                {
+                  image: '/images/active/hero-3.png',
+                  title: 'Introducing Barnet Color',
+                  desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+                },
+              ]).--size-wrap-md(data-slider-main data-opts-slider='{"slickContainer": ".product__slideHero","optsSlick": {"slide": "[data-slider-item]", "dots": true, "rows": 0, "slidesToShow": 1}}')
+            .product__seqments.--mg-top-lg
+              +headingGroup('Formula Collections', 'These concept focused collections dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.').--dark-mode
+              +imageContent([
+                {
+                  image: '/images/seqments/seqments-1.png',
+                  title: 'Color by Barnet'
+                },
+                {
+                  image: '/images/seqments/seqments-2.png',
+                  title: 'Conscious Beauty',
+                  isDarkMode: true
+                },
+                {
+                  image: '/images/seqments/seqments-3.png',
+                  title: 'Derm'
+                },
+                {
+                  image: '/images/seqments/seqments-4.png',
+                  title: 'Hair'
+                },
+                {
+                  image: '/images/seqments/seqments-4.png',
+                  title: 'Skin Care'
+                },
+                {
+                  image: '/images/seqments/seqments-1.png',
+                  title: 'Color by Barnet'
+                },
+                {
+                  image: '/images/seqments/seqments-2.png',
+                  title: 'Conscious Beauty',
+                  isDarkMode: true
+                },
+                {
+                  image: '/images/seqments/seqments-3.png',
+                  title: 'Derm'
+                },
+                {
+                  image: '/images/seqments/seqments-4.png',
+                  title: 'Hair'
+                },
+                {
+                  image: '/images/seqments/seqments-4.png',
+                  title: 'Skin Care'
+                },
+                {
+                  image: '/images/seqments/seqments-1.png',
+                  title: 'Color by Barnet'
+                },
+                {
+                  image: '/images/seqments/seqments-2.png',
+                  title: 'Conscious Beauty',
+                  isDarkMode: true
+                },
+                {
+                  image: '/images/seqments/seqments-3.png',
+                  title: 'Derm'
+                },
+                {
+                  image: '/images/seqments/seqments-4.png',
+                  title: 'Hair'
+                },
+                {
+                  image: '/images/seqments/seqments-4.png',
+                  title: 'Skin Care'
+                },
+                {
+                  image: '/images/seqments/seqments-1.png',
+                  title: 'Color by Barnet'
+                },
+                {
+                  image: '/images/seqments/seqments-2.png',
+                  title: 'Conscious Beauty',
+                  isDarkMode: true
+                },
+                {
+                  image: '/images/seqments/seqments-3.png',
+                  title: 'Derm'
+                },
+                {
+                  image: '/images/seqments/seqments-4.png',
+                  title: 'Hair'
+                },
+                {
+                  image: '/images/seqments/seqments-4.png',
+                  title: 'Skin Care'
+                },
+              ])(data-slider-main data-opts-slider='{"slickContainer": ".product__seqments","optsSlick": {"dots": true, "rows": 2, "slidesToShow": 4, "slidesToScroll": 4, "responsive":[{"breakpoint": 991, "settings": {"slidesToShow": 3 , "slidesToScroll": 3}}, {"breakpoint": 768, "settings": {"slidesToShow": 2, "slidesToScroll": 2}}]}}')
+            .product__title-widget.--mg-top-lg Explore by Type
+            .product__hexagonBox.--mg-top-lg
+              .component-hexagon.component-hexagon--productPage
+                .component-hexagon__box
+                  .component-hexagon__row
+                    .component-hexagon__col
+                      .component-hexagon__item.--disable
+                    .component-hexagon__col
+                      .component-hexagon__item
+                        +link('#', 'Mascara').component-hexagon__item--content
+                          .component-hexagon__item--img
+                            img(src="../images/product/product-lotion-b.svg")
+                          .component-hexagon__item--name
+                            | Mascara
+                    .component-hexagon__col
+                      .component-hexagon__item
+                        +link('#', 'Lipstick').component-hexagon__item--content
+                          .component-hexagon__item--img
+                            img(src="../images/product/product-lotion-b.svg")
+                          .component-hexagon__item--name
+                            | Lipstick
+                    .component-hexagon__col
+                      .component-hexagon__item.--disable
+                    .component-hexagon__col
+                      .component-hexagon__item
+                        +link('#', 'Eye shadow').component-hexagon__item--content
+                          .component-hexagon__item--img
+                            img(src="../images/product/product-lotion-b.svg")
+                          .component-hexagon__item--name
+                            | Eye shadow
+                    .component-hexagon__col
+                      .component-hexagon__item
+                        +link('#', 'Sun care').component-hexagon__item--content
+                          .component-hexagon__item--img
+                            img(src="../images/product/product-lotion-b.svg")
+                          .component-hexagon__item--name
+                            | Sun care
+                    .component-hexagon__col
+                      .component-hexagon__item.--disable
+                    .component-hexagon__col
+                      .component-hexagon__item
+                        +link('#', 'Masks').component-hexagon__item--content
+                          .component-hexagon__item--img
+                            img(src="../images/product/product-lotion-b.svg")
+                          .component-hexagon__item--name
+                            | Masks
+                    .component-hexagon__col
+                      .component-hexagon__item
+                        +link('#', 'Foudation').component-hexagon__item--content
+                          .component-hexagon__item--img
+                            img(src="../images/product/product-lotion-b.svg")
+                          .component-hexagon__item--name
+                            | Foudation
+                    .component-hexagon__col
+                      .component-hexagon__item
+                        +link('#', 'Blush').component-hexagon__item--content
+                          .component-hexagon__item--img
+                            img(src="../images/product/product-lotion-b.svg")
+                          .component-hexagon__item--name
+                            | Blush
+                    .component-hexagon__col
+                      .component-hexagon__item
+                        +link('#', 'Shots & Serums').component-hexagon__item--content
+                          .component-hexagon__item--img
+                            img(src="../images/product/product-lotion-b.svg")
+                          .component-hexagon__item--name
+                            | Shots & Serums
+                    .component-hexagon__col
+                      .component-hexagon__item.--disable
+                    .component-hexagon__col
+                      .component-hexagon__item
+                        +link('#', 'Moisturizer').component-hexagon__item--content
+                          .component-hexagon__item--img
+                            img(src="../images/product/product-lotion-b.svg")
+                          .component-hexagon__item--name
+                            | Moisturizer
+                    .component-hexagon__col
+                      .component-hexagon__item
+                        +link('#', 'Cleansers').component-hexagon__item--content
+                          .component-hexagon__item--img
+                            img(src="../images/product/product-lotion-b.svg")
+                          .component-hexagon__item--name
+                            | Cleansers
+                    .component-hexagon__col
+                      .component-hexagon__item
+                        +link('#', 'Skin creams').component-hexagon__item--content
+                          .component-hexagon__item--img
+                            img(src="../images/product/product-lotion-b.svg")
+                          .component-hexagon__item--name
+                            | Skin creams
+                    .component-hexagon__col.--sm-block
+                      .component-hexagon__item.--see-all
+                        +link('#', 'See All Formula').component-hexagon__item--content
+                          .component-hexagon__item--btn
+                            | See All Formula
+                    .component-hexagon__col
+                      .component-hexagon__item.--transparent
+                    .component-hexagon__col
+                      .component-hexagon__item.--disable
+                    .component-hexagon__col
+                      .component-hexagon__item
+                        +link('#', 'Eye Liner').component-hexagon__item--content
+                          .component-hexagon__item--img
+                            img(src="../images/product/product-lotion-b.svg")
+                          .component-hexagon__item--name
+                            | Eye liner
+                    .component-hexagon__col
+                      .component-hexagon__item
+                        +link('#', 'Lip stain').component-hexagon__item--content
+                          .component-hexagon__item--img
+                            img(src="../images/product/product-lotion-b.svg")
+                          .component-hexagon__item--name
+                            | Lip stain
+                    .component-hexagon__col
+                      .component-hexagon__item.--disable
+            .product__title-widget.--mg-top-ml Featured Formula
+            .product__wrapping.--mg-top-sm
+              .product__filter.product__filter--mobile(data-filter)
+                .product__filter-toggle(data-filter-toggle)
+                  span.open Hide Filters
+                  span.close Show all Categories & Filters
+                .product__filter-collapse(data-filter-collapse)
+                  .product__filter-wrap
+                    .product__boxFilter.active(data-boxcollapse)
+                      .product__boxFilter-title(data-boxcollapse-toggle) Architecture
+                      .product__boxFilter-box
+                        .product__boxFilter-list(data-filter-list)
+                          +filterLink([
+                            {text: 'Emulsion (12)', href:'formula-login.html?action=listing&filter=emulsion', darkmode: true},
+                            {text: 'O/W (5)', href:'formula-login.html?action=listing&filter=o-w',darkmode: true},
+                            {text: 'Phospholipid (2)', href:'formula-login.html?action=listing&filter=phospholipid', darkmode: true},
+                            {text: 'D-Phase (1)', href:'formula-login.html?action=listing&filter=d-phase', darkmode: true},
+                            {text: 'Gel (5)', href:'formula-login.html?action=listing&filter=gel', darkmode: true},
+                            {text: 'Jelly (2)', href:'formula-login.html?action=listing&filter=jelly', darkmode: true},
+                            {text: 'W/O (1)', href:'formula-login.html?action=listing&filter=w-o', darkmode: true},
+                            {text: 'Mild Surfactant (2)', href:'formula-login.html?action=listing&filter=mild-surfactant', darkmode: true},
+                            {text: 'W/Si (7)', href:'formula-login.html?action=listing&filter=w-si', darkmode: true},
+                            {text: 'Stick (2)', href:'formula-login.html?action=listing&filter=stick', darkmode: true},
+                            {text: 'Liquid Crystal (1)', href:'formula-login.html?action=listing&filter=liquid-crystal', darkmode: true},
+                          ])
+                    .product__boxFilter.active(data-boxcollapse)
+                      .product__boxFilter-title(data-boxcollapse-toggle) Concerns
+                      .product__boxFilter-box
+                        .product__boxFilter-list(data-filter-list)
+                          +filterLink([
+                            {text: 'Acne (2)', href:'formula-listing-login.html?filter=acne', darkmode: true},
+                            {text: 'Excess Sebum (4)', href:'formula-listing-login.html?filter=excess-sebum', darkmode: true},
+                            {text: 'Mild Cleansing (4)', href:'formula-listing-login.html?filter=mild-cleansing', darkmode: true},
+                            {text: 'Lip Health (3)', href:'formula-listing-login.html?filter=lip-health', darkmode: true},
+                            {text: 'Moisture (7)', href:'formula-listing-login.html?filter=moisture', darkmode: true},
+                            {text: 'Visible Pores (1)', href:'formula-listing-login.html?filter=visible-pores', darkmode: true},
+                            {text: 'Aging (5)', href:'formula-listing-login.html?filter=aging', darkmode: true},
+                            {text: 'Firmness (2)', href:'formula-listing-login.html?filter=firmness', darkmode: true},
+                            {text: 'Brightening (3)', href:'formula-listing-login.html?filter=brightening', darkmode: true},
+                            {text: 'Millenial Aging (1)', href:'formula-listing-login.html?filter=millenial-aging', darkmode: true},
+                            {text: 'Environmental Stress (1)', href:'formula-listing-login.html?filter=environmental-stress', darkmode: true},
+                            {text: 'Inflammation (2)', href:'formula-listing-login.html?filter=inflammation', darkmode: true},
+                            {text: 'Water-In-Silicone (12)', href:'formula-listing-login.html?filter=sun-protection', darkmode: true},
+                          ])
+                    .product__boxFilter(data-boxcollapse)
+                      .product__boxFilter-title(data-boxcollapse-toggle) Finish
+                      .product__boxFilter-box
+                        .product__boxFilter-list(data-filter-list)
+                          +filterLink([
+                            {text: 'Matte (2)', href:'formula-listing-login.html?filter=matte', darkmode: true},
+                            {text: 'Shiny (1)', href:'formula-listing-login.html?filter=shiny', darkmode: true},
+                            {text: 'Natural (13)', href:'formula-listing-login.html?filter=natural', darkmode: true},
+                            {text: 'Metallic (1)', href:'formula-listing-login.html?filter=metallic', darkmode: true},
+                            {text: 'Dewy (2)', href:'formula-listing-login.html?filter=dewy', darkmode: true},
+                          ])
+              +listProduct([
+                  {
+                    title: 'A.M. Mist Mask',
+                    desc: 'Give your skin an early boost in the morning that only takes a minute! This morning spray on mask is the perfect way to start your day. It’s a jelly skin shot that will leave you feeling moisturized from A.M. to P.M.',
+                    image: '/images/product/ic_lotion.png'
+                  },
+                  {
+                    title: 'Acqua Rush Emulsion',
+                    desc: 'Get a wave of hydration with Acqua Rush Emulsion! This formula gives you instant and lasting moisturization to plump and revitalize even the driest of skin. The active ingredients focus not only on instantly supplying key moisture elements but also stimulating the skin to moisturize itself for sustained moisture. Keep your skin healthy and hydrated around the clock with the Acqua Rush Emulsion!',
+                    image: '/images/product/ic_lipstick.png'
+                  },
+                  {
+                    title: 'Bouncy Balm Serum Foundation',
+                    desc: 'Immerse your skin in moisture with this bouncy balm foundation. The solid serum is a full coverage product delivering skin care benefits which hydrate the skin and reduce lines and wrinkles with a “Botox-like” effect.',
+                    image: '/images/product/ic_lipstick.png'
+                  },
+                  {
+                    title: 'CleanStick',
+                    desc: 'Are you in a rush? Take cleansing with you on the go! Infused with charcoal powder to detox the skin from dirt and impurities delivering the right amount of moisture and lipids into the skin. Once the stick interacts with water it will bloom into a cleansing milk removing impurities, dirt and sebum.',
+                    image: '/images/product/ic_stick.png'
+                  },
+                  {
+                    title: 'Gravity-Proof Sunscreen',
+                    desc: 'Defy gravity with the Gravity-Proof Sunscreen. Naturally lift and firm the skin  while plumping and filling in fine lines. Perfect for daily wear, apply in the morning for sun protection coupled with gravity fighting ingredients!',
+                    image: '/images/product/ic_lotion.png'
+                  },
+                ])
+            .product__loadmore.--mg-top-md
+              +link(rel="stylesheet", href="formula-login.html?action=listing&action=listing", data-see-more).btn.btn-regular.--dark-mode See All Actives
+
+  .product-container(style="display: none" data-listing-page)
+    .container#app
+      com-container(:isdarkmode="true")
+        com-heading-group(
+          slot="left"
+          title="STARTER FORMULA"
+          desc="These forward-looking and lab tested formula will kickstart your product development."
+        )
+        com-filter(slot="left")
+        com-tab-list(slot="right").d-none
+          com-tab-list-item(name="formula")
+        com-wrapping(slot="right")
+          com-filter-mobile
+          com-listing
+            com-list-formula(
+              data="/data/formula-data.json"
+              filter="/data/formula-filter.json"
+            )
+            com-load-more

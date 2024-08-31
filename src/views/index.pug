@@ -1,0 +1,109 @@
+extends _layouts/template
+
+block append vars
+  - title = $translator.home ? $translator.home.title : 'Homepage'
+  - useHeader = false
+
+block container
+  //- .container
+    //- +hero([
+    //-   {
+    //-     title: 'Welcome to<br>the web boilerplate',
+    //-     pics: {
+    //-       'default': 'images/hero/tech1.jpeg',
+    //-       991: 'images/hero/tech-m-1.jpeg',
+    //-     }
+    //-   }, {
+    //-     title: 'This is<br>Hero component example',
+    //-     isRight: true,
+    //-     pics: {
+    //-       'default': 'images/hero/tech2.jpeg',
+    //-       991: 'images/hero/tech-m-2.jpeg',
+    //-     }
+    //-   }, {
+    //-     title: 'Why do you swipe to third slide??',
+    //-     isBlack: true,
+    //-     pics: {
+    //-       'default': 'images/hero/tech3.jpeg',
+    //-       991: 'images/hero/tech-m-3.jpeg',
+    //-     }
+    //-   }
+    //- ])
+
+  mixin blank(title, href, target = "_blank")
+    .blank
+      +link(href, title)(target=target).link
+        span.text=title
+
+  .container-fluid
+    h1 COMPONENT
+    .block.template__block
+      h2.template__header COMMON
+      .clearfix
+        +blank('Style Guide', 'styleguide.html')
+        +blank('Footer', 'c_footer.html')
+        +blank('Header', 'c_header.html')
+        +blank('Loading', 'c_loading.html')
+
+      h2.template__header IMAGE CONTENT
+      .clearfix
+        +blank('Image Content', 'c_image-content.html')
+      h2.template__header HEXAGON
+      .clearfix
+        +blank('Hexagon', 'c_hexagon.html')
+      h2.template__header CONFIRM FORM
+      .clearfix
+        +blank('Confirm Form', 'c_confirm-form.html')
+    h1 PAGE
+    .block.template__block
+      h2.template__header HOMEPAGE LOGOUT
+      .clearfix
+        +blank('Sign in (logout)', 'c_form-sign-in.html')
+        +blank('Homepage (logout)', 'c_homepage-logout.html')
+        +blank('All Products (logout)', 'all-product-logout.html')
+        +blank('Product detail (logout)', 'product-detail-logout.html')
+        +blank('Contact us (logout)', 'contact-us.html')
+        +blank('About us (logout)', 'about-us.html')
+        +blank('Search (logout)', 'search-logout.html')
+      h2.template__header HOMEPAGE LOGIN
+      .clearfix
+        +blank('Homepage (login)', 'c_homepage-login.html')
+        +blank('Search (login)', 'search-login.html')
+        +blank('Product active detail (login)', 'product-active-detail-login.html')
+        +blank('Product system detail (login)', 'product-system-detail-login.html')
+        +blank('Actives (login)', 'active-login.html')
+        +blank('Systems (login)', 'systems-login.html')
+        +blank('Formula (login)', 'formula-login.html')
+        +blank('Formula Detail (login)', 'formula-detail-login.html')
+        +blank('Resource (login)', 'resource-login.html')
+        +blank('Resource Detail (login)', 'resource-detail-login.html')
+        +blank('Resource Detail "Video (login)', 'resource-detail-login-video.html')
+        +blank('Terms of use (login)', 'terms-of-use.html')
+        +blank('Concepts Landing (login)', 'concepts-landing-login.html')
+        +blank('Concepts Detail (login)', 'concepts-detail-login.html')
+      h2.template__header REQUEST
+      .clearfix
+        +blank('Form Request Access', 'c_request-access.html')
+        +blank('Form Forgot Password', 'c_forgot-password.html')
+        +blank('Form Add New Password', 'c_add-new-password.html')
+        +blank('Form Sample Request', 'c_sample-request.html')
+        +blank('Form Sample Empty', 'c_sample-empty.html')
+        +blank('Product Sample Request', 'c_product-sample-request.html')
+      h2.template__header ACCOUNT
+      .clearfix
+        +blank('Form My Account', 'c_my-account.html')
+        +blank('Form Update Details', 'c_update-details.html')
+        +blank('Form Change Password', 'c_change-password.html')
+        +blank('Form Set Password', 'c_set-password.html')
+      h2.template__header Global Innovation Center
+      .clearfix
+        +blank('Global Innovation Center (login)', 'global-innovation-center-login.html')
+        +blank('Lab Training (login)', 'lab-training-login.html')
+        +blank('Lab Day Request', 'c_lab-day-request.html')
+      h2.template__header Landing Pages
+      .clearfix
+        +blank('Landing Derm', 'c_landing-derm.html')
+        +blank('Landing Conscious Beauty', 'c_landing-conscious-beauty.html')
+        +blank('Landing Hair', 'c_landing-hair.html')
+        +blank('Landing Color', 'c_landing-color.html')
+        +blank('Landing Skin', 'c_landing-skin.html')

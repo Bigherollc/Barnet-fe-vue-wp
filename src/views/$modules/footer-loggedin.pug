@@ -1,0 +1,22 @@
+footer.footer
+  .footer__wrapper
+    .container
+      .row
+        .col-md-6
+          .footer__description
+            .footer__description--logo
+              +link('/en/index.html', 'Logo')
+                +img('/images/logo-barnet-medium.svg', 'Logo')
+            .footer__description--content
+              p Summary version of about us ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+            +link('#', 'About Us').btn
+        .col-md-4.offset-md-2
+          .footer__information
+            .footer__information--content
+              p Barnet Products LLC.
+              p 920 Sylvan Avenue
+              p Suite 210
+              p Englewood Cliffs, NJ 07632
+              p 
+                +link('tel:#201-346-4620', '201-346-4620')
+            +link('#', 'Contact Us').btn.btn-gtm-contact-us

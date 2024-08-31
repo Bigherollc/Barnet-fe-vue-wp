@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "image": "/images/active/mask-1.png",
+    "title": "Around the Clock Aging (Epigenetics)",
+    "desc": "Brighten, blur and highlight for glowing youthful skin.",
+    "link": "#"
+  },
+  {
+    "id": 1,
+    "image": "/images/active/mask-2.png",
+    "title": "Holobiont Beauty",
+    "desc": "Fresh and natural light touch coverage for daily use.",
+    "link": "#"
+  },
+  {
+    "id": 1,
+    "image": "/images/active/mask-3.png",
+    "title": "Moisturization",
+    "desc": "Solar shields lorem ipsum dolor sit ahmet neldim.",
+    "link": "#"
+  },
+  {
+    "id": 1,
+    "image": "/images/active/mask-4.png",
+    "title": "Holobiont Beauty",
+    "desc": "Brighten, blur and highlight for glowing youthful skin.",
+    "link": "#"
+  }
+]

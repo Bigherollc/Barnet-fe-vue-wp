@@ -1,0 +1,233 @@
+.component-tab-list {
+  $element: &;
+
+  ul {
+    display: flex;
+    align-items: center;
+    border-bottom: rem(1) solid $semi-dark-teal;
+
+    @include mq("sm") {
+      flex-wrap: wrap;
+    }
+  }
+
+  li {
+    margin-right: rem(60);
+
+    @include mq("sm") {
+      margin-right: rem(40);
+    }
+
+    @include mq("xs") {
+      width: 50%;
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    display: block;
+    font-size: rem(17);
+    color: $link;
+    text-transform: uppercase;
+    padding: rem(7) 0;
+    position: relative;
+
+    @include mq("sm") {
+      font-size: rem(14);
+    }
+
+    &::before {
+      content: "";
+      @include size(0);
+      border-top: rem(10) solid $semi-dark-teal;
+      border-left: rem(10) solid transparent;
+      border-right: rem(10) solid transparent;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+    }
+
+    &.active {
+      color: $semi-dark-teal;
+
+      &::before {
+        display: block;
+
+        @include mq("sm") {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // span {
+  //   color: $semi-dark-teal;
+  // }
+
+  &__toggle {
+    display: none;
+    font-size: rem(17);
+    line-height: rem(18);
+    padding: rem(10) 0;
+    text-transform: uppercase;
+
+    @include mq("sm") {
+      display: block;
+    }
+
+    &::after {
+      content: ' \e902';
+      @extend %font-icon;
+    }
+  }
+
+  &.\--vertical {
+    ul {
+      display: block;
+      border-bottom: none;
+
+      @include mq("ml") {
+        padding-top: rem(28);
+      }
+    }
+
+    li {
+      margin-right: 0;
+      margin-bottom: rem(23);
+
+      @include mq("sm") {
+        margin-bottom: rem(35);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      padding: 0;
+      padding-right: rem(10);
+      font-size: rem(15);
+      color: $white;
+      font-weight: normal;
+
+      &::before {
+        border-top: rem(10) solid transparent;
+        border-bottom: rem(10) solid transparent;
+        border-left: rem(10) solid $white;
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);
+
+        @include mq("sm") {
+          display: none;
+        }
+      }
+
+      &:hover {
+        @include mq("sm") {
+          background-color: transparent;
+        }
+      }
+    }
+    &.\--dark-mode {
+      a {
+        &::before {
+          border-top-color: transparent;
+        }
+      }
+    }
+  }
+
+  &.\--hasToggle {
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+
+    ul {
+      @include mq("sm") {
+        display: none;
+        width: rem(200);
+        padding: rem(20) rem(20);
+        background-color: $white;
+        box-shadow: 0 rem(3) rem(12) rem(1) $shadow-2;
+        border-bottom: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+      }
+    }
+
+    li {
+      @include mq("sm") {
+        width: 100%;
+        padding: 0;
+        margin-right: 0;
+        margin-bottom: rem(35);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &.\--dark-mode {
+      a {
+        color: $white;
+
+        @include mq("sm") {
+          color: $black;
+        }
+
+        &.active {
+          @include mq("sm") {
+            color: $link;
+          }
+        }
+      }
+    }
+
+    a {
+      &::before {
+        @include mq("sm") {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &.\--dark-mode {
+    #{$element}__toggle {
+      color: $white;
+    }
+
+    ul {
+      border-bottom-color: $white;
+    }
+
+    a:before {
+      border-top-color: $white;
+    }
+
+    a,
+    span,
+    a.active {
+      color: $white;
+    }
+  }
+
+  &.active {
+    ul {
+      @include mq("sm") {
+        display: block;
+      }
+    }
+  }
+}

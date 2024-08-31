@@ -1,0 +1,19 @@
+.menumobile(data-menumobile)
+  .menumobile__toggle(data-toggle)
+    span
+  .menumobile__menu(data-menu)
+    .menumobile__wrap
+      +nav([
+        {title: 'Concepts', text: 'Concepts', href: ''},
+        {title: 'Actives', text: 'Actives', href: ''},
+        {title: 'Systems', text: 'Systems', href: ''},
+        {title: 'Formula', text: 'Formula', href: ''},
+        {title: 'Resources', text: 'Resources', href: ''},
+        {title: 'Global Innovation Center', text: 'Global Innovation Center', href: ''},
+        {title: 'Samples', text: 'Samples', href: '', count: '2'}
+      ])
+      +nav([
+        {title: 'Profile Settings', text: 'Profile Settings', href: ''},
+        {title: 'Change Password', text: 'Change Password', href: ''},
+        {title: 'Logout', text: 'Logout', href: ''}
+      ])

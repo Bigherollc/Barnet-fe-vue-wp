@@ -1,0 +1,102 @@
+.component-form {
+  display: flex;
+  max-width: rem(390);
+  width: 100%;
+  background-color: $dark-teal;
+  align-items: center;
+  @extend %box-shadow-2;
+
+  &.\--right {
+    margin-left: auto;
+  }
+  &.\--left {
+    margin-right: auto;
+  }
+  &.\--center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__wrapper {
+    width: 100%;
+    padding: rem(25) rem(20) rem(40);
+  }
+
+  &__form {
+    margin-bottom: 0;
+  }
+
+  &__two-col {
+    display: flex;
+    margin: rem(-10) 0;
+  }
+
+  &__group {
+    &:not(:first-child) {
+      margin-top: rem(35);
+    }
+  }
+
+  &__item {
+    display: block;
+    margin: rem(10) 0;
+
+    &[class*="col-"] {
+      padding-left: 0;
+      padding-right: rem(7.5);
+
+      & + & {
+        padding-left: rem(7.5);
+        padding-right: 0;
+      }
+    }
+
+    .checkbox-row & {
+      display: inline-block;
+      margin-left: rem(25);
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__lbl {
+    display: inline-block;
+    margin-top: rem(10);
+    font-size: rem(12);
+    line-height: rem(13);
+    color: $barnet-teal;
+  }
+
+  &__link {
+    display: inline-block;
+    color: $link;
+    font-size: rem(14);
+    line-height: rem(15);
+  }
+
+  &__note {
+    color: $green-2;
+    font-size: rem(14);
+    line-height: rem(20);
+    font-weight: 300;
+  }
+
+  &__btn {
+    margin-top: rem(25);
+    text-align: center;
+  }
+
+  &__inbox {
+    margin-bottom: rem(25);
+  }
+
+  .btn {
+    margin-top: rem(10);
+  }
+
+  @include mq(sm) {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,19 @@
+.component-lab-day-request {
+  .component-form {
+    &__content {
+      &:nth-child(2) {
+        .component-form__note {
+          margin-top: rem(10);
+          margin-bottom: rem(10);
+        }
+      }
+    }
+    &__note {
+      margin-bottom: 25px;
+    }
+  }
+
+  .alert-warning {
+    margin-bottom: rem(20);
+  }
+}

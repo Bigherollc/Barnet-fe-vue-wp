@@ -1,0 +1,162 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Sample Request'
+  - useFooter = true
+  - useHeader = true
+  - isLogin = true
+  - isFooterLegal = true
+  - namespace = '--fit-vh --bg-gradient'
+
+block container
+  section.component-sample-request(data-sample-request)
+    .container
+      .component-form
+        .component-form__wrapper
+          form.component-form__form(data-parsley-validate data-parsley-errors-messages-disabled)
+            .component-form__content(data-tab-content)
+              .component-form__infor
+                .component-form__caption
+                  .component-heading-group.--dark-mode
+                    h2.component-heading-group__heading.--size-lg.to-uppercase
+                      | Sample Request
+                    .component-heading-group__desc
+                      p This should be a statement about why Barnet offeres samples, how they are good, how much you get and what to do with them.
+                      p International Customers: Some products are not available in all regions.
+                  .component-form__note
+                    | NOTE: Barnet agrees to offers samples for use in cosmetic and personal care formulations. We do not provide our ingredients for use in ingestible, injectables, or encapsulations. Barnet is pelased to offer samples for research and development purposed only and are happy to provide.
+                .component-form__field
+                  .component-form__infor__confirm(data-infor-confirm)
+                    .component-form__infor__confirm--wrapper
+                      .component-form__infor__confirm--heading
+                        +headingForm('Ship To:').--size-sm
+                        button.btn(type="button" data-edit-btn)
+                          | Edit
+                      .component-form__infor__confirm--content
+                        .component-form__infor__confirm--user
+                          p Mark James
+                          p mjames@companyname.com
+                          p W: 223-342-1515
+                          p M: 234-232-2151
+                        .component-form__infor__confirm--company
+                          p CompanyName
+                          p 342 West Gillford St.
+                          p Suite 2231
+                          p Boston, MA 43562
+                  .comnponent-form__infor__edit.d-none(data-infor-edit)
+                    .component-form__group
+                      +headingForm('Ship To:', 'All fields are required to complete your request.').--size-sm
+                      .component-form__group__input
+                        .component-form__item
+                          input.form-control.--dark-mode(type="text" name="first_name" placeholder="First Name" autocomplete="off" value="" data-parsley-required)
+                        .component-form__item
+                          input.form-control.--dark-mode(type="text" name="last_name" placeholder="Last Name" autocomplete="off" value="Last Name" data-parsley-required)
+                        .component-form__item
+                          input.form-control.--dark-mode(type="email" name="email" placeholder="Work Email Address" value="EmailTest@gmail.com" autocomplete="off" data-parsley-required)
+                    .component-form__group
+                      +headingForm('Company Details:').--size-sm
+                      .component-form__group__input
+                        .component-form__item
+                          input.form-control.--dark-mode(type="text" name="company_name" placeholder="Company Name" autocomplete="off" value="Company Name" data-parsley-required)
+                        .component-form__item
+                          input.form-control.--dark-mode(type="text" name="address" placeholder="Address" autocomplete="off" value="Address Test" data-parsley-required)
+                        .component-form__item
+                          input.form-control.--dark-mode(type="text" name="address_optional" placeholder="Address Line 2" autocomplete="off")
+                        .component-form__item
+                          select.form-control.--dark-mode(name="united_states" required data-parsley-required)
+                            option(disabled selected value="") United States
+                            option(value="0") Male
+                            option(value="1") Female
+                        .component-form__two-col
+                          .col-6.component-form__item
+                            input.form-control.--dark-mode(type="text" name="province" placeholder="State/Province" autocomplete="off" value="State/Province" data-parsley-required)
+                          .col-6.component-form__item
+                            input.form-control.--dark-mode(type="text" name="postal_code" placeholder="Postal Code" autocomplete="off" value="1324561" data-parsley-required)
+                        .component-form__item
+                          input.form-control.--dark-mode(type="text" name="phone" placeholder="Work Phone" autocomplete="off" value="111-111-1111" data-parsley-required data-mask="000-000-0000")
+                        .component-form__item
+                          input.form-control.--dark-mode(type="text" name="phone_optional" placeholder="Mobile Phone (Optional)" autocomplete="off" data-mask="000-000-0000")
+                  .component-form__group
+                    +headingForm('Additional Notes:', 'Any special requests such as multiple samples of an item can be added in the notes area below.').--size-sm
+                    .component-form-group__input
+                      .component-form__item
+                        textarea.form-control.--dark-mode(type="text" name="note" placeholder="Optional Note")
+                  .component-form__group
+                    .component-form-group__input
+                      .component-form__item
+                        .form-checkbox.--dark-mode
+                          input(type="checkbox" id="checkbox1" name="checkbox" data-parsley-checkmin="1" data-parsley-required)
+                          label(for="checkbox1")
+                            |  Signup for our newsletter to recieve updates about new prodcuts and whatever else is in the bnewsletter
+                            span
+                  .component-form__group
+                    +headingForm('', 'How did you hear about us:').--size-sm
+                    .component-form-group__input
+                      .component-form__item
+                        select.form-control.--dark-mode(name="about_us" required data-parsley-required)
+                          option(disabled selected value="") Select
+                          option(value="0") Male
+                          option(value="1") Female
+                  .component-form__group.text-center.d-none.d-sm-block
+                    button.btn.btn-solid.--dark-mode(data-next-btn type="submit")
+                      | Submit Request
+              .component-form__product
+                .component-form__group.--mg-bottom-lg
+                  .component-form__product__selected
+                    .component-heading-group
+                      h2.component-heading-group__heading.--size-md
+                        | Selected Samples
+                        span.count-wrapper
+                          | (
+                          span.count-number(data-count-sample) 0
+                          | )
+                    .component-form__product__list(data-wrap-sample)
+                      //- +link('#', 'Product Name').component-form__product__item
+                      //-   .component-form__product__item--wrapper
+                      //-     .component-form__product__item--content
+                      //-       i.icon.icon-sample
+                      //-       | Product Name
+                      //-     i.icon.icon-close(data-remove-sample data-id-sample="KM-2-65.14")
+                      //- +link('#', 'Product Name').component-form__product__item
+                      //-   .component-form__product__item--wrapper
+                      //-     .component-form__product__item--content
+                      //-       i.icon.icon-sample
+                      //-       | Product Name
+                      //-     i.icon.icon-close
+                      //- +link('#', 'Product Name').component-form__product__item
+                      //-   .component-form__product__item--wrapper
+                      //-     .component-form__product__item--content
+                      //-       i.icon.icon-sample
+                      //-       | Product Name
+                      //-     i.icon.icon-close
+                      //- +link('#', 'Product Name').component-form__product__item
+                      //-   .component-form__product__item--wrapper
+                      //-     .component-form__product__item--content
+                      //-       i.icon.icon-sample
+                      //-       | Product Name
+                      //-     i.icon.icon-close
+
+                .component-form__group
+                  +headingGroup('Find a Product', 'You can request samples of individual products and starter formula.', '--size-md')
+                  .component-form__ctas.text-center
+                    +link('#', 'All active materials').btn.btn-regular.btn-block
+                    +link('#', 'All system formers').btn.btn-regular.btn-block
+                    +link('#', 'All Starter Formula').btn.btn-regular.btn-block
+                .component-form__group
+                  +headingGroup('Quick Find', '', '--size-md')
+                  .component-form-group__input
+                    .component-form__item
+                      select.form-control(name="quick_find" data-quick-find="product" style="width: 100%")
+                        option(disabled selected value="") Select A Product
+                        //- option(value="0") Male
+                        //- option(value="1") Female
+                    .component-form__item
+                      select.form-control(name="quick_find" data-quick-find="formula" style="width: 100%")
+                        option(disabled selected value="") Select A Formula
+                        //- option(value="0") Male
+                        //- option(value="1") Female
+                .component-form__group.text-center.d-sm-none
+                  button.btn.btn-solid(data-next-btn type="submit")
+                    | Submit Request
+              input(type="hidden" name="selected_sample" value='[{"role": "管理者", "mail": "rental@live.com", "id": "a001"},{"role": "管理者", "mail": "rental2@live.com", "id": "b002"}]' data-selected-sample)
+              input(type="hidden" name="key_store" value="keyStore" data-key-store)

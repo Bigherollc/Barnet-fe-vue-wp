@@ -1,0 +1,45 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Sample Empty'
+  - useFooter = true
+  - useHeader = true
+  - isFooterLegal = true
+  - namespace = '--fit-vh --bg-gradient'
+
+block container
+  section.component-sample-request.--no-sample(data-sample-request data-request-step)
+    .container
+      .component-form
+        .component-form__wrapper
+          form.component-form__form(data-parsley-validate data-parsley-errors-messages-disabled)
+            .component-form__content(data-tab-content)
+              .component-form__infor
+                .component-form__caption
+                  .component-heading-group.--dark-mode
+                    h2.component-heading-group__heading.--size-lg.to-uppercase
+                      | Sample Request
+                    .component-heading-group__desc
+                      p This should be a statement about why Barnet offeres samples, how they are good, how much you get and what to do with them.
+                      p International Customers: Some products are not available in all regions.
+                .component-form__field
+                  .component-form-heading
+                    +headingForm('No Samples Selected', 'On each product and formula you will find a Request a Sample button. Find a product or formula and then add it to your sample request.')
+                  .component-form__group
+                    .component-form__ctas
+                      +link('#', 'All active materials').btn.btn-block
+                      +link('#', 'All system formers').btn.btn-block
+                      +link('#', 'All Starter Formula').btn.btn-block
+                  .component-form__group
+                    +headingForm('Quick Find').--size-sm
+                    .component-form-group__input
+                      .component-form__item
+                        select.form-control.--dark-mode(name="quick_find" data-quick-find="product" style="width: 100%")
+                          option(disabled selected value="") Select A Product
+                          //- option(value="0") Male
+                          //- option(value="1") Female
+                      .component-form__item
+                        select.form-control.--dark-mode(name="quick_find" data-quick-find="formula" style="width: 100%")
+                          option(disabled selected value="") Select A Formula
+                          //- option(value="0") Male
+                          //- option(value="1") Female

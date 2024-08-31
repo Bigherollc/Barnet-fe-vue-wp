@@ -1,0 +1,45 @@
+header.header(data-header)
+  .header__sticky.--bg-gradient(data-sticky)
+    .header__main
+      .container
+        include menumobile
+        .header__logo
+          +link(rel="stylesheet", href="index.html")
+            +img(src="/images/logo-barnet.svg", alt="")
+        .header__right
+          .header__menuNav
+            +nav([
+              {title: 'Global Innovation Center', text:'Global Innovation Center', href: '', icon: 'icon-beaker'},
+            ])
+          .header__account(data-account)
+            .header__account-toggle(title="Mark James" data-account-toggle)
+              i.icon.icon-account
+              span Mark James
+            .header__account-dropdown(data-account-dropdown)
+              +nav([
+                {title: 'Profile Settings', text: 'Profile Settings', href: ''},
+                {title: 'Change Password', text: 'Change Password', href: ''},
+                {title: 'Logout', text: 'Logout', href: ''}
+              ])
+          .header__samples
+            +link(rel="stylesheet", href="", title="Samples")
+              i(class='icon icon-sample')
+              span.header__samples-text Samples
+              span.header__samples-count 2
+          .header__search-toggle(data-search-toggle)
+            i(class='icon icon-search icon-gtm-search')
+    .header__menu
+      .container
+        +nav([
+          {title: 'Concepts', text: 'Concepts', href: ''},
+          {title: 'Actives', text: 'Actives', href: ''},
+          {title: 'Systems', text: 'Systems', href: ''},
+          {title: 'Formula', text: 'Formula', href: ''},
+          {title: 'Resources', text: 'Resources', href: ''}
+        ])
+    .header__search-dropdown(data-search-dropdown)
+      .header__search-form
+        form(action="post")
+          button
+            i(class='icon icon-search')
+          input(type="text" class="form-control" autocomplete="off")

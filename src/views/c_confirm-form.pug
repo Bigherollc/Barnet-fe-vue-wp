@@ -1,0 +1,61 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Confirm Form'
+  - useFooter = false
+  - useHeader = false
+  - namespace = '--bg-gradient'
+
+block container
+  .container-fluid
+    h2.template__header
+      | Confirm Sample Request
+    section.component-form-request.--confirmation
+      .container
+        .component-form-request__wrapper(style='background-image: url(../images/bg-hexagon.png)')
+          .component-form.--center
+            .component-form__wrapper
+              .component-form__content
+                .component-form__group.text-center
+                  +headingGroup('Thank You', 'We have received your request. It usually takes 24 hours to process your request. Lorem ipsum.', '--size-md').--dark-mode.text-center
+                  .component-form__btn
+                    +link("#", 'Ok').btn.btn-solid.--dark-mode
+
+    h2.template__header
+      | Confirm Lab Day Request
+    section.component-form-request.--confirmation.--bg-transparent
+      .container
+        .component-form-request__wrapper(style='background-image: url(../images/bg-hexagon.png)')
+          .component-form.--center
+            .component-form__wrapper
+              .component-form__content
+                .component-form__group.text-center
+                  +headingGroup('Thank You', 'We have received your request. It usually takes 24 hours to process your request. Lorem ipsum.', '--size-md').--dark-mode.text-center
+                  .component-form__btn
+                    +link("#", 'Ok').btn.btn-solid.--dark-mode
+
+    h2.template__header
+      | Confirm Forgot Password
+    section.component-form-request.--confirmation
+      .container
+        .component-form-request__wrapper(style='background-image: url(../images/bg-hexagon.png)')
+          .component-form.--center
+            .component-form__wrapper
+              .component-form__content
+                .component-form__group.text-center
+                  .component-form__inbox
+                    +img('/images/mail.svg', 'Mail')
+                  +headingGroup('Check Your Inbox', 'We just sent you an email. Follow the link in the email to reset your password.', '--size-md').--dark-mode
+
+    h2.template__header
+      | Confirm Change Password
+    section.component-form-request.--confirmation
+      .container
+        .component-form-request__wrapper(style='background-image: url(../images/bg-hexagon.png)')
+          .component-form.--center
+            .component-form__wrapper
+              .component-form__content
+                .component-form__group.text-center
+                  +headingGroup('Your Password Has Been Changed', 'It will be required on your next visit.', '--size-md').--dark-mode.text-center
+                  .component-form__btn
+                    +link("#", 'Ok').btn.btn-solid.--dark-mode

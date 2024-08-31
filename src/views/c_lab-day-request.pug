@@ -1,0 +1,96 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Lab Day Request'
+  - isLogin = true
+  - useFooter = true
+  - useHeader = true
+  - isFooterLegal = true
+  - namespace = '--fit-vh'
+
+block container
+  section.component-lab-day-request.component-form-hero(style='background-image:  url("../images/bg-sign-in.png")' data-url='/data/request-step.json' data-method="POST" data-request-step)
+    .component-form.--right
+      .component-form__wrapper
+        +headingGroup('Lab Day Request', '', '--size-lg to-uppercase').--dark-mode(data-heading)
+        +nav-list([
+          {
+            title: '',
+            active: true
+          },
+          {
+            title: '',
+          }
+        ]).component-progress-step(data-progress-step)
+        form.component-form__form(action='action_page.php' data-parsley-errors-messages-disabled data-parsley-validate)
+          .component-form__content(data-tab-content)
+            .component-form__group
+              .component-form__note
+                | Manage expectations about the request and introduce the form collection process.
+              +headingForm('Duration:').--size-sm
+              .component-form-group__input.checkbox-row
+                .component-form__item
+                  .form-radio.--dark-mode
+                    input(type="radio" id="duration_1" value="duration_1" name="duration" checked)
+                    label(for="duration_1")
+                      | Half Day
+                      span
+                .component-form__item
+                  .form-radio.--dark-mode
+                    label(for="duration_2")
+                      | Full Day
+                      input(type="radio" id="duration_2" value="duration_2" name="duration")
+                      span
+            .component-form__group
+              +headingForm('Desired Date:').--size-sm
+              div(data-calendar).custom-datepicker
+                input(type="hidden" name="desired_date" id="desired_date")
+            .component-form__group.text-center
+              button.btn.btn-solid.--dark-mode(data-next-btn data-step-valid type="button")
+                | Continue
+          .component-form__content.d-none(data-tab-content)
+            .component-form__group
+              +headingForm('Desired Modules:', '').--size-sm
+              .component-form__note
+                | Select up to two for a half-day.
+              .component-form-group__input
+                .component-form__item
+                  select.form-control.--dark-mode(name="select_day" required data-parsley-required)
+                    option(disabled selected value="") Select Module 1
+                    option(value="0") Male
+                    option(value="1") Female
+                .component-form__item
+                  select.form-control.--dark-mode(name="select_day" required data-parsley-excluded="true")
+                    option(disabled selected value="") Select Module 2 Optional
+                    option(value="0") Male
+                    option(value="1") Female
+            .component-form__group
+              +headingForm('Location:', '').--size-sm
+              .alert.alert-warning
+                | In-person Training Not Currently Available
+              .component-form-group__input.--mg-left-sm
+                .component-form__item
+                  .form-radio.--dark-mode.--glow-mode
+                    input(type="radio" id="location_1" value="location_1" name="location")
+                    label(for="location_1")
+                      | At the Global Innovation Center
+                      span
+                .component-form__item
+                  .form-radio.--dark-mode.--glow-mode
+                    input(type="radio" id="location_2" value="location_2" name="location")
+                    label(for="location_2")
+                      | Off-site
+                      span
+                .component-form__item
+                  .form-radio.--dark-mode.--glow-mode
+                    input(type="radio" id="location_3" value="location_3" name="location" checked)
+                    label(for="location_3")
+                      | Virtual
+                      span
+            .component-form__group.text-center
+              button.btn.btn-solid.--dark-mode(data-next-btn type="submit")
+                | Submit Request
+          .component-form__content.d-none(data-tab-content)
+            +headingGroup('Thank You', 'Your request is being reviewed. If approved, an email with access details will be sent to the email address provided in less than 48 hours.', '--size-lg to-uppercase text-left').--dark-mode.text-center
+            .component-form__btn
+              +link("#", 'Ok').btn.btn-solid.--dark-mode

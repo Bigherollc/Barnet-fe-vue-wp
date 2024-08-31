@@ -1,0 +1,105 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'About us (logout)'
+  - isLogin = true
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+
+block container
+  .about-us
+    .about-us__header
+      .container
+        .row.justify-content-center.align-items-center
+          .col-md-4
+            .about-us__header-logo
+              img(src="/images/logo-barnet.svg", alt="")
+            .about-us__header-summarize.--mg-top-xs Where Science Meets Fashion
+          .col-md-8
+            .about-us__header-introduction
+              | We are commitmented to finding, developing, and presenting fashionable new concepts, ingredients, and systems to our customers.
+    .about-us__analyze
+      .container
+        .row.justify-content-center
+          .col-6.col-sm-3.col-md-2.about-us__analyze-item
+            .about-us__analyze-counter
+              span(data-counter-up) 34
+            .about-us__analyze-unit Years in Operation
+          .col-6.col-sm-3.col-md-2.about-us__analyze-item
+            .about-us__analyze-counter
+              span(data-counter-up) 100
+              span +
+            .about-us__analyze-unit Starter Formula
+          .col-6.col-sm-3.col-md-2.about-us__analyze-item
+            .about-us__analyze-counter
+              span(data-counter-up) 140
+              span +
+            .about-us__analyze-unit Years of Lab Experience
+          .col-6.col-sm-3.col-md-2.about-us__analyze-item
+            .about-us__analyze-counter
+              span(data-counter-up) 30
+              span +
+            .about-us__analyze-unit Countries
+    .about-us__intro-video
+      .container
+        .styleguide__video.component-video-control(data-video)#video
+          video(poster="../images/related-video-1.png")
+            source(src="/videos/video.mp4")
+    .about-us__article
+      +imageOneside({
+        imgObj: {
+          src: '/images/content-oneside/global-support.png',
+          title: 'Trends Authority'
+        },
+        contentObj: {
+          title: 'Trends Authority',
+          subTitle: 'We offer leading edge trends information from around the globe with special focus on Asian trends. Explore our Concept collections and inspired Formula.',
+          list: [],
+          cta: {
+            link: '#',
+            title: 'See All Concepts'
+          }
+        }
+      }).--pd-top-lg
+      +imageOneside({
+        imgObj: {
+          src: '/images/content-oneside/formula-library.png',
+          title: 'Formula Library'
+        },
+        contentObj: {
+          title: 'Formula Library',
+          subTitle: 'Our starting formula library contains over 100 formula to showcase Barnet’s concepts, trends and technologies. These tested formula are meant to inspire on-trend products for skin care, color, sun and hair care.',
+          list: [],
+          cta: {
+            link: '#',
+            title: 'Explore Starter Formula'
+          }
+        },
+        isRight: true
+      }).--pd-top-lg.--mg-top-lg
+      +imageOneside({
+        imgObj: {
+          src: '/images/content-oneside/innovation-consultation.png',
+          title: 'Innovation & Consultation'
+        },
+        contentObj: {
+          title: 'Innovation & Consultation',
+          subTitle: 'Our global innovation center offers a range of resources and services to support formulation, engineering and help you develop new products.',
+          list: [],
+          cta: {
+            link: '#',
+            title: 'Explore Our Products'
+          }
+        }
+      }).--pd-top-lg.--mg-top-lg
+    .about-us__map
+      .container
+        .about-us__map-wrapper
+          .row.align-items-center.flex-sm-row-reverse
+            .col-sm-6.about-us__map-one-side
+              .about-us__map-img
+                +img(src="/images/world_map.svg", alt="")
+            .col-sm-6
+              .about-us__map-one-side
+              +headingGroup('Global Logistics', 'Our logistics program is designed to support customers globally. Covering 6 continents and over 30 countries, the global operations department is dedicated to supporting the needs of customers regardless of location.')
+              +headingGroup('Global Compliance', 'Our Global Compliance & Regulator Affairs team ensures that all Barnet ingredients adhere to today’s ever changing landscape of global cosmetic standards and individual customer requirements.').--mg-top-ml

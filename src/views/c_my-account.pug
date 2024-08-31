@@ -1,0 +1,73 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'My Account'
+  - isLogin = true
+  - useFooter = true
+  - useHeader = true
+  - isFooterLegal = true
+  - namespace = '--fit-vh --bg-gradient'
+
+block container
+  section.component-my-account(data-request-step data-url='/data/request-step.json' data-method="POST")
+    .container
+      .component-form
+        form.component-form__form
+          .component-form__wrapper(style="background-image: url(../images/bg-hexagon.png)")
+            .component-my-account__infor
+              .component-my-account__infor--wrapper
+                +headingGroup('My Account', '', '--size-lg to-uppercase').--dark-mode
+                .component-form__group
+                  .component-my-account__user
+                    p Mark James
+                    p mjames@companyname.com
+                    p W: 223-342-1515
+                    p M: 234-232-2151
+                  .component-my-account__company
+                    p CompanyName
+                    p 342 West Gillford St.
+                    p Suite 2231
+                    p Boston, MA 43562
+                    p USA
+                .component-form__group
+                  .component-form-group__input
+                    .component-form__item
+                      .form-checkbox.--dark-mode
+                        input(type="checkbox" id="checkbox1" name="newsletter" data-checkbox)
+                        label(for="checkbox1")
+                          |  Yes, I want to get the newsletter and stuff.
+                          span
+                .component-form__group
+                  +link('c_update-details.html', 'Edit').btn.btn-regula
+            .component-my-account__newsletter
+              .component-my-account__newsletter--wrapper
+                +link('#', 'Code List Alphabetical')(data-gen-pdf data-api="../data/code-list.json").component-my-account__newsletter--item
+                  .icon.icon-spec
+                  .component-my-account__content
+                    .component-my-account__title
+                      | Code List Alphabetical
+                    .component-my-account__date
+                      | 1/23/2021
+                +link('#', 'Code List Alphabetical')(data-gen-pdf data-api="../data/code-list.json").component-my-account__newsletter--item
+                  .icon.icon-spec
+                  .component-my-account__content
+                    .component-my-account__title
+                      | Code List Alphabetical
+                    .component-my-account__date
+                      | 1/23/2021
+                +link('#', 'Code List Alphabetical')(data-gen-pdf data-api="../data/code-list.json").component-my-account__newsletter--item
+                  .icon.icon-spec
+                  .component-my-account__content
+                    .component-my-account__title
+                      | Code List Alphabetical
+                    .component-my-account__date
+                      | 1/23/2021
+                +link('#', 'An Additional Assocaited Document')(data-gen-pdf data-api="../data/code-list.json").component-my-account__newsletter--item
+                  .icon.icon-spec
+                  .component-my-account__content
+                    .component-my-account__title
+                      | An Additional Assocaited Document
+                    .component-my-account__date
+                      | 1/23/2021
+              .component-form__group.d-sm-none
+                +link('c_update-details.html', 'Edit').btn.btn-regula

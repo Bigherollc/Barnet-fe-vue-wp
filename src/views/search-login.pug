@@ -1,0 +1,38 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Search (logout)'
+  - isFooterBoth = true
+  - namespace = 'search-page'
+block container
+  .search(data-search)
+    .container#app
+      com-container
+        com-heading-search(slot="left")
+        com-filter(slot="left")
+        com-no-result-sidebar(
+          slot="left"
+          image="/images/search/sidebarArtboard.png"
+        )
+        com-tab-list(slot="right")
+          com-tab-list-item(name="active")
+          com-tab-list-item(name="system")
+          com-tab-list-item(name="formula")
+          com-tab-list-item(name="resource")
+        com-image-concepts(
+          slot="right"
+          options='{"slide": "[data-slider-item]", "dots": true, "rows": 0, "slidesToShow": 3, "slidesToScroll": 3, "responsive":[{"breakpoint": 768, "settings": {"slidesToShow": 2, "slidesToScroll": 2}}]}'
+        )
+        com-wrapping(slot="right")
+          com-filter-mobile
+          com-listing
+            com-list-search(
+              :hasborder="true"
+              data="/data/search-data.json"
+              filter="/data/search-filter.json"
+            )
+            com-load-more
+          com-no-result(
+            image="/images/search/microscope_lg.svg"
+            text="No matching results could be found. Modify your keywords and try again."
+          )

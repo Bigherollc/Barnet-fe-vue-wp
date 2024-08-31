@@ -1,0 +1,9 @@
+mixin listAttr(items)
+  each item in items
+    .productDetail__attributes-item
+      .productDetail__attributes-image
+        +img(src=item.image, alt=item.text)
+      .productDetail__attributes-tooltip
+        +img(src=item.image, alt=item.text)
+      h3.productDetail__attributes-text!=item.text
+      +link(rel="stylesheet", title=item.text, href='#').productDetail__attributes-link

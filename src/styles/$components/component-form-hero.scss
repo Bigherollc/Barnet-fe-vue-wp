@@ -1,0 +1,33 @@
+.component-form-hero {
+  position: relative;
+  width: 100%;
+  padding: rem(50) rem(150) rem(40) rem(40);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: top right;
+
+  .component-progress-step {
+    margin-bottom: rem(30);
+  }
+
+  .component-form {
+    max-width: rem(380);
+
+    &__wrapper {
+      padding: rem(30) rem(15) rem(40);
+    }
+
+    .btn {
+      margin-top: 0;
+    }
+  }
+
+  @include mq(md) {
+    padding-right: rem(40);
+  }
+
+  @include mq(sm) {
+    padding: rem(40) rem(15);
+  }
+}

@@ -1,0 +1,116 @@
+.component-image-content {
+  $element: &;
+
+  margin: 0 rem(-7.5);
+
+  @include mq(sm) {
+    &__item {
+      &--wrapper {
+        overflow: hidden;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    width: auto;
+
+    &.slick-initialized {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    padding: 0 rem(7.5);
+    position: relative;
+
+    &--wrapper {
+      position: relative;
+      @extend %box-shadow-1;
+    }
+
+    &--img {
+      overflow: hidden;
+      position: relative;
+
+      &::before {
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(23,55,62,0.65) 0%,rgba(0,0,0,0) 100%);
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        transition: all .2s ease;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        transition: all .2s linear;
+      }
+    }
+
+    &--content {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      padding: rem(15) rem(10);
+      z-index: 2;
+      pointer-events: none;
+
+      .\--dark-mode & {
+        color: $white;
+      }
+    }
+
+    &--heading {
+      font-size: rem(14);
+      line-height: rem(16);
+      word-break: break-word;
+    }
+
+    a {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    &:hover {
+      #{$element}__item {
+        &--img {
+          &:before {
+            opacity: 1;
+            visibility: visible;
+          }
+
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  .slider-control {
+    [data-slider-item] {
+      & + [data-slider-item] {
+        display: block;
+      }
+    }
+
+    &:not(.slick-initialized) {
+      white-space: normal;
+      overflow: visible;
+    }
+  }
+}

@@ -1,0 +1,172 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Concepts Detail (login)'
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+block container
+  .concepts-container
+    .container
+      .concepts-detail
+        .concepts-detail__wrapping
+          .concepts-detail__header
+            .concepts-detail__header-groupTitle
+              .concepts-detail__header-title
+                h1 energetic aging
+              .concepts-detail__header-attr concept
+            .concepts-detail__fileList
+              +listFiles([
+                {
+                  icon: 'icon-presentation',
+                  text: 'Concept Presentation',
+                  href: ''
+                },
+                {
+                  icon: 'icon-video',
+                  text: 'Concept Video Title',
+                  href: ''
+                },
+                {
+                  icon: 'icon-video',
+                  text: 'PAdecaramiAnti PR',
+                  href: ''
+                },
+                {
+                  icon: 'icon-presentation',
+                  text: 'Get The Glow MPD Presentation',
+                  href: ''
+                },
+                {
+                  icon: 'icon-presentation',
+                  text: 'Conscious Beauty Sustainable Presentation',
+                  href: ''
+                },
+                {
+                  icon: 'icon-video',
+                  text: 'Eye Element PResentation',
+                  href: ''
+                },
+                {
+                  icon: 'icon-presentation',
+                  text: 'Beauty shots Presentation.',
+                  href: ''
+                },
+              ], false).--more-than-three
+          .concepts-detail__imageContent
+            +slideHero([
+              {
+                image: '/images/concepts/bg-slide-1.png',
+                desc: 'Mitochondria are the “Powerhouses” of the cell. Fatty acids are transported into the mitochondria and converted via oxidation to generate ATP (a universal cellular fuel to be used by the cell when required for energy). The focus of the mitochondria is to help generate via aerobic respiration the maximum amount of energy from the nutrients that are consumed. ',
+                mode: 'dark'
+              }
+            ]).--size-wrap-lg
+          .concepts-detail__areaDetail(data-interactive-diagram)
+            .concepts-detail__bannerContent.--mg-top-ml
+              .concepts-detail__banner
+                +img(src="/images/concepts/image-1.png", alt="")
+                .concepts-detail__banner--dot.active(data-dot-diagram data-index="0" style="top: 15%; left: 18%")
+                  span
+                .concepts-detail__banner--dot(data-dot-diagram data-index="1" style="top: 35%; left: 48%")
+                  span
+                .concepts-detail__banner--dot(data-dot-diagram data-index="2" style="top: 73%; left: 8%")
+                  span
+                .concepts-detail__banner--dot(data-dot-diagram data-index="3" style="top: 75%; left: 80%")
+                  span
+              .concepts-detail__slideContent
+                .concepts-detail__slide.slider-control(data-diagram data-slider-main data-opts-slider='{"slickContainer": ".concepts-detail__bannerContent","optsSlick": {"slide": "[data-slider-item]", "dots": true, "rows": 0, "slidesToShow": 1}}')
+                  .item(data-slider-item)
+                    +headingGroup('Title of the Interactive Diagram', 'Short description of what the diagram is and what we are looking at.')
+                    +mediaGroup({
+                      image: '/images/concepts/img_intereactive_section.png',
+                      title: 'Moisturization',
+                      content: '<p><strong>Bardiol IPO -</strong> Supplies a protective moisture barrier.</p><p><strong>Barsoft TXM -</strong> Drives moisture deep into the skin.</p>',
+                      link: '/'
+                    }).--mg-top-lg
+                  .item(data-slider-item)
+                    +headingGroup('Title of the Interactive Diagram', 'Short description of what the diagram is and what we are looking at.')
+                    +mediaGroup({
+                      image: '/images/concepts/img_intereactive_section.png',
+                      title: 'Skin Brightening',
+                      content: '<p><strong>Bardiol IPO -</strong> Supplies a protective moisture barrier.</p><p><strong>Barsoft TXM -</strong> Drives moisture deep into the skin.</p>',
+                      link: '#vegancompliant-skinbrightening'
+                    }).--mg-top-lg
+                  .item(data-slider-item)
+                    +headingGroup('Title of the Interactive Diagram', 'Short description of what the diagram is and what we are looking at.')
+                    +mediaGroup({
+                      image: '/images/concepts/img_intereactive_section.png',
+                      title: 'Sensitive Skin',
+                      content: '<p><strong>Bardiol IPO -</strong> Supplies a protective moisture barrier.</p><p><strong>Barsoft TXM -</strong> Drives moisture deep into the skin.</p>',
+                      link: '#vegancompliant-sensitiveskin'
+                    }).--mg-top-lg
+                  .item(data-slider-item)
+                    +headingGroup('Title of the Interactive Diagram', 'Short description of what the diagram is and what we are looking at.')
+                    +mediaGroup({
+                      image: '/images/concepts/img_intereactive_section.png',
+                      title: 'Vitamin Technologies',
+                      content: '<p><strong>Bardiol IPO -</strong> Supplies a protective moisture barrier.</p><p><strong>Barsoft TXM -</strong> Drives moisture deep into the skin.</p>',
+                      link: '#vegancompliant-vitamintechnologies'
+                    }).--mg-top-lg
+            .concepts-detail__app.--mg-top-lg
+              #app
+                com-container
+                  com-filter(slot="left")
+                    com-filter-swiper
+                  com-tab-list(slot="right" :hastoggle="true")
+                    com-tab-list-item(name="active" :isgroup="true")
+                    com-tab-list-item(name="system" :isgroup="true")
+                    com-tab-list-item(name="formula")
+                    com-tab-list-item(name="resource")
+                  com-wrapping(slot="right")
+                    com-filter-mobile
+                    com-listing
+                      com-list-concept(
+                        filter="/data/concepts-filter.json"
+                        data="/data/concepts-data.json"
+                      )
+                      com-load-more
+      section.component-fashtion-concepts.--mg-top-lg
+        .component-fashtion-concepts__wrapper
+          +headingGroup('Related Concepts').text-center.--dark-mode
+          .component-fashtion-concepts__slider.--mg-top-sm
+            +imageConcepts([
+              {
+                image: '/images/active/mask-1.png',
+                title: 'Around the Clock Aging (Epigenetics)',
+                desc: 'Brighten, blur and highlight for glowing youthful skin.'
+              },
+              {
+                image: '/images/active/mask-2.png',
+                title: 'Holobiont Beauty',
+                desc: 'Fresh and natural light touch coverage for daily use.'
+              },
+              {
+                image: '/images/active/mask-3.png',
+                title: 'Moisturization',
+                desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+              },
+              {
+                image: '/images/active/mask-4.png',
+                title: 'Moisturization',
+                desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+              },
+              {
+                image: '/images/active/mask-1.png',
+                title: 'Around the Clock Aging (Epigenetics)',
+                desc: 'Brighten, blur and highlight for glowing youthful skin.'
+              },
+              {
+                image: '/images/active/mask-2.png',
+                title: 'Holobiont Beauty',
+                desc: 'Fresh and natural light touch coverage for daily use.'
+              },
+              {
+                image: '/images/active/mask-3.png',
+                title: 'Moisturization',
+                desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+              },
+              {
+                image: '/images/active/mask-4.png',
+                title: 'Moisturization',
+                desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+              },
+            ])(data-slider-main data-opts-slider='{"slickContainer": ".component-fashtion-concepts","optsSlick": {"slide": "[data-slider-item]","dots": true, "rows": 0, "slidesToShow": 4, "slidesToScroll": 4, "responsive":[{"breakpoint": 991, "settings": {"slidesToShow": 3, "slidesToScroll": 3}}, {"breakpoint": 768, "settings": {"slidesToShow": 2, "slidesToScroll": 2}}]}}')

@@ -1,0 +1,117 @@
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icoJayRobin' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clock-sm:before {
+  content: "\e900";
+}
+.icon-filter-results-button:before {
+  content: "\e901";
+}
+.icon-menu-open:before {
+  content: "\e902";
+}
+.icon-triangle:before {
+  content: "\e903";
+}
+.icon-promo-back:before {
+  content: "\e904";
+}
+.icon-promo-next:before {
+  content: "\e905";
+}
+.icon-expand:before {
+  content: "\e906";
+}
+.icon-colapse:before {
+  content: "\e907";
+}
+.icon-account:before {
+  content: "\e908";
+}
+.icon-add-to-email:before {
+  content: "\e909";
+}
+.icon-beaker:before {
+  content: "\e90a";
+}
+.icon-concept:before {
+  content: "\e90b";
+}
+.icon-email:before {
+  content: "\e90c";
+}
+.icon-folder:before {
+  content: "\e90d";
+}
+.icon-formula:before {
+  content: "\e90e";
+}
+.icon-home:before {
+  content: "\e910";
+}
+.icon-library:before {
+  content: "\e911";
+}
+.icon-out-box:before {
+  content: "\e912";
+}
+.icon-products:before {
+  content: "\e914";
+}
+.icon-sample:before {
+  content: "\e915";
+}
+.icon-search:before {
+  content: "\e918";
+}
+.icon-summary:before {
+  content: "\e91a";
+}
+.icon-video:before {
+  content: "\e91b";
+}
+.icon-transform:before {
+  content: "\e916";
+}
+.icon-close:before {
+  content: "\e91c";
+}
+.icon-arrow-left:before {
+  content: "\e91d";
+}
+.icon-arrow-right:before {
+  content: "\e91e";
+}
+.icon-formula-card:before {
+  content: "\e91f";
+}
+.icon-formula-sheet:before {
+  content: "\e920";
+}
+.icon-kiss-sheet:before {
+  content: "\e921";
+}
+.icon-presentation:before {
+  content: "\e922";
+}
+.icon-sds:before {
+  content: "\e923";
+}
+.icon-spec:before {
+  content: "\e924";
+}
+.icon-global-product:before {
+  content: "\e925";
+}

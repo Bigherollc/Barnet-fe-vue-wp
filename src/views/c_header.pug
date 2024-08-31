@@ -1,0 +1,13 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Header'
+  - useFooter = false
+  - useHeader = false
+
+block container
+  .container-fluid
+    h2.template__header Header Logout
+    include $modules/header-logout
+    h2.template__header Header Login
+    include $modules/header-login

@@ -1,0 +1,129 @@
+.menumobile {
+  $element: &;
+
+  display: none;
+
+  @include mq("sm") {
+    display: block;
+  }
+
+  &__toggle {
+    @include size(48);
+    background-color: $semi-dark-teal;
+    position: relative;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      display: block;
+      content: '';
+      @include size(18, 2);
+      background-color: $teal;
+      position: absolute;
+      left: rem(15);
+      transition: transform .2s linear, top .2s linear .3s;
+      pointer-events: none;
+    }
+
+    &::before {
+      top: rem(17);
+    }
+
+    &::after {
+      top: rem(29);
+    }
+
+    span {
+      display: block;
+      @include size(18, 2);
+      background-color: $teal;
+      position: absolute;
+      top: rem(23);
+      left: rem(15);
+      transition: opacity .2s linear;
+      pointer-events: none;
+    }
+  }
+
+  &__wrap {
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  &__menu {
+    max-width: rem(300);
+    padding: rem(30) rem(24);
+    background-color: $semi-dark-teal;
+    position: fixed;
+    top: rem(48);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+    transition: transform .2s linear;
+    transform: translateX(-100%);
+
+    ul {
+      &:first-child {
+        padding-bottom: rem(20);
+        margin-bottom: rem(20);
+        border-bottom: rem(1) solid $teal;
+      }
+    }
+
+    li {
+      margin-bottom: rem(15);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      font-size: rem(18);
+      line-height: rem(19);
+      color: $white;
+      padding: rem(14) 0 rem(15);
+      text-transform: uppercase;
+
+      .count {
+        color: $black;
+        font-size: rem(14);
+        line-height: rem(17);
+        background-color: $yellow;
+        padding: 0 rem(8);
+        margin-left: rem(15);
+        border-radius: rem(4);
+      }
+    }
+  }
+
+  &.active {
+    #{$element}__menu {
+      transform: translateX(0);
+    }
+
+    #{$element}__toggle {
+      span {
+        opacity: 0;
+      }
+
+      &::before,
+      &::after {
+        top: rem(23);
+        transition: top .2s linear, transform .2s linear .3s;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

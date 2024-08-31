@@ -1,0 +1,55 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  font-family: Gotham;
+  font-size: $font-size-rem;
+
+  // Fix modernizr bug
+  &.safari {
+    background: none;
+  }
+}
+
+body {
+  margin: 0;
+  font-size: $font-size-default;
+  overflow-x: hidden;
+
+  &.freeze {
+    height: 100%;
+    overflow: hidden !important;
+
+    html.ios & {
+      position: fixed;
+      width: 100%;
+    }
+
+    &[class*="--scroll-"] {
+      border-right-style: solid;
+      border-right-color: $white;
+    }
+
+    @for $i from 13 through 18 {
+      &.\--scroll-#{$i} {
+        border-right-width: $i * 1px;
+      }
+    }
+  }
+
+  &[data-parallax] {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+img {
+  max-width: 100%;
+
+  &:not([src]),
+  &[src=""] {
+    display: none;
+  }
+}

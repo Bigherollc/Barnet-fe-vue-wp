@@ -1,0 +1,647 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Style Guide'
+  - namespace = 'styleguide'
+  - useHeader = false
+  - useFooter = false
+
+block container
+  .styleguide(data-styleguide)
+    .styleguide__container
+      .container
+        .row
+          .col-12.col-sm-2
+            small Primary
+            h2 Colors
+          .col-12.col-sm-10
+            .row
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--dark-teal
+                  .styleguide__block-color__text
+                    p @dark-teal
+                    p #17373e
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--semi-dark-teal
+                  .styleguide__block-color__text
+                    p @semi-dark-teal
+                    p #06494D
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--medium-teal
+                  .styleguide__block-color__text
+                    p @medium-teal
+                    p #066065
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--teal
+                  .styleguide__block-color__text
+                    p @teal
+                    p #52ABA9
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--barnet-teal
+                  .styleguide__block-color__text
+                    p @barnet-teal
+                    p #08b7b2
+            .row
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--black
+                  .styleguide__block-color__text
+                    p @black
+                    p #000000
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--white
+                  .styleguide__block-color__text
+                    p @white
+                    p #FFFFFF
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--light-gray
+                  .styleguide__block-color__text
+                    p @light_gray
+                    p #E0E0E0
+            .row
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--link
+                  .styleguide__block-color__text
+                    p @link
+                    p #0d9990
+              .col-6.col-sm-6.col-md-6
+                .styleguide__block-color
+                  .styleguide__block-color__gradient
+                  .styleguide__block-color__text
+                    p @background_gradient
+        .row
+          .col-12.col-sm-2
+            small Secondary
+            h2 Colors
+          .col-12.col-sm-10
+            .row
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--derm
+                  .styleguide__block-color__text
+                    p @derm
+                    p #0374A9
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--hair
+                  .styleguide__block-color__text
+                    p @hair
+                    p #6E4A04
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--conscious-beauty
+                  .styleguide__block-color__text
+                    p @conscious-beauty
+                    p #069044
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--color
+                  .styleguide__block-color__text
+                    p @color
+                    p #891778
+        .row
+          .col-12.col-sm-2
+            small Secondary
+            h2 Colors
+          .col-12.col-sm-10
+            .row
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--cart
+                  .styleguide__block-color__text
+                    p @cart
+                    p #0374A9
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--alert
+                  .styleguide__block-color__text
+                    p @alert
+                    p #F7B500
+              .col-6.col-sm-4.col-md-2
+                .styleguide__block-color
+                  .styleguide__block-color__color.styleguide__block-color__color--error
+                  .styleguide__block-color__text
+                    p @error
+                    p #FF2828
+    .styleguide__container
+      .container
+        .row
+          .col-12.col-sm-2
+            h2 Text Styles
+          .col-12.col-sm-10
+            .row
+              .col-12.col-sm-8
+                .styleguide__block-style
+                  .styleguide__block-style__text h1
+                  .styleguide__block-style__content
+                    h1 Type something
+                  .styleguide__block-style__desc Gotham-Extra Light/28px
+                .styleguide__block-style
+                  .styleguide__block-style__text h2
+                  .styleguide__block-style__content
+                    h2 Type something
+                  .styleguide__block-style__desc Gotham-Light/24px
+                .styleguide__block-style
+                  .styleguide__block-style__text h3
+                  .styleguide__block-style__content
+                    h3 Type something
+                  .styleguide__block-style__desc Gotham-Light/18/000 or FFF
+                .styleguide__block-style
+                  .styleguide__block-style__text Body (Light & Dark)
+                  .styleguide__block-style__content
+                    p Type something
+                  .styleguide__block-style__desc Gotham-Book/14/#000000
+                .styleguide__block-style
+                  .styleguide__block-style__content
+                    p.styleguide__block-style__content--alert Alert Text
+                    p.styleguide__block-style__content--error Error Text
+              .col-12.col-sm-4
+                .styleguide__block-style
+                  .styleguide__block-style__text MENU
+                  .styleguide__block-style__content
+                    .styleguide__block-style__drop-menu
+                     +link()
+                      span Drop Menu
+        .row
+          .col-12.col-sm-2
+            h2 Buttons
+          .col-12.col-sm-10
+            .row
+              .col-12.col-sm-4
+                .styleguide__block-style
+                  .styleguide__block-style__content
+                    .styleguide__mb
+                      button.btn.btn-solid
+                        span Button Text
+                    .styleguide__mb
+                      button.btn.btn-regular
+                        span Button Text
+                    .styleguide__mb
+                      button.btn.btn-regular.btn-large
+                        span Button Large
+                    .styleguide__mb
+                      button.btn.btn-solid.btn-block
+                        span Button Text (block)
+                    .styleguide__mb
+                      button.btn.btn-regular.btn-block
+                        span Button Text (block)
+              .col-12.col-sm-4
+                .styleguide__block-style
+                  .styleguide__block-style__text Filter
+                  .styleguide__block-style__content
+                    .filter
+                      span Filter (12)
+                    .filter.active
+                      span Filter (8)
+        .row
+          .col-12.col-sm-2
+            h2 Form Elements
+          .col-12.col-sm-10
+            .row
+              .col-12.col-sm-4
+                .styleguide__mb
+                  .form-checkbox
+                    input(type="checkbox" id="checkbox1" name="checkbox")
+                    label(for="checkbox1")
+                      |  Checkbox Label 1
+                      span
+                .styleguide__mb
+                  .form-checkbox
+                    input(type="checkbox" id="checkbox2" name="checkbox")
+                    label(for="checkbox2")
+                      | Checkbox Label 2
+                      span
+              .col-12.col-sm-4
+                .styleguide__mb
+                  .form-radio
+                    input(type="radio" id="radio1" name="radio")
+                    label(for="radio1")
+                      | Radio Label 1
+                      span
+                .styleguide__mb
+                  .form-radio
+                    input(type="radio" id="radio2" name="radio")
+                    label(for="radio2")
+                      | Radio Label 2
+                      span
+            .row
+              .col-12.col-sm-8
+                .styleguide__mb
+                  input(type="text" class="form-control" placeholder="Email" autocomplete="off")
+                .styleguide__two-col
+                  .col-6.styleguide__mb
+                    input(type="text" class="form-control" placeholder="Two Col" autocomplete="off")
+                  .col-6.styleguide__mb
+                    input(type="text" class="form-control" placeholder="Two Col" autocomplete="off")
+                .styleguide__mb
+                  select(type="text" class="form-control")
+                    option(value="") Select
+                    option(value="0") Male
+                    option(value="1") Female
+                .styleguide__mb
+                  textarea(class="form-control" placeholder="Content")
+    .styleguide__container.styleguide__container--dark
+      .container
+        .row
+          .col-12.col-sm-2
+            h2 Text Styles
+          .col-12.col-sm-10
+            .row
+              .col-12.col-sm-8
+                .styleguide__block-style
+                  .styleguide__block-style__text.styleguide__block-style__text--dark h1
+                  .styleguide__block-style__content.styleguide__block-style__content--dark
+                    h1 Type something
+                  .styleguide__block-style__desc.styleguide__block-style__desc--dark Gotham-Extra Light/28px
+                .styleguide__block-style
+                  .styleguide__block-style__text.styleguide__block-style__text--dark h2
+                  .styleguide__block-style__content.styleguide__block-style__content--dark
+                    h2 Type something
+                  .styleguide__block-style__desc.styleguide__block-style__desc--dark Gotham-Light/24px
+                .styleguide__block-style
+                  .styleguide__block-style__text.styleguide__block-style__text--dark h3
+                  .styleguide__block-style__content.styleguide__block-style__content--dark
+                    h3 Type something
+                  .styleguide__block-style__desc.styleguide__block-style__desc--dark Gotham-Light/18/000 or FFF
+                .styleguide__block-style
+                  .styleguide__block-style__text.styleguide__block-style__text--dark Body (Light & Dark)
+                  .styleguide__block-style__content.styleguide__block-style__content--dark
+                    p Type something
+                  .styleguide__block-style__desc.styleguide__block-style__desc--dark Gotham-Book/14/#000000
+                .styleguide__block-style
+                  .styleguide__block-style__content
+                    p.styleguide__block-style__content--alert Alert Text
+                    p.styleguide__block-style__content--error Error Text
+              .col-12.col-sm-4
+                .styleguide__block-style
+                  .styleguide__block-style__text.styleguide__block-style__text--dark HEADER
+                  .styleguide__block-style__content
+                    .styleguide__block-style__drop-menu
+                     +link(class="--dark-mode")
+                      span Header Links
+                .styleguide__block-style
+                  .styleguide__block-style__text.styleguide__block-style__text--dark NAV
+                  .styleguide__block-style__content
+                    .styleguide__block-style__drop-menu
+                     +link(class="--dark-mode")
+                      span MAIN NAVIGATION
+                .styleguide__block-style
+                  .styleguide__block-style__text.styleguide__block-style__text--dark MENU
+                  .styleguide__block-style__content
+                    .styleguide__block-style__drop-menu
+                     +link(class="--dark-mode")
+                      span Drop Menu
+        .row
+          .col-12.col-sm-2
+            h2 Buttons
+          .col-12.col-sm-10
+            .row
+              .col-12.col-sm-4
+                .styleguide__block-style
+                  .styleguide__block-style__content
+                    .styleguide__mb
+                      button.btn.btn-solid.--dark-mode
+                        span Button Text
+                    .styleguide__mb
+                      button.btn.btn-regular.--dark-mode
+                        span Button Text
+                    .styleguide__mb
+                      button.btn.btn-solid.btn-block.--dark-mode
+                        span Button Text (block)
+                    .styleguide__mb
+                      button.btn.btn-regular.btn-block.--dark-mode
+                        span Button Text (block)
+              .col-12.col-sm-4
+                .styleguide__block-style
+                  .styleguide__block-style__text.styleguide__block-style__text--dark Filter
+                  .styleguide__block-style__content
+                    .filter.--dark-mode
+                      span Filter (12)
+                    .filter.--dark-mode.active
+                      span Filter (8)
+        .row
+          .col-12.col-sm-2
+            h2 Form Elements
+          .col-12.col-sm-10
+            .row
+              .col-12.col-sm-4
+                .styleguide__mb
+                  .form-checkbox.--dark-mode
+                    input(type="checkbox" id="checkbox3" name="checkbox")
+                    label(for="checkbox3")
+                      | Checkbox Label 1
+                      span
+                .styleguide__mb
+                  .form-checkbox.--dark-mode
+                    input(type="checkbox" id="checkbox4" name="checkbox")
+                    label(for="checkbox4")
+                      | Checkbox Label 2
+                      span
+              .col-12.col-sm-4
+                .styleguide__mb
+                  .form-radio.--dark-mode
+                    input(type="radio" id="radio3" name="radio")
+                    label(for="radio3")
+                      | Radio Label 1
+                      span
+                .styleguide__mb
+                  .form-radio.--dark-mode
+                    input(type="radio" id="radio4" name="radio")
+                    label(for="radio4")
+                      | Radio Label 2
+                      span
+                .styleguide__mb
+                  .form-radio.--dark-mode.--glow-mode
+                    input(type="radio" id="radio5" name="radio_glow")
+                    label(for="radio5")
+                      | Radio Label Glow Dark 1
+                      span
+                .styleguide__mb
+                  .form-radio.--dark-mode.--glow-mode
+                    input(type="radio" id="radio6" name="radio_glow" checked)
+                    label(for="radio6")
+                      | Radio Label Glow Dark 2
+                      span
+            .row
+              .col-12.col-sm-8
+                .styleguide__mb
+                  input(type="text" class="form-control --dark-mode" placeholder="Email" autocomplete="off")
+                .styleguide__two-col
+                  .col-6.styleguide__mb
+                    input(type="text" class="form-control --dark-mode" placeholder="Two Col" autocomplete="off")
+                  .col-6.styleguide__mb
+                    input(type="text" class="form-control --dark-mode" placeholder="Two Col" autocomplete="off")
+                .styleguide__mb
+                  select(type="text" class="form-control --dark-mode")
+                    option(value="") Select
+                    option(value="0") Male
+                    option(value="1") Female
+                .styleguide__mb
+                  textarea(class="form-control --dark-mode" placeholder="Content")
+    .styleguide__container
+      .container
+        h2.styleguide__mb-30 Font Icon
+        .styleguide__fonticon-grid.styleguide__mb-30
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-clock-sm"></i>
+              .styleguide__fonticon-item__name icon-clock-sm
+              .styleguide__fonticon-item__code e900
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-filter-results-button"></i>
+              .styleguide__fonticon-item__name icon-filter-results-button
+              .styleguide__fonticon-item__code e901
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-menu-open"></i>
+              .styleguide__fonticon-item__name icon-menu-open
+              .styleguide__fonticon-item__code e902
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-triangle"></i>
+              .styleguide__fonticon-item__name icon-triangle
+              .styleguide__fonticon-item__code e903
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-promo-back"></i>
+              .styleguide__fonticon-item__name icon-promo-back
+              .styleguide__fonticon-item__code e904
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-promo-next"></i>
+              .styleguide__fonticon-item__name icon-promo-next
+              .styleguide__fonticon-item__code e905
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-expand"></i>
+              .styleguide__fonticon-item__name icon-expand
+              .styleguide__fonticon-item__code e906
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-colapse"></i>
+              .styleguide__fonticon-item__name icon-colapse
+              .styleguide__fonticon-item__code e907
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-account"></i>
+              .styleguide__fonticon-item__name icon-account
+              .styleguide__fonticon-item__code e908
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-add-to-email"></i>
+              .styleguide__fonticon-item__name icon-add-to-email
+              .styleguide__fonticon-item__code e909
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-beaker"></i>
+              .styleguide__fonticon-item__name icon-beaker
+              .styleguide__fonticon-item__code e90a
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-concept"></i>
+              .styleguide__fonticon-item__name icon-concept
+              .styleguide__fonticon-item__code e90b
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-email"></i>
+              .styleguide__fonticon-item__name icon-email
+              .styleguide__fonticon-item__code e90c
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-folder"></i>
+              .styleguide__fonticon-item__name icon-folder
+              .styleguide__fonticon-item__code e90d
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-formula"></i>
+              .styleguide__fonticon-item__name icon-formula
+              .styleguide__fonticon-item__code e90e
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-home"></i>
+              .styleguide__fonticon-item__name icon-home
+              .styleguide__fonticon-item__code e910
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-library"></i>
+              .styleguide__fonticon-item__name icon-library
+              .styleguide__fonticon-item__code e911
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-out-box"></i>
+              .styleguide__fonticon-item__name icon-out-box
+              .styleguide__fonticon-item__code e912
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-products"></i>
+              .styleguide__fonticon-item__name icon-products
+              .styleguide__fonticon-item__code e914
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-sample"></i>
+              .styleguide__fonticon-item__name icon-sample
+              .styleguide__fonticon-item__code e915
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-search"></i>
+              .styleguide__fonticon-item__name icon-search
+              .styleguide__fonticon-item__code e918
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-summary"></i>
+              .styleguide__fonticon-item__name icon-summary
+              .styleguide__fonticon-item__code e91a
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-video"></i>
+              .styleguide__fonticon-item__name icon-video
+              .styleguide__fonticon-item__code e91b
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-transform"></i>
+              .styleguide__fonticon-item__name icon-transform
+              .styleguide__fonticon-item__code e916
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-close"></i>
+              .styleguide__fonticon-item__name icon-close
+              .styleguide__fonticon-item__code e91c
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-arrow-left"></i>
+              .styleguide__fonticon-item__name icon-arrow-left
+              .styleguide__fonticon-item__code e91d
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-arrow-right"></i>
+              .styleguide__fonticon-item__name icon-arrow-right
+              .styleguide__fonticon-item__code e91e
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-global-product"></i>
+              .styleguide__fonticon-item__name icon-global-product
+              .styleguide__fonticon-item__code e925
+        h2.styleguide__mb-30 PDF Icon
+        .styleguide__fonticon-grid
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-formula-card"></i>
+              .styleguide__fonticon-item__name icon-formula-card
+              .styleguide__fonticon-item__code e91f
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-formula-sheet"></i>
+              .styleguide__fonticon-item__name icon-formula-sheet
+              .styleguide__fonticon-item__code e920
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-kiss-sheet"></i>
+              .styleguide__fonticon-item__name icon-kiss-sheet
+              .styleguide__fonticon-item__code e921
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-presentation"></i>
+              .styleguide__fonticon-item__name icon-presentation
+              .styleguide__fonticon-item__code e922
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-sds"></i>
+              .styleguide__fonticon-item__name icon-sds
+              .styleguide__fonticon-item__code e923
+          .styleguide__fonticon-col
+            .styleguide__fonticon-item
+              .styleguide__fonticon-item__icon <i class="icon icon-spec"></i>
+              .styleguide__fonticon-item__name icon-spec
+              .styleguide__fonticon-item__code e924
+    .styleguide__container.styleguide__container--dark
+      .container
+        h2.styleguide__mb-30 Hero Banner
+        .styleguide__heroBanner.styleguide__mb-60.slider-control(data-slider-main data-opts-slider='{"slickContainer": ".styleguide__container","optsSlick": {"slide": "[data-slider-item]", "dots": true, "rows": 0, "slidesToShow": 1}}')
+          .item(data-slider-item)
+            .styleguide__heroBanner-img
+              img(src="/images/hero/hero.png", alt="")
+          .item(data-slider-item)
+            .styleguide__heroBanner-img
+              img(src="/images/hero/hero.png", alt="")
+          .item(data-slider-item)
+            .styleguide__heroBanner-img
+              img(src="/images/hero/hero.png", alt="")
+        h2.styleguide__mb-30 Tabs content
+        .component-tab-list.--dark-mode
+          ul.nav(role="tablist")
+            li
+              a(class="active" href="#tab1" data-toggle="tab" role="tab") Actives <span>(32)</span>
+            li
+              a(href="#tab2" data-toggle="tab" role="tab") Systems <span>(40)</span>
+            li
+              a(href="#tab3" data-toggle="tab" role="tab") Formula <span>(18)</span>
+            li
+              a(href="#tab4" data-toggle="tab" role="tab") Resources <span>(24)</span>
+        .tab-content
+          .tab-pane.active(id="tab1" role="tabpanel")
+          .tab-pane(id="tab2" role="tabpanel")
+          .tab-pane(id="tab3" role="tabpanel")
+          .tab-pane(id="tab4" role="tabpanel")
+    .styleguide__container
+      .container
+        h2.styleguide__mb-30 Tabs content
+        .component-tab-list
+          ul.nav(role="tablist")
+            li
+              a(href="#tab5" data-toggle="tab" class="active") Actives <span>(32)</span>
+            li
+              a(href="#tab6" data-toggle="tab") Systems <span>(40)</span>
+            li
+              a(href="#tab7" data-toggle="tab") Formula <span>(18)</span>
+            li
+              a(href="#tab8" data-toggle="tab") Resources <span>(24)</span>
+        .tab-content.styleguide__mb-60
+          .tab-pane.active(id="tab5")
+          .tab-pane(id="tab6")
+          .tab-pane(id="tab7")
+          .tab-pane(id="tab8")
+        h2.styleguide__mb-30 Videos
+        .styleguide__video.styleguide__mb-30.component-video-control(data-video)#video
+          video(poster="../images/related-video-1.png")
+            source(src="/videos/video.mp4")
+        h2.styleguide__mb-30 Pdf
+        .styleguide__video.pdf#pdf
+          iframe(src="/pdf/pdf.pdf", frameborder="0")
+    .styleguide__container
+      .container
+        h2.styleguide__mb-30 Sign in box
+        .component-signin-box(style="background-image: url(/images/product/bg-signin.png)")
+          .component-signin-box__title Sign In for Details
+          .component-signin-box__box
+            .component-signin-box__signin
+              .component-signin-box__text Registered users get access to full product information and related resources:
+              .component-signin-box__list
+                ul.component-list
+                  li Specifications & Data Sheets
+                  li Videos & Presentations
+                  li Starter Formula
+              .component-signin-box__link
+                a(class="btn btn-normal --dark-mode") Sign in
+            .component-signin-box__request
+              .component-signin-box__titleRequest New Customer?
+              a(class="btn btn-solid --dark-mode") Request Access
+    .styleguide__container
+      .container
+        h2.styleguide__mb-30 Request sample box
+        .component-sample-band
+          .component-sample-band__wrap
+            .component-sample-band__content
+              .component-sample-band__icon
+                i.icon.icon-sample
+              .component-sample-band__text Samples available. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            .component-sample-band__btn
+              +link(rel="stylesheet", href="#", title="Request Sample").btn.btn-solid.--dark-mode Request Sample

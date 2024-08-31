@@ -1,0 +1,52 @@
+.component-fashtion-concepts {
+  padding-left: rem(15);
+  padding-right: rem(15);
+  $element: &;
+
+  &.slider-init {
+    #{$element}__wrapper {
+      &:before {
+        bottom: rem(125);
+
+        @include mq(md) {
+          bottom: rem(90);
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    padding-top: rem(35);
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: rem(-15);
+      bottom: rem(75);
+      left: rem(-15);
+      border: solid rem(1) $shadow-3;
+      pointer-events: none;
+    }
+  }
+
+  @include mq(md) {
+    &__wrapper {
+      padding-top: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  @include mq(sm) {
+    padding-left: 0;
+    padding-right: 0;
+
+    .product__slideBanner-slide {
+      padding-top: rem(140);
+    }
+  }
+}

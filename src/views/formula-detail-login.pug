@@ -1,0 +1,255 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Formula Detail (login)'
+  - isLogin = true
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+
+block container
+  .product-container.product-container--detail
+    .container
+      .productDetail(data-product)
+        .productDetail__wrapping
+          .productDetail__header.productDetail__header--formulaPage
+            .productDetail__header-image
+              +img(src="/images/product/product-lotion-b.svg", alt="")
+            .productDetail__header-groupTitle.productDetail__header-groupTitle--formulaPage
+              h1.productDetail__header-title.productDetail__header-title--formulaPage Insta-Glam Ready Primer
+            .productDetail__header-desc.productDetail__header-desc--formulaPage
+              p KM-2-65.12
+          .productDetail__background(style="background-image: url(/images/formula/bg-detail-1.png)")
+          .productDetail__detail
+            .productDetail__detail-wrap
+              .productDetail__detail-right
+                .productDetail__detail-wrapper
+                  .productDetail__fileList
+                    +listFiles([
+                      {
+                        icon: 'icon-formula-sheet',
+                        text: 'Formula Sheet',
+                        extension: 'pdf',
+                        href: ''
+                      }
+                    ])
+                  .productDetail__information(style="background-image: url(../images/bg-attributes.png)")
+                    .productDetail__information--content
+                      .productDetail__information--wrapper
+                        +headingGroup('Key Features').--dark-mode
+                        +nav-list([
+                          {
+                            title: 'Removes Sebum'
+                          },
+                          {
+                            title: 'Moisturizing'
+                          },
+                          {
+                            title: 'Delivers Actives into the Skin'
+                          }
+                        ]).component-list
+                    .productDetail__information--content
+                      .productDetail__information--wrapper
+                        +headingGroup('How To Use').--dark-mode
+                        +nav-list([
+                          {
+                            title: 'In the morning gently apply onto face and add water.'
+                          },
+                          {
+                            title: 'Massage in circular motions to cleanse the skin.'
+                          },
+                          {
+                            title: 'Rinse and continue with morning skin care regimen.'
+                          }
+                        ]).component-list
+              .productDetail__detail-left
+                h2.productDetail__contentAttributes
+                  p Blur and hydrate skin with this Oil-Free primer for flawless glam ready skin! Create a flawless base that absorbs oil throughout the day while maintaining moisture. Designed for all day wear no matter how many selfies.
+                  p Apply to clean, moisturized skin and pat directly into pores for best results. It can be worn alone or as the first step of a daily makeup routine.
+          .productDetail__request
+            .component-sample-band
+              .component-sample-band__wrap
+                .component-sample-band__content
+                  .component-sample-band__icon
+                    i.icon.icon-sample
+                  .component-sample-band__text Samples available. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                .component-sample-band__btn
+                  +link(rel="stylesheet", href="#", title="Request Sample").btn.btn-solid.--dark-mode Request Sample
+          .productDetail__areaDetail.--mg-top-lg
+            +headingGroup('Formula')
+            .component-table.--mg-top-xs(data-table)
+              table
+                thead
+                  tr
+                    th Phase
+                    th Material Name
+                    th INCI
+                    th Supplier
+                    th Properties
+                    th %
+                tbody
+                  tr
+                    td A
+                    td Glycerin 99%
+                    td Glycerin
+                    td Spectrum Quality Products, Inc.
+                    td Humectant
+                    td 9.00
+                  tr
+                    td A
+                    td Keltrol CG (2% Aq.)
+                    td Water, Xantan Gum
+                    td CP Kelco
+                    td Thickener
+                    td 2.50
+                  tr
+                    td B
+                    td <span style="font-weight: 500; color: #0D9990">Barcril AV</span>
+                    td Sodium Acylates Crosspolynner, Water
+                    td Barnet
+                    td Thickener
+                    td 4.00
+                  tr
+                    td C
+                    td Keltrol CG (2% Aq.)
+                    td Water, Xantan Gum
+                    td CP Kelco
+                    td Thickener
+                    td 2.50
+                  tr
+                    td C
+                    td Glycerin 99%
+                    td Glycerin
+                    td Spectrum Quality Products, Inc.
+                    td Humectant
+                    td 9.00
+                  tr
+                    td E
+                    td Keltrol CG (2% Aq.)
+                    td Water, Xantan Gum
+                    td CP Kelco
+                    td Thickener
+                    td 2.50
+                  tr
+                    td(colspan=6 style="text-align: right") Total: 100%
+            .productDetail__flexible(style="background-image: url(../images/bg-attributes-large.png")
+              .productDetail__flexible--content
+                i.icon.icon-transform
+                .component-heading-group.--dark-mode
+                  h2.component-heading-group__heading
+                    | Flexible Formula
+                  .component-heading-group__desc
+                    | An Ethoxylate-Free version is available.
+                    | <a class="btn-gtm-contact-us" href="#" title="Contact Us">Contact Us</a> for alterations.
+          .productDetail__areaDetail.--mg-top-lg
+            .productDetail__processing
+              +headingGroup('Processing')
+              +nav-list([
+                {
+                  title: 'Combine Phase A in main beaker and mix with propeller agitation.',
+                  number: '1'
+                },
+                {
+                  title: 'Combine Phase B in side beaker and mix well until all powder is wet out.',
+                  number: '2'
+                },
+                {
+                  title: 'Add Phase B to main beaker and propeller mix until uniform. Switch to sweep mixing once viscosity builds.',
+                  number: '3'
+                },
+                {
+                  title: 'Add Phase C to main beaker and sweep mix until uniform.',
+                  number: '4'
+                },
+                {
+                  title: 'Add Phase D to main beaker and sweep mix until uniform.',
+                  number: '5'
+                },
+                {
+                  title: 'Combine Phase E and add to batch. Sweep mix until uniform.',
+                  number: '6'
+                }
+              ]).component-hexagon-text.--mg-top-sm
+          .productDetail__areaDetail.--mg-top-lg
+            .productDetail__analysis
+              +headingGroup('Key Ingredients')
+              +headingGroup('Poloyolprepolymer-15', 'Polyolprepolymers are a patented delivery and deposition technology which holds active ingredients in a reservoir in the upper layers of the skin. This technology optimizes the use of active ingredients as well as preventing irritation from ingredients that typically would penetrate too far into the skin (ex. Salicylic Acid). Polyolprepolymers were also tested to add water resistance to sunscreens (whirlpool study), have outstanding spreading characteristics, enhance antimicrobial activity and much more.', '--size-md').--mg-top-md
+              +headingGroup('Reversalys 30', 'Reversalys 30 is a combination of an extract of the first calcified algae, Jania rubens, rich in taurine produced in bioreactor and a baltic polysaccharide depolymerized with a patented technology. Created for millennials, tested on millennials to boost the level of energy in their skin and erase the early sign of age.', '--size-md').--mg-top-md
+          .productDetail__areaDetail.--mg-top-lg
+            .productDetail__specs
+              +headingGroup('Formula Specifications')
+              .productDetail__specs--wrapper(style="background-image: url(../images/bg-attributes-large.png")
+                .productDetail__specs--group
+                  .productDetail__specs--name
+                    | Appearance:
+                  .productDetail__specs--content
+                    | White Cloudy Cream
+                .productDetail__specs--group
+                  .productDetail__specs--name
+                    | pH:
+                  .productDetail__specs--content
+                    | 5-6
+                .productDetail__specs--group
+                  .productDetail__specs--name
+                    | Viscocity:
+                  .productDetail__specs--content
+                    | 100,000 - 400,000 | CPS RV-6 @10RPM
+                .productDetail__specs--group
+                  .productDetail__specs--name
+                    | Specific Gravity:
+                  .productDetail__specs--content
+                    | 0.99
+          .productDetail__areaDetail.--mg-top-lg
+            .productDetail__certification
+              .productDetail__certification--wrapper
+                .productDetail__certification--img
+                  +img('/images/quasi_excipient.svg', 'img')
+                .productDetail__certification--img
+                  +img('/images/quasi_excipient.svg', 'img')
+                .productDetail__certification--img
+                  +img('/images/quasi_excipient.svg', 'img')
+
+          .productDetail__areaDetail.--mg-top-lg.--pd-bottom-lg
+            +headingGroup('See the collection:')
+            +imageContent([
+              {
+                image: '/images/seqments/seqments-1.png',
+                title: 'Color by Barnet',
+                isDarkMode: true
+              },
+            ]).--mg-top-ml
+        .productDetail__wrapping.--mg-top-lg
+          .productDetail__areaDetail.productDetail__areaDetail--bgGreen.--pd-top-sm.--pd-bottom-ml
+            +headingGroup('About the Base', '<span style="text-decoration: underline; font-weight: 500">Barcril-AV</span> is a sodium salt of acrylic copolymer, an absorbent powder which holds more than 20 times its dry weight in water. Formulations featuring the <span style="text-decoration: underline; font-weight: 500">Barcril-AV</span> technology release water when applied to the skin and provide a unique change in texture during application while leaving a soft blurred finish.')
+            .component-video-control.--mg-top-xs(data-video data-gtm-view-video='About the Base')
+              video(poster="../images/related-video-1.png")
+                source(src="/videos/video.mp4")
+            p.color-semi-dark-teal.--mg-top-xs Formulating with Barcril-AV | <span class="text-icon icon-clock-sm">3:45</span>
+        .productDetail__related-fomular.--mg-top-lg
+          +headingGroup('Related Formula').--dark-mode
+          +listProduct([
+            {
+              title: 'A.M. Mist Mask',
+              desc: 'Give your skin an early boost in the morning that only takes a minute! This morning spray on mask is the perfect way to start your day. It’s a jelly skin shot that will leave you feeling moisturized from A.M. to P.M.',
+              image: '/images/product/ic_lotion.png'
+            },
+            {
+              title: 'Acqua Rush Emulsion',
+              desc: 'Get a wave of hydration with Acqua Rush Emulsion! This formula gives you instant and lasting moisturization to plump and revitalize even the driest of skin. The active ingredients focus not only on instantly supplying key moisture elements but also stimulating the skin to moisturize itself for sustained moisture. Keep your skin healthy and hydrated around the clock with the Acqua Rush Emulsion!',
+              image: '/images/product/ic_lipstick.png'
+            },
+            {
+              title: 'Bouncy Balm Serum Foundation',
+              desc: 'Immerse your skin in moisture with this bouncy balm foundation. The solid serum is a full coverage product delivering skin care benefits which hydrate the skin and reduce lines and wrinkles with a “Botox-like” effect.',
+              image: '/images/product/ic_lipstick.png'
+            },
+            {
+              title: 'CleanStick',
+              desc: 'Are you in a rush? Take cleansing with you on the go! Infused with charcoal powder to detox the skin from dirt and impurities delivering the right amount of moisture and lipids into the skin. Once the stick interacts with water it will bloom into a cleansing milk removing impurities, dirt and sebum.',
+              image: '/images/product/ic_stick.png'
+            },
+            {
+              title: 'Gravity-Proof Sunscreen',
+              desc: 'Defy gravity with the Gravity-Proof Sunscreen. Naturally lift and firm the skin  while plumping and filling in fine lines. Perfect for daily wear, apply in the morning for sun protection coupled with gravity fighting ingredients!',
+              image: '/images/product/ic_lotion.png'
+            },
+          ]).--mg-top-sm

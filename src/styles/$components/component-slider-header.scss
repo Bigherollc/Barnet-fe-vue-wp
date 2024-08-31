@@ -1,0 +1,26 @@
+.component-slider-header {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: rem(250);
+    background-color: $bg-green-dark-1;
+  }
+
+  .container {
+    @include mq("md") {
+      padding: 0;
+    }
+  }
+
+  &.\--mg-top-lg {
+    @include mq("md") {
+      margin-top: 0;
+    }
+  }
+}

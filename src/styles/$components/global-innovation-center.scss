@@ -1,0 +1,56 @@
+.global-innovation-center {
+  padding-bottom: rem(120);
+
+  @include mq("sm") {
+    padding-bottom: rem(100);
+  }
+
+  // HEADING
+  &__heading {
+    &.\--mg-top-ml {
+      margin-top: 50px;
+    }
+
+    &-row {
+      display: flex;
+      margin: 0 rem(-15);
+
+      @include mq("md") {
+        display: block;
+      }
+    }
+
+    &-col-1 {
+      width: rem(315);
+      padding: 0 rem(15);
+
+      @include mq("md") {
+        width: 100%;
+      }
+    }
+
+    &-col-2 {
+      width: calc(100% - 315px);
+      padding: 0 rem(15);
+
+      @include mq("md") {
+        width: 100%;
+      }
+    }
+
+    .component-heading-group {
+      @include mq("md") {
+        margin-bottom: rem(30);
+      }
+    }
+  }
+
+  // FOOTING
+  &__footing {
+    .component-slider-hero {
+      @extend %box-shadow-1;
+      white-space: normal;
+      overflow: visible;
+    }
+  }
+}

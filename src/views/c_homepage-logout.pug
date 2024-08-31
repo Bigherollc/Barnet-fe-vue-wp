@@ -1,0 +1,85 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Homepage Logout'
+  - useFooter = true
+  - useHeader = true
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+
+block container
+  section.component-image-form.--mg-top-ml
+    .container
+      .component-image-form__wrapper
+        .component-image-form__img(style="background-image: url(/images/intro-video.png)")
+        .component-form.--center
+          .component-form__wrapper
+            form.component-form__form(data-parsley-validate data-parsley-errors-messages-disabled)
+              .component-form__group
+                +headingForm('Customer Sign In')
+                .component-form__group__input
+                  .component-form__item
+                    input.form-control.--dark-mode(type="email" name="email" placeholder="Email" autocomplete="off" data-parsley-required)
+                  .component-form__item
+                    input.form-control.--dark-mode(type="password" name="password" placeholder="Password" autocomplete="off" minlength=7 data-parsley-required)
+                +link('#', 'Forgot Passowrd?').component-form__link
+                button(type="submit").btn.btn-solid.btn-large.btn-block.--dark-mode
+                  | Sign In
+              .component-form__group
+                +headingForm('New Customer')
+                +link('#', 'Request Access').btn.btn-regular.btn-block.--dark-mode.btn-gtm-request-access
+
+  +imageOneside({
+    imgObj: {
+      src: '/images/content-oneside/200-products.png',
+      title: '200+ Products'
+    },
+    contentObj: {
+      title: '200+ Products',
+      subTitle: 'Our collection of unique, well tested specialty ingredients lorem ipsum cosmetics and personal care.',
+      list: [
+        {
+          title: 'Backed by Science',
+        },
+        {
+          title: 'On-Trend & Fashion Forward',
+        },
+        {
+          title: 'Formulating Guidelines',
+        },
+        {
+          title: 'Starter Formula Included',
+        },
+      ],
+      cta: {
+        link: '#',
+        title: 'Explore Our Products'
+      }
+    },
+    isRight: true
+  }).--mg-top-lg
+
+  +imageOneside({
+    imgObj: {
+      src: '/images/content-oneside/global-support.png',
+      title: 'Global Support'
+    },
+    contentObj: {
+      title: 'Global Support',
+      subTitle: 'Lorem ipsum dolor sit ahmet commeitment to out cusgtomers. With partners all over the globe dolor sit ahmet.',
+      list: [
+        {
+          title: 'Sales Consultations & Support',
+        },
+        {
+          title: 'Innovation Center & Lab Assistance',
+        },
+        {
+          title: 'Compliance & Regulatory Support',
+        },
+        {
+          title: 'Customized Logistics',
+        },
+      ]
+    }
+  }).--mg-top-lg.--mg-bottom-lg.--pd-top-lg

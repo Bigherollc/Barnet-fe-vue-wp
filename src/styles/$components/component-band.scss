@@ -1,0 +1,119 @@
+.component-band {
+  padding: rem(15);
+  background-color: $bg-green-dark-3;
+  @extend %box-shadow-1;
+
+  &__wrapper {
+    display: flex;
+    max-width: rem(770);
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__group {
+    display: flex;
+
+    position: relative;
+    align-items: center;
+
+    @include mq("sm") {
+      width: auto;
+    }
+
+    .ie & {
+      width: calc(100% - 210px);
+
+      @include mq("sm") {
+        width: auto;
+      }
+    }
+
+    &.\--white {
+      color: $white;
+      width: rem(210);
+
+      .ie & {
+        width: rem(210);
+
+        @include mq("sm") {
+          width: auto;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: rem(32);
+    height: rem(32);
+    align-items: center;
+    font-size: rem(23);
+    color: $white;
+  }
+
+  &__heading {
+    font-size: rem(18);
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    padding: 0 rem(40);
+    font-size: rem(14);
+    line-height: rem(20);
+
+    a {
+      display: inline-block;
+      margin-left: rem(5);
+      font-weight: bold;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    position: absolute;
+    width: rem(30);
+    height: rem(30);
+    top: 50%;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    transform: translateY(-50%) rotate(-90deg);
+    border-radius: rem(3);
+    font-weight: bold;
+
+    .no-touchevents &:hover {
+      text-decoration: none;
+      color: $white;
+      background-color: $bg-green-dark-4;
+    }
+
+    i {
+      font-weight: inherit;
+    }
+  }
+
+  @include mq(sm) {
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__desc {
+      padding: 0;
+      margin: rem(20) 0;
+      text-align: center;
+    }
+
+    &__cta {
+      display: none;
+    }
+  }
+
+  // PRODUCT PAGE
+  &--productPage {
+    margin-top: 0;
+  }
+}

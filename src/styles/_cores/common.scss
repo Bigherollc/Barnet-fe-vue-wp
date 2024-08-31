@@ -1,0 +1,1209 @@
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all .2s;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: $font-size-h1;
+  font-weight: 100;
+  line-height: rem(30);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: $font-size-h2;
+  line-height: rem(26);
+  font-weight: 300;
+}
+
+h3 {
+  font-size: $font-size-h3;
+  font-weight: 300;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn {
+  $element: &;
+
+  display: inline-block;
+  text-align: center;
+  font-size: rem(12);
+  line-height: rem(13);
+  text-transform: uppercase;
+  padding: rem(11) rem(30) rem(10) rem(30);
+  border: solid rem(1) $light-gray;
+  border-radius: rem(3);
+  background-color: transparent;
+  color: $white;
+  cursor: pointer;
+  transition: all .2s;
+  outline: none;
+  white-space: nowrap;
+
+
+  &-large {
+    padding: rem(17) rem(33) rem(16);
+  }
+
+  &-solid {
+    color: $white;
+    background-color: $medium-teal;
+    border-color: transparent;
+
+    &.\--dark-mode {
+      color: $medium-teal;
+      background-color: $white;
+    }
+  }
+
+  &-regular {
+    color: $medium-teal;
+    border-color: $medium-teal;
+
+    &.\--dark-mode {
+      color: $white;
+      background-color: transparent;
+      border-color: $white;
+    }
+  }
+
+  &-block {
+    display: block;
+    width: 100%;
+  }
+
+  .no-touchevents &:hover {
+    color: $white;
+    background-color: $link;
+    border-color: transparent;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.\--bg-gradient {
+  @extend %background-gradiant;
+}
+
+.\--bg-white {
+  background-color: $bg-white-1;
+}
+
+.\--bg-green {
+  background-color: $bg-green-1;
+}
+
+.filter {
+  display: block;
+  font-size: rem(14);
+  line-height: rem(17);
+  color: $medium-teal;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: rem(17);
+  }
+
+  span {
+    display: inline-block;
+    padding-left: rem(32);
+    position: relative;
+    pointer-events: none;
+
+    &::before {
+      @include size(16);
+
+      content: "";
+      background-color: $white;
+      border: solid rem(1) $medium-teal;
+      border-radius: rem(4);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &.active {
+    span {
+      &::before {
+        background-color: $medium-teal;
+      }
+    }
+  }
+
+  &.\--dark-mode {
+    color: $white;
+
+    span {
+      &::before {
+        background-color: transparent;
+        border-color: $white;
+      }
+    }
+
+    &.active {
+      span {
+        &::before {
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    span {
+      text-decoration: underline;
+    }
+  }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: rem(48);
+  padding-left: rem(15);
+  border: solid rem(1) $medium-teal;
+  border-radius: rem(4);
+  outline: none;
+  font-size: rem(14);
+
+  &::placeholder {
+    color: $gray-1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $gray-1 !important;
+  }
+
+  &.\--dark-mode {
+    background-color: transparent;
+    color: $white;
+    border-color: $bd-teal-2;
+  }
+
+  &.parsley-error {
+    border-color: $error;
+  }
+}
+
+.alert {
+  margin: rem(10) 0;
+  font-size: rem(14);
+  line-height: rem(15);
+  font-weight: 300;
+
+  &-warning {
+    color: $alert;
+  }
+
+  &-danger {
+    color: $error;
+  }
+}
+
+.form-checkbox,
+.form-radio {
+  label {
+    display: inline-block;
+    position: relative;
+    padding-left: rem(23);
+    font-size: rem(14);
+    line-height: rem(19);
+    font-weight: 300;
+    cursor: pointer;
+
+    span {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include size(16);
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  &.\--dark-mode {
+    color: $white;
+  }
+
+  &.parsley-error {
+    span {
+      border-color: $error !important;
+    }
+  }
+}
+
+.form-checkbox {
+  label {
+    span {
+      border: solid rem(1) $dark-teal;
+      border-radius: rem(4);
+
+      &:after {
+        content: "";
+        @include size(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: $dark-teal;
+        transition: all .2s;
+      }
+    }
+  }
+
+  input {
+    &:checked {
+      + label {
+        span {
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &.\--dark-mode {
+    label {
+      span {
+        border-color: $white;
+
+        &:after {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
+
+.form-radio {
+  label {
+    span {
+      border: solid rem(1) $medium-teal;
+      border-radius: 50%;
+
+      &:after {
+        content: "";
+        @include size(50%);
+        background-color: $medium-teal;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform .2s;
+      }
+    }
+  }
+
+  input {
+    &:checked {
+      + label {
+        span {
+          &:after {
+            transform: translate(-50%, -50%) scale(1);
+          }
+        }
+      }
+    }
+  }
+
+  &.\--dark-mode {
+    label {
+      span {
+        border-color: $white;
+
+        &:after {
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  &.\--glow-mode {
+    label {
+      opacity: 0.5;
+      transition: opacity .2s linear;
+
+      span {
+        border-color: $medium-teal;
+      }
+    }
+
+    input {
+      &:checked {
+        + label {
+          opacity: 1;
+
+          span {
+            border-color: $white;
+
+            &:after {
+              transform: translate(-50%, -50%) scale(1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+button,
+input,
+textarea,
+select {
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input {
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+textarea.form-control {
+  height: rem(100);
+  padding: rem(15);
+  resize: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+select.form-control {
+  padding-right: rem(40);
+  appearance: none;
+  background-image: url($icon-dropdown-light);
+  background-position: center right rem(10);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-color: $bd-teal-3;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:invalid,
+  option[value=""] {
+    color: $gray-1;
+  }
+
+  option {
+    color: $black;
+  }
+
+  &.\--dark-mode {
+    background-image: url($icon-dropdown-dark);
+  }
+}
+
+.tab-content {
+  > .tab-pane {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+
+.slider-init {
+  .slick-initialized {
+    padding-bottom: rem(50);
+  }
+}
+
+.slider-control {
+  position: relative;
+
+  &:not(.slick-initialized) {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &[data-slider-main] {
+    opacity: 0;
+  }
+
+  &.\--has-slider-sm {
+    opacity: 1;
+
+    @include mq(sm) {
+      opacity: 0;
+    }
+  }
+
+  &.slick-initialized {
+    opacity: 1;
+  }
+
+  [data-slider-item] {
+    & + [data-slider-item] {
+      display: none;
+    }
+  }
+
+  .slick-slide {
+    height: auto;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .slick-wrap {
+    padding: 0 rem(40);
+    position: absolute;
+    left: 50%;
+    bottom: rem(20);
+    transform: translateX(-50%);
+  }
+
+  .slick-list {
+    .slick-slide + .slick-slide {
+      display: block;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 rem(-10);
+
+    li {
+      height: rem(10);
+      margin: 0 rem(10);
+
+      &.slick-active,
+      .no-touchevents &:hover {
+        button {
+          background-color: $white;
+        }
+      }
+    }
+
+    button {
+      display: block;
+      @include size(10);
+      padding: 0;
+      border: solid rem(1) $white;
+      background-color: transparent;
+      font-size: 0;
+      cursor: pointer;
+      transition: background-color .2s linear;
+    }
+  }
+
+  .slick-arrow {
+    @include size(15);
+    font-size: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    cursor: pointer;
+
+    &:before {
+      @extend %font-icon;
+      font-size: rem(30);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all .2s linear;
+    }
+
+    .no-touchevents &:hover {
+      &:before {
+        color: $white;
+      }
+    }
+  }
+
+  .slick-prev {
+    left: 0;
+
+    &::before {
+      content: "\e904";
+    }
+  }
+
+  .slick-next {
+    right: 0;
+
+    &::before {
+      content: "\e905";
+    }
+  }
+
+  @include mq(md) {
+    &.\--full-md {
+      .slick-list {
+        margin: 0 rem(-15);
+      }
+    }
+  }
+
+  &.\--light-mode {
+    .slick-dots {
+      button {
+        border-color: $medium-teal;
+      }
+
+      li {
+        &.slick-active,
+        &:hover {
+          button {
+            background-color: $medium-teal;
+          }
+        }
+      }
+    }
+
+    .slick-arrow {
+      &:hover {
+        &::before {
+          color: $teal;
+        }
+      }
+    }
+  }
+}
+
+.component-video-control {
+  &:hover {
+    .vjs-control-bar {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+
+  .vjs-big-play-button {
+    @include size(100, 60);
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: none;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+
+    &::before {
+      content: "\e91b";
+      @extend %font-icon;
+      font-size: rem(145);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $white;
+      pointer-events: none;
+    }
+  }
+
+  .vjs-control-bar {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: rem(50);
+    border-radius: rem(10);
+    padding: 0 rem(15);
+    position: absolute;
+    left: 50%;
+    bottom: rem(40);
+    transform: translateX(-50%);
+    background-color: $gray-3;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all .2s ease;
+
+    @include mq("sm") {
+      width: 90%;
+      bottom: rem(20);
+    }
+  }
+
+  .vjs-control {
+    @include size(30);
+    padding: 0;
+    margin: 0 rem(10);
+    margin-left: 0;
+    border: none;
+    background-color: transparent;
+    background-size: rem(14);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .vjs-backward {
+    background-image: url($icon-backward);
+    order: 1;
+
+    @include mq("sm") {
+      display: none;
+    }
+  }
+
+  .vjs-play-control {
+    order: 2;
+    background-size: rem(13);
+    background-image: url($icon-play);
+
+    &.vjs-playing {
+      background-image: url($icon-stop);
+    }
+
+    &.vjs-paused {
+      background-image: url($icon-play);
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  .vjs-forward {
+    background-image: url($icon-forward);
+    order: 3;
+
+    @include mq("sm") {
+      display: none;
+    }
+  }
+
+  .vjs-volume-panel {
+    width: rem(30);
+    height: rem(30);
+    order: 4;
+    position: relative;
+
+    &:hover > .vjs-volume-control {
+      height: rem(80);
+    }
+  }
+
+  .vjs-mute-control {
+    background-image: url($icon-unmute);
+    background-size: rem(20);
+
+    &.vjs-vol-0 {
+      background-image: url($icon-mute);
+    }
+  }
+
+  .vjs-volume-control {
+    position: absolute;
+    width: rem(6);
+    height: 0;
+    bottom: 100%;
+    left: 12px;
+    transition: height .2s;
+
+    .vjs-volume-bar {
+      height: 100%;
+      width: 100%;
+      background: $gray-2;
+      position: relative;
+    }
+
+    .vjs-volume-level {
+      width: 100%;
+      background: $white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .vjs-current-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(36);
+    margin: 0;
+    order: 5;
+    text-align: center;
+  }
+
+  .vjs-progress-control {
+    width: calc(100% - 190px);
+    height: rem(5);
+    margin: 0 rem(10);
+    order: 6;
+    background-color: $gray-4;
+    position: relative;
+
+    .vjs-play-progress {
+      background-color: $gray-5;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    .vjs-time-tooltip {
+      font-size: 0;
+    }
+  }
+
+  .vjs-remaining-time {
+    order: 7;
+  }
+
+  .vjs-duration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(36);
+    margin: 0 rem(10);
+    text-align: center;
+    order: 8;
+  }
+
+  .vjs-fullscreen-control {
+    margin: 0;
+    background-image: url($icon-fullscreen);
+    order: 9;
+  }
+
+  video {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .vjs-fluid {
+    width: 100%;
+    max-width: 100%;
+    height: 0;
+    position: relative;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .vjs-tech {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .vjs-current-time-display,
+  .vjs-duration-display {
+    color: $gray-4;
+  }
+
+  .vjs-hidden,
+  .vjs-time-divider,
+  .vjs-control-text,
+  .vjs-spacer {
+    display: none;
+  }
+
+  .vjs-has-started {
+    .vjs-big-play-button {
+      display: none;
+    }
+  }
+}
+
+.component-list {
+  li {
+    position: relative;
+    padding-left: rem(28);
+    font-size: rem(14);
+    line-height: rem(26);
+
+    &::before {
+      content: '•';
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.pdf {
+  iframe {
+    width: 100%;
+    height: rem(450);
+  }
+}
+
+.template__header {
+  line-height: 1.1;
+  letter-spacing: 0;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-left: 0.5rem solid black;
+  padding-left: 1rem;
+}
+
+.to-uppercase {
+  text-transform: uppercase;
+}
+
+.to-capitalize {
+  text-transform: capitalize;
+}
+
+.to-normal {
+  font-weight: normal;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-icon {
+  padding-left: rem(20);
+  position: relative;
+
+  &::before {
+    @extend %font-icon;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+
+[role="main"] {
+  .jspContainer,
+  .jspScrollable {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .jspVerticalBar {
+    width: rem(2);
+  }
+
+  .jspTrack {
+    background-color: $white;
+  }
+
+  .jspDrag {
+    background-color: $medium-teal;
+  }
+}
+
+.color {
+  &-semi-dark-teal {
+    color: $semi-dark-teal;
+  }
+}
+
+.\--mg-top {
+  &-xl {
+    margin-top: rem(130);
+
+    @include mq(sm) {
+      margin-top: rem(80);
+    }
+  }
+
+  &-lg {
+    margin-top: rem(60);
+
+    @include mq(sm) {
+      margin-top: rem(40);
+    }
+  }
+
+  &-ml {
+    margin-top: rem(45);
+  }
+
+  &-md {
+    margin-top: rem(35);
+  }
+
+  &-sm {
+    margin-top: rem(25);
+  }
+
+  &-xs {
+    margin-top: rem(10);
+  }
+}
+
+.\--mg-bottom {
+
+  &-lg {
+    margin-bottom: rem(60);
+
+    @include mq(sm) {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &-ml {
+    margin-bottom: rem(45);
+  }
+
+  &-md {
+    margin-bottom: rem(35);
+  }
+
+  &-sm {
+    margin-bottom: rem(25);
+  }
+
+  &-xs {
+    margin-bottom: rem(10);
+  }
+}
+
+.\--mg-left {
+  &-lg {
+    margin-left: rem(60);
+
+    @include mq(sm) {
+      margin-left: rem(40);
+    }
+  }
+
+  &-ml {
+    margin-left: rem(45);
+  }
+
+  &-md {
+    margin-left: rem(35);
+  }
+
+  &-sm {
+    margin-left: rem(25);
+  }
+
+  &-xs {
+    margin-left: rem(10);
+  }
+}
+
+.\--pd-top {
+  &-lg {
+    padding-top: rem(60);
+
+    @include mq(sm) {
+      padding-top: rem(40);
+    }
+  }
+
+  &-ml {
+    padding-top: rem(45);
+  }
+
+  &-md {
+    padding-top: rem(35);
+  }
+
+  &-sm {
+    padding-top: rem(25);
+  }
+
+  &-xs {
+    padding-top: rem(10);
+  }
+}
+
+.\--pd-bottom {
+  &-lg {
+    padding-bottom: rem(60);
+
+    @include mq(sm) {
+      padding-bottom: rem(40);
+    }
+  }
+
+  &-ml {
+    padding-bottom: rem(45);
+  }
+
+  &-md {
+    padding-bottom: rem(35);
+  }
+
+  &-sm {
+    padding-bottom: rem(25);
+  }
+
+  &-xs {
+    padding-bottom: rem(10);
+  }
+}
+
+.\--fit-vh {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+
+  main {
+    display: flex;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+  }
+}
+
+select.select2-hidden-accessible {
+  &.parsley-error {
+    &~.select2-container {
+      .select2-selection {
+        &--single {
+          border-color: $error;
+        }
+      }
+    }
+  }
+
+  &.\--dark-mode {
+    &~.select2-container {
+      .select2-selection {
+        &--single {
+          background-image: url($icon-dropdown-dark);
+          border-color: $bd-teal-2;
+        }
+
+        &__rendered {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &~.select2-container {
+    .select2-selection {
+      &--single {
+        display: block;
+        width: 100%;
+        height: rem(48);
+        padding-left: rem(15);
+        padding-right: rem(40);
+        border: solid rem(1) $bd-teal-3;
+        border-radius: rem(4);
+        outline: none;
+        font-size: rem(14);
+        background: transparent;
+        background-image: url($icon-dropdown-light);
+        background-position: center right rem(10);
+        background-repeat: no-repeat;
+      }
+
+      &__rendered {
+        color: $black;
+        padding-left: 0;
+        line-height: rem(48);
+      }
+
+      &__arrow {
+        display: none;
+      }
+    }
+  }
+}
+
+.select2-results__options {
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: rem(5);
+    background-color: $white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $medium-teal;
+  }
+}
+
+.autocomplete {
+  font-size: rem(14);
+  font-weight: 500;
+  padding: rem(5) rem(15);
+  min-height: rem(167);
+  background-color: $white;
+  @extend %box-shadow-1;
+  z-index: 10;
+
+  > div {
+    padding: rem(5) 0;
+    cursor: pointer;
+
+    &.selected {
+      color: $link;
+
+      span {
+        color: $black;
+      }
+    }
+
+    span {
+      font-size: rem(13);
+      color: $gray-1;
+      font-weight: normal;
+    }
+  }
+}
+
+// override color button accept
+.wpgdprc-consent-bar {
+  .wpgdprc-button--accept {
+    color: $black !important;
+  }
+}
+// end override color button accept

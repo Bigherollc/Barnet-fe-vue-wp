@@ -1,0 +1,8 @@
+mixin confirmPopup()
+  .component-confirm-popup(data-confirm-popup)
+    .component-confirm-popup__popup
+      .component-confirm-popup__text-content(data-content) Are you sure ?
+      .component-confirm-popup__btn-group
+        button.btn.btn-regular(data-btn-no) Cancel
+        button.btn.btn-solid(data-btn-yes) OK
+    .component-confirm-popup__overlay

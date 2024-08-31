@@ -1,0 +1,48 @@
+.component-form-request {
+  width: 100%;
+  padding: rem(60) 0;
+
+  &.\--confirmation {
+    .component-form__wrapper {
+      padding-top: rem(35);
+      padding-bottom: rem(35);
+    }
+  }
+
+  &.\--bg-transparent {
+    .component-form {
+      background-color: transparent;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @extend %box-shadow-2;
+  }
+
+  .component-form {
+    max-width: rem(380);
+    min-height: rem(350);
+    box-shadow: none;
+
+    &__wrapper {
+      padding: rem(35) rem(15) rem(60);
+    }
+
+    .btn {
+      margin-top: 0;
+    }
+  }
+
+  @include mq(md) {
+    padding: rem(40) 0;
+  }
+
+  @include mq(sm) {
+    &__wrapper {
+      padding: 0;
+    }
+  }
+}

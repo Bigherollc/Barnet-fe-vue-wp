@@ -1,0 +1,9 @@
+mixin filter(items)
+  each item in items
+    .filter(class=[item.darkmode && '--dark-mode'])
+      span!=item.text
+
+mixin filterLink(items)
+  each item in items
+    +link(href=item.href class=[item.darkmode && '--dark-mode', 'filter'] title=item.text)
+      span!=item.text

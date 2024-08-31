@@ -1,0 +1,57 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Update Details'
+  - useFooter = true
+  - useHeader = true
+  - isFooterLegal = true
+  - namespace = '--fit-vh --bg-gradient'
+
+block container
+  section.component-form-request(data-request-step)
+    .container
+      .component-form-request__wrapper(style='background-image: url(../images/bg-hexagon.png)')
+        .component-form.--center
+          .component-form__wrapper
+            +headingGroup('Update Details', '', '--size-lg to-uppercase').--dark-mode.--mg-bottom-sm.text-center(data-heading)
+            +nav-list([
+              {
+                title: 'Please try again!!!'
+              }
+            ]).parsley-errors-list.filled(data-validate-server)
+            form.component-form__form(data-parsley-validate data-parsley-errors-messages-disabled)
+              .component-form__content(data-tab-content)
+                .component-form__group
+                  .component-form__group__input
+                    .component-form__item
+                      input.form-control.--dark-mode(type="text" name="first_name" placeholder="First Name" value="Mark" autocomplete="off" data-parsley-required)
+                    .component-form__item
+                      input.form-control.--dark-mode(type="text" name="last_name" placeholder="Last Name" value="James" autocomplete="off" data-parsley-required)
+                    .component-form__item
+                      input.form-control.--dark-mode(type="email" name="email" placeholder="Work Email Address" value="mjames@companyname.com" autocomplete="off" disabled data-parsley-required)
+                .component-form__group
+                  +headingForm('Company Details:').--size-sm
+                  .component-form__group__input
+                    .component-form__item
+                      input.form-control.--dark-mode(type="text" name="company_name" placeholder="Company Name" value="Company Name" autocomplete="off" data-parsley-required)
+                    .component-form__item
+                      input.form-control.--dark-mode(type="text" name="address" placeholder="Address" value="342 West Gillford St." autocomplete="off" data-parsley-required)
+                    .component-form__item
+                      input.form-control.--dark-mode(type="text" name="address_optional" placeholder="Address Line 2" value="Suite 2231" autocomplete="off" data-parsley-required)
+                    .component-form__item
+                      select.form-control.--dark-mode(name="united_states" required data-parsley-required data-select-box)
+                        option(disabled selected value="") United States
+                        option(value="0") Male
+                        option(value="1") Female
+                    .component-form__two-col
+                      .col-6.component-form__item
+                        input.form-control.--dark-mode(type="text" name="province" placeholder="State/Province" value="MA" autocomplete="off" data-parsley-required)
+                      .col-6.component-form__item
+                        input.form-control.--dark-mode(type="text" name="postal_code" placeholder="Postal Code" value="43562" autocomplete="off" data-parsley-required)
+                    .component-form__item
+                      input.form-control.--dark-mode(type="text" name="phone" placeholder="Work Phone" value="223-342-1515" autocomplete="off" data-parsley-required data-mask="000-000-0000")
+                    .component-form__item
+                      input.form-control.--dark-mode(type="text" name="phone_optional" placeholder="Mobile Phone (Optional)" value="223-342-1515" autocomplete="off" data-parsley-required data-mask="000-000-0000")
+                .component-form__group.text-center
+                  button.btn.btn-solid.btn-large.--dark-mode(data-next-btn type="submit")
+                    | Submit Request

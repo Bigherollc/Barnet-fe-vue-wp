@@ -1,0 +1,8 @@
+mixin accrodion(items)
+  .component-accrodion(data-accrodion)
+    each item in items
+      .component-accrodion__item(data-item)
+        .component-accrodion__toggle(data-toggle)
+          span!=item.toggle
+        .component-accrodion__dropdown(data-dropdown)
+          !=item.content

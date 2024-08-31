@@ -1,0 +1,9 @@
+import './com-container';
+import './com-filter-item';
+import './com-filter-swiper';
+import './com-group-product';
+import './com-item-formula';
+import './com-item-product';
+import './com-item-resource';
+import './com-wrapping';
+import './com-item-concepts';

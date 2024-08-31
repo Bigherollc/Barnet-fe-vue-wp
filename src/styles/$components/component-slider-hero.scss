@@ -1,0 +1,43 @@
+.component-slider-hero {
+  &__item {
+    min-height: rem(250);
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__wrap {
+    padding: rem(20);
+
+    .\--size-wrap-lg & {
+      max-width: rem(500);
+    }
+
+    .\--size-wrap-md & {
+      max-width: rem(360);
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: rem(20);
+    left: rem(20);
+  }
+
+  &__ribbon {
+    display: inline-block;
+    font-size: rem(14);
+    line-height: rem(15);
+    font-weight: bold;
+    color: $white;
+    padding: rem(9) rem(30);
+    margin-bottom: rem(10);
+    background-color: $red;
+  }
+
+  .slick-list {
+    @extend %box-shadow-1;
+  }
+}

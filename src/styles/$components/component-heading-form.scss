@@ -1,0 +1,23 @@
+.component-heading-form {
+  color: $white;
+
+  &__heading {
+    .\--size-sm & {
+      font-size: rem(18);
+      line-height: rem(20);
+    }
+  }
+
+  &__desc {
+    margin-top: rem(10);
+    font-size: rem(14);
+    line-height: rem(20);
+    font-weight: 300;
+
+    .\--size-sm & {
+      margin-top: rem(5);
+      font-size: rem(12);
+      line-height: rem(16);
+    }
+  }
+}

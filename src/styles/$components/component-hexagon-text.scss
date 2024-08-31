@@ -1,0 +1,28 @@
+.component-hexagon-text {
+  max-width: rem(930);
+  font-size: rem(18);
+  line-height: rem(19);
+  counter-reset: hexatext;
+
+  li {
+    position: relative;
+    padding: rem(25) 0 rem(25) rem(100);
+  }
+
+  .number {
+    content: counter(hexatext);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: rem(65);
+    height: rem(65);
+    transform: translateY(-50%);
+    font-size: rem(24);
+    line-height: rem(65);
+    color: $white;
+    text-align: center;
+    background: url(../images/bg-polygon-fill.svg) no-repeat center;
+    background-size: contain;
+    counter-increment: hexatext;
+  }
+}

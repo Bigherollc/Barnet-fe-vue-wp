@@ -1,0 +1,119 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Resource Detail Video (login)'
+  - isLogin = true
+  - isFooterBoth = true
+  - namespace = '--bg-gradient'
+
+block container
+  .resource-detail
+    .container
+      +headingGroup('Formulating with Barsolve NS-100', 'Creating a D-Phase Barsolve NS-100. Create cleansing gels, creams, serums and more with this lorem ipsum dolor sit ahmet.', '--size-lg')
+      .resource-detail__detail
+        .resource-detail__detail--row
+          .resource-detail__detail--colRight
+            .resource-detail__detail--content
+              .resource-detail__detail--part
+                .resource-detail__detail--title Related Products
+                .resource-detail__detail--listRelated
+                  +listRelated([
+                    {
+                      title: 'Barsolve NS-100',
+                      link: '#'
+                    }
+                  ])
+              .resource-detail__detail--part
+                .resource-detail__detail--title Related Formula
+                .resource-detail__detail--listRelated
+                  +listRelated([
+                    {
+                      image: '/images/product/product-lipstick.svg',
+                      title: 'Acqua Rush Emulsion',
+                      link: '#'
+                    },
+                    {
+                      image: '/images/product/product-lotion-b.svg',
+                      title: 'A.M. Mist Mask',
+                      link: '#'
+                    }
+                  ])
+          .resource-detail__detail--colLeft
+            .resource-detail__detail--VideoFile
+              .component-video-control(data-video)#video
+                video(poster="../images/related-video-1.png")
+                  source(src="/videos/video.mp4")
+      .resource-detail__other
+        .product__title-widget Related Resources
+        +relatedVideo({
+          classComp: '--bg-green',
+          type: 4,
+          items: [
+            {
+              image: '../images/related-video-1.png',
+              title: 'Title of the Video',
+              time: '15:23'
+            },
+            {
+              image: '../images/related-video-1.png',
+              title: 'Title of the Video',
+              time: '15:23'
+            },
+            {
+              image: '../images/related-video-1.png',
+              title: 'Title of the Video',
+              time: '15:23'
+            },
+            {
+              image: '../images/related-video-1.png',
+              title: 'Title of the Video',
+              time: '15:23'
+            },
+          ]
+        })(data-slider-main data-opts-slider='{"slickContainer": ".component-related-video","optsSlick": {"slide": "[data-slider-item]","dots": true, "rows": 0, "slidesToShow": 4,  "slidesToScroll": 4, "responsive":[{"breakpoint": 991, "settings": {"slidesToShow": 3,  "slidesToScroll": 3}},{"breakpoint": 768, "settings": {"slidesToShow": 2,  "slidesToScroll": 2}},{"breakpoint": 376, "settings": {"slidesToShow": 1,  "slidesToScroll": 1}}]}}')
+      section.component-fashtion-concepts.--mg-top-lg
+        .component-fashtion-concepts__wrapper
+          +headingGroup('Related Concepts').text-center.--dark-mode
+          .component-fashtion-concepts__slider.--mg-top-sm
+            +imageConcepts([
+              {
+                image: '/images/active/mask-1.png',
+                title: 'Around the Clock Aging (Epigenetics)',
+                desc: 'Brighten, blur and highlight for glowing youthful skin.'
+              },
+              {
+                image: '/images/active/mask-2.png',
+                title: 'Holobiont Beauty',
+                desc: 'Fresh and natural light touch coverage for daily use.'
+              },
+              {
+                image: '/images/active/mask-3.png',
+                title: 'Moisturization',
+                desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+              },
+              {
+                image: '/images/active/mask-4.png',
+                title: 'Moisturization',
+                desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+              },
+              {
+                image: '/images/active/mask-1.png',
+                title: 'Around the Clock Aging (Epigenetics)',
+                desc: 'Brighten, blur and highlight for glowing youthful skin.'
+              },
+              {
+                image: '/images/active/mask-2.png',
+                title: 'Holobiont Beauty',
+                desc: 'Fresh and natural light touch coverage for daily use.'
+              },
+              {
+                image: '/images/active/mask-3.png',
+                title: 'Moisturization',
+                desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+              },
+              {
+                image: '/images/active/mask-4.png',
+                title: 'Moisturization',
+                desc: 'Solar shields lorem ipsum dolor sit ahmet neldim.'
+              },
+            ])(data-slider-main data-opts-slider='{"slickContainer": ".component-fashtion-concepts","optsSlick": {"slide": "[data-slider-item]","dots": true, "rows": 0, "slidesToShow": 4, "slidesToScroll": 4, "responsive":[{"breakpoint": 991, "settings": {"slidesToShow": 3, "slidesToScroll": 3}}, {"breakpoint": 768, "settings": {"slidesToShow": 2, "slidesToScroll": 2}}]}}')

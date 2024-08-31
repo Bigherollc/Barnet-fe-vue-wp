@@ -1,0 +1,231 @@
+.styleguide {
+  &__container {
+    padding: rem(50) 0 rem(60);
+    border-bottom: solid rem(1) $light-gray;
+
+    &--dark {
+      background-color: $dark-teal;
+
+      h2 {
+        color: $white;
+      }
+    }
+  }
+
+  &__block-color {
+    margin-bottom: rem(30);
+
+    &__color {
+      @include size(80);
+      margin-bottom: rem(15);
+
+      &--dark-teal {
+        background-color: $dark-teal;
+      }
+
+      &--semi-dark-teal {
+        background-color: $semi-dark-teal;
+      }
+
+      &--medium-teal {
+        background-color: $medium-teal;
+      }
+
+      &--teal {
+        background-color: $teal;
+      }
+
+      &--barnet-teal {
+        background-color: $barnet-teal;
+      }
+
+      &--black {
+        background-color: $black;
+      }
+
+      &--white {
+        background-color: $white;
+        border: solid rem(1) $light-gray;
+      }
+
+      &--light-gray {
+        background-color: $light-gray;
+      }
+
+      &--link {
+        background-color: $link;
+      }
+
+      &--derm {
+        background-color: $derm;
+      }
+
+      &--hair {
+        background-color: $hair;
+      }
+
+      &--conscious-beauty {
+        background-color: $conscious-beauty;
+      }
+
+      &--color {
+        background-color: $color;
+      }
+
+      &--cart {
+        background-color: $cart;
+      }
+
+      &--alert {
+        background-color: $alert;
+      }
+
+      &--error {
+        background-color: $error;
+      }
+    }
+
+    &__gradient {
+      width: 100%;
+      height: rem(80);
+      margin-bottom: rem(15);
+      @extend %background-gradiant;
+    }
+  }
+
+  &__block-style {
+    margin-bottom: rem(50);
+
+    &__text {
+      font-size: rem(23);
+      line-height: rem(28);
+      text-transform: uppercase;
+      margin-bottom: rem(10);
+
+      &--dark {
+        color: $white;
+      }
+    }
+
+    &__content {
+      margin-bottom: rem(10);
+      text-transform: uppercase;
+
+      h1,
+      h2 {
+        color: $semi-dark-teal;
+      }
+
+      &--alert {
+        color: $alert;
+      }
+
+      &--error {
+        color: $error;
+      }
+
+      &--dark {
+        h1,
+        h2,
+        h3,
+        p {
+          color: $white;
+        }
+      }
+    }
+
+    &__desc {
+      font-size: rem(12);
+      line-height: rem(14);
+      margin-bottom: rem(5);
+
+      &--dark {
+        color: $white;
+      }
+    }
+
+    &__drop-menu {
+      text-transform: none;
+
+      a {
+        &.\--dark-mode {
+          color: $white;
+        }
+
+        &:hover {
+          color: $link;
+        }
+      }
+    }
+  }
+
+  &__fonticon {
+    &-grid {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin: 0 rem(-20);
+    }
+
+    &-col {
+      width: 25%;
+      padding: 0 rem(20);
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      font-size: rem(13);
+      color: $black;
+      margin-bottom: rem(15);
+
+      &__icon {
+        font-size: rem(16);
+        width: rem(30);
+        flex-shrink: 0;
+      }
+
+      &__name {
+        width: 100%;
+        padding-left: rem(5);
+        color: $gray-2;
+      }
+
+      &__code {
+        width: rem(35);
+        flex-shrink: 0;
+        color: $gray-1;
+      }
+    }
+  }
+
+  &__two-col {
+    display: flex;
+  }
+
+  &__mb {
+    margin-bottom: rem(10);
+
+    &[class*="col-"] {
+      padding-left: 0;
+      padding-right: rem(7.5);
+
+      & + & {
+        padding-left: rem(7.5);
+        padding-right: 0;
+      }
+    }
+
+    &-20 {
+      margin-bottom: rem(20);
+    }
+
+    &-30 {
+      margin-bottom: rem(30);
+    }
+
+    &-60 {
+      margin-bottom: rem(60);
+    }
+  }
+}
