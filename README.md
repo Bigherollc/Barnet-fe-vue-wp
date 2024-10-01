@@ -1,4 +1,4 @@
-WEB TEMPLATE
+WEB TEMPLATE vue 2
 ===================
 
 Web template use es6, pug, scss
