@@ -1,3 +1,4 @@
+/* eslint-enable no-prototype-builtins */
 import { callApi } from '../../../utils/http';
 
 export default {
