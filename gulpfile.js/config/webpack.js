@@ -66,8 +66,9 @@ module.exports = {
     splitChunks: false,
     flagIncludedChunks: true,
     concatenateModules: true,
-    occurrenceOrder: true,
-    sideEffects: true
+    sideEffects: true,
+    chunkIds: "size",
+    moduleIds: "size",
   },
   devtool: isDevelopment && 'source-map'
 };

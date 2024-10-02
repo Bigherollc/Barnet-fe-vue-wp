@@ -8,9 +8,17 @@ const stream = require('../utils/browser-sync');
 
 function lintScripts () {
   let _gulp = src(filesJs)
-    .pipe(cached('eslint'))
-    .pipe(eslint())
-    .pipe(eslint.results(handleESLintError));
+    .pipe(eslint({
+      parser: '@babel/eslint-parser',
+      parserOptions: {
+        requireConfigFile: false,
+        babelOptions: {
+          presets: ['@babel/preset-env'],
+        },
+      }
+    }))
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError());
 
   if (stream.isStreaming) {
     return _gulp;
