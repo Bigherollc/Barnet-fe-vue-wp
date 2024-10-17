@@ -1,12 +1,13 @@
 // ROOT
-import root from './root';
+import { createStore } from 'vuex'
+import root from './root'
 
 // MODULES
-import product from './modules/product';
-import concept from './modules/concept';
-import formula from './modules/formula';
-import search from './modules/search';
-import resource from './modules/resource';
+import product from './modules/product'
+import concept from './modules/concept'
+import formula from './modules/formula'
+import search from './modules/search'
+import resource from './modules/resource'
 
 // INIT
 const modules = {
@@ -15,15 +16,10 @@ const modules = {
   formula,
   search,
   resource
-};
-
-for (let mod in modules) {
-  if (Object.prototype.hasOwnProperty.call(modules, mod)) {
-    modules[mod].namespaced = true;
-  }
 }
 
-export default new Vuex.Store({
+export default createStore({
   ...root,
   modules
-});
+})
+

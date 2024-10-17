@@ -1,4 +1,19 @@
-Vue.component('com-sign-in', {
+import { defineComponent, computed } from 'vue';
+
+export default defineComponent({
+  name: 'ComSignIn',
+  props: {
+    backgroundImage: String,
+    urlSignIn: String,
+    urlRequestAccess: String,
+  },
+  setup(props) {
+    const urlBgImg = computed(() => `url(${props.backgroundImage})`);
+
+    return {
+      urlBgImg
+    };
+  },
   template: `
     <div class="product__signIn">
       <div
@@ -24,15 +39,5 @@ Vue.component('com-sign-in', {
         </div>
       </div>
     </div>
-  `,
-
-  props: {
-    backgroundImage: String,
-    urlSignIn: String,
-    urlRequestAccess: String,
-  },
-
-  computed: {
-    urlBgImg: (vm) => `url(${vm.backgroundImage})`
-  }
+  `
 });

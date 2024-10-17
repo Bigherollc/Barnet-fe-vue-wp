@@ -1,5 +1,7 @@
 //_____________________________________________________
 //                                           GET SCREEN
+@use "sass:math";
+
 @function screen($name) {
   @return map-get($grid-breakpoints, $name);
 }
@@ -45,7 +47,7 @@
       $context: $context * 1px;
     }
 
-    @return $pixels / $context * 1#{$unit};
+    @return math.div($pixels, $context) * 1#{$unit};
   }
 }
 

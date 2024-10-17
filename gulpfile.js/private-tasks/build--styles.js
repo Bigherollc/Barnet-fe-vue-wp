@@ -1,5 +1,5 @@
 const { src, dest } = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const cached = require('gulp-cached');
 const bulkSass = require('organizze-gulp-sass-bulk-import');
 const sassUnicode = require('gulp-sass-unicode');

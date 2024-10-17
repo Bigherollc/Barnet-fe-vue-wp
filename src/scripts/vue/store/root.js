@@ -18,8 +18,6 @@ function recursiveFilter (data, filter, index) {
   return listTerm;
 }
 
-Vue.use(Vuex);
-
 export default {
   state: {
     listType: [],

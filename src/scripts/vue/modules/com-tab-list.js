@@ -1,12 +1,59 @@
+import { ref, watch, onMounted } from 'vue';
 import { getParamValue, updateParamValue } from '../../utils/http';
 
-const {
-  mapState,
-  mapActions,
-  mapGetters
-} = Vuex;
+export default {
+  props: {
+    hastoggle: {
+      type: Boolean,
+      default: false
+    },
+  },
 
-Vue.component('com-tab-list', {
+  setup(props, { emit }) {
+    const currentType = ref(null);
+    const isDarkMode = ref(false);
+    const source = ref({});
+    const total = ref(0);
+    const hasData = ref(false);
+    const firstAvailableSection = ref(null);
+
+
+    watch(firstAvailableSection, (value) => {
+      const hasTab = $('.component-tab-list').hasClass('d-none');
+
+      !hasTab && updateParamValue('tab', value, true);
+      currentType.value = value;
+      emit('setData', value);
+    });
+
+    const checkHistory = () => {
+      const param = window.location.search;
+      const objParam = getParamValue(param);
+      const hasTab = $('.component-tab-list').hasClass('d-none');
+      const tabActive = objParam.tab || false;
+      const tab = tabActive ? $('.component-tab-list').find(`a[data-tab-name=${tabActive}]`) : $('.component-tab-list').find('li:first').find('a');
+      const tabName = tab.data('tab-name');
+      const isGroup = tab.data('is-group');
+
+      emit('updateIsGroup', isGroup);
+      currentType.value = tabName;
+      !hasTab && updateParamValue('tab', tabName);
+    };
+
+    onMounted(() => {
+      checkHistory();
+    });
+
+    return {
+      currentType,
+      isDarkMode,
+      source,
+      total,
+      hasData,
+      firstAvailableSection,
+      isHide: hasData.value === 0 || !hasData.value,
+    };
+  },
   template: `
     <div>
       <div
@@ -30,64 +77,5 @@ Vue.component('com-tab-list', {
       </div>
     </div>
   `,
+};
 
-  props: {
-    hastoggle: {
-      type: Boolean,
-      default: false
-    },
-  },
-
-  computed: {
-    ...mapState([
-      'currentType',
-      'isDarkMode',
-      'source',
-      'total',
-      'hasData',
-    ]),
-
-    ...mapGetters([
-      'firstAvailableSection'
-    ]),
-
-    isHide: vm => vm.total === 0 || !vm.hasData,
-  },
-
-  methods: {
-    ...mapActions([
-      'updateListApi',
-      'setCurrentType',
-      'setData',
-      'updateIsGroup',
-    ]),
-
-    checkHistory () {
-      const param = window.location.search;
-      const objParam = getParamValue(param);
-      const hasTab = $('.component-tab-list').hasClass('d-none');
-      const tabActive = objParam.tab || false;
-      const tab = tabActive ? $('.component-tab-list').find(`a[data-tab-name=${tabActive}]`) : $('.component-tab-list').find('li:first').find('a');
-      const tabName = tab.data('tab-name');
-      const isGroup = tab.data('is-group');
-
-      this.updateIsGroup(isGroup);
-      this.setCurrentType(tabName);
-      !hasTab && updateParamValue('tab', tabName);
-    },
-  },
-
-  mounted () {
-    this.checkHistory();
-  },
-
-  watch: {
-    firstAvailableSection (value) {
-      const hasTab = $('.component-tab-list').hasClass('d-none');
-
-      !hasTab && updateParamValue('tab', value, true);
-      this.setCurrentType(value);
-      this.setData(value);
-    }
-  }
-});
