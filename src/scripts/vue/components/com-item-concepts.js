@@ -1,4 +1,25 @@
-Vue.component('com-item-concepts', {
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  props: {
+    title: {
+      type: String,
+      default: '',
+    },
+    image: {
+      type: String,
+      default: '',
+    },
+    desc: {
+      type: String,
+      default: '',
+    },
+    link: {
+      type: String,
+      default: '',
+    },
+  },
+
   template: `
     <div class="component-image-concepts__item--wrapper">
       <div class="component-image-concepts__item--img">
@@ -10,11 +31,5 @@ Vue.component('com-item-concepts', {
       </div><a :href="link" :title="title" rel="stylesheet" ></a>
     </div>
   `,
-
-  props: {
-    title: String,
-    image: String,
-    desc: String,
-    link: String,
-  },
 });
+

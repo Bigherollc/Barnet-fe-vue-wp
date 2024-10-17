@@ -1,3 +1,5 @@
+import { createApp } from 'vue';
+
 // STORE
 import store from './store/';
 
@@ -7,6 +9,7 @@ import './components/';
 // MODULES
 import './modules/';
 
-new Vue({
-  store
-}).$mount('#app');
+createApp({
+  render: () => null,
+}).use(store).mount('#app');
+

@@ -1,31 +1,26 @@
-Vue.component('com-filter-item', {
-  template: `
-    <div
-      class="filter "
-      :data-slug="slug"
-      :title="name"
-      :class="{
-        'active': isActive,
-        '--dark-mode': isDarkMode,
-        'd-none': isHide,
-      }"
-      v-on:click="onClickFilter(event, slug)"
-    >
-      <span>{{name}} ({{count}})</span>
-    </div>
-  `,
+import { defineComponent } from 'vue';
 
+export default defineComponent({
   props: {
-    slug: String,
-    name: String,
-    count: Number,
+    slug: {
+      type: String,
+      default: '',
+    },
+    name: {
+      type: String,
+      default: '',
+    },
+    count: {
+      type: Number,
+      default: 0,
+    },
     link: {
       type: String,
       default: '',
     },
     isActive: {
       type: Boolean,
-      default: false
+      default: false,
     },
     isLink: {
       type: Boolean,
@@ -34,18 +29,33 @@ Vue.component('com-filter-item', {
     isDarkMode: {
       type: Boolean,
       default: false,
-    }
-
-  },
-
-  computed: {
-    isHide: vm => vm.count === 0,
-  },
-
-  methods: {
-    onClickFilter (event, slug) {
-      const isFilted = $(event.target).hasClass('active');
-      this.$emit('onClickFilter', {slug, isFilted});
     },
-  }
+  },
+  computed: {
+    isHide() {
+      return this.count === 0;
+    },
+  },
+  methods: {
+    onClickFilter(event, slug) {
+      const isFilted = event.target.classList.contains('active');
+      this.$emit('onClickFilter', { slug, isFilted });
+    },
+  },
+  template: `
+    <div
+      class="filter"
+      :data-slug="slug"
+      :title="name"
+      :class="{
+        'active': isActive,
+        '--dark-mode': isDarkMode,
+        'd-none': isHide,
+      }"
+      @click="onClickFilter($event, slug)"
+    >
+      <span>{{name}} ({{count}})</span>
+    </div>
+  `,
 });
+

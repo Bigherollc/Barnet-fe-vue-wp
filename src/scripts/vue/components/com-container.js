@@ -1,32 +1,35 @@
-const {
-  mapActions
-} = Vuex;
+import { defineComponent } from 'vue';
 
-Vue.component('com-container', {
-  template: `
-    <div class="product__pageListing" data-page-listing>
-      <div class="product__pageListing--row">
-        <div class="product__pageListing--colLeft">
-          <slot name="left"></slot>
-        </div>
-        <div class="product__pageListing--colRight">
-          <slot name="right"></slot>
-        </div>
-      </div>
-    </div>
-  `,
+export default defineComponent({
+  name: 'ComContainer',
 
   props: {
-    isdarkmode: Boolean
+    isdarkmode: {
+      type: Boolean,
+      default: false
+    }
   },
 
-  methods: {
-    ...mapActions([
-      'setDarkMode'
-    ]),
-  },
+  setup(props) {
+    const store = require('vuex').useStore();
+    const { onMounted } = require('vue');
 
-  mounted () {
-    this.setDarkMode(this.isdarkmode);
+    onMounted(() => {
+      store.setDarkMode(props.isdarkmode);
+    });
+
+    return () => (
+      <div class="product__pageListing" data-page-listing>
+        <div class="product__pageListing--row">
+          <div class="product__pageListing--colLeft">
+            <slot name="left" />
+          </div>
+          <div class="product__pageListing--colRight">
+            <slot name="right" />
+          </div>
+        </div>
+      </div>
+    );
   }
 });
+

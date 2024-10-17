@@ -1,4 +1,6 @@
-Vue.component('com-item-resource', {
+import { defineComponent } from 'vue';
+
+export default defineComponent({
   template: `
     <div class="component-related-video__col col-12 col-sm-6 col-md-4">
       <a
@@ -27,7 +29,6 @@ Vue.component('com-item-resource', {
       </div>
     </div>
   `,
-
   props: {
     image: String,
     title: String,
@@ -41,3 +42,4 @@ Vue.component('com-item-resource', {
     }
   },
 });
+

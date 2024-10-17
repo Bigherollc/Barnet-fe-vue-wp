@@ -1,4 +1,36 @@
-Vue.component('com-item-product', {
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  props: {
+    title: {
+      type: String,
+      default: '',
+    },
+    desc: {
+      type: String,
+      default: '',
+    },
+    link: {
+      type: String,
+      default: '',
+    },
+    subtext: {
+      type: String,
+      default: '',
+    },
+    area: {
+      type: String,
+      default: '',
+    },
+  },
+  computed: {
+    hasImage() {
+      return this.image !== '';
+    },
+    isGlobal() {
+      return this.area === 'global';
+    },
+  },
   template: `
     <div class="component-list-product__item">
       <div class="component-list-product__wrap">
@@ -15,23 +47,5 @@ Vue.component('com-item-product', {
       </div>
     </div>
   `,
-
-  props: {
-    title: String,
-    desc: String,
-    link: String,
-    subtext: {
-      type: String,
-      default: '',
-    },
-    area: {
-      type: String,
-      default: '',
-    },
-  },
-
-  computed: {
-    hasImage: vm => vm.image !== '',
-    isGlobal: ({ area }) => area === 'global',
-  },
 });
+
