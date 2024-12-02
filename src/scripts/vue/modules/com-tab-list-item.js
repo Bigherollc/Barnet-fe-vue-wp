@@ -1,13 +1,10 @@
 import { updateParamValue } from '../../utils/http';
 
-const {
-  mapState,
-  mapActions
-} = Vuex;
+const { mapState, mapActions } = Vuex;
 
 Vue.component('com-tab-list-item', {
   template: `
-    <li :class="{ 'd-none': !isShow }">
+    <li :class="{'d-none': !isShow}">
       <a
         href=""
         :class="{'active': isActive}"
@@ -18,7 +15,7 @@ Vue.component('com-tab-list-item', {
         :title="name"
         v-on:click="onClickTab(event)"
       >
-        {{name}} (<span data-tab-count>{{countAll}}</span>)
+        {{name}} (<span data-tab-count>{{count}}</span>)
       </a>
     </li>
   `,
@@ -31,26 +28,18 @@ Vue.component('com-tab-list-item', {
   },
 
   computed: {
-    ...mapState([
-      'source',
-      'time4Load',
-      'currentType',
-    ]),
+    ...mapState(['source', 'time4Load', 'currentType']),
 
-    ...mapState('search', [
-      'conceptSource',
-    ]),
+    ...mapState('search', ['conceptSource']),
 
-    ...mapState('concept', [
-      'dataConcept',
-      'dataNoConcept'
-    ]),
+    ...mapState('concept', ['dataConcept', 'dataNoConcept']),
 
     count: ({ source, name }) => source[name]?.count,
-    countConceptSearch: vm => vm.conceptSource[vm.name]?.length || 0,
-    countAll: vm => vm.count + vm.countConceptSearch,
-    isShow: vm => !!vm.count || !!vm.countConceptSearch,
-    isActive: vm => vm.currentType === vm.name,
+    countConceptSearch: (vm) => vm.conceptSource[vm.name]?.length || 0,
+    countAll: (vm) => vm.count + vm.countConceptSearch,
+    isShow: (vm) => !!vm.count,
+    // isShow: true,
+    isActive: (vm) => vm.currentType === vm.name,
   },
 
   methods: {
@@ -59,10 +48,10 @@ Vue.component('com-tab-list-item', {
       'setData',
       'reUpdateSourceCount',
       'actionFilter',
-      'updateIsGroup'
+      'updateIsGroup',
     ]),
 
-    async onClickTab (event) {
+    async onClickTab(event) {
       event.preventDefault();
       const target = $(event.currentTarget);
       const tabName = target.data('tab-name');
@@ -72,7 +61,7 @@ Vue.component('com-tab-list-item', {
       target.addClass('active');
 
       $('[data-loading]').removeClass('d-none');
-      await new Promise(res => setTimeout(res, this.time4Load));
+      await new Promise((res) => setTimeout(res, this.time4Load));
       this.setData(type);
       this.updateIsGroup(this.isgroup);
       this.actionFilter();
@@ -83,7 +72,7 @@ Vue.component('com-tab-list-item', {
     },
   },
 
-  created () {
+  created() {
     this.pushListType(this.name);
-  }
+  },
 });

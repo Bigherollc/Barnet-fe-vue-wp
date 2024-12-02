@@ -24,42 +24,45 @@ module.exports = {
           presets: ['@babel/preset-env'],
           plugins: [
             [
-              '@babel/plugin-transform-runtime', {
+              '@babel/plugin-transform-runtime',
+              {
                 helpers: true,
-                regenerator: true
-              }
+                regenerator: true,
+              },
             ],
             [
-              '@babel/plugin-proposal-decorators', {
-                legacy: true
-              }
+              '@babel/plugin-proposal-decorators',
+              {
+                legacy: true,
+              },
             ],
             [
-              '@babel/plugin-proposal-pipeline-operator', {
-                proposal: 'minimal'
-              }
+              '@babel/plugin-proposal-pipeline-operator',
+              {
+                proposal: 'minimal',
+              },
             ],
             '@babel/plugin-proposal-class-properties',
             '@babel/plugin-transform-function-name',
             '@babel/plugin-syntax-dynamic-import',
-            '@babel/plugin-proposal-optional-chaining'
+            '@babel/plugin-proposal-optional-chaining',
           ],
-          cacheDirectory: true
-        }
-      }
-    ]
+          cacheDirectory: true,
+        },
+      },
+    ],
   },
   resolve: {
     alias: {
-      '@': resolve(srcScript, 'cores')
-    }
+      '@': resolve(srcScript, 'cores'),
+    },
   },
   plugins: [
     new ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      Plugin: ['@/plugin', 'default']
-    })
+      Plugin: ['@/plugin', 'default'],
+    }),
   ],
   optimization: {
     nodeEnv,
@@ -67,8 +70,8 @@ module.exports = {
     flagIncludedChunks: true,
     concatenateModules: true,
     sideEffects: true,
-    chunkIds: "size",
-    moduleIds: "size",
+    chunkIds: 'natural',
+    moduleIds: 'natural',
   },
-  devtool: isDevelopment && 'source-map'
+  devtool: isDevelopment && 'source-map',
 };

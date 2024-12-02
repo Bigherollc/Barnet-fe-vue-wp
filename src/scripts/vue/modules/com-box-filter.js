@@ -39,12 +39,12 @@ Vue.component('com-box-filter', {
     index: Number,
     filterName: String,
     arrayFilterItem: Array,
-    // TODO: DUPLICATED isOpen and computed isOpen
-    // isOpen: {
-    //   type: Boolean,
-    //   default: false,
-    // },
+    isOpen: {
+      type: Boolean,
+      default: false,
+    },
     arrOpen: {
+      type: Array,
       default: [0, 1],
     }
   },

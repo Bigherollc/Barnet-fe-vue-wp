@@ -1,10 +1,6 @@
 import { getParamValue, updateParamValue } from '../../utils/http';
 
-const {
-  mapState,
-  mapActions,
-  mapGetters
-} = Vuex;
+const { mapState, mapActions, mapGetters } = Vuex;
 
 Vue.component('com-tab-list', {
   template: `
@@ -34,24 +30,16 @@ Vue.component('com-tab-list', {
   props: {
     hastoggle: {
       type: Boolean,
-      default: false
+      default: false,
     },
   },
 
   computed: {
-    ...mapState([
-      'currentType',
-      'isDarkMode',
-      'source',
-      'total',
-      'hasData',
-    ]),
+    ...mapState(['currentType', 'isDarkMode', 'source', 'total', 'hasData']),
 
-    ...mapGetters([
-      'firstAvailableSection'
-    ]),
+    ...mapGetters(['firstAvailableSection']),
 
-    isHide: vm => vm.total === 0 || !vm.hasData,
+    isHide: (vm) => vm.total === 0 || !vm.hasData,
   },
 
   methods: {
@@ -62,12 +50,14 @@ Vue.component('com-tab-list', {
       'updateIsGroup',
     ]),
 
-    checkHistory () {
+    checkHistory() {
       const param = window.location.search;
       const objParam = getParamValue(param);
       const hasTab = $('.component-tab-list').hasClass('d-none');
       const tabActive = objParam.tab || false;
-      const tab = tabActive ? $('.component-tab-list').find(`a[data-tab-name=${tabActive}]`) : $('.component-tab-list').find('li:first').find('a');
+      const tab = tabActive
+        ? $('.component-tab-list').find(`a[data-tab-name=${tabActive}]`)
+        : $('.component-tab-list').find('li:first').find('a');
       const tabName = tab.data('tab-name');
       const isGroup = tab.data('is-group');
 
@@ -77,17 +67,17 @@ Vue.component('com-tab-list', {
     },
   },
 
-  mounted () {
+  mounted() {
     this.checkHistory();
   },
 
   watch: {
-    firstAvailableSection (value) {
+    firstAvailableSection(value) {
       const hasTab = $('.component-tab-list').hasClass('d-none');
 
       !hasTab && updateParamValue('tab', value, true);
       this.setCurrentType(value);
       this.setData(value);
-    }
-  }
+    },
+  },
 });

@@ -28,7 +28,7 @@ Vue.component('com-image-concepts', {
       'conceptSource'
     ]),
 
-    dataSource: vm => vm.conceptSource[vm.currentType] || [],
+    dataSource: vm => vm.conceptSource[vm.currentType === 'actives' ? 'active' : vm.currentType === 'systems' ? 'system' : vm.currentType] || [],
 
     isShow: vm => vm.dataSource.length,
   },

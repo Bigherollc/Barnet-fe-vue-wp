@@ -1,7 +1,7 @@
 extends _layouts/layout
 
 block append vars
-  - title = 'Search (logout)'
+  - title = 'Search (login)'
   - isFooterBoth = true
   - namespace = 'search-page'
 block container
@@ -15,8 +15,9 @@ block container
           image="/images/search/sidebarArtboard.png"
         )
         com-tab-list(slot="right")
-          com-tab-list-item(name="active")
-          com-tab-list-item(name="system")
+          com-tab-list-item(name="actives")
+          com-tab-list-item(name="systems")
+          com-tab-list-item(name="dispersions")
           com-tab-list-item(name="formula")
           com-tab-list-item(name="resource")
         com-image-concepts(

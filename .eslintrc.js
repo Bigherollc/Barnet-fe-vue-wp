@@ -1,29 +1,27 @@
 module.exports = {
-  parserOptions: {
-    parser: '@babel/eslint-parser',
-    requireConfigFile: false
-  },
+  root: true,
   env: {
     browser: true,
     es6: true,
-    jquery: true,
-    node: true  // Ensure support for CommonJS globals
+    node: true
+  },
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaFeatures: {
+      legacyDecorators: true
+    }
   },
   globals: {
-    '$': 'readonly',
-    'jQuery': 'readonly',
-    '__webpack_require__': 'readonly',
-    'Vue': 'readonly',
-    'Vuex': 'readonly'   // Add this line for Vuex
+    $: true,
+    jQuery: true,
+    Plugin: true,
+    Vue: true,
+    Vuex: true,
+    VueRouter: true,
+    __webpack_require__: true
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:vue/recommended'
-  ],
-  plugins: [
-    'vue'
-  ],
   rules: {
+    // recommended
     'for-direction': 2,
     'getter-return': 2,
     'no-compare-neg-zero': 2,
@@ -197,7 +195,6 @@ module.exports = {
     'no-var': 1,
     'object-shorthand': 1,
     'prefer-template': 1,
-    'template-curly-spacing': 1,
-    'no-prototype-builtins': 'off'
+    'template-curly-spacing': 1
   }
-};
+}

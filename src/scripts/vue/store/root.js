@@ -235,7 +235,7 @@ export default {
     updateListShow ({ state, commit, dispatch }) {
       const { page, skip, totalPage, listTerm, isGroup } = state;
       const start = (page - 1) * skip;
-      const end = start + ( skip - 1 );
+      const end = (totalPage) * skip;
       const _dataSort = listTerm.filter((item, index) => (start <= index && index <= end));
       const isMore = isGroup ? false : page < totalPage;
 

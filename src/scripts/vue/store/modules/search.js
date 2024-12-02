@@ -48,7 +48,7 @@ export default {
 
       const { listType } = rootState;
       const { dataApi, filterApi } = param;
-      const listTypeConcept = ['active', 'system'];
+      const listTypeConcept = ['active', 'system', 'dispersions'];
       // UPDATE URL
       dispatch('updateApiUrl', param);
 

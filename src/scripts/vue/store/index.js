@@ -18,7 +18,7 @@ const modules = {
 };
 
 for (let mod in modules) {
-  if (Object.prototype.hasOwnProperty.call(modules, mod)) {
+  if (modules.hasOwnProperty(mod)) {
     modules[mod].namespaced = true;
   }
 }

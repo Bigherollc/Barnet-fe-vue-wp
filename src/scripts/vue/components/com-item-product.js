@@ -26,12 +26,12 @@ Vue.component('com-item-product', {
     },
     area: {
       type: String,
-      default: '',
+      default: false,
     },
   },
 
   computed: {
     hasImage: vm => vm.image !== '',
     isGlobal: ({ area }) => area === 'global',
-  },
+  }
 });

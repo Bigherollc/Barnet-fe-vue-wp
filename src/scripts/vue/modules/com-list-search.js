@@ -28,6 +28,17 @@ Vue.component('com-list-search', {
         :image="item.data.formula_icon_black"
         :link="item.data.permalink"
       ></com-item-formula>
+      
+      <com-item-dispersions
+        v-if="isDispersions"
+        v-for="item in listShow"
+        :key=item.key
+        :title="item.data.post_title"
+        :desc="item.data.post_excerpt"
+        :image="item.data.dispersions_icon_black"
+        :link="item.data.permalink"
+      ></com-item-dispersions>
+
 
       <div
         v-if="isResource"
@@ -58,11 +69,12 @@ Vue.component('com-list-search', {
       'currentType'
     ]),
 
-    isActive: vm => vm.currentType === 'active',
-    isSystem: vm => vm.currentType === 'system',
-    isProduct: vm => vm.isActive || vm.isSystem,
+    isActive: vm => vm.currentType === 'actives',
+    isSystem: vm => vm.currentType === 'systems',
+    isDispersions: vm => vm.currentType === 'dispersions',
     isFormula: vm => vm.currentType === 'formula',
     isResource: vm => vm.currentType === 'resource',
+    isProduct: vm => vm.isActive || vm.isSystem || vm.isDispersions,
     clsList: vm => vm.isResource ? 'component-list-resource' : 'component-list-product',
   },
 

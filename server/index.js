@@ -30,7 +30,7 @@ app.engine('pug', (path, options, callback) => {
 
 app.set('views', srcView);
 app.set('view engine', 'pug');
-app.use(express['static'](output));
+app.use(express.static(output));
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
