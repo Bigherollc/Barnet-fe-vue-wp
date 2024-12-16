@@ -1,19 +1,26 @@
 import { callApi } from '../utils/http';
 
-const
-  classParsleyError = 'parsley-error',
+// Define class-level constants for CSS classes
+const classParsleyError = 'parsley-error',
   classDNone = 'd-none',
   classDone = 'done',
   classActive = 'active',
-  classCurrent = 'current'
-;
+  classCurrent = 'current';
 
-const generateErrorServer = (msgError) =>
-  `<ul class="parsley-errors-list filled" data-validate-server>
-    <li class="parsley-required">
-      ${msgError}
-    </li>
+/**
+ * Generate HTML for server-side validation errors.
+ * @param {string} msgError - The error message.
+ * @returns {string} HTML string for the error.
+ */
+const generateErrorServer = (msgError) => {
+  if (typeof msgError !== 'string') {
+    console.error('Invalid msgError type:', msgError);
+    return '';
+  }
+  return `<ul class="parsley-errors-list filled" data-validate-server>
+    <li class="parsley-required">${msgError}</li>
   </ul>`;
+};
 
 @Plugin({
   options: {
@@ -28,24 +35,22 @@ const generateErrorServer = (msgError) =>
     dataCheckbox: '[data-checkbox]',
     dataStepValid: '[data-step-valid]',
     formElement: 'form',
-    formInputItem: 'component-form__item'
-  }
+    formInputItem: 'component-form__item',
+  },
 })
 export default class RequestStep {
-  init () {
+  init() {
     this.initProps();
     this.initDom();
     this.initEvent();
     this.initParsleyGroup();
   }
 
-  initProps () {
-    this.props = {
-      count: 0
-    };
+  initProps() {
+    this.props = { count: 0 };
   }
 
-  initDom () {
+  initDom() {
     const {
       dataLoading,
       dataHeading,
@@ -54,7 +59,7 @@ export default class RequestStep {
       dataCheckbox,
       formElement,
       dataTabContent,
-      dataFieldValidate
+      dataFieldValidate,
     } = this.options;
 
     this.$heading = this.$element.find(dataHeading);
@@ -68,42 +73,34 @@ export default class RequestStep {
     this.$loading = $(dataLoading);
   }
 
-  initEvent () {
-    const {
-      pluginName,
-      formInputItem,
-      dataValidateServer
-    } = this.options;
+  initEvent() {
+    const { pluginName, formInputItem, dataValidateServer } = this.options;
 
-    this.$stepItem
-    .off(`click.${pluginName}`)
-    .on(`click.${pluginName}`, (e) => {
-      const
-        that = this,
-        targetDOM = e.target,
+    // Step navigation click event
+    this.$stepItem.off(`click.${pluginName}`).on(`click.${pluginName}`, (e) => {
+      const targetDOM = e.target,
         $targetClick = $(targetDOM),
-        $targetActive = that.$stepItem.filter(`.${classActive}`),
-        indexClick = that.$stepItem.index(targetDOM),
-        indexActive = that.$stepItem.index($targetActive[0])
-      ;
+        $targetActive = this.$stepItem.filter(`.${classActive}`),
+        indexClick = this.$stepItem.index(targetDOM),
+        indexActive = this.$stepItem.index($targetActive[0]);
 
       if ($targetClick.hasClass(classActive)) {
         return;
       }
 
       if ($targetActive.hasClass(classDone)) {
-        that.$nextBtn
+        this.$nextBtn
           .eq(indexActive)
-          .trigger('click', {indexNext: indexClick});
+          .trigger('click', { indexNext: indexClick });
       } else {
-        that.$stepItem.removeClass(classCurrent);
+        this.$stepItem.removeClass(classCurrent);
         $targetActive.not(`.${classDone}`).addClass(classCurrent);
-
-        that.props.count = indexClick;
-        that.changeTab(that.props.count);
+        this.props.count = indexClick;
+        this.changeTab(this.props.count);
       }
     });
 
+    // Input focus event to remove server validation errors
     this.$fieldValidate
       .off(`focusin.${pluginName}`)
       .on(`focusin.${pluginName}`, (e) => {
@@ -117,72 +114,72 @@ export default class RequestStep {
         }
       });
 
+    // Next button click event
     this.$nextBtn
       .off(`click.${pluginName}`)
-      .on(`click.${pluginName}`, (e, {indexNext} = {}) => {
+      .on(`click.${pluginName}`, (e, { indexNext } = {}) => {
         e.preventDefault();
-
-        $(e.target).trigger('click-next');
-
-        const
-          that = this,
-          { dataStepValid } = that.options,
+        const { dataStepValid } = this.options,
           $target = $(e.target),
-          groupName = $target.attr('data-group-validate'),
-          goToNextStep = function() {
-            that.props.count = typeof indexNext === 'number' ? indexNext : that.props.count += 1;
-            that.changeTab(that.props.count);
-          }
-        ;
+          groupName = $target.attr('data-group-validate');
 
-        that.$form.parsley().whenValidate({
-          group: groupName
-        }).done(() => {
-          if ($target.attr('type') !== 'submit') {
-            if ($target.is(dataStepValid)) {
-              goToNextStep();
-              return;
+        if (!groupName || typeof groupName !== 'string') {
+          console.error('Invalid groupName:', groupName);
+          return;
+        }
+        this.$form
+          .parsley()
+          .whenValidate({ group: groupName})
+          .done(() => {
+            if ($target.attr('type') !== 'submit') {
+              if (!dataStepValid || typeof dataStepValid !== 'string') {
+                console.error('Invalid dataStepValid:', dataStepValid);
+                return;
+              }
+              if ($target.is(dataStepValid)) {
+                this.props.count =
+                  typeof indexNext === 'number'
+                    ? indexNext
+                    : this.props.count + 1;
+                this.changeTab(this.props.count);
+                return;
+              }
+
+              const dataForm = this.$form.serializeArray();
+              this.sendData(dataForm)
+                .then((res) => {
+                  if (res.success) {
+                    this.props.count =
+                      typeof indexNext === 'number'
+                        ? indexNext
+                        : this.props.count + 1;
+                    this.changeTab(this.props.count);
+                  } else {
+                    this.renderError(res);
+                  }
+                  this.$loading.addClass(classDNone);
+                })
+                .catch((err) => console.error('Error sending data:', err));
+            } else {
+              this.$form.submit();
             }
-
-            const dataForm = that.$form.serializeArray();
-
-            that.sendData(dataForm)
-              .then(res => {
-                if (res.success) {
-                  goToNextStep();
-                } else {
-                  that.renderError(res);
-                }
-
-                that.$loading.addClass(classDNone);
-              }, err => {
-                console.error(err);
-              });
-          } else {
-            that.$form.submit();
-          }
-        });
+          })
+          .fail(() => {
+            console.error('Validation failed for group:', groupName);
+          });
       });
 
+    // Checkbox change event
     this.$checkbox
       .off(`change.${pluginName}`)
       .on(`change.${pluginName}`, (e) => {
-        const
-          that = this,
-          $targetCurr = $(e.target),
-          nameCurr = $targetCurr.attr('name'),
-          valueCurr = $targetCurr.is(':checked'),
-          objData = {}
-        ;
+        const nameCurr = $(e.target).attr('name'),
+          valueCurr = $(e.target).is(':checked'),
+          objData = { [nameCurr]: valueCurr };
 
-        objData[nameCurr] = valueCurr;
-
-        that.sendData(objData)
-          .then(() => {
-            that.$loading.addClass(classDNone);
-          }, err => {
-            console.error(err);
-          });
+        this.sendData(objData)
+          .then(() => this.$loading.addClass(classDNone))
+          .catch((err) => console.error('Error sending checkbox data:', err));
       });
   }
 
@@ -190,10 +187,13 @@ export default class RequestStep {
     const { dataNextBtn } = this.options;
 
     this.$tabContent.each((index, tab) => {
-      const
-        $validateEle = $(tab).find('input, select, textarea'),
-        $btn = $(tab).find(dataNextBtn)
-      ;
+      if (typeof index !== 'number') {
+        console.error('Invalid index:', index);
+        return;
+      }
+
+      const $validateEle = $(tab).find('input, select, textarea'),
+        $btn = $(tab).find(dataNextBtn);
 
       $validateEle.attr('data-parsley-group', `tab-${index}`);
       $btn.attr('data-group-validate', `tab-${index}`);
@@ -201,7 +201,7 @@ export default class RequestStep {
   }
 
   changeTab(index) {
-    let indexDone = index > 0 ? index - 1 : index;
+    const indexDone = index > 0 ? index - 1 : index;
 
     this.$tabContent.addClass(classDNone).eq(index).removeClass(classDNone);
     this.$stepItem.eq(indexDone).addClass(classDone);
@@ -210,42 +210,44 @@ export default class RequestStep {
   }
 
   sendData(opts) {
-    const
-      { url, method } = this.options,
-      data = opts,
-      headers = {}
-    ;
+    const { url, method } = this.options;
 
     this.$loading.removeClass(classDNone);
 
-    return callApi({url, headers, data, method});
+    if (typeof opts !== 'object') {
+      console.error('Invalid data type for opts:', opts);
+      return Promise.reject(new Error('Invalid data type for opts'));
+    }
+
+    return callApi({ url, headers: {}, data: opts, method });
   }
 
   renderError({ arrError }) {
-    const
-      { formInputItem } = this.options,
-      $tabCurrent = this.$tabContent.eq(this.props.count)
-    ;
-
-    if (!arrError.length) {
+    if (!Array.isArray(arrError)) {
+      console.error('Invalid arrError:', arrError);
       return;
     }
 
+    const { formInputItem } = this.options,
+      $tabCurrent = this.$tabContent.eq(this.props.count);
+
     arrError.forEach((item) => {
-      const
-        { inputError, msgError} = item,
-        $current = $tabCurrent.find(`input[name='${inputError}']`),
+      const { inputError, msgError } = item;
+
+      if (!inputError || typeof inputError !== 'string') {
+        console.error('Invalid inputError:', inputError);
+        return;
+      }
+
+      const $current = $tabCurrent.find(`input[name='${inputError}']`),
         $currentContainer = $current.closest(`.${formInputItem}`),
-        $errorDOM = $(generateErrorServer(msgError))
-      ;
+        $errorDOM = $(generateErrorServer(msgError));
 
       if (!$current.length || $currentContainer.find('ul li').length) {
         return;
       }
 
-      $current
-        .addClass(classParsleyError)
-        .after($errorDOM);
+      $current.addClass(classParsleyError).after($errorDOM);
     });
   }
 }

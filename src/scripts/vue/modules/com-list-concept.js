@@ -66,9 +66,10 @@ Vue.component('com-list-concept', {
 
     ]),
 
-    isActive: vm => vm.currentType === 'active',
-    isSystem: vm => vm.currentType === 'system',
-    isProduct: vm => vm.isActive || vm.isSystem,
+    isActive: vm => vm.currentType === 'actives',
+    isSystem: vm => vm.currentType === 'systems',
+    isDispersions: vm => vm.currentType === 'dispersions',
+    isProduct: vm => vm.isActive || vm.isSystem || vm.isDispersions,
     isFormula: vm => vm.currentType === 'formula',
     isResource: vm => vm.currentType === 'resource',
   },

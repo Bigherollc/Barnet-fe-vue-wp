@@ -163,7 +163,7 @@ export default class Header {
       },
       onSelect: (item) => {
         _ITEMSEARCH = item;
-        window.location.href = item.link;
+        window.open(item.link, '_blank');
       },
       disableAutoSelect: true,
     });

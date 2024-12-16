@@ -55,7 +55,8 @@
     "autocompleter": "^6.1.0",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
-    "browser-sync": "^2.26.14",
+    "browser-sync": "^2.29.3",
+    "browser-sync-webpack-plugin": "^2.3.0",
     "compression": "^1.7.4",
     "dayjs": "^1.10.5",
     "del": "^5.1.0",
@@ -82,16 +83,12 @@
     "organizze-gulp-sass-bulk-import": "^0.1.1",
     "pug": "^2.0.4",
     "require-dir": "^1.2.0",
-    "sass": "^1.81.0",
     "strip-indent": "^3.0.0",
     "video.js": "^7.11.4",
     "vinyl-named": "^1.1.0",
     "vue-loader": "^15.9.6",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.12",
-    "webpack": "^5.96.1",
-    "webpack-cli": "^5.1.4",
-    "webpack-stream": "^7.0.0"
-  },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+    "webpack-stream": "^5.2.1"
+  }
 }
