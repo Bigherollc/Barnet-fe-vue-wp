@@ -2,7 +2,7 @@ const {
   mapState,
   mapActions
 } = Vuex;
-
+//fixed
 Vue.component('com-list-resource', {
   template: `
     <div
