@@ -27,6 +27,7 @@ Vue.component('com-list-resource', {
     hasborder: Boolean,
     data: String,
     filter: String,
+    roles: Array,
   },
 
   computed: {
@@ -48,8 +49,8 @@ Vue.component('com-list-resource', {
   async mounted () {
     const dataApi = this.data;
     const filterApi = this.filter;
-
-    await this.getResourceRource({dataApi, filterApi});
+    const userRoles = this.roles; // Define the 'userRoles' variable
+    await this.getResourceRource({dataApi, filterApi, userRoles});
     this.updateHasData(true);
   }
 });
