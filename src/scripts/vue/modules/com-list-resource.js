@@ -28,6 +28,7 @@ Vue.component('com-list-resource', {
     data: String,
     filter: String,
     roles: Array,
+    region: String
   },
 
   computed: {
@@ -50,7 +51,8 @@ Vue.component('com-list-resource', {
     const dataApi = this.data;
     const filterApi = this.filter;
     const userRoles = this.roles; // Define the 'userRoles' variable
-    await this.getResourceRource({dataApi, filterApi, userRoles});
+    const userRegion = this.region;
+    await this.getResourceRource({dataApi, filterApi, userRoles, userRegion});
     this.updateHasData(true);
   }
 });

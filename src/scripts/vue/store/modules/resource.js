@@ -8,8 +8,7 @@ export default {
 
       let source = {};
       const { listType, currentType } = rootState;
-      const { dataApi, filterApi, userRoles } = param;
-
+      const { dataApi, filterApi, userRoles, userRegion } = param;
       // GET DATA
       const otpsData = { url: dataApi };
       const resData = await callApi(otpsData);
@@ -22,14 +21,19 @@ export default {
       });
       // FILTER DATA ACCORDING TO USER ROLES
       const _data = totalData.filter((resource) => {
-        if (!resource.data.resource_roles) {
+        if (resource.data.resource_roles === null) {
+          return false;
+        }
+        const resourceArea = resource.data.resource_area;
+        if (resourceArea && resourceArea !== userRegion.replace(/"/g, '')) {
           return false;
         }
         const roles = resource.data.resource_roles;
+
         const arrUserRoles = userRoles.replace(/[\[\]"]/g, '').split(',');
         return typeof roles === 'object'
-          ? roles.filter((role) => arrUserRoles.includes(role) ?? false) ?? false
-          : arrUserRoles.includes(roles) ?? false;
+          ? roles.filter((role) => arrUserRoles.includes(role)).length > 0
+          : arrUserRoles.includes(roles);
       });
       // GET FILTER
       const otpsFilter = { url: filterApi };
