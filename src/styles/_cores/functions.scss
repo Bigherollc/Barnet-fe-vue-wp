@@ -45,7 +45,7 @@
       $context: $context * 1px;
     }
 
-    @return $pixels / $context * 1#{$unit};
+    @return #{$pixels / $context}#{$unit};
   }
 }
 

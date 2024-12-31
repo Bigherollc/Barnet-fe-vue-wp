@@ -59,14 +59,13 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery',
       Plugin: ['@/plugin', 'default']
-    }),
+    })
   ],
   optimization: {
     nodeEnv,
     splitChunks: false,
     flagIncludedChunks: true,
     concatenateModules: true,
-    occurrenceOrder: true,
     sideEffects: true
   },
   devtool: isDevelopment && 'source-map'

@@ -1,10 +1,10 @@
-import { isEmptyObject } from 'jquery';
-import { callApi } from '../../../utils/http';
+import { isEmptyObject } from "jquery";
+import { callApi } from "../../../utils/http";
 
 export default {
   actions: {
     async getSource({ dispatch, rootState }, param) {
-      dispatch('setTotalSearchResult', 0, { root: true });
+      dispatch("setTotalSearchResult", 0, { root: true });
 
       let source = {};
       const { listType, currentType } = rootState;
@@ -21,41 +21,46 @@ export default {
       });
       // FILTER DATA ACCORDING TO USER ROLES
       const _data = totalData.filter((resource) => {
-        if (resource.data.resource_roles === null) {
+        if (
+          resource.data.resource_area &&
+          resource.data.resource_area === userRegion.replace(/"/g, "")
+        ) {
+          if (resource.data.resource_roles === null) {
+            return true;
+          }
+          if (resource.data.resource_roles !== null) {
+            const roles = resource.data.resource_roles;
+            console.log(resource.data);
+            const arrUserRoles = userRoles.replace(/[\[\]"]/g, "").split(",");
+            return typeof roles === "object"
+              ? roles.filter((role) => arrUserRoles.includes(role)).length > 0
+              : arrUserRoles.includes(roles);
+          }
+        } else {
           return false;
         }
-        const resourceArea = resource.data.resource_area;
-        if (resourceArea && resourceArea !== userRegion.replace(/"/g, '')) {
-          return false;
-        }
-        const roles = resource.data.resource_roles;
-
-        const arrUserRoles = userRoles.replace(/[\[\]"]/g, '').split(',');
-        return typeof roles === 'object'
-          ? roles.filter((role) => arrUserRoles.includes(role)).length > 0
-          : arrUserRoles.includes(roles);
       });
       // GET FILTER
       const otpsFilter = { url: filterApi };
       const _filter = await callApi(otpsFilter);
       const _filter_max_order =
         _filter.reduce((acc, curr) => {
-          const order = curr.hasOwnProperty('order')
+          const order = Object.prototype.hasOwnProperty.call(curr, "order")
             ? parseInt(curr.order)
             : acc;
           return order > acc ? order : acc;
         }, 0) + 1;
-      const _filter_check_order = _filter.map((filter) =>
-        Object.assign({}, filter, {
-          order: filter.hasOwnProperty('order')
-            ? parseInt(filter.order)
-            : _filter_max_order,
-        })
-      );
+      // const _filter_check_order = _filter.map((filter) =>
+      //   Object.assign({}, filter, {
+      //     order: filter.hasOwnProperty('order')
+      //       ? parseInt(filter.order)
+      //       : _filter_max_order,
+      //   })
+      // );
 
       // SETUP SOURCE
       listType.forEach((itemType) => {
-        let filter = _filter_check_order.filter((item) => item.parent === 0);
+        let filter = _filter.filter((item) => item.parent === 0);
         const data = _data.filter((item) => item.data.web_type === itemType);
         const count = data.length;
 
@@ -65,7 +70,7 @@ export default {
           }
 
           item.taxonomies.forEach((item_tax) => {
-            const tax_order = _filter_check_order.filter(
+            const tax_order = _filter.filter(
               (filter) => filter.term_id === item_tax.term_id
             )[0];
             const item_tax_order = Object.assign({}, item_tax, {
@@ -79,8 +84,8 @@ export default {
         Object.assign(source, { [itemType]: { data, filter, count } });
       });
 
-      dispatch('setSource', source, { root: true });
-      dispatch('setData', currentType, { root: true });
+      dispatch("setSource", source, { root: true });
+      dispatch("setData", currentType, { root: true });
     },
   },
 };

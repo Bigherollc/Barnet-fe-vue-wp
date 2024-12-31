@@ -17,11 +17,9 @@ const modules = {
   resource
 };
 
-for (let mod in modules) {
-  if (modules.hasOwnProperty(mod)) {
-    modules[mod].namespaced = true;
-  }
-}
+Object.keys(modules).forEach(mod => {
+  modules[mod].namespaced = true;
+});
 
 export default new Vuex.Store({
   ...root,

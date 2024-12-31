@@ -15,7 +15,8 @@ function buildScriptsES6 (cb) {
     .pipe(vinylNamed())
     .pipe(webpack(option))
     .on('error', handleError)
-    .pipe(dest(outputScript));
+    .pipe(dest(outputScript))
+    .on('end', cb); // Ensure async completion
 }
 
 buildScriptsES6.displayName = 'build:scripts-es6';

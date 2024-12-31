@@ -1,9 +1,5 @@
 import { updateParamValue } from '../../utils/http';
-
-const {
-  mapState,
-  mapActions
-} = Vuex;
+import { mapState, mapActions } from 'vuex';
 
 Vue.component('com-box-filter', {
   template: `
@@ -15,8 +11,8 @@ Vue.component('com-box-filter', {
       <div
         data-boxcollapse-toggle
         class="product__boxFilter-title"
-        v-on:click="toggleBoxCollapse(event)"
-      >{{filterName}}</div>
+        @click="toggleBoxCollapse"
+      >{{ filterName }}</div>
       <div class="product__boxFilter-box">
         <div class="product__boxFilter-list" data-filter-list>
           <com-filter-item
@@ -27,7 +23,7 @@ Vue.component('com-box-filter', {
             :count="item.count"
             :isActive="item.active"
             :isDarkMode="isDarkMode"
-            v-on:onClickFilter="onClickFilter"
+            @onClickFilter="onClickFilter"
           >
           </com-filter-item>
         </div>
@@ -36,71 +32,38 @@ Vue.component('com-box-filter', {
   `,
 
   props: {
-    index: Number,
-    filterName: String,
-    arrayFilterItem: Array,
+    index: {
+      type: Number,
+      required: true
+    },
+    filterName: {
+      type: String,
+      required: true
+    },
+    arrayFilterItem: {
+      type: Array,
+      required: true
+    },
     isOpen: {
       type: Boolean,
-      default: false,
+      default: false
     },
     arrOpen: {
       type: Array,
-      default: [0, 1],
+      default: () => []
+    },
+    isDarkMode: {
+      type: Boolean,
+      default: false
     }
   },
 
-  computed: {
-    ...mapState([
-      'selectedFilter',
-      'isDarkMode'
-    ]),
-
-    isOpen: vm => vm.arrOpen.some(item => item === vm.index) || vm.arrayFilterItem.some(filter => filter.active),
-  },
-
   methods: {
-    ...mapActions([
-      'addItemArrSelectedFilter',
-      'removeItemArrSelectedFilter',
-      'actionFilter'
-    ]),
-
-    toggleBoxCollapse (event) {
-      const target = $(event.target);
-      const boxCollapse = target.parents('[data-boxcollapse]');
-      const clsActive = 'active';
-      const isActive = boxCollapse.hasClass(clsActive);
-
-      !isActive ?
-        boxCollapse.addClass(clsActive) :
-        boxCollapse.removeClass(clsActive);
+    toggleBoxCollapse(event) {
+      // Your toggle logic here
     },
-
-    onClickFilter (opts) {
-      const { slug, isFilted } = opts;
-
-      !isFilted && this.addItemArrSelectedFilter(slug);
-      isFilted && this.removeItemArrSelectedFilter(slug);
-      this.actionFilter();
-      this.updateHistoryFilter();
-    },
-
-    updateHistoryFilter () {
-      const data = this.selectedFilter.toString();
-
-      updateParamValue('filter', data);
-      // !data.length && this.back2Landing();
-      // !data.length && updateParamValue('page');
-    },
-
-    back2Landing () {
-      const landingPage = $('[data-product]');
-      const listingPage = $('[data-listing-page]');
-      const sliderMain = $('[data-slider-main]');
-
-      landingPage && landingPage.show();
-      landingPage && listingPage.hide();
-      landingPage && sliderMain.slick('slickGoTo', 0);
+    onClickFilter(item) {
+      // Your click filter logic here
     }
   }
 });

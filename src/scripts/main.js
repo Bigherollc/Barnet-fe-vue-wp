@@ -2,12 +2,12 @@ import './initializations/update-js-assets-path';
 
 const isIE = document.documentElement.classList.contains('ie');
 
-async function initJS () {
+async function initJS() {
   if (isIE) {
     await import(/* webpackChunkName: "chunks/ie-polyfill" */ './polyfill/ie');
   }
 
-  import(/* webpackChunkName: "chunks/apps" */ './main/index');
+  await import(/* webpackChunkName: "chunks/apps" */ './main/index');
 }
 
 if (isIE) {

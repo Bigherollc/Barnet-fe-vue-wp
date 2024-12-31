@@ -24,7 +24,7 @@ const filesCopy = addPath(srcAsset, '**', 'favicon/**');
 const filesFavicon = addPath(srcAsset, 'favicon/**');
 const filesAssets = filesCopy
   .concat(filesFavicon)
-  .concat(isProduction ? 'index.html' : []);
+  .concat(isProduction ? ['index.html'] : []);
 exports.filesAssets = filesAssets;
 
 const srcScript = `${src}scripts/`;

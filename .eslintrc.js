@@ -5,12 +5,24 @@ module.exports = {
     es6: true,
     node: true
   },
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
+    requireConfigFile: false,
+    babelOptions: {
+      presets: ['@babel/preset-env'],
+      plugins: [
+        ['@babel/plugin-proposal-decorators', { legacy: true }],
+        '@babel/plugin-proposal-class-properties'
+      ]
+    },
     ecmaFeatures: {
       legacyDecorators: true
     }
   },
+  extends: [
+    'eslint:recommended',
+    'plugin:vue/recommended'
+  ],
   globals: {
     $: true,
     jQuery: true,

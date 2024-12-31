@@ -26,7 +26,7 @@ Vue.component('com-item-product', {
     },
     area: {
       type: String,
-      default: false,
+      default: '',
     },
   },
 
